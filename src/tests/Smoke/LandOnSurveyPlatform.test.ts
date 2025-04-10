@@ -69,7 +69,7 @@ test('E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke', 
       });
     });
     
-    import { test, expect } from '@playwright/test';
+   
 
 test('Verify auto-scrolling of the image carousel', async ({ page }) => {
     // Add test metadata
@@ -84,6 +84,11 @@ test('Verify auto-scrolling of the image carousel', async ({ page }) => {
         const pageTitle = await page.title();
         expect(pageTitle).toContain("59club"); 
     });
+
+
+
+
+
 
   /*// Step 2: Locate the carousel container
   const carousel = page.locator('this.selector.carousel-container'); 
@@ -102,4 +107,5 @@ test('Verify auto-scrolling of the image carousel', async ({ page }) => {
 
   // Step 6: Verify that the active image has changed
   expect(secondImage).not.toBe(firstImage);
-});*/
+});
+*/
