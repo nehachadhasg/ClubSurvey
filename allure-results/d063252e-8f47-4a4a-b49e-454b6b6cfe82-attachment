@@ -1,0 +1,103 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:5:5
+
+# Error details
+
+```
+Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('img[alt="59club Logo"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for locator('img[alt="59club Logo"]')
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "logo":
+  - img "logo"
+- region:
+  - group:
+    - img "Enhance Service & Sales Excellence"
+  - group:
+    - img "Unlock Powerful Insights"
+  - group:
+    - img "Train & Excel with Expert Guidance"
+- heading "Unlock Powerful Insights" [level=3]
+- paragraph: Measure customer experience, staff performance & operational standards with surveys & benchmarking. Compare results against industry leaders and optimize with confidence.
+- button "Go to slide 1"
+- button "Go to slide 2"
+- button "Go to slide 3"
+- button "Contact us"
+- img
+- heading "Login" [level=1]
+- paragraph: Please enter your details
+- text: Email address*
+- textbox "Insert your email address"
+- text: Password*
+- button "Forgot your password?"
+- textbox "Enter your password"
+- button:
+  - img
+- checkbox "Remember me"
+- text: Remember me
+- button "Login" [disabled]
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from "@playwright/test";
+   2 | import { ClubSurveyLogin } from "../../pages/ClubSurveyLogin";
+   3 | import { URLConstants } from "../../../constants/urlConstants";
+   4 |
+   5 | test('E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo',  async ({ page, context }) => {
+   6 |         // Add test metadata
+   7 |         /*test.info().annotations.push(
+   8 |            // { type: "Author", description: "Ajay Michael" },
+   9 |             { type: "TestCase", description: "E2E-CLUB59-31-TC01" },
+  10 |             { type: "Test Description", description: "Verify clicking the 59club logo redirects to the homepage" }
+  11 |         );*/
+  12 |
+  13 |         // Initialize the ClubSurveyLogin page object
+  14 |         const clubSurveyLogin = new ClubSurveyLogin(page, context);
+  15 |
+  16 |         // Step 1: Open the login screen
+  17 |         await test.step("Navigate to the login screen", async () => {
+  18 |             await clubSurveyLogin.loadApp(URLConstants.adminURL);
+  19 |
+  20 |             // Assert that the login screen is loaded
+  21 |             const pageTitle = await page.title();
+  22 |             expect(pageTitle).toContain("59club"); // Replace "59club" with the actual title of the login page
+  23 |         });
+  24 |
+  25 |         // Step 2: Verify redirection to the homepage via the 59club logo
+  26 |         await test.step("Verify redirection to the homepage via the 59club logo", async () => {
+  27 |             await clubSurveyLogin.verifyLogoRedirection(URLConstants.clubURL);
+  28 |
+  29 |             // Assert that the current URL matches the expected homepage URL
+  30 |             const currentURL = await page.url();
+  31 |           //  expect(currentURL).toBe(URLConstants.clubURL);
+  32 |
+  33 |             // Assert that the homepage contains a specific element (e.g., a header or logo)
+  34 |             const homepageLogo = page.locator('img[alt="59club Logo"]'); // Replace with the actual selector for the homepage logo
+> 35 |             await expect(homepageLogo).toBeVisible();
+     |                                        ^ Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+  36 |         });
+  37 |     });
+```

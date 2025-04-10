@@ -1,0 +1,980 @@
+[2025-04-08 19:49:31] INFO: Test run started with 0 test(s).
+[2025-04-08 19:49:31] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-04-08 19:49:31] INFO: Test run completed with status: FAILED
+[2025-04-08 19:50:56] INFO: Test run started with 0 test(s).
+[2025-04-08 19:50:56] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-04-08 19:50:56] INFO: Test run completed with status: FAILED
+[2025-04-08 19:51:24] INFO: Test run started with 0 test(s).
+[2025-04-08 19:51:24] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-04-08 19:51:24] INFO: Test run completed with status: FAILED
+[2025-04-08 19:51:44] INFO: Test run started with 0 test(s).
+[2025-04-08 19:51:44] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-04-08 19:51:44] INFO: Test run completed with status: FAILED
+[2025-04-08 19:55:08] INFO: Test run started with 0 test(s).
+[2025-04-08 19:55:08] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-04-08 19:55:08] INFO: Test run completed with status: FAILED
+[2025-04-08 19:56:11] INFO: Test run started with 0 test(s).
+[2025-04-08 19:56:11] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-04-08 19:56:11] INFO: Test run completed with status: FAILED
+[2025-04-08 20:01:58] INFO: Test run started with 1 test(s).
+[2025-04-08 20:01:59] INFO: Test Case Started : Verify clicking the 59club logo redirects to the homepage
+[2025-04-08 20:02:02] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 20:02:07] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 20:02:07] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 20:02:07] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 20:02:07] INFO: Completed Step : The 59club Logo clicked - Error: Error: page.waitForSelector: Unsupported token "@alt" while parsing css selector "img[@alt="logo" and contains(@src, "clubLogo")]". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for img[@alt="logo" and contains(@src, "clubLogo")] to be visible[22m
+
+[2025-04-08 20:02:07] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: page.waitForSelector: Unsupported token "@alt" while parsing css selector "img[@alt="logo" and contains(@src, "clubLogo")]". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for img[@alt="logo" and contains(@src, "clubLogo")] to be visible[22m
+
+[2025-04-08 20:02:08] INFO: Test Case Completed : Verify clicking the 59club logo redirects to the homepage Status : failed
+[2025-04-08 20:02:08] INFO: Test run completed with status: FAILED
+[2025-04-08 20:06:30] INFO: Test run started with 1 test(s).
+[2025-04-08 20:06:30] INFO: Test Case Started : Verify clicking the 59club logo redirects to the homepage
+[2025-04-08 20:06:32] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 20:06:35] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 20:06:35] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 20:06:37] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 20:06:38] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 20:06:38] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"https://[7mwww.59club.com/[27m"[39m
+Received: [31m"https://[7mqa.survey.59club.studiographene.xyz/en-US/auth/login[27m"[39m
+[2025-04-08 20:06:39] INFO: Test Case Completed : Verify clicking the 59club logo redirects to the homepage Status : failed
+[2025-04-08 20:06:39] INFO: Test run completed with status: FAILED
+[2025-04-08 20:15:00] INFO: Test run started with 1 test(s).
+[2025-04-08 20:15:01] INFO: Test Case Started : Verify clicking the 59club logo redirects to the homepage
+[2025-04-08 20:15:02] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 20:15:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 20:15:05] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 20:15:07] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 20:15:08] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 20:15:08] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"https://[7mwww.59club.com/[27m"[39m
+Received: [31m"https://[7mqa.survey.59club.studiographene.xyz/en-US/auth/login[27m"[39m
+[2025-04-08 20:15:09] INFO: Test Case Completed : Verify clicking the 59club logo redirects to the homepage Status : failed
+[2025-04-08 20:15:09] INFO: Test run completed with status: FAILED
+[2025-04-08 20:18:15] INFO: Test run started with 1 test(s).
+[2025-04-08 20:18:15] INFO: Test Case Started : Verify clicking the 59club logo redirects to the homepage
+[2025-04-08 20:18:16] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 20:18:17] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 20:18:17] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 20:18:18] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 20:18:18] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 20:18:18] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"https://[7mwww.59club.com/[27m"[39m
+Received: [31m"https://[7mqa.survey.59club.studiographene.xyz/en-US/auth/login[27m"[39m
+[2025-04-08 20:18:18] INFO: Test Case Completed : Verify clicking the 59club logo redirects to the homepage Status : failed
+[2025-04-08 20:18:19] INFO: Test run completed with status: FAILED
+[2025-04-08 20:24:30] INFO: Test run started with 1 test(s).
+[2025-04-08 20:24:30] INFO: Test Case Started : Verify clicking the 59club logo redirects to the homepage
+[2025-04-08 20:24:31] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 20:24:34] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 20:24:34] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 20:24:37] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 20:24:37] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 20:24:42] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"https://[7mwww.59club.com/[27m"[39m
+Received: [31m"https://[7mqa.survey.59club.studiographene.xyz/en-US/auth/login[27m"[39m
+[2025-04-08 20:24:44] INFO: Test Case Completed : Verify clicking the 59club logo redirects to the homepage Status : failed
+[2025-04-08 20:24:44] INFO: Test run completed with status: FAILED
+[2025-04-08 20:59:13] INFO: Test run started with 0 test(s).
+[2025-04-08 20:59:13] ERROR: Test Error: Error: No tests found
+[2025-04-08 20:59:13] INFO: Test run completed with status: FAILED
+[2025-04-08 20:59:43] INFO: Test run started with 1 test(s).
+[2025-04-08 20:59:43] INFO: Test run completed with status: PASSED
+[2025-04-08 21:00:55] INFO: Test run started with 1 test(s).
+[2025-04-08 21:00:56] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo
+[2025-04-08 21:01:05] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 21:01:07] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 21:01:07] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 21:01:10] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 21:01:10] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 21:01:35] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('img[alt="59club Logo"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('img[alt="59club Logo"]')[22m
+
+[2025-04-08 21:01:38] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo Status : failed
+[2025-04-08 21:01:39] INFO: Test run completed with status: FAILED
+[2025-04-08 21:01:56] INFO: Test run started with 1 test(s).
+[2025-04-08 21:01:57] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo
+[2025-04-08 21:02:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 21:02:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 21:02:05] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 21:02:08] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 21:02:09] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 21:02:32] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('img[alt="59club Logo"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('img[alt="59club Logo"]')[22m
+
+[2025-04-08 21:02:35] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo Status : failed
+[2025-04-08 21:02:35] INFO: Test run completed with status: FAILED
+[2025-04-08 21:07:31] INFO: Test run started with 1 test(s).
+[2025-04-08 21:07:31] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo
+[2025-04-08 21:07:39] INFO: Executing Step : Navigate to the login screen
+[2025-04-08 21:07:40] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-08 21:07:40] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-08 21:07:40] INFO: Executing Step : The 59club Logo clicked
+[2025-04-08 21:07:41] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-08 21:08:05] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('img[alt="59club Logo"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('img[alt="59club Logo"]')[22m
+
+[2025-04-08 21:08:07] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo Status : failed
+[2025-04-08 21:08:07] INFO: Test run completed with status: FAILED
+[2025-04-09 04:34:46] INFO: Test run started with 1 test(s).
+[2025-04-09 04:34:46] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo
+[2025-04-09 04:35:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 04:35:15] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 04:35:15] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 04:35:17] INFO: Executing Step : The 59club Logo clicked
+[2025-04-09 04:35:18] INFO: Completed Step : The 59club Logo clicked - Success
+[2025-04-09 04:35:46] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('img[alt="59club Logo"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('img[alt="59club Logo"]')[22m
+
+[2025-04-09 04:35:47] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo Status : failed
+[2025-04-09 04:35:47] INFO: Test run completed with status: FAILED
+[2025-04-09 04:40:43] INFO: Test run started with 1 test(s).
+[2025-04-09 04:40:44] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo
+[2025-04-09 04:42:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 04:42:34] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 04:42:34] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 04:42:37] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 04:42:37] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 04:42:42] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 04:42:44] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo Status : passed
+[2025-04-09 04:42:44] INFO: Test run completed with status: PASSED
+[2025-04-09 04:49:57] INFO: Test run started with 1 test(s).
+[2025-04-09 04:49:58] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 04:50:07] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 04:50:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 04:50:12] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 04:50:15] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 04:50:15] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 04:50:20] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 04:50:21] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 04:50:32] INFO: Test run completed with status: PASSED
+[2025-04-09 05:24:52] INFO: Test run started with 1 test(s).
+[2025-04-09 05:24:53] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 05:24:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 05:25:04] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 05:25:04] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 05:25:05] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 05:25:05] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 05:25:10] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 05:25:11] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 05:25:11] INFO: Test run completed with status: PASSED
+[2025-04-09 05:35:02] INFO: Test run started with 2 test(s).
+[2025-04-09 05:35:02] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 05:35:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 05:35:08] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 05:35:08] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 05:35:10] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 05:35:11] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 05:35:15] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 05:35:16] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 05:35:17] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 05:35:18] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 05:35:19] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 05:35:19] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 05:35:20] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 05:35:20] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 05:35:23] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 05:35:24] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 05:35:24] INFO: Test run completed with status: PASSED
+[2025-04-09 12:04:29] INFO: Test run started with 2 test(s).
+[2025-04-09 12:04:30] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 12:04:31] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 12:04:34] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 12:04:34] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 12:04:35] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 12:04:36] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 12:04:40] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 12:04:42] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 12:04:42] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 12:04:44] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 12:04:45] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 12:04:45] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 12:04:46] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 12:04:46] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 12:04:49] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 12:04:49] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 12:04:49] INFO: Test run completed with status: PASSED
+[2025-04-09 16:34:58] INFO: Test run started with 4 test(s).
+[2025-04-09 16:34:59] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 16:35:06] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 16:35:07] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 16:35:07] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 16:35:07] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 16:35:08] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 16:35:13] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 16:35:13] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 16:35:13] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 16:35:38] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 16:35:39] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 16:35:40] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 16:35:41] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 16:35:41] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 16:35:42] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 16:35:42] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 16:35:45] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 16:35:46] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 16:35:46] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 16:36:06] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 16:36:06] INFO: Test run completed with status: FAILED
+[2025-04-09 16:43:39] INFO: Test run started with 4 test(s).
+[2025-04-09 16:43:39] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 16:43:41] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 16:43:42] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 16:43:42] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 16:43:42] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 16:43:43] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 16:43:47] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 16:43:48] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 16:43:48] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 16:44:15] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 16:44:15] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 16:45:22] INFO: Test run started with 4 test(s).
+[2025-04-09 16:45:23] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 16:45:24] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 16:45:25] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 16:45:25] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 16:45:25] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 16:45:26] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 16:45:30] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 16:45:31] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 16:45:31] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 16:45:38] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : interrupted
+[2025-04-09 16:45:38] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 18:24:45] INFO: Test run started with 4 test(s).
+[2025-04-09 18:24:45] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:24:49] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:24:52] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:24:52] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 18:24:54] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 18:24:55] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 18:24:59] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 18:25:00] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 18:25:00] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 18:25:00] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:25:01] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:25:01] INFO: Executing Step : Verify redirection to the contactus modal via the contact us button
+[2025-04-09 18:25:01] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 18:25:01] INFO: Completed Step : Verify redirection to the contactus modal via the contact us button - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"h2[class*=\"typography-heading\"]:has-text(\"Need help\")"[39m
+Received: [31m"contactUsModalAssert"[39m
+[2025-04-09 18:25:01] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 18:25:02] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 18:25:03] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:25:05] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:25:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:25:05] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 18:25:06] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 18:25:06] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 18:25:10] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 18:25:10] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 18:25:10] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 18:25:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:25:11] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:25:11] INFO: Executing Step : Verify redirection to the contactus modal via the contact us button
+[2025-04-09 18:25:11] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 18:25:11] INFO: Completed Step : Verify redirection to the contactus modal via the contact us button - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"h2[class*=\"typography-heading\"]:has-text(\"Need help\")"[39m
+Received: [31m"contactUsModalAssert"[39m
+[2025-04-09 18:25:11] INFO: Completed Step : The Contact Us Button Button clicked - Error: Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]')[22m
+[2m    - locator resolved to <button class="border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200">Contact us</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+
+[2025-04-09 18:25:11] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 18:25:12] INFO: Test run completed with status: FAILED
+[2025-04-09 18:29:11] INFO: Test run started with 4 test(s).
+[2025-04-09 18:29:11] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:29:13] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:29:15] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:29:15] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 18:29:15] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 18:29:15] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 18:29:20] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 18:29:21] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 18:29:21] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 18:29:21] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:29:22] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:29:22] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 18:30:04] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 18:30:43] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m"h2[class*=\"typography-heading\"]:has-text(\"Need help\")"[39m
+Received: [31m"contactUsModalAssert"[39m
+[2025-04-09 18:30:44] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 18:30:46] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 18:30:47] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 18:35:45] INFO: Test run started with 4 test(s).
+[2025-04-09 18:35:46] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:35:48] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:35:51] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:35:51] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 18:35:53] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 18:35:54] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 18:35:59] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 18:36:00] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 18:36:00] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 18:36:00] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:36:01] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:36:01] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 18:37:40] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 18:37:40] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 18:38:46] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help or want to contact us?")')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help or want to contact us?")')[22m
+
+[2025-04-09 18:39:50] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 18:39:51] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:39:52] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:39:52] INFO: Completed Step : Navigate to the login screen - Error: Error: Failed to load the page at https://qa.survey.59club.studiographene.xyz
+[2025-04-09 18:39:52] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : interrupted
+[2025-04-09 18:39:52] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 18:49:56] INFO: Test run started with 4 test(s).
+[2025-04-09 18:49:56] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:49:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:50:02] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:50:02] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 18:50:04] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 18:50:05] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 18:50:09] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 18:50:10] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 18:50:10] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 18:50:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:50:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:50:12] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 18:54:15] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 18:54:22] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 18:55:02] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help or want to contact us?")')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help or want to contact us?")')[22m
+
+[2025-04-09 18:55:39] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 18:55:46] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 18:55:48] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:55:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:55:49] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 18:55:50] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 18:55:50] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 18:55:55] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 18:55:55] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 18:55:55] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 18:55:56] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 18:55:56] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 18:55:56] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 18:56:51] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 18:56:51] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 18:58:21] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help or want to contact us?")')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help or want to contact us?")')[22m
+
+[2025-04-09 18:58:23] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 18:58:23] INFO: Test run completed with status: FAILED
+[2025-04-09 19:04:49] INFO: Test run started with 4 test(s).
+[2025-04-09 19:04:49] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:04:52] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:04:55] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:04:55] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:04:57] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:04:57] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:05:03] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:05:04] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : interrupted
+[2025-04-09 19:05:04] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 19:20:56] INFO: Test run started with 4 test(s).
+[2025-04-09 19:20:57] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:20:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:21:08] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:21:08] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:21:13] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:21:13] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:21:19] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:21:19] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 19:21:19] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 19:21:20] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:21:21] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:21:21] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 19:22:05] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 19:22:53] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 19:23:01] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 19:23:23] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 19:23:24] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:23:26] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:23:29] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:23:29] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:23:32] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:23:32] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:23:38] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:23:39] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 19:23:39] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 19:23:39] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:23:39] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:23:39] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 19:23:47] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 19:24:25] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 19:24:32] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 19:25:11] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 19:25:11] INFO: Test run completed with status: PASSED
+[2025-04-09 19:26:45] INFO: Test run started with 4 test(s).
+[2025-04-09 19:26:45] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:26:47] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:26:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:26:49] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:26:49] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:26:49] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:26:54] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:26:55] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 19:26:55] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 19:26:55] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:26:56] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:26:56] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 19:26:56] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 19:26:56] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 19:26:57] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 19:26:58] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:26:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:27:00] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:27:00] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:27:00] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:27:00] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:27:03] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:27:03] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 19:27:03] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 19:27:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:27:04] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:27:04] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 19:27:04] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 19:27:04] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 19:27:05] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 19:27:05] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 19:27:05] INFO: Test run completed with status: PASSED
+[2025-04-09 19:30:11] INFO: Test run started with 4 test(s).
+[2025-04-09 19:30:12] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:30:14] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:30:16] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:30:16] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:30:16] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:30:16] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:30:20] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:30:21] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 19:30:21] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 19:30:21] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:30:22] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:30:22] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 19:30:22] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 19:30:22] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 19:30:22] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 19:30:24] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 19:30:25] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:30:26] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:30:26] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 19:30:26] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 19:30:26] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 19:30:30] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 19:30:30] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 19:30:30] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 19:30:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 19:30:30] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 19:30:30] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 19:30:31] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 19:30:31] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 19:30:31] INFO: Completed Step : The Contact Us Button Button clicked - Error: Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]')[22m
+[2m    - locator resolved to <button class="border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200">Contact us</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[2025-04-09 19:30:31] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 19:30:31] INFO: Test run completed with status: FAILED
+[2025-04-09 21:48:04] INFO: Test run started with 4 test(s).
+[2025-04-09 21:48:05] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 21:48:07] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:48:13] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:48:13] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 21:48:15] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 21:48:15] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 21:48:20] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 21:48:21] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 21:48:21] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 21:48:21] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:48:22] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:48:22] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 21:48:22] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 21:48:22] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 21:48:22] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 21:48:24] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 21:48:25] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:48:26] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:48:26] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 21:48:26] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 21:48:26] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 21:48:29] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 21:48:30] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 21:48:30] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 21:48:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:48:30] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:48:30] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 21:48:30] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 21:48:30] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 21:48:31] INFO: Completed Step : The Contact Us Button Button clicked - Error: Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]')[22m
+[2m    - locator resolved to <button class="border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200">Contact us</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[2025-04-09 21:48:31] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 21:48:31] INFO: Test run completed with status: FAILED
+[2025-04-09 21:54:54] INFO: Test run started with 4 test(s).
+[2025-04-09 21:54:55] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 21:54:58] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:55:01] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:55:01] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 21:55:02] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 21:55:03] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 21:55:07] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 21:55:08] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 21:55:08] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 21:55:08] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:55:09] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:55:09] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 21:55:09] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 21:55:09] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 21:55:09] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 21:55:10] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 21:55:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:55:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:55:12] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 21:55:13] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 21:55:13] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 21:55:16] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 21:55:16] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 21:55:16] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 21:55:16] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 21:55:17] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 21:55:17] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 21:55:17] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 21:55:17] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 21:55:17] INFO: Completed Step : The Contact Us Button Button clicked - Error: Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]')[22m
+[2m    - locator resolved to <button class="border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200">Contact us</button>[22m
+[2m  - attempting click action[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[2025-04-09 21:55:17] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 21:55:17] INFO: Test run completed with status: FAILED
+[2025-04-09 22:12:15] INFO: Test run started with 4 test(s).
+[2025-04-09 22:12:15] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:12:18] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:12:22] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:12:22] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:12:24] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:12:24] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:12:28] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:12:30] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:12:30] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:12:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:12:31] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:12:45] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:12:45] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:12:45] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 22:13:02] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:13:32] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 22:13:34] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:13:36] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:13:37] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:13:37] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:13:38] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:13:38] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:13:42] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:13:42] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:13:42] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:13:43] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:13:43] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:15:44] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:15:48] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:15:48] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 22:16:08] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:17:25] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 22:17:43] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : interrupted
+[2025-04-09 22:34:35] INFO: Test run started with 4 test(s).
+[2025-04-09 22:34:36] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:34:39] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:34:43] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:34:43] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:34:45] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:34:45] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:34:49] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:34:49] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:34:49] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:34:50] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:34:50] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:34:50] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:34:50] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:34:51] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:35:11] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help")')
+Expected string: [32m"Need help"[39m
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help")')[22m
+
+[2025-04-09 22:35:12] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 22:35:13] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:35:13] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : skipped
+[2025-04-09 22:35:13] INFO: Test run completed with status: INTERRUPTED
+[2025-04-09 22:36:17] INFO: Test run started with 4 test(s).
+[2025-04-09 22:36:18] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:36:20] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:36:21] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:36:21] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:36:21] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:36:21] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:36:25] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:36:26] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:36:26] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:36:26] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:36:27] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:36:27] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:36:27] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:36:27] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:36:47] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help")')
+Expected string: [32m"Need help"[39m
+Received string: [31m"Need help[7m or want to contact us?[27m"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help")')[22m
+[2m    21 × locator resolved to <h2 class="typography-heading-2">Need help or want to contact us?</h2>[22m
+[2m       - unexpected value "Need help or want to contact us?"[22m
+
+[2025-04-09 22:36:53] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 22:36:54] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:36:56] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:36:57] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:36:57] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:36:57] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:36:57] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:37:00] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:37:01] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:37:01] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:37:01] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:37:01] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:37:01] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:37:01] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:37:01] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:37:21] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help")')
+Expected string: [32m"Need help"[39m
+Received string: [31m"Need help[7m or want to contact us?[27m"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help")')[22m
+[2m    21 × locator resolved to <h2 class="typography-heading-2">Need help or want to contact us?</h2>[22m
+[2m       - unexpected value "Need help or want to contact us?"[22m
+
+[2025-04-09 22:37:22] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-09 22:37:23] INFO: Test run completed with status: FAILED
+[2025-04-09 22:53:03] INFO: Test run started with 4 test(s).
+[2025-04-09 22:53:03] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:53:06] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:53:06] INFO: Completed Step : Navigate to the login screen - Error: Error: Failed to load the page at https://qa.survey.59club.studiographene.xyz/en-GB/auth/login
+[2025-04-09 22:53:07] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : failed
+[2025-04-09 22:53:08] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:53:13] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:53:15] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:53:15] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:53:15] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:53:15] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 22:53:15] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:53:15] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 22:53:17] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:53:20] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:53:21] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:53:21] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:53:21] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:53:21] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:53:26] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:53:26] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:53:26] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:53:26] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:53:27] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:53:27] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:53:27] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:53:27] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:53:27] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 22:53:27] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 22:53:28] INFO: Test run completed with status: FAILED
+[2025-04-09 22:53:52] INFO: Test run started with 4 test(s).
+[2025-04-09 22:53:53] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:53:56] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:53:56] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:53:56] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:53:57] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:53:57] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:54:02] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:54:03] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:54:03] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:54:03] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:54:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:54:05] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:54:05] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:54:05] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 22:54:05] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:54:05] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 22:54:07] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-09 22:54:09] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:54:10] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:54:10] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-09 22:54:10] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-09 22:54:10] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-09 22:54:13] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-09 22:54:13] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-09 22:54:13] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-09 22:54:14] INFO: Executing Step : Navigate to the login screen
+[2025-04-09 22:54:14] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-09 22:54:14] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-09 22:54:14] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-09 22:54:14] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-09 22:54:15] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-09 22:54:15] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-09 22:54:15] INFO: Test run completed with status: PASSED
+[2025-04-10 09:38:35] INFO: Test run started with 4 test(s).
+[2025-04-10 09:38:35] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 09:38:36] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:38:37] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:38:37] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 09:38:37] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 09:38:37] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 09:38:43] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 09:38:44] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 09:38:44] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 09:38:44] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:38:44] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:38:44] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 09:38:44] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 09:38:45] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-10 09:39:04] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help")')
+Expected string: [32m"Need [7mk[27melp"[39m
+Received string: [31m"Need [7mh[27melp[7m or want to contact us?[27m"[39m
+Call log:
+[2m  - expect.toContainText with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help")')[22m
+[2m    22 × locator resolved to <h2 class="typography-heading-2">Need help or want to contact us?</h2>[22m
+[2m       - unexpected value "Need help or want to contact us?"[22m
+
+[2025-04-10 09:39:10] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-10 09:39:11] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 09:39:12] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:39:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:39:12] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 09:39:12] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 09:39:12] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 09:39:16] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 09:39:16] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 09:39:16] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 09:39:16] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:39:16] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:39:16] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 09:39:17] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 09:39:17] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-10 09:39:37] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('h2[class*="typography-heading"]:has-text("Need help")')
+Expected string: [32m"Need [7mk[27melp"[39m
+Received string: [31m"Need [7mh[27melp[7m or want to contact us?[27m"[39m
+Call log:
+[2m  - expect.toContainText with timeout 20000ms[22m
+[2m  - waiting for locator('h2[class*="typography-heading"]:has-text("Need help")')[22m
+[2m    21 × locator resolved to <h2 class="typography-heading-2">Need help or want to contact us?</h2>[22m
+[2m       - unexpected value "Need help or want to contact us?"[22m
+
+[2025-04-10 09:39:38] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-10 09:39:38] INFO: Test run completed with status: FAILED
+[2025-04-10 09:41:43] INFO: Test run started with 4 test(s).
+[2025-04-10 09:41:43] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 09:41:45] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:41:45] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:41:45] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 09:41:45] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 09:41:46] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 09:41:50] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 09:41:51] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 09:41:51] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 09:41:51] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:41:52] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:41:52] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 09:41:52] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 09:41:52] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-10 09:41:52] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-10 09:41:53] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 09:41:56] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:41:57] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:41:57] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 09:41:57] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 09:41:57] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 09:42:00] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 09:42:00] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 09:42:00] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 09:42:00] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 09:42:00] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 09:42:00] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 09:42:00] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 09:42:00] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-10 09:42:00] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-10 09:42:00] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-10 09:42:01] INFO: Test run completed with status: PASSED
+[2025-04-10 10:15:49] INFO: Test run started with 4 test(s).
+[2025-04-10 10:15:49] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 10:15:50] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 10:15:51] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 10:15:51] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 10:15:51] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 10:15:52] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 10:15:56] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 10:15:57] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 10:15:57] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 10:15:57] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 10:15:57] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 10:15:57] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 10:15:57] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 10:15:57] INFO: Executing Step : The Close Button button clicked
+[2025-04-10 10:15:57] INFO: Completed Step : The Close Button button clicked - Error: Error: page.waitForSelector: Unexpected token "" while parsing css selector "div[class*="cursor-pointer"][class*="bg-greyscale-100"". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for div[class*="cursor-pointer"][class*="bg-greyscale-100" to be visible[22m
+
+[2025-04-10 10:15:57] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: page.waitForSelector: Unexpected token "" while parsing css selector "div[class*="cursor-pointer"][class*="bg-greyscale-100"". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for div[class*="cursor-pointer"][class*="bg-greyscale-100" to be visible[22m
+
+[2025-04-10 10:15:58] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-10 10:15:58] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-10 10:15:58] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 10:15:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 10:16:00] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 10:16:00] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 10:16:00] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 10:16:00] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 10:16:04] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 10:16:04] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 10:16:04] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 10:16:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 10:16:04] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 10:16:04] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 10:16:04] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 10:16:04] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-10 10:16:04] INFO: Executing Step : The Close Button button clicked
+[2025-04-10 10:16:04] INFO: Completed Step : The Close Button button clicked - Error: Error: page.waitForSelector: Unexpected token "" while parsing css selector "div[class*="cursor-pointer"][class*="bg-greyscale-100"". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for div[class*="cursor-pointer"][class*="bg-greyscale-100" to be visible[22m
+
+[2025-04-10 10:16:04] INFO: Completed Step : Verify contactus modal via the contact us button - Error: Error: page.waitForSelector: Unexpected token "" while parsing css selector "div[class*="cursor-pointer"][class*="bg-greyscale-100"". Did you mean to CSS.escape it?
+Call log:
+[2m  - waiting for div[class*="cursor-pointer"][class*="bg-greyscale-100" to be visible[22m
+
+[2025-04-10 10:16:05] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : failed
+[2025-04-10 10:16:05] INFO: Test run completed with status: FAILED
+[2025-04-10 11:00:19] INFO: Test run started with 4 test(s).
+[2025-04-10 11:00:19] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 11:00:20] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 11:00:21] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 11:00:21] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 11:00:21] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 11:00:22] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 11:00:28] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 11:00:29] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 11:00:29] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 11:00:29] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 11:00:29] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 11:00:29] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 11:00:29] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 11:00:30] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-10 11:00:30] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-10 11:00:30] INFO: Test Case Started : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke
+[2025-04-10 11:00:31] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 11:00:32] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 11:00:32] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-10 11:00:32] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-10 11:00:32] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-10 11:00:35] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-10 11:00:35] INFO: Test Case Completed : E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo @smoke Status : passed
+[2025-04-10 11:00:35] INFO: Test Case Started : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke
+[2025-04-10 11:00:35] INFO: Executing Step : Navigate to the login screen
+[2025-04-10 11:00:35] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-10 11:00:35] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-10 11:00:36] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-10 11:00:36] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-10 11:00:36] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-10 11:00:36] INFO: Test Case Completed : E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke Status : passed
+[2025-04-10 11:00:36] INFO: Test run completed with status: PASSED

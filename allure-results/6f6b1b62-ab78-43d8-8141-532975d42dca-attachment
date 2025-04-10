@@ -1,0 +1,100 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo >> Verify clicking the 59club logo redirects to the homepage
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:6:9
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "https://www.59club.com/"
+Received: "https://qa.survey.59club.studiographene.xyz/en-US/auth/login"
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:32:32
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:27:9
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "logo":
+  - img "logo"
+- region:
+  - group:
+    - img "Enhance Service & Sales Excellence"
+  - group:
+    - img "Unlock Powerful Insights"
+  - group:
+    - img "Train & Excel with Expert Guidance"
+- heading "Unlock Powerful Insights" [level=3]
+- paragraph: Measure customer experience, staff performance & operational standards with surveys & benchmarking. Compare results against industry leaders and optimize with confidence.
+- button "Go to slide 1"
+- button "Go to slide 2"
+- button "Go to slide 3"
+- button "Contact us"
+- img
+- heading "Login" [level=1]
+- paragraph: Please enter your details
+- text: Email address*
+- textbox "Insert your email address"
+- text: Password*
+- button "Forgot your password?"
+- textbox "Enter your password"
+- button:
+  - img
+- checkbox "Remember me"
+- text: Remember me
+- button "Login" [disabled]
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from "@playwright/test";
+   2 | import { ClubSurveyLogin } from "../../pages/ClubSurveyLogin";
+   3 | import { URLConstants } from "../../../constants/urlConstants";
+   4 |
+   5 | test.describe("E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo", () => {
+   6 |     test("Verify clicking the 59club logo redirects to the homepage", async ({ page, context }) => {
+   7 |         // Add test metadata
+   8 |         test.info().annotations.push(
+   9 |            // { type: "Author", description: "Ajay Michael" },
+  10 |             { type: "TestCase", description: "E2E-CLUB59-31-TC01" },
+  11 |             { type: "Test Description", description: "Verify clicking the 59club logo redirects to the homepage" }
+  12 |         );
+  13 |
+  14 |         // Initialize the ClubSurveyLogin page object
+  15 |         const clubSurveyLogin = new ClubSurveyLogin(page, context);
+  16 |
+  17 |         // Step 1: Open the login screen
+  18 |         await test.step("Navigate to the login screen", async () => {
+  19 |             await clubSurveyLogin.loadApp(URLConstants.adminURL);
+  20 |
+  21 |             // Assert that the login screen is loaded
+  22 |             const pageTitle = await page.title();
+  23 |             expect(pageTitle).toContain("59club"); // Replace "59club" with the actual title of the login page
+  24 |         });
+  25 |
+  26 |         // Step 2: Verify redirection to the homepage via the 59club logo
+  27 |         await test.step("Verify redirection to the homepage via the 59club logo", async () => {
+  28 |             await clubSurveyLogin.verifyLogoRedirection(URLConstants.clubURL);
+  29 |
+  30 |             // Assert that the current URL matches the expected homepage URL
+  31 |             const currentURL = await page.url();
+> 32 |             expect(currentURL).toBe(URLConstants.clubURL);
+     |                                ^ Error: expect(received).toBe(expected) // Object.is equality
+  33 |
+  34 |             // Assert that the homepage contains a specific element (e.g., a header or logo)
+  35 |             const homepageLogo = page.locator('img[alt="59club Logo"]'); // Replace with the actual selector for the homepage logo
+  36 |             await expect(homepageLogo).toBeVisible();
+  37 |         });
+  38 |     });
+  39 | });
+```
