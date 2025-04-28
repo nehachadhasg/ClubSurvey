@@ -1,4 +1,4 @@
-import { ConcretePlaywrightWrapper } from './helpers/playwright'; // Adjust the path accordingly
+import { ConcretePlaywrightWrapper } from './helpers/playwright'; 
 import { BrowserContext, Page, chromium } from '@playwright/test';
 
 let wrapper: ConcretePlaywrightWrapper;

@@ -5,6 +5,6 @@ export const credentials = {
    
     ADMINLOGIN: {
         username: "59clubqaadmin@yopmail.com",
-        password: "Orange@345*"
+        password: "Tulip@345*"
     }
 };

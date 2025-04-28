@@ -15,25 +15,23 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
         secondaryEmailSelector: 'input[name="email"]',
         passwordSelector: 'input[placeholder="Enter your password"]',
         secondaryPasswordSelector: 'input[name="password"]',
-        loginButtonSelector: 'button[name="Login"]',
+        loginButtonSelector: 'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
         clublogo: 'img[alt="logo"][src*="clubLogo"]',
         contactus: 'button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]',
        // contactus: 'button[contains(text(), "Contact us") and contains(@class, "inline-flex") and contains(@class, "bg-lime")]',
         imgscroller1: 'img[@alt="Unlock Powerful Insights" and contains(@src, "loginsecond") and contains(@class, "object-contain")]',
         imgscroller2: 'img alt="Unlock Powerful Insights" loading="lazy" width="450" height="300" decoding="async" data-nimg="1" class="object-contain" src="/_next/static/media/loginsecond.b5f50a21.svg" style="color: transparent"',
         imgscroller3: 'img[@alt="Train & Excel with Expert Guidance" and contains(@src, "loginthird") and contains(@class, "object-contain")]',
-        loginButton: 'button[contains(text(), "Login") and contains(@class, "inline-flex") and contains(@class, "bg-dark-green")]',
-        rememberme: 'div[contains(@class, "relative") and contains(@class, "flex") and contains(@class, "h-5") and contains(@class, "w-5")]/input[@type="checkbox"]',
-        remembermeLabel: 'div[contains(@class, "relative") and contains(@class, "flex") and contains(@class, "h-5") and contains(@class, "w-5")]/input[@type="checkbox"]',
+        loginButton: 'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
+        rememberme: 'div[class*="h-5"][class*="w-5"][class*="bg-greyscale-200"]',
         togglebutton: 'button[contains(@class, "text-gray-1000") and contains(@class, "flex") and contains(@class, "cursor-pointer") and contains(@class, "px-3")]',
         clublogodashboard: 'img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"',
         contactUsModal: 'div[role="dialog"][data-state="open"]',
         contactUsModalAssert:'h2[class*="typography-heading"]:has-text("Need help")',
         contactUsModalCloseButton:'div[class*="cursor-pointer"][class*="bg-greyscale-100"',
         carouselcontainer: 'div[role="region"][aria-roledescription="carousel"]',
-        firstImage: 'img[alt="Enhance Service & Sales Excellence"][class="object-contain"]',
-        secondImage: 'img[alt="Train & Excel with Expert Guidance"][class="object-contain"]',
-        thirdImage: ''
+        forgotpassword: 'button[type="button"][class*="typography-label-bold"][class*="cursor-pointer"]',
+        myProfileButton: 'div[class*="typography-body-1-bold"][class*="bg-gold"][class*="cursor-pointer"]',
     };
 
     public someAbstractMethod(): void {
@@ -92,27 +90,7 @@ public async verifyContactUsModal(expectedTextSubstring: string) {
     
     //Ensure contactus modal appears
     this.validateElementVisibility(this.selectors.contactUsModal, "Contact Us Modal");
-    // Wait for the modal to be visible 
-   // const modal = this.page.locator('contactUsModal');
 
-    // Assert that the URL matches the expected URL
-    //await expect('contactUsModalAssert').toBe(expectedTextSubstring);
+}
+}
 
-    // Ensure the new page is not closed prematurely
-    //await this.click(this.selectors.contactUsModalCloseButton, "Close Button", "button"); // Close the new tab after verification (optional)
-}
-}
-/*
-public async closeContactUsModal(selector: string) {
-    // Ensure the modal close button is visible
-    await this.validateElementVisibility(this.selectors.contactUsModalCloseButton, "Contact Us Modal Close Button");
-    // Click the close button
-    await this.click(selector, "Close Button", "button");
-    // Wait for the modal to be closed
-    await this.page.waitForSelector(this.selectors.contactUsModal, { state: 'hidden' });
-    // Assert that the modal is no longer visible
-    const modal = this.page.locator(this.selectors.contactUsModal);
-    await expect(modal).not.toBeVisible();
-    console.log("Contact Us modal closed successfully.");
-}
-}*/

@@ -12,10 +12,10 @@ export default defineConfig({
     timeout: 20000
 
   },
-  testDir: 'src/tests/Smoke',
+  testDir: 'src/tests/Regression_Suite',
   // globalSetup: require.resolve('utils/jiraReport.ts'),
 
-  fullyParallel: false,
+  fullyParallel: true,
   retries: 0,
   workers: 1,
   repeatEach: 0,

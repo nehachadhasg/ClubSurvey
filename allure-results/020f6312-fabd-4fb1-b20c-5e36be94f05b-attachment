@@ -1,0 +1,171 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:194:5
+
+# Error details
+
+```
+Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('div[class*="typography-body-1-bold"][class*="bg-gold"][class*="cursor-pointer"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for locator('div[class*="typography-body-1-bold"][class*="bg-gold"][class*="cursor-pointer"]')
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:230:39
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "logo":
+  - img "logo"
+- region:
+  - group:
+    - img "Enhance Service & Sales Excellence"
+  - group:
+    - img "Unlock Powerful Insights"
+  - group:
+    - img "Train & Excel with Expert Guidance"
+- heading "Enhance Service & Sales Excellence" [level=3]
+- paragraph: 59Club is the industry leading customer service analyst and training provider, operating across the UK, Ireland, Europe, USA, Canada, Middle East, Africa, Asia, Australia & New Zealand.
+- button "Go to slide 1"
+- button "Go to slide 2"
+- button "Go to slide 3"
+- button "Contact us"
+- img
+- heading "Login" [level=1]
+- paragraph: Please enter your details
+- text: Email address*
+- textbox "Insert your email address"
+- paragraph: Incorrect email or password. Please try again.
+- text: Password*
+- button "Forgot your password?"
+- textbox "Enter your password"
+- button:
+  - img
+- paragraph: Incorrect email or password. Please try again.
+- checkbox "Remember me"
+- text: Remember me
+- button "Login" [disabled]
+```
+
+# Test source
+
+```ts
+  130 |
+  131 |     // Assert that the login screen is loaded
+  132 |     const pageTitle = await page.title();
+  133 |     expect(pageTitle).toContain("59club");
+  134 |   });
+  135 |
+  136 |   // Step 2: Navigate to the homepage via the 59club logo
+  137 |   await test.step("Verify redirection to the homepage via the 59club logo", async () => {
+  138 |     await clubSurveyLogin.verifyLogoRedirection(URLConstants.clubURL);
+  139 |
+  140 |     // Assert that the current URL matches the expected homepage URL
+  141 |     //const currentURL = await page.url();
+  142 |     //expect(currentURL).toBe(URLConstants.clubURL);
+  143 |
+  144 |     // Assert that the homepage contains a specific element (e.g., a header or logo)
+  145 |     const homepageLogo = page.locator(clubSurveyLogin.selectors.clublogo);
+  146 |     await expect(homepageLogo).toBeVisible();
+  147 |   });
+  148 |
+  149 |   // Step 3: Verify the "Contact Us" modal is visible
+  150 |   await test.step("Verify Contact Us modal via the Contact Us button", async () => {
+  151 |     // Click on the "Contact Us" button
+  152 |     const contactUsButton = page.locator(clubSurveyLogin.selectors.contactus);
+  153 |     await contactUsButton.click();
+  154 |
+  155 |     // Assert that the "Contact Us" modal is visible
+  156 |     const contactUsModal = page.locator(clubSurveyLogin.selectors.contactUsModal);
+  157 |     await expect(contactUsModal).toBeVisible();
+  158 |
+  159 |     // Assert that the modal contains the expected heading
+  160 |     const modalHeading = page.locator(clubSurveyLogin.selectors.contactUsModalAssert);
+  161 |     await expect(modalHeading).toContainText("Need help");
+  162 |   });
+  163 |
+  164 |   // Step 4: Verify login form elements are accessible
+  165 |   await test.step("Verify login form elements are accessible", async () => {
+  166 |     const usernameField = page.locator(clubSurveyLogin.selectors.emailSelector);
+  167 |     const passwordField = page.locator(clubSurveyLogin.selectors.passwordSelector);
+  168 |     const loginButton = page.locator(clubSurveyLogin.selectors.loginButton);
+  169 |
+  170 |     // Assert that the username field is visible
+  171 |     await expect(usernameField).toBeVisible();
+  172 |
+  173 |     // Assert that the password field is visible
+  174 |     await expect(passwordField).toBeVisible();
+  175 |
+  176 |     // Assert that the login button is visible
+  177 |     //await expect(loginButton).toBeVisible();
+  178 |   });
+  179 |
+  180 |   // Step 5: Verify the "Remember Me" checkbox is accessible
+  181 |   await test.step("Verify 'Remember Me' checkbox is accessible", async () => {
+  182 |     const rememberMeCheckbox = page.locator(clubSurveyLogin.selectors.rememberme);
+  183 |     await expect(rememberMeCheckbox).toBeVisible();
+  184 |   });
+  185 |
+  186 |   // Step 6: Verify the "Forgot Password" link is accessible
+  187 |   await test.step("Verify 'Forgot Password' link is accessible", async () => {
+  188 |     const forgotPasswordLink = page.locator(clubSurveyLogin.selectors.forgotpassword);
+  189 |     await expect(forgotPasswordLink).toBeVisible();
+  190 |   });
+  191 | });  
+  192 |
+  193 |
+  194 | test('SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity', async ({ page }) => {
+  195 |     // Add test metadata
+  196 |     test.info().annotations.push(
+  197 |         { type: 'TestCase', description: 'SANITY-CLUB59-LOGIN-TC04' },
+  198 |         { type: 'Test Description', description: 'Validate login with valid credentials' }
+  199 |     );
+  200 |     // Step 1: Open the login screen
+  201 |     await test.step("Navigate to the login screen", async () => {
+  202 |         await clubSurveyLogin.loadApp(URLConstants.adminURL);
+  203 |         // Assert that the login screen is loaded
+  204 |         const pageTitle = await page.title();
+  205 |         expect(pageTitle).toContain("59club"); 
+  206 |     });
+  207 |
+  208 |     // Step 2: Verify the username, password and Login button is accessible
+  209 |     await test.step("Verify login form elements are accessible", async () => {
+  210 |         const usernameField = page.locator(clubSurveyLogin.selectors.emailSelector);
+  211 |         const passwordField = page.locator(clubSurveyLogin.selectors.passwordSelector);
+  212 |         const loginButton = page.locator(clubSurveyLogin.selectors.loginButtonSelector);
+  213 |
+  214 |         // Assert that the username field is visible
+  215 |         await expect(usernameField).toBeVisible();
+  216 |         await usernameField.fill(credentials.ADMINLOGIN.username);
+  217 |     
+  218 |         // Assert that the password field is visible
+  219 |         await expect(passwordField).toBeVisible();
+  220 |         await passwordField.fill(credentials.ADMINLOGIN.password);
+  221 |         // Assert that the login button is visible
+  222 |         await expect(loginButton).toBeVisible();
+  223 |         await loginButton.click();
+  224 |
+  225 |     });
+  226 |
+  227 |     // Step 3: Verify the "My Profile" button is accessible
+  228 |     await test.step("Verify 'My Profile' button is accessible", async () => {
+  229 |         const myProfileButton = page.locator(clubSurveyLogin.selectors.myProfileButton);
+> 230 |         await expect(myProfileButton).toBeVisible();
+      |                                       ^ Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+  231 |     });
+  232 | });
+```
