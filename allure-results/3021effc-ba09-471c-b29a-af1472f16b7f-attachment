@@ -1,0 +1,324 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:237:5
+
+# Error details
+
+```
+Error: expect.toBeVisible: Unexpected token "=" while parsing css selector "img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"". Did you mean to CSS.escape it?
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:245:31
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "Small Logo":
+  - img "Small Logo"
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- button "Toggle Sidebar"
+- heading "Language" [level=1]
+- img
+- img
+- text: English (GB)
+- img
+- text: English (US)
+- img
+- img
+- text: Danish
+- img
+- text: French
+- img
+- text: German
+- img
+- text: Italian
+- img
+- text: Portuguese
+- img
+- text: Spanish
+- img
+- text: Swedish
+- img
+- text: Thai
+- img
+- text: Vietnamese
+- button "Cancel"
+- button "Confirm"
+- navigation:
+  - button "Toggle sidebar":
+    - img
+  - button "All Franchises":
+    - text: All Franchises
+    - img
+  - text: /
+  - button "All Groups" [disabled]
+  - text: /
+  - button "All Venues" [disabled]
+- button "Notifications":
+  - img
+- text: JD
+- heading "dashboards.adminDashboard.all.allFranchises" [level=1]
+- img
+- searchbox "globals.functionality.search.searchPlaceholderEllipsis"
+- button "Filters":
+  - img
+  - text: Filters
+- img
+- img
+- img
+- text: 24 Venues 44 Surveys 0 Active Surveys 62% Avg. Participation 75% Avg. Completion
+- table:
+  - rowgroup:
+    - row "Franchise Venues Active Surveys Participation Completed":
+      - cell "Franchise":
+        - text: Franchise
+        - img
+      - cell "Venues":
+        - text: Venues
+        - img
+      - cell "Active Surveys":
+        - text: Active Surveys
+        - img
+      - cell "Participation":
+        - text: Participation
+        - img
+        - img
+      - cell "Completed":
+        - text: Completed
+        - img
+        - img
+  - rowgroup:
+    - row "59Club Africa 59Club Africa 2 0 62% 64%":
+      - cell "59Club Africa 59Club Africa":
+        - img "59Club Africa"
+        - text: 59Club Africa
+      - cell "2"
+      - cell "0"
+      - cell "62%"
+      - cell "64%"
+    - row "59Club America 59Club America 0 0 74% 28%":
+      - cell "59Club America 59Club America":
+        - img "59Club America"
+        - text: 59Club America
+      - cell "0"
+      - cell "0"
+      - cell "74%"
+      - cell "28%"
+    - row "59Club Asia 59Club Asia 3 0 71% 21%":
+      - cell "59Club Asia 59Club Asia":
+        - img "59Club Asia"
+        - text: 59Club Asia
+      - cell "3"
+      - cell "0"
+      - cell "71%"
+      - cell "21%"
+    - row "59Club Canada 59Club Canada 0 0 17% 14%":
+      - cell "59Club Canada 59Club Canada":
+        - img "59Club Canada"
+        - text: 59Club Canada
+      - cell "0"
+      - cell "0"
+      - cell "17%"
+      - cell "14%"
+    - row "59Club Europe 59Club Europe 3 0 25% 83%":
+      - cell "59Club Europe 59Club Europe":
+        - img "59Club Europe"
+        - text: 59Club Europe
+      - cell "3"
+      - cell "0"
+      - cell "25%"
+      - cell "83%"
+    - row "59Club Flowers 59Club Flowers 6 0 63% 71%":
+      - cell "59Club Flowers 59Club Flowers":
+        - img "59Club Flowers"
+        - text: 59Club Flowers
+      - cell "6"
+      - cell "0"
+      - cell "63%"
+      - cell "71%"
+    - row "59Club Fruits 59Club Fruits 0 0 34% 54%":
+      - cell "59Club Fruits 59Club Fruits":
+        - img "59Club Fruits"
+        - text: 59Club Fruits
+      - cell "0"
+      - cell "0"
+      - cell "34%"
+      - cell "54%"
+    - row "59Club India 59Club India 1 0 76% 39%":
+      - cell "59Club India 59Club India":
+        - img "59Club India"
+        - text: 59Club India
+      - cell "1"
+      - cell "0"
+      - cell "76%"
+      - cell "39%"
+    - row "59Club Mexico 59Club Mexico 0 0 34% 85%":
+      - cell "59Club Mexico 59Club Mexico":
+        - img "59Club Mexico"
+        - text: 59Club Mexico
+      - cell "0"
+      - cell "0"
+      - cell "34%"
+      - cell "85%"
+    - row "59Club Middle East 59Club Middle East 0 0 24% 81%":
+      - cell "59Club Middle East 59Club Middle East":
+        - img "59Club Middle East"
+        - text: 59Club Middle East
+      - cell "0"
+      - cell "0"
+      - cell "24%"
+      - cell "81%"
+- text: globals.concepts.pagination.show
+- combobox: "10"
+- text: globals.concepts.pagination.of 19 globals.concepts.entities.franchisePluralLowercase
+- button [disabled]:
+  - img
+- button "01"
+- button "02"
+- button:
+  - img
+```
+
+# Test source
+
+```ts
+  145 |     //expect(currentURL).toBe(URLConstants.clubURL);
+  146 |
+  147 |     // Assert that the homepage contains a specific element (e.g., a header or logo)
+  148 |     const homepageLogo = page.locator(clubSurveyLogin.selectors.clublogo);
+  149 |     await expect(homepageLogo).toBeVisible();
+  150 |   });
+  151 |
+  152 |   // Step 3: Verify the "Contact Us" modal is visible
+  153 |   await test.step("Verify Contact Us modal via the Contact Us button", async () => {
+  154 |     // Click on the "Contact Us" button
+  155 |     const contactUsButton = page.locator(clubSurveyLogin.selectors.contactus);
+  156 |     await contactUsButton.click();
+  157 |
+  158 |     // Assert that the "Contact Us" modal is visible
+  159 |     const contactUsModal = page.locator(clubSurveyLogin.selectors.contactUsModal);
+  160 |     await expect(contactUsModal).toBeVisible();
+  161 |
+  162 |     // Assert that the modal contains the expected heading
+  163 |     const modalHeading = page.locator(clubSurveyLogin.selectors.contactUsModalAssert);
+  164 |     await expect(modalHeading).toContainText("Need help");
+  165 |   });
+  166 |
+  167 |   // Step 4: Verify login form elements are accessible
+  168 |   await test.step("Verify login form elements are accessible", async () => {
+  169 |     const usernameField = page.locator(clubSurveyLogin.selectors.emailSelector);
+  170 |     const passwordField = page.locator(clubSurveyLogin.selectors.passwordSelector);
+  171 |     const loginButton = page.locator(clubSurveyLogin.selectors.loginButton);
+  172 |
+  173 |     // Assert that the username field is visible
+  174 |     await expect(usernameField).toBeVisible();
+  175 |
+  176 |     // Assert that the password field is visible
+  177 |     await expect(passwordField).toBeVisible();
+  178 |
+  179 |     // Assert that the login button is visible
+  180 |     //await expect(loginButton).toBeVisible();
+  181 |   });
+  182 |
+  183 |   // Step 5: Verify the "Remember Me" checkbox is accessible
+  184 |   await test.step("Verify 'Remember Me' checkbox is accessible", async () => {
+  185 |     const rememberMeCheckbox = page.locator(clubSurveyLogin.selectors.rememberme);
+  186 |     await expect(rememberMeCheckbox).toBeVisible();
+  187 |   });
+  188 |
+  189 |   // Step 6: Verify the "Forgot Password" link is accessible
+  190 |   await test.step("Verify 'Forgot Password' link is accessible", async () => {
+  191 |     const forgotPasswordLink = page.locator(clubSurveyLogin.selectors.forgotpassword);
+  192 |     await expect(forgotPasswordLink).toBeVisible();
+  193 |   });
+  194 | });  
+  195 |
+  196 |
+  197 | /*test('SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity', async ({ page }) => {
+  198 |     // Add test metadata
+  199 |     test.info().annotations.push(
+  200 |         { type: 'TestCase', description: 'SANITY-CLUB59-LOGIN-TC04' },
+  201 |         { type: 'Test Description', description: 'Validate login with valid credentials' }
+  202 |     );
+  203 |     // Step 1: Open the login screen
+  204 |     await test.step("Navigate to the login screen", async () => {
+  205 |       await clubSurveyLogin.loadApp('/en-GB/auth/login');
+  206 |         // Assert that the login screen is loaded
+  207 |         const pageTitle = await page.title();
+  208 |         expect(pageTitle).toContain("59club"); 
+  209 |     });
+  210 |
+  211 |     // Step 2: Verify the username, password and Login button is accessible
+  212 |     await test.step("Verify login form elements are accessible", async () => {
+  213 |         const usernameField = page.locator(clubSurveyLogin.selectors.emailSelector);
+  214 |         const passwordField = page.locator(clubSurveyLogin.selectors.passwordSelector);
+  215 |         const loginButton = page.locator(clubSurveyLogin.selectors.loginButtonSelector);
+  216 |
+  217 |         // Assert that the username field is visible
+  218 |         await expect(usernameField).toBeVisible();
+  219 |         await usernameField.fill(credentials.ADMINLOGIN.username);
+  220 |     
+  221 |         // Assert that the password field is visible
+  222 |         await expect(passwordField).toBeVisible();
+  223 |         await passwordField.fill(credentials.ADMINLOGIN.password);
+  224 |         // Assert that the login button is visible
+  225 |         await expect(loginButton).toBeVisible();
+  226 |         await loginButton.click();
+  227 |
+  228 |     });
+  229 |
+  230 |     // Step 3: Verify the "My Profile" button is accessible
+  231 |     await test.step("Verify 'My Profile' button is accessible", async () => {
+  232 |         const myProfileButton = page.locator(clubSurveyLogin.selectors.myProfileButton);
+  233 |         await expect(myProfileButton).toBeVisible();
+  234 |     });
+  235 | });*/
+  236 |
+  237 | test('SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials', async ({ page, context }) => {
+  238 |   const clubSurveyLogin = new ClubSurveyLogin(page, context);
+  239 |
+  240 |   // Perform login
+  241 |   await clubSurveyLogin.ClubSurveyLogin();
+  242 |
+  243 |   // Assert that the dashboard is loaded
+  244 |   const dashboardLogo = page.locator(clubSurveyLogin.selectors.clublogodashboard);
+> 245 |   await expect(dashboardLogo).toBeVisible();
+      |                               ^ Error: expect.toBeVisible: Unexpected token "=" while parsing css selector "img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"". Did you mean to CSS.escape it?
+  246 | });
+```

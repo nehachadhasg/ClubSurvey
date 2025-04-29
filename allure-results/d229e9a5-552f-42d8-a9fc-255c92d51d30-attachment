@@ -1,0 +1,152 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:237:5
+
+# Error details
+
+```
+Error: expect.toBeVisible: Unexpected token "=" while parsing css selector "img alt="Small Logo" width="24" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[24px]" src="/_next/static/media/smallLogo.cd14bf8e.svg" style="color: transparent"". Did you mean to CSS.escape it?
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for img alt="Small Logo" width="24" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[24px]" src="/_next/static/media/smallLogo.cd14bf8e.svg" style="color: transparent"
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:245:31
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "logo":
+  - img "logo"
+- region:
+  - group:
+    - img "Enhance Service & Sales Excellence"
+  - group:
+    - img "Unlock Powerful Insights"
+  - group:
+    - img "Train & Excel with Expert Guidance"
+- heading "Unlock Powerful Insights" [level=3]
+- paragraph: Measure customer experience, staff performance & operational standards with surveys & benchmarking. Compare results against industry leaders and optimise with confidence.
+- button "Go to slide 1"
+- button "Go to slide 2"
+- button "Go to slide 3"
+- button "Contact us"
+- img
+- paragraph: Logging in...
+```
+
+# Test source
+
+```ts
+  145 |     //expect(currentURL).toBe(URLConstants.clubURL);
+  146 |
+  147 |     // Assert that the homepage contains a specific element (e.g., a header or logo)
+  148 |     const homepageLogo = page.locator(clubSurveyLogin.selectors.clublogo);
+  149 |     await expect(homepageLogo).toBeVisible();
+  150 |   });
+  151 |
+  152 |   // Step 3: Verify the "Contact Us" modal is visible
+  153 |   await test.step("Verify Contact Us modal via the Contact Us button", async () => {
+  154 |     // Click on the "Contact Us" button
+  155 |     const contactUsButton = page.locator(clubSurveyLogin.selectors.contactus);
+  156 |     await contactUsButton.click();
+  157 |
+  158 |     // Assert that the "Contact Us" modal is visible
+  159 |     const contactUsModal = page.locator(clubSurveyLogin.selectors.contactUsModal);
+  160 |     await expect(contactUsModal).toBeVisible();
+  161 |
+  162 |     // Assert that the modal contains the expected heading
+  163 |     const modalHeading = page.locator(clubSurveyLogin.selectors.contactUsModalAssert);
+  164 |     await expect(modalHeading).toContainText("Need help");
+  165 |   });
+  166 |
+  167 |   // Step 4: Verify login form elements are accessible
+  168 |   await test.step("Verify login form elements are accessible", async () => {
+  169 |     const usernameField = page.locator(clubSurveyLogin.selectors.emailSelector);
+  170 |     const passwordField = page.locator(clubSurveyLogin.selectors.passwordSelector);
+  171 |     const loginButton = page.locator(clubSurveyLogin.selectors.loginButton);
+  172 |
+  173 |     // Assert that the username field is visible
+  174 |     await expect(usernameField).toBeVisible();
+  175 |
+  176 |     // Assert that the password field is visible
+  177 |     await expect(passwordField).toBeVisible();
+  178 |
+  179 |     // Assert that the login button is visible
+  180 |     //await expect(loginButton).toBeVisible();
+  181 |   });
+  182 |
+  183 |   // Step 5: Verify the "Remember Me" checkbox is accessible
+  184 |   await test.step("Verify 'Remember Me' checkbox is accessible", async () => {
+  185 |     const rememberMeCheckbox = page.locator(clubSurveyLogin.selectors.rememberme);
+  186 |     await expect(rememberMeCheckbox).toBeVisible();
+  187 |   });
+  188 |
+  189 |   // Step 6: Verify the "Forgot Password" link is accessible
+  190 |   await test.step("Verify 'Forgot Password' link is accessible", async () => {
+  191 |     const forgotPasswordLink = page.locator(clubSurveyLogin.selectors.forgotpassword);
+  192 |     await expect(forgotPasswordLink).toBeVisible();
+  193 |   });
+  194 | });  
+  195 |
+  196 |
+  197 | /*test('SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity', async ({ page }) => {
+  198 |     // Add test metadata
+  199 |     test.info().annotations.push(
+  200 |         { type: 'TestCase', description: 'SANITY-CLUB59-LOGIN-TC04' },
+  201 |         { type: 'Test Description', description: 'Validate login with valid credentials' }
+  202 |     );
+  203 |     // Step 1: Open the login screen
+  204 |     await test.step("Navigate to the login screen", async () => {
+  205 |       await clubSurveyLogin.loadApp('/en-GB/auth/login');
+  206 |         // Assert that the login screen is loaded
+  207 |         const pageTitle = await page.title();
+  208 |         expect(pageTitle).toContain("59club"); 
+  209 |     });
+  210 |
+  211 |     // Step 2: Verify the username, password and Login button is accessible
+  212 |     await test.step("Verify login form elements are accessible", async () => {
+  213 |         const usernameField = page.locator(clubSurveyLogin.selectors.emailSelector);
+  214 |         const passwordField = page.locator(clubSurveyLogin.selectors.passwordSelector);
+  215 |         const loginButton = page.locator(clubSurveyLogin.selectors.loginButtonSelector);
+  216 |
+  217 |         // Assert that the username field is visible
+  218 |         await expect(usernameField).toBeVisible();
+  219 |         await usernameField.fill(credentials.ADMINLOGIN.username);
+  220 |     
+  221 |         // Assert that the password field is visible
+  222 |         await expect(passwordField).toBeVisible();
+  223 |         await passwordField.fill(credentials.ADMINLOGIN.password);
+  224 |         // Assert that the login button is visible
+  225 |         await expect(loginButton).toBeVisible();
+  226 |         await loginButton.click();
+  227 |
+  228 |     });
+  229 |
+  230 |     // Step 3: Verify the "My Profile" button is accessible
+  231 |     await test.step("Verify 'My Profile' button is accessible", async () => {
+  232 |         const myProfileButton = page.locator(clubSurveyLogin.selectors.myProfileButton);
+  233 |         await expect(myProfileButton).toBeVisible();
+  234 |     });
+  235 | });*/
+  236 |
+  237 | test('SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials', async ({ page, context }) => {
+  238 |   const clubSurveyLogin = new ClubSurveyLogin(page, context);
+  239 |
+  240 |   // Perform login
+  241 |   await clubSurveyLogin.ClubSurveyLogin();
+  242 |
+  243 |   // Assert that the dashboard is loaded
+  244 |   const dashboardLogo = page.locator(clubSurveyLogin.selectors.clubsmalllogodashboard);
+> 245 |   await expect(dashboardLogo).toBeVisible();
+      |                               ^ Error: expect.toBeVisible: Unexpected token "=" while parsing css selector "img alt="Small Logo" width="24" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[24px]" src="/_next/static/media/smallLogo.cd14bf8e.svg" style="color: transparent"". Did you mean to CSS.escape it?
+  246 | });
+```

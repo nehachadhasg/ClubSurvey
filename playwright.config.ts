@@ -1,28 +1,31 @@
 import { defineConfig } from '@playwright/test';
+import { loadEnvironmentConfig } from './config/configLoader';
 //import { channel } from 'diagnostics_channel';
 //import { OrtoniReportConfig } from 'ortoni-report';
 
-
+const environment = loadEnvironmentConfig();
 const timestamp = Date.now();
 const reportDir = `./reporter/playwright-reports-${timestamp}`;
 export default defineConfig({
-  timeout: 550000,
+  timeout: 50000,
 
   expect: {
     timeout: 20000
 
   },
   testDir: 'src/tests/Regression_Suite',
-  // globalSetup: require.resolve('utils/jiraReport.ts'),
+
 
   fullyParallel: true,
   retries: 0,
   workers: 1,
   repeatEach: 0,
+
   
   reporter: [['html', { outputFolder: reportDir, open: 'always' }], [`./CustomReporterConfig.ts`], ['line'], ["allure-playwright"]],
  
   use: {
+    baseURL: environment.baseURL, // Use the environment-specific base URL
     actionTimeout: 20000,
     trace: 'on',
     headless: false,
@@ -78,6 +81,9 @@ export default defineConfig({
         browserName: 'webkit', // WebKit is the engine used by Safari
         headless: false, // Run in non-headless mode for Safari
         viewport: { width: 1280, height: 720 }, // Set a default viewport size
+        launchOptions: {
+          args: [], // Add any additional arguments if needed
+        },
       },
     },
     

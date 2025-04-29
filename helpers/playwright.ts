@@ -5,8 +5,6 @@ import fs from 'fs'
 import axios from "axios";
 
 
-
-
 export abstract class PlaywrightWrapper {
 
     readonly page: Page;
@@ -25,6 +23,9 @@ export abstract class PlaywrightWrapper {
     }
     //added concrete subclassthat implements abstract method.
     abstract someAbstractMethod(): void; // Example abstract method
+
+
+     
 
     /**
    * Types into the specified textbox after clearing any existing text.
@@ -405,7 +406,7 @@ export abstract class PlaywrightWrapper {
     async validateElementVisibility(locator: any, elementName: string) {
         try {
             const element = this.page.locator(locator);
-            await this.page.waitForSelector(locator, { state: 'attached', timeout: 30000, strict: true });
+            await this.page.waitForSelector(locator, { state: 'attached', timeout: 60000, strict: true });
             if (await element.isVisible()) {
                 console.log(`${elementName} is visible as expected.`);
             } else {

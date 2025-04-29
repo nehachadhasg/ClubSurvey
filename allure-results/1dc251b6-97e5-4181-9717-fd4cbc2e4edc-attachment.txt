@@ -1,0 +1,4 @@
+Error validating visibility of Club Small Logo: Error: page.waitForSelector: Unexpected token "=" while parsing css selector "img alt="Small Logo" width="24" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[24px]" src="/_next/static/media/smallLogo.cd14bf8e.svg" style="color: transparent"". Did you mean to CSS.escape it?
+Call log:
+  - waiting for img alt="Small Logo" width="24" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[24px]" src="/_next/static/media/smallLogo.cd14bf8e.svg" style="color: transparent"
+

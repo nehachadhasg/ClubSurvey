@@ -1,15 +1,20 @@
 //import { Page } from "@playwright/test";
 import { BrowserContext, Page } from "playwright";
 import { PlaywrightWrapper } from "../../helpers/playwright";
-import { credentials } from "../../constants/credentials";
+//import { credentials } from "../../constants/credentials";
 import { expect } from "playwright/test";
-import { URLConstants } from "../../constants/urlConstants";
+import { loadEnvironmentConfig } from '../../config/configLoader';
+//import { URLConstants } from "../../constants/urlConstants";
+
+const environment = loadEnvironmentConfig();
 
 export class ClubSurveyLogin extends PlaywrightWrapper {
 
     constructor( page: Page, context: BrowserContext) {
         super( page, context);
     }
+
+    
     public selectors = {
         emailSelector: 'input[placeholder="Insert your email address"]',
         secondaryEmailSelector: 'input[name="email"]',
@@ -26,6 +31,7 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
         rememberme: 'div[class*="h-5"][class*="w-5"][class*="bg-greyscale-200"]',
         togglebutton: 'button[contains(@class, "text-gray-1000") and contains(@class, "flex") and contains(@class, "cursor-pointer") and contains(@class, "px-3")]',
         clublogodashboard: 'img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"',
+        clubsmalllogodashboard: 'img[alt="Small Logo"]',
         contactUsModal: 'div[role="dialog"][data-state="open"]',
         contactUsModalAssert:'h2[class*="typography-heading"]:has-text("Need help")',
         contactUsModalCloseButton:'div[class*="cursor-pointer"][class*="bg-greyscale-100"',
@@ -38,12 +44,12 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
         console.log("Abstract method implemented in ClubSurveyLogin");
     }
 
-
+/*
     public async ClubSurveyLogin(role: keyof typeof credentials) {
 
         const { username, password } = credentials[role];
 
-        await this.loadApp(URLConstants.adminURL)
+        await this.loadApp(environment.baseURL)
         const pageTitle = await this.page.title();
         if (pageTitle.startsWith("59club")) {
             await this.type(this.selectors.emailSelector, "Username", username);
@@ -56,6 +62,32 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
             console.log("Login page is Skipped");
 
         }
+}*/
+
+public async ClubSurveyLogin() {
+    // Access credentials from the environment object
+    const { username, password } = environment.credentials;
+
+    // Load the application using the baseURL from the environment
+    await this.loadApp(environment.baseURL);
+
+    const pageTitle = await this.page.title();
+    if (pageTitle.startsWith("59club")) {
+        // Fill in the username and password fields
+        await this.type(this.selectors.emailSelector, "Username", username);
+        await this.type(this.selectors.passwordSelector, "Password", password);
+
+        // Click the login button
+        await this.click(this.selectors.loginButtonSelector, "Sign In", "Button");
+
+        // Wait for the dashboard to load
+        await this.wait('maxWait');
+
+        // Validate that the dashboard logo is visible
+        await this.validateElementVisibility(this.selectors.clubsmalllogodashboard, "Club Small Logo");
+    } else {
+        console.log("Login page is Skipped");
+    }
 }
 
 public async verifyLogoRedirection(expectedURL: string) {
