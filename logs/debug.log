@@ -4646,3 +4646,1181 @@ Call log:
 [2025-04-29 08:11:53] INFO: Completed Step : The Sign In Button clicked - Success
 [2025-04-29 08:12:04] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials Status : passed
 [2025-04-29 08:12:04] INFO: Test run completed with status: PASSED
+[2025-04-29 13:04:50] INFO: Test run started with 10 test(s).
+[2025-04-29 13:04:51] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 13:04:52] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:04:53] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 13:04:53] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 13:04:53] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 13:04:53] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 13:04:57] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 13:04:57] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 13:04:57] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 13:04:58] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:04:58] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 13:04:58] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 13:04:58] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 13:04:58] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 13:04:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 13:04:58] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 13:04:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:04:59] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 13:04:59] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 13:04:59] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 13:04:59] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 13:04:59] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 13:04:59] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 13:04:59] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 13:04:59] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 13:04:59] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 13:04:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:05:00] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 13:05:00] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 13:05:00] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 13:05:01] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 13:05:05] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 13:05:05] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 13:05:05] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 13:05:05] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 13:05:05] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 13:05:05] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 13:05:05] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 13:05:05] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 13:05:05] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 13:05:06] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 13:05:06] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials
+[2025-04-29 13:05:07] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 13:05:08] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 13:05:08] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 13:05:08] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 13:05:08] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 13:05:09] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 13:05:20] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials Status : passed
+[2025-04-29 13:05:27] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 13:05:29] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : interrupted
+[2025-04-29 13:05:29] INFO: Test run completed with status: INTERRUPTED
+[2025-04-29 13:06:23] INFO: Test run started with 10 test(s).
+[2025-04-29 13:06:23] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 13:06:24] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:06:26] INFO: Completed Step : Navigate to the login screen - Error: Error: Failed to load the page at https://uat.example.com
+[2025-04-29 13:06:26] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : failed
+[2025-04-29 13:06:27] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 13:06:27] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:06:28] INFO: Completed Step : Navigate to the login screen - Error: Error: Failed to load the page at https://uat.example.com
+[2025-04-29 13:06:28] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : failed
+[2025-04-29 13:06:28] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 13:06:32] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:06:33] INFO: Completed Step : Navigate to the login screen - Error: Error: Failed to load the page at https://uat.example.com
+[2025-04-29 13:06:33] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : failed
+[2025-04-29 13:06:33] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 13:06:34] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 13:06:35] INFO: Completed Step : Navigate to the login screen - Error: Error: Failed to load the page at /en-GB/auth/login
+[2025-04-29 13:06:35] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : failed
+[2025-04-29 13:06:35] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials
+[2025-04-29 13:06:37] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials Status : failed
+[2025-04-29 13:06:37] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 13:06:38] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : interrupted
+[2025-04-29 13:06:38] INFO: Test run completed with status: INTERRUPTED
+[2025-04-29 15:49:05] INFO: Test run started with 70 test(s).
+[2025-04-29 15:49:05] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:49:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:12] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:49:12] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:49:12] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:49:16] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:49:16] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:49:16] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:49:16] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:17] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:17] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:49:17] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:49:17] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:49:17] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:49:17] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:49:17] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:18] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:18] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:49:18] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:49:18] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:49:18] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:49:18] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:49:18] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:49:18] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:49:18] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:49:18] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:18] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:18] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:49:18] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:49:19] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:49:22] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:49:22] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:49:22] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:49:22] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:49:22] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:49:22] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:49:22] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:49:22] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:49:22] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:49:22] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:49:22] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:49:23] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:49:24] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:49:24] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:49:24] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:49:24] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:49:25] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:49:35] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:49:44] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:49:46] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:46] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:46] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:49:46] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:49:46] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:49:49] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:49:49] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:49:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:49:49] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:49] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:49:49] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:49:49] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:49:49] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:49:49] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:49:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:49:49] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:49] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:49:49] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:49:49] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:49:49] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:49:49] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:49:49] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:49:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:49:50] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:49:50] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:49:50] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:49:50] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:49:50] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:49:50] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:49:52] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:49:52] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:49:52] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:49:52] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:49:52] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:49:52] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:49:52] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:49:52] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:49:52] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:49:52] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:49:52] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:49:53] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:49:53] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:49:53] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:49:53] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:49:53] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:49:53] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:50:03] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:50:03] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:50:06] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:50:07] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:50:07] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:50:07] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:50:07] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:50:10] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:50:10] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:50:10] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:50:10] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:50:10] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:50:10] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:50:10] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:50:10] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:50:10] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:50:10] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:50:10] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:50:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:50:11] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:50:11] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:50:11] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:50:11] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:50:11] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:50:11] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:50:11] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:50:11] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:50:11] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:50:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:50:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:50:12] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:50:12] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:50:12] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:50:15] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:50:15] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:50:15] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:50:15] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:50:15] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:50:15] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:50:15] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:50:15] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:50:15] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:50:15] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:50:15] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:50:15] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:50:15] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:50:15] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:50:15] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:50:15] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:50:15] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:51:06] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 15:51:06] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:51:07] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:08] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:08] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:51:08] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:51:08] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:51:12] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:51:13] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:51:13] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:51:13] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:13] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:13] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:51:13] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:51:13] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:51:13] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:51:13] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:51:13] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:51:14] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:14] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:14] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:51:14] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:51:14] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:51:14] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:51:14] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:51:14] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:51:14] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:51:14] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:51:14] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:15] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:15] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:51:15] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:51:15] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:51:18] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:51:18] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:51:18] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:51:18] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:51:18] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:51:18] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:51:18] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:51:18] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:51:18] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:51:18] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:51:18] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:51:19] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:51:19] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:51:19] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:51:19] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:51:19] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:51:19] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:51:29] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:51:30] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:51:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:31] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:31] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:51:31] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:51:31] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:51:34] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:51:34] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:51:34] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:51:34] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:34] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:34] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:51:34] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:51:35] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:51:35] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:51:35] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:51:35] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:51:35] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:35] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:35] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:51:35] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:51:35] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:51:35] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:51:35] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:51:35] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:51:35] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:51:35] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:51:36] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:36] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:36] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:51:36] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:51:36] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:51:39] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:51:39] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:51:39] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:51:39] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:51:39] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:51:39] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:51:39] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:51:39] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:51:39] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:51:40] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:51:40] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:51:40] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:51:40] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:51:40] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:51:40] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:51:40] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:51:40] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:51:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:51:51] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:51:52] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:52] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:52] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:51:52] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:51:53] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:51:56] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:51:56] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:51:56] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:51:56] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:57] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:57] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:51:57] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:51:57] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:51:57] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:51:57] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:51:57] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:51:57] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:57] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:57] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:51:58] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:51:58] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:51:58] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:51:58] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:51:58] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:51:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:51:58] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:51:58] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:51:58] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:51:58] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:51:58] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:51:58] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:52:01] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:52:01] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:52:01] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:52:01] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:52:01] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:52:01] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:52:01] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:52:01] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:52:01] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:52:01] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:52:01] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:52:03] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:52:03] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:52:03] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:52:03] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:52:03] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:52:03] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:52:13] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:52:14] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:52:15] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:15] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:15] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:52:15] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:52:15] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:52:21] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:52:21] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:52:21] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:52:21] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:21] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:21] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:52:21] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:52:21] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:52:21] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:52:21] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:52:21] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:52:22] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:22] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:22] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:52:22] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:52:22] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:52:22] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:52:22] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:52:22] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:52:22] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:52:22] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:52:22] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:23] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:23] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:52:23] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:52:23] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:52:26] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:52:26] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:52:26] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:52:26] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:52:26] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:52:26] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:52:26] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:52:26] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:52:26] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:52:26] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:52:26] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:52:27] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:52:27] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:52:27] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:52:27] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:52:27] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:52:27] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:52:37] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:52:38] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:52:38] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:39] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:39] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:52:39] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:52:39] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:52:41] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:52:41] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:52:41] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:52:42] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:42] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:42] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:52:42] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:52:42] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:52:42] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:52:42] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:52:42] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:52:42] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:43] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:43] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:52:43] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:52:43] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:52:43] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:52:43] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:52:43] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:52:43] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:52:43] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:52:43] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:43] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:43] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:52:43] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:52:44] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:52:47] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:52:47] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:52:47] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:52:47] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:52:47] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:52:47] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:52:47] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:52:47] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:52:47] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:52:47] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:52:47] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:52:47] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:52:47] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:52:47] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:52:47] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:52:47] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:52:47] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:52:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:52:58] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:52:59] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:52:59] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:52:59] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:52:59] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:53:00] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:53:03] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:53:03] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:53:03] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:53:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:04] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:04] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:53:04] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:53:04] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:53:04] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:53:04] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:53:04] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:53:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:05] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:53:05] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:53:05] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:53:05] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:53:05] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:53:05] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:53:05] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:53:05] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:53:05] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:06] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:06] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:53:06] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:53:06] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:53:09] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:53:09] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:53:09] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:53:09] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:53:09] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:53:09] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:53:09] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:53:09] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:53:09] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:53:09] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:53:09] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:53:10] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:53:10] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:53:10] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:53:10] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:53:10] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:53:10] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:53:20] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:53:21] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:53:22] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:22] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:22] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:53:22] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:53:22] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:53:26] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:53:26] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:53:26] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:53:27] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:27] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:27] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:53:27] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:53:27] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:53:27] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:53:27] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:53:27] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:53:27] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:28] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:28] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:53:28] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:53:28] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:53:28] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:53:28] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:53:28] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:53:28] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:53:28] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:53:28] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:28] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:28] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:53:28] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:53:29] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:53:31] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:53:31] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:53:31] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:53:31] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:53:31] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:53:31] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:53:31] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:53:31] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:53:31] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:53:32] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:53:32] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:53:32] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:53:32] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:53:32] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:53:32] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:53:32] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:53:32] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:53:43] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:53:43] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:53:44] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:44] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:44] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:53:44] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:53:44] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:53:48] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:53:48] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:53:48] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:53:48] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:48] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:48] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:53:48] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:53:48] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:53:48] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:53:48] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:53:48] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:53:49] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:49] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:53:49] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:53:49] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:53:49] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:53:49] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:53:49] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:53:49] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:53:49] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:53:49] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:53:50] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:53:50] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:53:50] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:53:50] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:53:52] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:53:52] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:53:53] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:53:53] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:53:53] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:53:53] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:53:53] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:53:53] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:53:53] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:53:53] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:53:53] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:53:53] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:53:53] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:53:53] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:53:53] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:53:53] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:53:53] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:54:04] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:54:04] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:54:05] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:05] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:54:06] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:54:06] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:54:09] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:54:10] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:54:10] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:54:10] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:10] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:10] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:54:10] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:54:10] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:54:10] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:54:10] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:54:10] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:54:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:11] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:11] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:54:11] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:54:11] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:54:11] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:54:11] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:54:11] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:54:11] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:54:11] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:54:11] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:12] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:12] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:54:12] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:54:12] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:54:14] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:54:14] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:54:15] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:54:15] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:54:15] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:54:15] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:54:15] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:54:15] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:54:15] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:54:15] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:54:15] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:54:15] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:54:15] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:54:15] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:54:15] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:54:15] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:54:15] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:54:26] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 15:54:26] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:54:27] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:28] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:28] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:54:28] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:54:28] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:54:32] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:54:32] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:54:32] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:54:32] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:32] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:32] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:54:32] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:54:32] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:54:32] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:54:32] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:54:32] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:54:32] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:33] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:33] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:54:33] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:54:33] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:54:33] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:54:33] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:54:33] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:54:33] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:54:33] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:54:33] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:54:33] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:54:33] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:54:33] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:54:33] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:54:36] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:54:36] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:54:36] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:54:36] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:54:36] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:54:36] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:54:36] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:54:36] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:54:36] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:54:36] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:54:36] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:54:36] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:54:36] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:54:36] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:54:36] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:54:36] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:54:36] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:55:26] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 15:55:27] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 15:55:28] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:55:28] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:55:28] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:55:28] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:55:28] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:55:34] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:55:34] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 15:55:34] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 15:55:34] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:55:34] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:55:34] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 15:55:34] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 15:55:34] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 15:55:34] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 15:55:35] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 15:55:35] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 15:55:35] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:55:35] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:55:35] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:55:35] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:55:35] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:55:35] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:55:35] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:55:35] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:55:35] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 15:55:35] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 15:55:36] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 15:55:36] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 15:55:36] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 15:55:36] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 15:55:36] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 15:55:39] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 15:55:39] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 15:55:39] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 15:55:39] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 15:55:39] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 15:55:39] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 15:55:39] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 15:55:39] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 15:55:39] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 15:55:40] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 15:55:40] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 15:55:40] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 15:55:40] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 15:55:40] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 15:55:40] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 15:55:40] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 15:55:40] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 15:56:31] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 15:56:31] INFO: Test run completed with status: FAILED
+[2025-04-29 16:16:29] INFO: Test run started with 20 test(s).
+[2025-04-29 16:16:29] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:16:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:16:32] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:16:32] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:16:32] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:16:33] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:16:37] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:16:37] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:16:37] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:16:37] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:16:37] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:16:37] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:16:37] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:16:38] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:16:38] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:16:38] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:16:38] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:16:38] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:16:38] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:16:38] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:16:38] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:16:38] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:16:38] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:16:38] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:16:39] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:16:39] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:16:39] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:16:39] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:16:39] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:16:39] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:16:40] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:16:42] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:16:42] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:16:42] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:16:42] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:16:42] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:16:42] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:16:42] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:16:42] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:16:42] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:16:43] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:16:43] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:16:43] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:16:44] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:16:44] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:16:44] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:16:44] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:16:45] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:16:55] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 16:17:03] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:17:04] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:05] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:05] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:17:05] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:17:05] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:17:08] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:17:08] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:17:08] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:17:08] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:09] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:09] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:17:09] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:17:09] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 16:17:09] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:17:09] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:17:09] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:17:09] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:09] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:09] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:17:09] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:17:09] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:17:09] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:17:09] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:17:09] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:17:09] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:17:09] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:17:09] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:09] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:09] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:17:10] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:17:10] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:17:12] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:17:12] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:17:12] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:17:12] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:17:12] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:17:12] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:17:12] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:17:12] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:17:12] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:17:12] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:17:12] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:17:12] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:17:12] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:17:12] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:17:13] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:17:13] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:17:13] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:17:23] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 16:17:23] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:17:23] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:24] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:24] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:17:24] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:17:24] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:17:27] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:17:27] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:17:27] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:17:28] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:28] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:28] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:17:28] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:17:28] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 16:17:28] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:17:28] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:17:28] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:17:28] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:28] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:28] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:17:28] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:17:28] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:17:28] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:17:28] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:17:28] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:17:28] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:17:28] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:17:28] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:17:29] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:17:29] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:17:29] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:17:29] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:17:31] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:17:31] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:17:31] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:17:31] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:17:31] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:17:31] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:17:31] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:17:31] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:17:31] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:17:31] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:17:31] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:17:31] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:17:31] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:17:31] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:17:31] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:17:31] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:17:32] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:18:21] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 16:18:22] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:18:23] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:18:24] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:18:24] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:18:24] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:18:24] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:18:29] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:18:29] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:18:29] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:18:29] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:18:29] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:18:29] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:18:29] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:18:30] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 16:18:30] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:18:30] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:18:30] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:18:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:18:30] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:18:30] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:18:30] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:18:30] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:18:30] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:18:30] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:18:30] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:18:30] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:18:30] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:18:31] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:18:31] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:18:31] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:18:31] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:18:31] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:18:34] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:18:34] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:18:34] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:18:34] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:18:34] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:18:34] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:18:34] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:18:34] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:18:34] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:18:34] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:18:34] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:18:35] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:18:35] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:18:35] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:18:35] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:18:35] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:18:35] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:19:25] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 16:19:25] INFO: Test run completed with status: FAILED
+[2025-04-29 16:32:49] INFO: Test run started with 20 test(s).
+[2025-04-29 16:32:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:32:51] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:32:51] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:32:51] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:32:52] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:32:52] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:32:56] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:32:56] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:32:56] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:32:56] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:32:57] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:32:57] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:32:57] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:32:57] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:32:57] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:32:57] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:32:57] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:32:58] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:32:58] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:32:58] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:32:58] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:32:58] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:32:58] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:32:58] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:32:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:32:58] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:32:58] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:32:59] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:32:59] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:32:59] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:32:59] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:33:03] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:33:03] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:33:03] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:33:03] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:33:03] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:33:03] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:33:03] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:33:03] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:33:03] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:33:03] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:33:03] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:33:04] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:33:04] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:33:04] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:33:05] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:33:05] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:33:05] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:33:16] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 16:33:24] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:33:25] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:25] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:25] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:33:25] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:33:26] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:33:28] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:33:29] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:33:29] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:33:29] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:29] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:29] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:33:29] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:33:29] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 16:33:29] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:33:29] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:33:29] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:33:29] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:29] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:29] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:33:29] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:33:30] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:33:30] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:33:30] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:33:30] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:33:30] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:33:30] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:33:30] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:30] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:30] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:33:30] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:33:30] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:33:32] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:33:32] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:33:32] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:33:32] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:33:32] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:33:32] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:33:32] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:33:32] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:33:32] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:33:32] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:33:32] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:33:33] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:33:33] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:33:33] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:33:33] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:33:33] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:33:33] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:33:43] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : passed
+[2025-04-29 16:33:43] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:33:44] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:44] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:44] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:33:44] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:33:44] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:33:47] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:33:47] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:33:47] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:33:47] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:48] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:48] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:33:48] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:33:48] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 16:33:48] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:33:48] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:33:48] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:33:48] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:48] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:48] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:33:48] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:33:48] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:33:48] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:33:48] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:33:48] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:33:48] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:33:48] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:33:48] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:33:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:33:49] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:33:49] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:33:49] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:33:51] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:33:51] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:33:51] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:33:51] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:33:51] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:33:51] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:33:51] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:33:51] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:33:51] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:33:51] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:33:51] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:33:52] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:33:52] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:33:52] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:33:52] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:33:52] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:33:52] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:34:42] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 16:34:42] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity
+[2025-04-29 16:34:44] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:34:44] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:34:44] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:34:44] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:34:44] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:34:49] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:34:49] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity Status : passed
+[2025-04-29 16:34:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity
+[2025-04-29 16:34:49] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:34:49] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:34:49] INFO: Executing Step : Verify contactus modal via the contact us button
+[2025-04-29 16:34:49] INFO: Executing Step : The Contact Us Button Button clicked
+[2025-04-29 16:34:49] INFO: Completed Step : The Contact Us Button Button clicked - Success
+[2025-04-29 16:34:49] INFO: Completed Step : Verify contactus modal via the contact us button - Success
+[2025-04-29 16:34:49] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity Status : passed
+[2025-04-29 16:34:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity
+[2025-04-29 16:34:50] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:34:50] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:34:50] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:34:50] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:34:50] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:34:50] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:34:50] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:34:50] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:34:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity Status : passed
+[2025-04-29 16:34:50] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e
+[2025-04-29 16:34:50] INFO: Executing Step : Navigate to the login screen
+[2025-04-29 16:34:51] INFO: Completed Step : Navigate to the login screen - Success
+[2025-04-29 16:34:51] INFO: Executing Step : Verify redirection to the homepage via the 59club logo
+[2025-04-29 16:34:51] INFO: Executing Step : The 59club Logo img clicked
+[2025-04-29 16:34:51] INFO: Completed Step : The 59club Logo img clicked - Success
+[2025-04-29 16:34:54] INFO: Completed Step : Verify redirection to the homepage via the 59club logo - Success
+[2025-04-29 16:34:54] INFO: Executing Step : Verify Contact Us modal via the Contact Us button
+[2025-04-29 16:34:54] INFO: Completed Step : Verify Contact Us modal via the Contact Us button - Success
+[2025-04-29 16:34:54] INFO: Executing Step : Verify login form elements are accessible
+[2025-04-29 16:34:54] INFO: Completed Step : Verify login form elements are accessible - Success
+[2025-04-29 16:34:54] INFO: Executing Step : Verify 'Remember Me' checkbox is accessible
+[2025-04-29 16:34:54] INFO: Completed Step : Verify 'Remember Me' checkbox is accessible - Success
+[2025-04-29 16:34:54] INFO: Executing Step : Verify 'Forgot Password' link is accessible
+[2025-04-29 16:34:54] INFO: Completed Step : Verify 'Forgot Password' link is accessible - Success
+[2025-04-29 16:34:54] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e Status : passed
+[2025-04-29 16:34:54] INFO: Test Case Started : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity
+[2025-04-29 16:34:54] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-04-29 16:34:54] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-04-29 16:34:54] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-04-29 16:34:54] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-04-29 16:34:54] INFO: Executing Step : The Sign In Button clicked
+[2025-04-29 16:34:55] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-04-29 16:35:44] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity Status : timedOut
+[2025-04-29 16:35:44] INFO: Test run completed with status: FAILED

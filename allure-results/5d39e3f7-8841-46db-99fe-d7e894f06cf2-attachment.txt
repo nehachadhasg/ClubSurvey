@@ -1,0 +1,3 @@
+Successfully loaded the URL: /en-GB/auth/login
+logo is visible as expected.
+Navigated to URL: https://www.59club.com/

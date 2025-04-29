@@ -5,6 +5,7 @@ export const environment = {
         username: "59clubqaadmin@yopmail.com",
         password: "Tulip@345*"
     },
+     clubURL: "https://www.59club.com/",
   };
 
    

@@ -44,25 +44,6 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
         console.log("Abstract method implemented in ClubSurveyLogin");
     }
 
-/*
-    public async ClubSurveyLogin(role: keyof typeof credentials) {
-
-        const { username, password } = credentials[role];
-
-        await this.loadApp(environment.baseURL)
-        const pageTitle = await this.page.title();
-        if (pageTitle.startsWith("59club")) {
-            await this.type(this.selectors.emailSelector, "Username", username);
-            await this.type(this.selectors.passwordSelector, "password", password);
-            await this.click(this.selectors.loginButtonSelector, "Sign In", "Button");
-            await this.wait('mediumWait')
-         //   await this.storeState("./logins/salesforceLogin.json")
-            await this.validateElementVisibility(this.selectors.clublogodashboard, "clubLargeLogo");
-        } else {
-            console.log("Login page is Skipped");
-
-        }
-}*/
 
 public async ClubSurveyLogin() {
     // Access credentials from the environment object

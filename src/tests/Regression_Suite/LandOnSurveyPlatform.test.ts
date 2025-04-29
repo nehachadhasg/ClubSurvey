@@ -1,6 +1,8 @@
-import { test, expect } from "@playwright/test";
+//import { test, expect } from "@playwright/test";
+import { test, expect } from '../../fixtures/fixture';
+import { SANITY_TAG, E2E_TAG } from "../../../constants/tags";
 import { ClubSurveyLogin } from "../../pages/ClubSurveyLogin";
-import { URLConstants } from "../../../constants/urlConstants";
+//import { URLConstants } from "../../../constants/urlConstants";
 //import { credentials } from '../../../constants/credentials';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
 import { base } from "@faker-js/faker/.";
@@ -11,10 +13,11 @@ let clubSurveyLogin: ClubSurveyLogin;
 test.beforeEach(async ({ page, context }) => {
   // Initialize the ClubSurveyLogin object before each test
   clubSurveyLogin = new ClubSurveyLogin(page, context);
+
 });
 
 
-test('SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity',  async ({ page, context }) => {
+test(`SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo ${SANITY_TAG}`,  async ({ page, context }) => {
         // Add test metadata
         test.info().annotations.push(
           
@@ -27,7 +30,7 @@ test('SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sa
 
         // Step 1: Open the login screen
         await test.step("Navigate to the login screen", async () => {
-            await clubSurveyLogin.loadApp('/en-GB/auth/login');
+            await clubSurveyLogin.loadApp(environment.baseURL);
            // await page.goto();
 
             // Assert that the login screen is loaded
@@ -37,7 +40,7 @@ test('SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sa
 
         // Step 2: Verify redirection to the homepage via the 59club logo
         await test.step("Verify redirection to the homepage via the 59club logo", async () => {
-            await clubSurveyLogin.verifyLogoRedirection(URLConstants.clubURL);
+            await clubSurveyLogin.verifyLogoRedirection(environment.clubURL);
 
             // Assert that the current URL matches the expected homepage URL
             const currentURL = await page.url();
@@ -50,7 +53,10 @@ test('SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sa
     });
 
 
-    test('SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal @sanity', async ({ page }) => {
+
+
+
+    test(`SANITY-CLUB59-LOGIN-TC02: Verify Contact Us button opens the Contact Us modal ${SANITY_TAG}`, async ({ page }) => {
         // Add test metadata
         test.info().annotations.push(
             { type: "TestCase", description: "SANITY-CLUB59-LOGIN-TC02" },
@@ -58,7 +64,7 @@ test('SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sa
         );
         // Step 1: Open the login screen
         await test.step("Navigate to the login screen", async () => {
-          await clubSurveyLogin.loadApp('/en-GB/auth/login');
+          await clubSurveyLogin.loadApp(environment.baseURL);
             // Assert that the login screen is loaded
             const pageTitle = await page.title();
             expect(pageTitle).toContain("59club"); 
@@ -77,7 +83,7 @@ test('SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sa
     
 
 
-test('SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity', async ({ page }) => {
+test(`SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--${SANITY_TAG}`, async ({ page }) => {
     // Add test metadata
     test.info().annotations.push(
         { type: 'TestCase', description: 'SANITY-CLUB59-LOGIN-TC03' },
@@ -85,7 +91,7 @@ test('SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity', asyn
     );
     // Step 1: Open the login screen
     await test.step("Navigate to the login screen", async () => {
-      await clubSurveyLogin.loadApp('/en-GB/auth/login');
+      await clubSurveyLogin.loadApp(environment.baseURL);
         // Assert that the login screen is loaded
         const pageTitle = await page.title();
         expect(pageTitle).toContain("59club"); 
@@ -120,7 +126,7 @@ test('SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity', asyn
 });
 
 
-test('E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e', async ({ page }) => {
+test(`E2E-CLUB59-LOGIN-001: Complete end-to-end flow ${E2E_TAG}`, async ({ page }) => {
   // Add test metadata
   test.info().annotations.push(
     { type: "TestCase", description: "E2E-CLUB59-LOGIN" },
@@ -129,7 +135,7 @@ test('E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e', async ({ page }) => 
 
   // Step 1: Load the login screen
   await test.step("Navigate to the login screen", async () => {
-    await clubSurveyLogin.loadApp('/en-GB/auth/login');
+    await clubSurveyLogin.loadApp(environment.baseURL);
 
     // Assert that the login screen is loaded
     const pageTitle = await page.title();
@@ -138,7 +144,7 @@ test('E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e', async ({ page }) => 
 
   // Step 2: Navigate to the homepage via the 59club logo
   await test.step("Verify redirection to the homepage via the 59club logo", async () => {
-    await clubSurveyLogin.verifyLogoRedirection(URLConstants.clubURL);
+    await clubSurveyLogin.verifyLogoRedirection(environment.clubURL);
 
     // Assert that the current URL matches the expected homepage URL
     //const currentURL = await page.url();
@@ -234,6 +240,7 @@ test('E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e', async ({ page }) => 
     });
 });*/
 
+/*
 test('SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials', async ({ page, context }) => {
   const clubSurveyLogin = new ClubSurveyLogin(page, context);
 
@@ -241,6 +248,13 @@ test('SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials', async ({
   await clubSurveyLogin.ClubSurveyLogin();
 
   // Assert that the dashboard is loaded
-  const dashboardLogo = page.locator(clubSurveyLogin.selectors.clubsmalllogodashboard);
+  const dashboardLogo = loggedInPage.locator(clubSurveyLogin.selectors.clubsmalllogodashboard);
+  await expect(dashboardLogo).toBeVisible();
+});
+*/
+
+test(`SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials ${SANITY_TAG}`, async ({ loggedInPage }) => {
+  // Assert that the dashboard is loaded
+  const dashboardLogo = loggedInPage.locator('img[alt="Small Logo"]');
   await expect(dashboardLogo).toBeVisible();
 });
