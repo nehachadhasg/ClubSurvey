@@ -1,0 +1,248 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Role-Based Login Tests >> Super Admin role: Access Super Admin dashboard
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:8:9
+
+# Error details
+
+```
+Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('text=Super Admin Dashboard')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for locator('text=Super Admin Dashboard')
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:17:41
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "Small Logo":
+  - img "Small Logo"
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- button "Toggle Sidebar"
+- heading "Language" [level=1]
+- img
+- img
+- text: English (GB)
+- img
+- img
+- text: English (US)
+- img
+- text: Danish
+- img
+- text: French
+- img
+- text: German
+- img
+- text: Italian
+- img
+- text: Portuguese
+- img
+- text: Spanish
+- img
+- text: Swedish
+- img
+- text: Thai
+- img
+- text: Vietnamese
+- button "Cancel"
+- button "Confirm"
+- navigation:
+  - button "Toggle sidebar":
+    - img
+  - button "All Franchises":
+    - text: All Franchises
+    - img
+  - text: /
+  - button "All Groups" [disabled]
+  - text: /
+  - button "All Venues" [disabled]
+- button "Notifications":
+  - img
+- text: JD
+- heading "All Franchises" [level=1]
+- img
+- searchbox "Search..."
+- button "Filters":
+  - img
+  - text: Filters
+- img
+- img
+- img
+- text: 27 Venues 48 Surveys 0 Active Surveys 62% Avg. Participation 75% Avg. Completion
+- table:
+  - rowgroup:
+    - row "Franchise Venues Active Surveys Participation Completed":
+      - cell "Franchise":
+        - text: Franchise
+        - img
+      - cell "Venues":
+        - text: Venues
+        - img
+      - cell "Active Surveys":
+        - text: Active Surveys
+        - img
+      - cell "Participation":
+        - text: Participation
+        - img
+        - img
+      - cell "Completed":
+        - text: Completed
+        - img
+        - img
+  - rowgroup:
+    - row "59Club Africa 59Club Africa 2 0 53% 83%":
+      - cell "59Club Africa 59Club Africa":
+        - img "59Club Africa"
+        - text: 59Club Africa
+      - cell "2"
+      - cell "0"
+      - cell "53%"
+      - cell "83%"
+    - row "59Club America 59Club America 0 0 51% 87%":
+      - cell "59Club America 59Club America":
+        - img "59Club America"
+        - text: 59Club America
+      - cell "0"
+      - cell "0"
+      - cell "51%"
+      - cell "87%"
+    - row "59Club Asia 59Club Asia 3 0 13% 38%":
+      - cell "59Club Asia 59Club Asia":
+        - img "59Club Asia"
+        - text: 59Club Asia
+      - cell "3"
+      - cell "0"
+      - cell "13%"
+      - cell "38%"
+    - row "59Club Canada 59Club Canada 0 0 22% 71%":
+      - cell "59Club Canada 59Club Canada":
+        - img "59Club Canada"
+        - text: 59Club Canada
+      - cell "0"
+      - cell "0"
+      - cell "22%"
+      - cell "71%"
+    - row "59Club Europe 59Club Europe 3 0 67% 34%":
+      - cell "59Club Europe 59Club Europe":
+        - img "59Club Europe"
+        - text: 59Club Europe
+      - cell "3"
+      - cell "0"
+      - cell "67%"
+      - cell "34%"
+    - row "59Club Flowers 59Club Flowers 6 0 87% 68%":
+      - cell "59Club Flowers 59Club Flowers":
+        - img "59Club Flowers"
+        - text: 59Club Flowers
+      - cell "6"
+      - cell "0"
+      - cell "87%"
+      - cell "68%"
+    - row "59Club Fruits 59Club Fruits 0 0 30% 40%":
+      - cell "59Club Fruits 59Club Fruits":
+        - img "59Club Fruits"
+        - text: 59Club Fruits
+      - cell "0"
+      - cell "0"
+      - cell "30%"
+      - cell "40%"
+    - row "59Club India 59Club India 1 0 60% 61%":
+      - cell "59Club India 59Club India":
+        - img "59Club India"
+        - text: 59Club India
+      - cell "1"
+      - cell "0"
+      - cell "60%"
+      - cell "61%"
+    - row "59Club Mexico 59Club Mexico 0 0 13% 99%":
+      - cell "59Club Mexico 59Club Mexico":
+        - img "59Club Mexico"
+        - text: 59Club Mexico
+      - cell "0"
+      - cell "0"
+      - cell "13%"
+      - cell "99%"
+    - row "59Club Middle East 59Club Middle East 0 0 33% 37%":
+      - cell "59Club Middle East 59Club Middle East":
+        - img "59Club Middle East"
+        - text: 59Club Middle East
+      - cell "0"
+      - cell "0"
+      - cell "33%"
+      - cell "37%"
+- text: Show
+- combobox: "10"
+- text: of 21 franchises
+- button [disabled]:
+  - img
+- button "01"
+- button "02"
+- button "03"
+- button:
+  - img
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | import { loadEnvironmentConfig } from '../../../config/configLoader';
+   3 | import { ClubSurveyLogin } from '../../pages/ClubSurveyLogin';
+   4 | const environment = loadEnvironmentConfig();
+   5 |
+   6 |
+   7 | test.describe('Role-Based Login Tests', () => {
+   8 |     test('Super Admin role: Access Super Admin dashboard', async ({ page, context }) => {
+   9 |       const clubSurveyLogin = new ClubSurveyLogin(page, context);
+  10 |       const { username, password } = environment.credentials.SUPER_ADMIN;
+  11 |   
+  12 |       // Perform login using the ClubSurveyLogin class
+  13 |       await clubSurveyLogin.ClubSurveyLogin();
+  14 |   
+  15 |       // Assert that the Super Admin dashboard is visible
+  16 |       const superAdminDashboard = page.locator('text=Super Admin Dashboard');
+> 17 |       await expect(superAdminDashboard).toBeVisible();
+     |                                         ^ Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+  18 |     });
+  19 | });
+  20 |
+  21 |
+```

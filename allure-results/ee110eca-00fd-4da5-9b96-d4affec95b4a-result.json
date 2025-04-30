@@ -1,1 +1,427 @@
-{"uuid":"ee110eca-00fd-4da5-9b96-d4affec95b4a","name":"E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke","historyId":"4cb03a26f37f7855de98357e7d0843f7:94dadec355fb24357203fcbce2c308f6","status":"failed","statusDetails":{"message":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n","trace":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1744260357077,"stop":1744260357081}],"attachments":[],"parameters":[],"name":"fixture: context","start":1744260357077,"stop":1744260357082},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1744260357083,"stop":1744260357192}],"attachments":[],"parameters":[],"name":"fixture: page","start":1744260357082,"stop":1744260357192}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1744260357076,"stop":1744260357192}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1744260357076,"stop":1744260357192},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357193,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1744260357817},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357819,"name":"page.title","stop":1744260357820},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357821,"name":"expect.toContain","stop":1744260357822}],"attachments":[],"parameters":[],"start":1744260357193,"name":"Navigate to the login screen","stop":1744260357822},{"statusDetails":{},"stage":"running","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357823,"name":"page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744260357844},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357844,"name":"locator.isVisible(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744260357846},{"status":"failed","statusDetails":{},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n","trace":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357848,"name":"expect.toContainText","stop":1744260357857},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357856,"name":"locator.click(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744260357923},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357915,"name":"locator.isVisible(div[role=\"dialog\"][data-state=\"open\"])","stop":1744260357917}],"attachments":[],"parameters":[],"start":1744260357848,"name":"page.waitForSelector(div[role=\"dialog\"][data-state=\"open\"])","stop":1744260357955},{"status":"failed","statusDetails":{"message":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\n","trace":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\n\n    at ClubSurveyLogin.validateElementVisibility (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:408:29)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:103:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:31\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357956,"name":"page.waitForSelector(div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\")","stop":1744260357958},{"status":"failed","statusDetails":{"message":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n","trace":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n","trace":"Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744260357958,"name":"page.waitForSelector(div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\")","stop":1744260357960}],"attachments":[],"parameters":[],"start":1744260357958,"name":"The Close Button button clicked","stop":1744260357960}],"attachments":[],"parameters":[],"start":1744260357847,"name":"page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744260357985}],"attachments":[],"parameters":[],"start":1744260357847,"name":"The Contact Us Button Button clicked","stop":1744260358178},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"63e98ef4-3de9-4c89-baa9-d6c1cf332bcb-attachment.png","type":"image/png"}],"parameters":[],"start":1744260358296,"name":"screenshot","stop":1744260358296},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"fd6af401-e3a1-4bb3-9dcb-b84efe7b6542-attachment.webm","type":"video/webm"}],"parameters":[],"start":1744260358297,"name":"video","stop":1744260358297},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_prompt-0","source":"cae7f28a-c93c-4ded-bea3-39c39805b980-attachment","type":"text/markdown"}],"parameters":[],"start":1744260358297,"name":"_prompt-0","stop":1744260358297},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"75696e0e-8083-496c-aaa1-c97ea6b01781-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1744260358297,"name":"trace","stop":1744260358297}],"attachments":[{"name":"stdout","source":"00995c13-edec-4b82-ab5b-31e348a99553-attachment.txt","type":"text/plain"},{"name":"stderr","source":"de58e421-78ac-4e21-a17f-b335227fc774-attachment.txt","type":"text/plain"}],"parameters":[],"start":1744260357822,"name":"Verify contactus modal via the contact us button"},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744260357960,"stop":1744260358104},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1744260358105,"stop":1744260358105},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1744260358106,"stop":1744260358106},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1744260358149,"stop":1744260358149}],"attachments":[],"parameters":[],"name":"After Hooks","start":1744260357960,"stop":1744260358151}],"attachments":[],"parameters":[{"name":"Project","value":"chrome"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > chrome > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"smoke"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-55042-worker-0"},{"name":"parentSuite","value":"chrome"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1744260357091,"testCaseId":"4cb03a26f37f7855de98357e7d0843f7","fullName":"LandOnSurveyPlatform.test.ts:47:9","stop":1744260358163}
+{
+  "uuid": "ee110eca-00fd-4da5-9b96-d4affec95b4a",
+  "name": "E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke",
+  "historyId": "4cb03a26f37f7855de98357e7d0843f7:94dadec355fb24357203fcbce2c308f6",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n",
+    "trace": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1744260357077,
+                  "stop": 1744260357081
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1744260357077,
+              "stop": 1744260357082
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1744260357083,
+                  "stop": 1744260357192
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1744260357082,
+              "stop": 1744260357192
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1744260357076,
+          "stop": 1744260357192
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1744260357076,
+      "stop": 1744260357192
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744260357193,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+          "stop": 1744260357817
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744260357819,
+          "name": "page.title",
+          "stop": 1744260357820
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744260357821,
+          "name": "expect.toContain",
+          "stop": 1744260357822
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744260357193,
+      "name": "Navigate to the login screen",
+      "stop": 1744260357822
+    },
+    {
+      "statusDetails": {},
+      "stage": "running",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744260357823,
+          "name": "page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1744260357844
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744260357844,
+          "name": "locator.isVisible(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1744260357846
+        },
+        {
+          "status": "failed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "failed",
+              "statusDetails": {
+                "message": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n",
+                "trace": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"
+              },
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [
+                    {
+                      "status": "passed",
+                      "statusDetails": {},
+                      "stage": "finished",
+                      "steps": [],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1744260357848,
+                      "name": "expect.toContainText",
+                      "stop": 1744260357857
+                    },
+                    {
+                      "status": "passed",
+                      "statusDetails": {},
+                      "stage": "finished",
+                      "steps": [],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1744260357856,
+                      "name": "locator.click(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+                      "stop": 1744260357923
+                    },
+                    {
+                      "status": "passed",
+                      "statusDetails": {},
+                      "stage": "finished",
+                      "steps": [],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1744260357915,
+                      "name": "locator.isVisible(div[role=\"dialog\"][data-state=\"open\"])",
+                      "stop": 1744260357917
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1744260357848,
+                  "name": "page.waitForSelector(div[role=\"dialog\"][data-state=\"open\"])",
+                  "stop": 1744260357955
+                },
+                {
+                  "status": "failed",
+                  "statusDetails": {
+                    "message": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\n",
+                    "trace": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\n\n    at ClubSurveyLogin.validateElementVisibility (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:408:29)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:103:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:31\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1744260357956,
+                  "name": "page.waitForSelector(div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\")",
+                  "stop": 1744260357958
+                },
+                {
+                  "status": "failed",
+                  "statusDetails": {
+                    "message": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n",
+                    "trace": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"
+                  },
+                  "stage": "finished",
+                  "steps": [
+                    {
+                      "status": "failed",
+                      "statusDetails": {
+                        "message": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n",
+                        "trace": "Error: page.waitForSelector: Unexpected token \"\" while parsing css selector \"div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\" to be visible\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:96:29\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:20)\n    at ClubSurveyLogin.closeContactUsModal (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:105:16)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:71:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:63:9"
+                      },
+                      "stage": "finished",
+                      "steps": [],
+                      "attachments": [],
+                      "parameters": [],
+                      "start": 1744260357958,
+                      "name": "page.waitForSelector(div[class*=\"cursor-pointer\"][class*=\"bg-greyscale-100\")",
+                      "stop": 1744260357960
+                    }
+                  ],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1744260357958,
+                  "name": "The Close Button button clicked",
+                  "stop": 1744260357960
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1744260357847,
+              "name": "page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+              "stop": 1744260357985
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744260357847,
+          "name": "The Contact Us Button Button clicked",
+          "stop": 1744260358178
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "source": "63e98ef4-3de9-4c89-baa9-d6c1cf332bcb-attachment.png",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1744260358296,
+          "name": "screenshot",
+          "stop": 1744260358296
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "video",
+              "source": "fd6af401-e3a1-4bb3-9dcb-b84efe7b6542-attachment.webm",
+              "type": "video/webm"
+            }
+          ],
+          "parameters": [],
+          "start": 1744260358297,
+          "name": "video",
+          "stop": 1744260358297
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "_prompt-0",
+              "source": "cae7f28a-c93c-4ded-bea3-39c39805b980-attachment",
+              "type": "text/markdown"
+            }
+          ],
+          "parameters": [],
+          "start": 1744260358297,
+          "name": "_prompt-0",
+          "stop": 1744260358297
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "trace",
+              "source": "75696e0e-8083-496c-aaa1-c97ea6b01781-attachment.zip",
+              "type": "application/vnd.allure.playwright-trace"
+            }
+          ],
+          "parameters": [],
+          "start": 1744260358297,
+          "name": "trace",
+          "stop": 1744260358297
+        }
+      ],
+      "attachments": [
+        {
+          "name": "stdout",
+          "source": "00995c13-edec-4b82-ab5b-31e348a99553-attachment.txt",
+          "type": "text/plain"
+        },
+        {
+          "name": "stderr",
+          "source": "de58e421-78ac-4e21-a17f-b335227fc774-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1744260357822,
+      "name": "Verify contactus modal via the contact us button"
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1744260357960,
+          "stop": 1744260358104
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744260358105,
+          "stop": 1744260358105
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744260358106,
+          "stop": 1744260358106
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1744260358149,
+          "stop": 1744260358149
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1744260357960,
+      "stop": 1744260358151
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chrome" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chrome > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "smoke" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-55042-worker-0" },
+    { "name": "parentSuite", "value": "chrome" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1744260357091,
+  "testCaseId": "4cb03a26f37f7855de98357e7d0843f7",
+  "fullName": "LandOnSurveyPlatform.test.ts:47:9",
+  "stop": 1744260358163
+}

@@ -1,0 +1,30 @@
+{
+  "uuid": "a7efc8f1-2a14-42c9-bbeb-287b7eb09686",
+  "name": "Group Admin role: Access Group Admin dashboard",
+  "historyId": "69547bbafe0796f6f648585597a434b4:054ef217feb7d43c7a5deef3686f1047",
+  "status": "skipped",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "Mobile Pixel 5" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "roleBasedTests.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > Mobile Pixel 5 > roleBasedTests.test.ts > Role-Based Login Tests"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-94154-worker-0" },
+    { "name": "parentSuite", "value": "Mobile Pixel 5" },
+    { "name": "suite", "value": "roleBasedTests.test.ts" },
+    { "name": "subSuite", "value": "Role-Based Login Tests" }
+  ],
+  "links": [],
+  "start": 1745972325229,
+  "testCaseId": "69547bbafe0796f6f648585597a434b4",
+  "fullName": "roleBasedTests.test.ts:20:7",
+  "stop": 1745972325229
+}

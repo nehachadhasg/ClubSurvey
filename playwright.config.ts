@@ -1,8 +1,6 @@
 import { defineConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 import { loadEnvironmentConfig } from './config/configLoader';
-//import { channel } from 'diagnostics_channel';
-//import { OrtoniReportConfig } from 'ortoni-report';
 
 const environment = loadEnvironmentConfig();
 const timestamp = Date.now();
@@ -11,31 +9,32 @@ export default defineConfig({
   timeout: 50000,
 
   expect: {
-    timeout: 20000
-
+    timeout: 20000,
   },
   testDir: 'src/tests/Regression_Suite',
-
 
   fullyParallel: true,
   retries: 0,
   workers: 1,
   repeatEach: 0,
 
-  
-  reporter: [['html', { outputFolder: reportDir, open: 'always' }], [`./CustomReporterConfig.ts`], ['line'], ["allure-playwright"]],
- 
+  reporter: [
+    ['html', { outputFolder: reportDir, open: 'always' }],
+    [`./CustomReporterConfig.ts`],
+    ['line'],
+    ['allure-playwright'],
+  ],
+
   use: {
     baseURL: environment.baseURL, // Use the environment-specific base URL
     actionTimeout: 20000,
     headless: false,
     screenshot: 'only-on-failure', // Capture screenshots only on failure
     trace: 'retain-on-failure', // Retain traces only on failure
-    video: 'retain-on-failure', 
+    video: 'retain-on-failure',
     ignoreHTTPSErrors: true,
     bypassCSP: true,
-   // storageState: "logins/salesforceLogin.json"
-
+    // storageState: "logins/salesforceLogin.json"
   },
 
   // testMatch: [
@@ -56,24 +55,26 @@ export default defineConfig({
          launchOptions: {
            slowMo: 300,
            args: ["--start-maximized", "--disable-web-security", "--disable-features=IsolateOrigins,site-per-process", '--no-proxy-server']
-         },
- 
- 
-       }
- 
+         }
+      }
      }, */
     {
       name: 'chrome',
       use: {
-        browserName: 'chromium', channel: 'chrome', headless: false,
+        browserName: 'chromium',
+        channel: 'chrome',
+        headless: false,
         viewport: null,
         launchOptions: {
           slowMo: 300,
-          args: ["--start-maximized", "--disable-web-security", "--disable-features=IsolateOrigins,site-per-process", '--no-proxy-server']
-
-        }
-
-      }
+          args: [
+            '--start-maximized',
+            '--disable-web-security',
+            '--disable-features=IsolateOrigins,site-per-process',
+            '--no-proxy-server',
+          ],
+        },
+      },
     },
     {
       name: 'safari',
@@ -82,7 +83,8 @@ export default defineConfig({
         headless: false, // Run in non-headless mode for Safari
         viewport: { width: 1280, height: 720 }, // Set a default viewport size
         launchOptions: {
-          args: [], // Add any additional arguments if needed
+          slowMo: 300,
+          args: ['--start-maximized'], // Add any additional arguments if needed
         },
       },
     },
@@ -192,7 +194,7 @@ export default defineConfig({
         ...devices['Pixel 5'], // Predefined device descriptor for Pixel 5
       },
     },
-    
+
     /* ...(
       true ? [{
         name: 'API Testing',

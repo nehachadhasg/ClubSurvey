@@ -1,0 +1,436 @@
+{
+  "uuid": "c8ec8eb3-a39a-47a7-a767-5aabe390a884",
+  "name": "Venue Admin role: Access Venue Admin dashboard",
+  "historyId": "f77830bf27ec0583775a409836c921b7:969c352bee93c662f3c6f43279ecdeef",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 50000ms exceeded.",
+    "trace": "Test timeout of 50000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1745971347285,
+              "stop": 1745971347410
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1745971347284,
+          "stop": 1745971347410
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1745971347411,
+              "stop": 1745971347445
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745971347411,
+          "stop": 1745971347449
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1745971347450,
+              "stop": 1745971347714
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745971347449,
+          "stop": 1745971347714
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loginAsRole",
+          "start": 1745971347714,
+          "stop": 1745971347715
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745971347281,
+      "stop": 1745971347715
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971347719,
+      "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+      "stop": 1745971348143
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971348145,
+      "name": "page.title",
+      "stop": 1745971348147
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971348149,
+          "name": "locator.clear(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745971348252
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971348252,
+          "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745971348272
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971348148,
+      "name": "Textbox Username filled with data: nehava@yopmail.com",
+      "stop": 1745971348272
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971348273,
+          "name": "locator.clear(input[placeholder=\"Enter your password\"])",
+          "stop": 1745971348295
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971348295,
+          "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+          "stop": 1745971348302
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971348272,
+      "name": "Textbox Password filled with data: Club59@123",
+      "stop": 1745971348302
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971348302,
+          "name": "page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745971348312
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971348312,
+          "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745971348361
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971348302,
+      "name": "The Sign In Button clicked",
+      "stop": 1745971348361
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971348362,
+      "name": "page.waitForTimeout",
+      "stop": 1745971358381
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971358382,
+      "name": "page.waitForSelector(img[alt=\"Small Logo\"])",
+      "stop": 1745971358388
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971358388,
+      "name": "locator.isVisible(img[alt=\"Small Logo\"])",
+      "stop": 1745971358392
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('text=Venue Admin Dashboard')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('text=Venue Admin Dashboard')\n",
+        "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('text=Venue Admin Dashboard')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('text=Venue Admin Dashboard')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:33:39",
+        "actual": "<element(s) not found>",
+        "expected": "visible"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971358394,
+      "name": "expect.toBeVisible",
+      "stop": 1745971408502
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "8f3dc6d7-0ad1-4867-a926-26aa471ab47a-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971409582,
+      "name": "screenshot",
+      "stop": 1745971409582
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "4cc4af8a-16af-41d2-9632-030218812620-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971409583,
+      "name": "video",
+      "stop": 1745971409583
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_prompt-1",
+          "source": "64f8da81-6f53-4562-9455-a5879e5de853-attachment",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971409584,
+      "name": "_prompt-1",
+      "stop": 1745971409584
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "986db58c-c1c3-4f76-9426-1a555575756f-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971409584,
+      "name": "trace",
+      "stop": 1745971409584
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745971408159,
+          "stop": 1745971408942
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loginAsRole",
+          "start": 1745971408943,
+          "stop": 1745971408943
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745971408944,
+          "stop": 1745971408944
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745971408944,
+          "stop": 1745971408944
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745971409314,
+          "stop": 1745971409319
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745971408147,
+      "stop": 1745971409322
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "32baa9e1-807d-4ce4-8e17-a8f0e3e423b7-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "roleBasedTests.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > roleBasedTests.test.ts > Role-Based Login Tests"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-92986-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "roleBasedTests.test.ts" },
+    { "name": "subSuite", "value": "Role-Based Login Tests" }
+  ],
+  "links": [],
+  "start": 1745971347282,
+  "testCaseId": "f77830bf27ec0583775a409836c921b7",
+  "fullName": "roleBasedTests.test.ts:28:7",
+  "stop": 1745971409184
+}

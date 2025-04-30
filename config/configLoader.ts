@@ -1,10 +1,15 @@
+import { environment as qaEnvironment } from './qa';
+import { environment as uatEnvironment } from './uat';
+
 //Utility function to dynamicaaly load the appropriate configuration based on the environment.
 export function loadEnvironmentConfig() {
-    const ENV = process.env.ENV || 'qa'; // Default to 'qa' if ENV is not set
-    try {
-    const { environment } = require(`./${ENV}`);
-    return environment;
-  } catch (error) {
-    throw new Error(`Environment configuration for '${ENV}' not found. Ensure the file exists in the config folder.`);
+  const ENV = process.env.ENV || 'qa'; // Default to 'qa' if ENV is not set
+  switch (ENV.toLowerCase()) {
+    case 'qa':
+      return qaEnvironment;
+    case 'staging':
+      return uatEnvironment;
+    default:
+      throw new Error(`Unknown environment: ${ENV}`);
   }
 }

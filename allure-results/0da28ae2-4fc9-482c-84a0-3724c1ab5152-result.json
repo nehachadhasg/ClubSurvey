@@ -1,1 +1,184 @@
-{"uuid":"0da28ae2-4fc9-482c-84a0-3724c1ab5152","name":"SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity","historyId":"621f26dd05a37a546ba58e17650b247e:969c352bee93c662f3c6f43279ecdeef","status":"failed","statusDetails":{"message":"Error: browserContext.newPage: Test ended.","trace":"Error: browserContext.newPage: Test ended."},"stage":"finished","steps":[{"statusDetails":{},"stage":"running","steps":[{"status":"failed","statusDetails":{"message":"Test timeout of 50000ms exceeded while running \"beforeEach\" hook.","trace":"Test timeout of 50000ms exceeded while running \"beforeEach\" hook.\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:12:6"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserType.launch","start":1745912127900,"stop":1745912128214}],"attachments":[],"parameters":[],"name":"fixture: browser","start":1745912127899,"stop":1745912128214},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745912128215,"stop":1745912128293}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745912128215,"stop":1745912128298},{"status":"failed","statusDetails":{"message":"Test timeout of 50000ms exceeded while running \"beforeEach\" hook.","trace":"Test timeout of 50000ms exceeded while running \"beforeEach\" hook.\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:12:6"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Test timeout of 50000ms exceeded while running \"beforeEach\" hook.","trace":"Test timeout of 50000ms exceeded while running \"beforeEach\" hook.\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:12:6"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745912128299,"stop":1745912128932}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745912128298,"stop":1745912129332}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745912127897,"stop":1745912128932}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745912127896},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"86c0cdf1-dc43-4acb-bae2-c4453783306e-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1745912129053,"name":"trace","stop":1745912129053},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745912128932,"stop":1745912128932},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745912128932,"stop":1745912128932}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745912128931,"stop":1745912128990}],"attachments":[],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-83721-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745912127897,"testCaseId":"621f26dd05a37a546ba58e17650b247e","fullName":"LandOnSurveyPlatform.test.ts:18:5","stop":1745912128672}
+{
+  "uuid": "0da28ae2-4fc9-482c-84a0-3724c1ab5152",
+  "name": "SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity",
+  "historyId": "621f26dd05a37a546ba58e17650b247e:969c352bee93c662f3c6f43279ecdeef",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: browserContext.newPage: Test ended.",
+    "trace": "Error: browserContext.newPage: Test ended."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "statusDetails": {},
+      "stage": "running",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Test timeout of 50000ms exceeded while running \"beforeEach\" hook.",
+            "trace": "Test timeout of 50000ms exceeded while running \"beforeEach\" hook.\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:12:6"
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserType.launch",
+                  "start": 1745912127900,
+                  "stop": 1745912128214
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: browser",
+              "start": 1745912127899,
+              "stop": 1745912128214
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745912128215,
+                  "stop": 1745912128293
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745912128215,
+              "stop": 1745912128298
+            },
+            {
+              "status": "failed",
+              "statusDetails": {
+                "message": "Test timeout of 50000ms exceeded while running \"beforeEach\" hook.",
+                "trace": "Test timeout of 50000ms exceeded while running \"beforeEach\" hook.\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:12:6"
+              },
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "failed",
+                  "statusDetails": {
+                    "message": "Test timeout of 50000ms exceeded while running \"beforeEach\" hook.",
+                    "trace": "Test timeout of 50000ms exceeded while running \"beforeEach\" hook.\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:12:6"
+                  },
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745912128299,
+                  "stop": 1745912128932
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745912128298,
+              "stop": 1745912129332
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745912127897,
+          "stop": 1745912128932
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745912127896
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "86c0cdf1-dc43-4acb-bae2-c4453783306e-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745912129053,
+      "name": "trace",
+      "stop": 1745912129053
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745912128932,
+          "stop": 1745912128932
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745912128932,
+          "stop": 1745912128932
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745912128931,
+      "stop": 1745912128990
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-83721-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745912127897,
+  "testCaseId": "621f26dd05a37a546ba58e17650b247e",
+  "fullName": "LandOnSurveyPlatform.test.ts:18:5",
+  "stop": 1745912128672
+}

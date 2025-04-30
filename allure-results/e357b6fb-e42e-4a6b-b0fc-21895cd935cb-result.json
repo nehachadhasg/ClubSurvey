@@ -1,0 +1,30 @@
+{
+  "uuid": "e357b6fb-e42e-4a6b-b0fc-21895cd935cb",
+  "name": "SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity",
+  "historyId": "b6f42426b50279a745fd641e4d42afca:b0c541f07b9140a848824da4a350afbe",
+  "status": "skipped",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "Mobile iPhone 12" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > Mobile iPhone 12 > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-94154-worker-0" },
+    { "name": "parentSuite", "value": "Mobile iPhone 12" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745972325228,
+  "testCaseId": "b6f42426b50279a745fd641e4d42afca",
+  "fullName": "LandOnSurveyPlatform.test.ts:256:5",
+  "stop": 1745972325228
+}

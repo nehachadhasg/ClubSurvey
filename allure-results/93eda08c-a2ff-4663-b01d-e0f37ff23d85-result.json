@@ -1,1 +1,266 @@
-{"uuid":"93eda08c-a2ff-4663-b01d-e0f37ff23d85","name":"E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e","historyId":"24c30720d18f16f73843d96ebae95026:969c352bee93c662f3c6f43279ecdeef","status":"failed","statusDetails":{"message":"Error: Failed to load the page at https://uat.example.com","trace":"Error: Failed to load the page at https://uat.example.com\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:130:5\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:129:3"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserType.launch","start":1745884425232,"stop":1745884425335}],"attachments":[],"parameters":[],"name":"fixture: browser","start":1745884425231,"stop":1745884425335},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745884425336,"stop":1745884425367}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745884425335,"stop":1745884425372},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745884425373,"stop":1745884425618}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745884425372,"stop":1745884425618}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745884425228,"stop":1745884425618}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745884425228,"stop":1745884425618},{"status":"failed","statusDetails":{"message":"Error: Failed to load the page at https://uat.example.com","trace":"Error: Failed to load the page at https://uat.example.com\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:130:5\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:129:3"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: page.goto: A server with the specified hostname could not be found.\nCall log:\n  - navigating to \"https://uat.example.com/\", waiting until \"load\"\n","trace":"Error: page.goto: A server with the specified hostname could not be found.\nCall log:\n  - navigating to \"https://uat.example.com/\", waiting until \"load\"\n\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:125:29)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:130:27\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:129:14"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884425622,"name":"page.goto(https://uat.example.com)","stop":1745884425650}],"attachments":[],"parameters":[],"start":1745884425619,"name":"Navigate to the login screen","stop":1745884425650},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"d9b514c8-fc4e-4f7e-8d89-1d00c3fa0cee-attachment.png","type":"image/png"}],"parameters":[],"start":1745884425714,"name":"screenshot","stop":1745884425714},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"20269ab7-e204-4643-b406-52216eaf5d78-attachment.webm","type":"video/webm"}],"parameters":[],"start":1745884425715,"name":"video","stop":1745884425715},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"b7b958f1-ea48-4d76-a372-fa2b89444b9a-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1745884425715,"name":"trace","stop":1745884425715},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1745884425651,"stop":1745884425665},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745884425666,"stop":1745884425666},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745884425666,"stop":1745884425666},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1745884425698,"stop":1745884425698}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745884425650,"stop":1745884425699}],"attachments":[{"name":"stdout","source":"08d85467-d938-497f-bbfb-c76cad5927ab-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"e2e"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-69162-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745884425229,"testCaseId":"24c30720d18f16f73843d96ebae95026","fullName":"LandOnSurveyPlatform.test.ts:121:5","stop":1745884425593}
+{
+  "uuid": "93eda08c-a2ff-4663-b01d-e0f37ff23d85",
+  "name": "E2E-CLUB59-LOGIN-001: Complete end-to-end flow @e2e",
+  "historyId": "24c30720d18f16f73843d96ebae95026:969c352bee93c662f3c6f43279ecdeef",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: Failed to load the page at https://uat.example.com",
+    "trace": "Error: Failed to load the page at https://uat.example.com\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:130:5\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:129:3"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserType.launch",
+                  "start": 1745884425232,
+                  "stop": 1745884425335
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: browser",
+              "start": 1745884425231,
+              "stop": 1745884425335
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745884425336,
+                  "stop": 1745884425367
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745884425335,
+              "stop": 1745884425372
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745884425373,
+                  "stop": 1745884425618
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745884425372,
+              "stop": 1745884425618
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745884425228,
+          "stop": 1745884425618
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745884425228,
+      "stop": 1745884425618
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: Failed to load the page at https://uat.example.com",
+        "trace": "Error: Failed to load the page at https://uat.example.com\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:130:5\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:129:3"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: page.goto: A server with the specified hostname could not be found.\nCall log:\n  - navigating to \"https://uat.example.com/\", waiting until \"load\"\n",
+            "trace": "Error: page.goto: A server with the specified hostname could not be found.\nCall log:\n  - navigating to \"https://uat.example.com/\", waiting until \"load\"\n\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:125:29)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:130:27\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:129:14"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884425622,
+          "name": "page.goto(https://uat.example.com)",
+          "stop": 1745884425650
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745884425619,
+      "name": "Navigate to the login screen",
+      "stop": 1745884425650
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "d9b514c8-fc4e-4f7e-8d89-1d00c3fa0cee-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884425714,
+      "name": "screenshot",
+      "stop": 1745884425714
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "20269ab7-e204-4643-b406-52216eaf5d78-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884425715,
+      "name": "video",
+      "stop": 1745884425715
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "b7b958f1-ea48-4d76-a372-fa2b89444b9a-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884425715,
+      "name": "trace",
+      "stop": 1745884425715
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745884425651,
+          "stop": 1745884425665
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745884425666,
+          "stop": 1745884425666
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745884425666,
+          "stop": 1745884425666
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745884425698,
+          "stop": 1745884425698
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745884425650,
+      "stop": 1745884425699
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "08d85467-d938-497f-bbfb-c76cad5927ab-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "e2e" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-69162-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745884425229,
+  "testCaseId": "24c30720d18f16f73843d96ebae95026",
+  "fullName": "LandOnSurveyPlatform.test.ts:121:5",
+  "stop": 1745884425593
+}

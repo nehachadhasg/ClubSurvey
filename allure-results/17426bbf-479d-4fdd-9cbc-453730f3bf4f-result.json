@@ -1,0 +1,30 @@
+{
+  "uuid": "17426bbf-479d-4fdd-9cbc-453730f3bf4f",
+  "name": "Franchise Admin role: Access Franchise Admin dashboard",
+  "historyId": "cccbc19ccda67a00739b691a10a89c6d:969c352bee93c662f3c6f43279ecdeef",
+  "status": "skipped",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "roleBasedTests.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > roleBasedTests.test.ts > Role-Based Login Tests"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-94154-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "roleBasedTests.test.ts" },
+    { "name": "subSuite", "value": "Role-Based Login Tests" }
+  ],
+  "links": [],
+  "start": 1745972325228,
+  "testCaseId": "cccbc19ccda67a00739b691a10a89c6d",
+  "fullName": "roleBasedTests.test.ts:12:7",
+  "stop": 1745972325228
+}

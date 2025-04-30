@@ -1,1 +1,466 @@
-{"uuid":"aca8a152-1987-4114-9d4b-f78602e314e9","name":"E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo","historyId":"a6750af1f5f6cbfc4dd55213cfe39048:94dadec355fb24357203fcbce2c308f6","status":"failed","statusDetails":{"message":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n","trace":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9","actual":"<element(s) not found>","expected":"visible"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserType.launch","start":1744126256391,"stop":1744126257192}],"attachments":[],"parameters":[],"name":"fixture: browser","start":1744126256390,"stop":1744126257192},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1744126257196,"stop":1744126257216}],"attachments":[],"parameters":[],"name":"fixture: context","start":1744126257194,"stop":1744126257222},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1744126257223,"stop":1744126257949}],"attachments":[],"parameters":[],"name":"fixture: page","start":1744126257222,"stop":1744126257949}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1744126256385,"stop":1744126257950},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126265137,"name":"page.goto(https://qa.survey.59club.studiographene.xyz)","stop":1744126267960},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126267961,"name":"page.title","stop":1744126267963},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126267965,"name":"expect.toContain","stop":1744126267966}],"attachments":[],"parameters":[],"start":1744126265124,"name":"Navigate to the login screen","stop":1744126267966},{"status":"failed","statusDetails":{"message":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n","trace":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9","actual":"<element(s) not found>","expected":"visible"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126270376,"name":"page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1744126270463},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126270463,"name":"locator.isVisible(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1744126270467},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126270469,"name":"page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1744126270476},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126270476,"name":"locator.click(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1744126270901}],"attachments":[],"parameters":[],"start":1744126270469,"name":"The 59club Logo clicked","stop":1744126270901}],"attachments":[],"parameters":[],"start":1744126270468,"name":"browserContext.waitForEvent","stop":1744126274146},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126274149,"name":"page.waitForLoadState","stop":1744126275606},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126275607,"name":"expect.toBe","stop":1744126275608},{"status":"failed","statusDetails":{"message":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n","trace":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9","actual":"<element(s) not found>","expected":"visible"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744126275617,"name":"expect.toBeVisible","stop":1744126295640}],"attachments":[],"parameters":[],"start":1744126267966,"name":"Verify redirection to the homepage via the 59club logo","stop":1744126295640},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"97f397b0-d490-4062-988b-8e08ce6d5f2f-attachment.png","type":"image/png"}],"parameters":[],"start":1744126298847,"name":"screenshot","stop":1744126298847},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"5a2b6e02-590b-436f-a22d-17d35e490f1b-attachment.png","type":"image/png"}],"parameters":[],"start":1744126298853,"name":"screenshot","stop":1744126298853},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"848403bc-3970-4d12-a58b-b6591c80c5ca-attachment.webm","type":"video/webm"}],"parameters":[],"start":1744126298854,"name":"video","stop":1744126298854},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"6021a857-0efc-4e3f-b0dc-8709c5b8fcaa-attachment.webm","type":"video/webm"}],"parameters":[],"start":1744126298858,"name":"video","stop":1744126298858},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_prompt-0","source":"b248b8cc-e4fe-44d8-8912-01639067d240-attachment","type":"text/markdown"}],"parameters":[],"start":1744126298859,"name":"_prompt-0","stop":1744126298859},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"3da0b966-3df5-43c2-83f2-7bf35b7582ca-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1744126298859,"name":"trace","stop":1744126298859},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744126295643,"stop":1744126296667}],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744126295642,"stop":1744126296667},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1744126296671,"stop":1744126296672},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1744126296672,"stop":1744126296672},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1744126297522,"stop":1744126297526}],"attachments":[],"parameters":[],"name":"video.saveAs","start":1744126297521,"stop":1744126297524}],"attachments":[],"parameters":[],"name":"After Hooks","start":1744126295641,"stop":1744126297528}],"attachments":[{"name":"stdout","source":"fd0d54a2-facb-447f-bebd-9ae18add4a81-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chrome"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > chrome > LandOnSurveyPlatform.test.ts"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-37651-worker-0"},{"name":"parentSuite","value":"chrome"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1744126256394,"testCaseId":"a6750af1f5f6cbfc4dd55213cfe39048","fullName":"LandOnSurveyPlatform.test.ts:5:5","stop":1744126296729}
+{
+  "uuid": "aca8a152-1987-4114-9d4b-f78602e314e9",
+  "name": "E2E-CLUB59-31-TC01: Navigate to Surveys Platform via 59club Logo",
+  "historyId": "a6750af1f5f6cbfc4dd55213cfe39048:94dadec355fb24357203fcbce2c308f6",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n",
+    "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9",
+    "actual": "<element(s) not found>",
+    "expected": "visible"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1744126256391,
+              "stop": 1744126257192
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1744126256390,
+          "stop": 1744126257192
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1744126257196,
+              "stop": 1744126257216
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744126257194,
+          "stop": 1744126257222
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1744126257223,
+              "stop": 1744126257949
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744126257222,
+          "stop": 1744126257949
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1744126256385,
+      "stop": 1744126257950
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126265137,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz)",
+          "stop": 1744126267960
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126267961,
+          "name": "page.title",
+          "stop": 1744126267963
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126267965,
+          "name": "expect.toContain",
+          "stop": 1744126267966
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744126265124,
+      "name": "Navigate to the login screen",
+      "stop": 1744126267966
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n",
+        "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9",
+        "actual": "<element(s) not found>",
+        "expected": "visible"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126270376,
+          "name": "page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])",
+          "stop": 1744126270463
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126270463,
+          "name": "locator.isVisible(img[alt=\"logo\"][src*=\"clubLogo\"])",
+          "stop": 1744126270467
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1744126270469,
+                  "name": "page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])",
+                  "stop": 1744126270476
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1744126270476,
+                  "name": "locator.click(img[alt=\"logo\"][src*=\"clubLogo\"])",
+                  "stop": 1744126270901
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1744126270469,
+              "name": "The 59club Logo clicked",
+              "stop": 1744126270901
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126270468,
+          "name": "browserContext.waitForEvent",
+          "stop": 1744126274146
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126274149,
+          "name": "page.waitForLoadState",
+          "stop": 1744126275606
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126275607,
+          "name": "expect.toBe",
+          "stop": 1744126275608
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n",
+            "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('img[alt=\"59club Logo\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('img[alt=\"59club Logo\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:35:40\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Smoke/LandOnSurveyPlatform.test.ts:26:9",
+            "actual": "<element(s) not found>",
+            "expected": "visible"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744126275617,
+          "name": "expect.toBeVisible",
+          "stop": 1744126295640
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744126267966,
+      "name": "Verify redirection to the homepage via the 59club logo",
+      "stop": 1744126295640
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "97f397b0-d490-4062-988b-8e08ce6d5f2f-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1744126298847,
+      "name": "screenshot",
+      "stop": 1744126298847
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "5a2b6e02-590b-436f-a22d-17d35e490f1b-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1744126298853,
+      "name": "screenshot",
+      "stop": 1744126298853
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "848403bc-3970-4d12-a58b-b6591c80c5ca-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1744126298854,
+      "name": "video",
+      "stop": 1744126298854
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "6021a857-0efc-4e3f-b0dc-8709c5b8fcaa-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1744126298858,
+      "name": "video",
+      "stop": 1744126298858
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_prompt-0",
+          "source": "b248b8cc-e4fe-44d8-8912-01639067d240-attachment",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1744126298859,
+      "name": "_prompt-0",
+      "stop": 1744126298859
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "3da0b966-3df5-43c2-83f2-7bf35b7582ca-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1744126298859,
+      "name": "trace",
+      "stop": 1744126298859
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.screenshot",
+              "start": 1744126295643,
+              "stop": 1744126296667
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1744126295642,
+          "stop": 1744126296667
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744126296671,
+          "stop": 1744126296672
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744126296672,
+          "stop": 1744126296672
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "video.saveAs",
+              "start": 1744126297522,
+              "stop": 1744126297526
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1744126297521,
+          "stop": 1744126297524
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1744126295641,
+      "stop": 1744126297528
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "fd0d54a2-facb-447f-bebd-9ae18add4a81-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chrome" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chrome > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-37651-worker-0" },
+    { "name": "parentSuite", "value": "chrome" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1744126256394,
+  "testCaseId": "a6750af1f5f6cbfc4dd55213cfe39048",
+  "fullName": "LandOnSurveyPlatform.test.ts:5:5",
+  "stop": 1744126296729
+}

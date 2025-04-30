@@ -1,0 +1,39 @@
+Error during wait: page.waitForTimeout: Test ended.
+    at ClubSurveyLogin.wait (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:511:27)
+    at ClubSurveyLogin (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:81:18)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/fixtures/fixture.ts:37:9
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:38:18 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@20',
+    location: {
+      file: '/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts',
+      line: 511,
+      column: 27,
+      function: 'ClubSurveyLogin.wait'
+    },
+    category: 'pw:api',
+    title: 'page.waitForTimeout',
+    apiName: 'page.waitForTimeout',
+    params: { timeout: 10000 },
+    boxedStack: undefined,
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'pw:api@20'
+    },
+    complete: [Function: complete],
+    endWallTime: 1745993639651,
+    error: {
+      message: 'Error: page.waitForTimeout: Test ended.',
+      stack: 'Error: page.waitForTimeout: Test ended.\n' +
+        '    at ClubSurveyLogin.wait (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:511:27)\n' +
+        '    at ClubSurveyLogin (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:81:18)\n' +
+        '    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/fixtures/fixture.ts:37:9\n' +
+        '    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:38:18',
+      cause: undefined
+    }
+  }
+}
+Error validating visibility of Club Small Logo: Error: page.waitForSelector: Target page, context or browser has been closed

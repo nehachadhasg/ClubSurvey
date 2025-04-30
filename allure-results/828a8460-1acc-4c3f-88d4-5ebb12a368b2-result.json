@@ -1,1 +1,251 @@
-{"uuid":"828a8460-1acc-4c3f-88d4-5ebb12a368b2","name":"SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity","historyId":"f819597be76c239d3e98b0b0cbab2457:969c352bee93c662f3c6f43279ecdeef","status":"failed","statusDetails":{"message":"Error: Failed to load the page at [object Object]","trace":"Error: Failed to load the page at [object Object]\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:86:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:85:5"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserType.launch","start":1745884424441,"stop":1745884424554}],"attachments":[],"parameters":[],"name":"fixture: browser","start":1745884424440,"stop":1745884424554},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745884424555,"stop":1745884424590}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745884424554,"stop":1745884424598},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745884424598,"stop":1745884424830}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745884424598,"stop":1745884424830}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745884424437,"stop":1745884424830}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745884424437,"stop":1745884424831},{"status":"failed","statusDetails":{"message":"Error: Failed to load the page at [object Object]","trace":"Error: Failed to load the page at [object Object]\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:86:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:85:5"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884424831,"name":"Navigate to the login screen","stop":1745884424834},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"7ad4ed8b-3a95-421b-8813-00b081d741fc-attachment.png","type":"image/png"}],"parameters":[],"start":1745884424910,"name":"screenshot","stop":1745884424910},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"c650aab3-0964-49a7-9220-7ef815f41e20-attachment.webm","type":"video/webm"}],"parameters":[],"start":1745884424910,"name":"video","stop":1745884424910},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"0f0b0f67-f4e9-4c2a-a3ef-cef404d02dde-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1745884424910,"name":"trace","stop":1745884424910},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1745884424836,"stop":1745884424861},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745884424862,"stop":1745884424862},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745884424862,"stop":1745884424862},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1745884424894,"stop":1745884424894}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745884424835,"stop":1745884424895}],"attachments":[{"name":"stdout","source":"723ad5f8-8a45-468d-a187-f131ec2da402-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-69162-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745884424437,"testCaseId":"f819597be76c239d3e98b0b0cbab2457","fullName":"LandOnSurveyPlatform.test.ts:78:5","stop":1745884424778}
+{
+  "uuid": "828a8460-1acc-4c3f-88d4-5ebb12a368b2",
+  "name": "SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity",
+  "historyId": "f819597be76c239d3e98b0b0cbab2457:969c352bee93c662f3c6f43279ecdeef",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: Failed to load the page at [object Object]",
+    "trace": "Error: Failed to load the page at [object Object]\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:86:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:85:5"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserType.launch",
+                  "start": 1745884424441,
+                  "stop": 1745884424554
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: browser",
+              "start": 1745884424440,
+              "stop": 1745884424554
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745884424555,
+                  "stop": 1745884424590
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745884424554,
+              "stop": 1745884424598
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745884424598,
+                  "stop": 1745884424830
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745884424598,
+              "stop": 1745884424830
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745884424437,
+          "stop": 1745884424830
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745884424437,
+      "stop": 1745884424831
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: Failed to load the page at [object Object]",
+        "trace": "Error: Failed to load the page at [object Object]\n    at ClubSurveyLogin.loadApp (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:129:19)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:86:9\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:85:5"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745884424831,
+      "name": "Navigate to the login screen",
+      "stop": 1745884424834
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "7ad4ed8b-3a95-421b-8813-00b081d741fc-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884424910,
+      "name": "screenshot",
+      "stop": 1745884424910
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "c650aab3-0964-49a7-9220-7ef815f41e20-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884424910,
+      "name": "video",
+      "stop": 1745884424910
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "0f0b0f67-f4e9-4c2a-a3ef-cef404d02dde-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884424910,
+      "name": "trace",
+      "stop": 1745884424910
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745884424836,
+          "stop": 1745884424861
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745884424862,
+          "stop": 1745884424862
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745884424862,
+          "stop": 1745884424862
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745884424894,
+          "stop": 1745884424894
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745884424835,
+      "stop": 1745884424895
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "723ad5f8-8a45-468d-a187-f131ec2da402-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-69162-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745884424437,
+  "testCaseId": "f819597be76c239d3e98b0b0cbab2457",
+  "fullName": "LandOnSurveyPlatform.test.ts:78:5",
+  "stop": 1745884424778
+}

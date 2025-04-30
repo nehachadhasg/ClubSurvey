@@ -1,1 +1,431 @@
-{"uuid":"a5a59935-7676-465b-895f-d2288e736a3f","name":"SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity","historyId":"621f26dd05a37a546ba58e17650b247e:969c352bee93c662f3c6f43279ecdeef","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserType.launch","start":1745884476415,"stop":1745884476681}],"attachments":[],"parameters":[],"name":"fixture: browser","start":1745884476414,"stop":1745884476681},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745884476683,"stop":1745884476734}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745884476682,"stop":1745884476739},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745884476740,"stop":1745884477469}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745884476739,"stop":1745884477469}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745884476411,"stop":1745884477469}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745884476411,"stop":1745884477470},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884477474,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1745884478003},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884478004,"name":"page.title","stop":1745884478005},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884478006,"name":"expect.toContain","stop":1745884478006}],"attachments":[],"parameters":[],"start":1745884477470,"name":"Navigate to the login screen","stop":1745884478006},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884478007,"name":"page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1745884478132},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884478133,"name":"locator.isVisible(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1745884478135},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884478136,"name":"page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1745884478139},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884478140,"name":"locator.click(img[alt=\"logo\"][src*=\"clubLogo\"])","stop":1745884478189}],"attachments":[],"parameters":[],"start":1745884478136,"name":"The 59club Logo img clicked","stop":1745884478190}],"attachments":[],"parameters":[],"start":1745884478136,"name":"browserContext.waitForEvent","stop":1745884480598},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884480600,"name":"page.waitForLoadState","stop":1745884480804},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884480804,"name":"expect.toBe","stop":1745884480805},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884480805,"name":"page.close","stop":1745884480826},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745884480826,"name":"expect.toBeVisible","stop":1745884480833}],"attachments":[],"parameters":[],"start":1745884478006,"name":"Verify redirection to the homepage via the 59club logo","stop":1745884480833},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"7d540ef2-e571-429c-af00-9f661d1ef09d-attachment.png","type":"image/png"}],"parameters":[],"start":1745884481222,"name":"screenshot","stop":1745884481223},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"b27556d3-0a1a-4d7c-b290-a36c7bcb8dac-attachment.webm","type":"video/webm"}],"parameters":[],"start":1745884481224,"name":"video","stop":1745884481224},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"7bf6bfce-2fc0-4fec-9c73-41decb3d8c23-attachment.webm","type":"video/webm"}],"parameters":[],"start":1745884481224,"name":"video","stop":1745884481224},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"c5beace6-0ecd-42fc-ad93-697ad816c1ec-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1745884481224,"name":"trace","stop":1745884481224},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1745884480834,"stop":1745884480876},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745884480877,"stop":1745884480878},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745884480878,"stop":1745884480878},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1745884481072,"stop":1745884481073}],"attachments":[],"parameters":[],"name":"video.saveAs","start":1745884481072,"stop":1745884481073}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745884480834,"stop":1745884481074}],"attachments":[{"name":"stdout","source":"738213f7-8e55-4851-ac9d-b29e44b740e0-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-69542-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745884476411,"testCaseId":"621f26dd05a37a546ba58e17650b247e","fullName":"LandOnSurveyPlatform.test.ts:16:5","stop":1745884480803}
+{
+  "uuid": "a5a59935-7676-465b-895f-d2288e736a3f",
+  "name": "SANITY-CLUB59-LOGIN-TC01: Navigate to Surveys Platform via 59club Logo @sanity",
+  "historyId": "621f26dd05a37a546ba58e17650b247e:969c352bee93c662f3c6f43279ecdeef",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserType.launch",
+                  "start": 1745884476415,
+                  "stop": 1745884476681
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: browser",
+              "start": 1745884476414,
+              "stop": 1745884476681
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745884476683,
+                  "stop": 1745884476734
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745884476682,
+              "stop": 1745884476739
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745884476740,
+                  "stop": 1745884477469
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745884476739,
+              "stop": 1745884477469
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745884476411,
+          "stop": 1745884477469
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745884476411,
+      "stop": 1745884477470
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884477474,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+          "stop": 1745884478003
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884478004,
+          "name": "page.title",
+          "stop": 1745884478005
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884478006,
+          "name": "expect.toContain",
+          "stop": 1745884478006
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745884477470,
+      "name": "Navigate to the login screen",
+      "stop": 1745884478006
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884478007,
+          "name": "page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])",
+          "stop": 1745884478132
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884478133,
+          "name": "locator.isVisible(img[alt=\"logo\"][src*=\"clubLogo\"])",
+          "stop": 1745884478135
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1745884478136,
+                  "name": "page.waitForSelector(img[alt=\"logo\"][src*=\"clubLogo\"])",
+                  "stop": 1745884478139
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1745884478140,
+                  "name": "locator.click(img[alt=\"logo\"][src*=\"clubLogo\"])",
+                  "stop": 1745884478189
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1745884478136,
+              "name": "The 59club Logo img clicked",
+              "stop": 1745884478190
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884478136,
+          "name": "browserContext.waitForEvent",
+          "stop": 1745884480598
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884480600,
+          "name": "page.waitForLoadState",
+          "stop": 1745884480804
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884480804,
+          "name": "expect.toBe",
+          "stop": 1745884480805
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884480805,
+          "name": "page.close",
+          "stop": 1745884480826
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745884480826,
+          "name": "expect.toBeVisible",
+          "stop": 1745884480833
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745884478006,
+      "name": "Verify redirection to the homepage via the 59club logo",
+      "stop": 1745884480833
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "7d540ef2-e571-429c-af00-9f661d1ef09d-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884481222,
+      "name": "screenshot",
+      "stop": 1745884481223
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "b27556d3-0a1a-4d7c-b290-a36c7bcb8dac-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884481224,
+      "name": "video",
+      "stop": 1745884481224
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "7bf6bfce-2fc0-4fec-9c73-41decb3d8c23-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884481224,
+      "name": "video",
+      "stop": 1745884481224
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "c5beace6-0ecd-42fc-ad93-697ad816c1ec-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745884481224,
+      "name": "trace",
+      "stop": 1745884481224
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745884480834,
+          "stop": 1745884480876
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745884480877,
+          "stop": 1745884480878
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745884480878,
+          "stop": 1745884480878
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "video.saveAs",
+              "start": 1745884481072,
+              "stop": 1745884481073
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745884481072,
+          "stop": 1745884481073
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745884480834,
+      "stop": 1745884481074
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "738213f7-8e55-4851-ac9d-b29e44b740e0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-69542-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745884476411,
+  "testCaseId": "621f26dd05a37a546ba58e17650b247e",
+  "fullName": "LandOnSurveyPlatform.test.ts:16:5",
+  "stop": 1745884480803
+}

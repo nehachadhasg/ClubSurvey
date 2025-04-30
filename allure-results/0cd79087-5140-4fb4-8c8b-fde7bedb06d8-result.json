@@ -1,1 +1,332 @@
-{"uuid":"0cd79087-5140-4fb4-8c8b-fde7bedb06d8","name":"SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity","historyId":"f819597be76c239d3e98b0b0cbab2457:969c352bee93c662f3c6f43279ecdeef","status":"failed","statusDetails":{"message":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n","trace":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:102:35\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:90:5","actual":"<element(s) not found>","expected":"visible"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1744303092892,"stop":1744303092893}],"attachments":[],"parameters":[],"name":"fixture: context","start":1744303092892,"stop":1744303092894},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1744303092895,"stop":1744303093006}],"attachments":[],"parameters":[],"name":"fixture: page","start":1744303092894,"stop":1744303093006}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1744303092891,"stop":1744303093006}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1744303092891,"stop":1744303093006},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744303093006,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1744303095274},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744303095275,"name":"page.title","stop":1744303095279},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744303095280,"name":"expect.toContain","stop":1744303095280}],"attachments":[],"parameters":[],"start":1744303093006,"name":"Navigate to the login screen","stop":1744303095280},{"status":"failed","statusDetails":{"message":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n","trace":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:102:35\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:90:5","actual":"<element(s) not found>","expected":"visible"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744303095282,"name":"expect.toBeVisible","stop":1744303095655},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744303095655,"name":"expect.toBeVisible","stop":1744303095658},{"status":"failed","statusDetails":{"message":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n","trace":"Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:102:35\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:90:5","actual":"<element(s) not found>","expected":"visible"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744303095659,"name":"expect.toBeVisible","stop":1744303115663}],"attachments":[],"parameters":[],"start":1744303095280,"name":"Verify login form elements are accessible","stop":1744303115663},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"35e1825d-5741-484d-955a-0d4a4aff4643-attachment.png","type":"image/png"}],"parameters":[],"start":1744303115866,"name":"screenshot","stop":1744303115866},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"596405cb-c424-4cfc-a3ab-03ed9eeaca46-attachment.webm","type":"video/webm"}],"parameters":[],"start":1744303115867,"name":"video","stop":1744303115867},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_prompt-0","source":"258d1389-799d-42e6-9d9c-efca5a81649b-attachment","type":"text/markdown"}],"parameters":[],"start":1744303115867,"name":"_prompt-0","stop":1744303115867},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"9e6b2dcd-62d6-4d81-9f67-47393873ba23-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1744303115867,"name":"trace","stop":1744303115867},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744303115664,"stop":1744303115704},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1744303115705,"stop":1744303115705},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1744303115705,"stop":1744303115705},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1744303115782,"stop":1744303115784}],"attachments":[],"parameters":[],"name":"After Hooks","start":1744303115663,"stop":1744303115786}],"attachments":[{"name":"stdout","source":"2e22b070-e548-4ff7-96df-5a95dfcd52d8-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-3294-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1744303092894,"testCaseId":"f819597be76c239d3e98b0b0cbab2457","fullName":"LandOnSurveyPlatform.test.ts:75:5","stop":1744303115786}
+{
+  "uuid": "0cd79087-5140-4fb4-8c8b-fde7bedb06d8",
+  "name": "SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity",
+  "historyId": "f819597be76c239d3e98b0b0cbab2457:969c352bee93c662f3c6f43279ecdeef",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n",
+    "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:102:35\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:90:5",
+    "actual": "<element(s) not found>",
+    "expected": "visible"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1744303092892,
+                  "stop": 1744303092893
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1744303092892,
+              "stop": 1744303092894
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1744303092895,
+                  "stop": 1744303093006
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1744303092894,
+              "stop": 1744303093006
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1744303092891,
+          "stop": 1744303093006
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1744303092891,
+      "stop": 1744303093006
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744303093006,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+          "stop": 1744303095274
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744303095275,
+          "name": "page.title",
+          "stop": 1744303095279
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744303095280,
+          "name": "expect.toContain",
+          "stop": 1744303095280
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744303093006,
+      "name": "Navigate to the login screen",
+      "stop": 1744303095280
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n",
+        "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:102:35\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:90:5",
+        "actual": "<element(s) not found>",
+        "expected": "visible"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744303095282,
+          "name": "expect.toBeVisible",
+          "stop": 1744303095655
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744303095655,
+          "name": "expect.toBeVisible",
+          "stop": 1744303095658
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n",
+            "trace": "Error: Timed out 20000ms waiting for expect(locator).toBeVisible()\n\nLocator: locator('button[name=\"Login\"]')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for locator('button[name=\"Login\"]')\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:102:35\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:90:5",
+            "actual": "<element(s) not found>",
+            "expected": "visible"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744303095659,
+          "name": "expect.toBeVisible",
+          "stop": 1744303115663
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744303095280,
+      "name": "Verify login form elements are accessible",
+      "stop": 1744303115663
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "35e1825d-5741-484d-955a-0d4a4aff4643-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1744303115866,
+      "name": "screenshot",
+      "stop": 1744303115866
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "596405cb-c424-4cfc-a3ab-03ed9eeaca46-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1744303115867,
+      "name": "video",
+      "stop": 1744303115867
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_prompt-0",
+          "source": "258d1389-799d-42e6-9d9c-efca5a81649b-attachment",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1744303115867,
+      "name": "_prompt-0",
+      "stop": 1744303115867
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "9e6b2dcd-62d6-4d81-9f67-47393873ba23-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1744303115867,
+      "name": "trace",
+      "stop": 1744303115867
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1744303115664,
+          "stop": 1744303115704
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744303115705,
+          "stop": 1744303115705
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744303115705,
+          "stop": 1744303115705
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1744303115782,
+          "stop": 1744303115784
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1744303115663,
+      "stop": 1744303115786
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "2e22b070-e548-4ff7-96df-5a95dfcd52d8-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-3294-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1744303092894,
+  "testCaseId": "f819597be76c239d3e98b0b0cbab2457",
+  "fullName": "LandOnSurveyPlatform.test.ts:75:5",
+  "stop": 1744303115786
+}

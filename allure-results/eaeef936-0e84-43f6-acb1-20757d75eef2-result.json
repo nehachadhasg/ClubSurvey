@@ -1,1 +1,397 @@
-{"uuid":"eaeef936-0e84-43f6-acb1-20757d75eef2","name":"SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials","historyId":"5c751e7dff67804374ab9152711c3f3c:94dadec355fb24357203fcbce2c308f6","status":"failed","statusDetails":{"message":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n","trace":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:245:31"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745890289413,"stop":1745890289416}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745890289413,"stop":1745890289417},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745890289418,"stop":1745890289513}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745890289418,"stop":1745890289513}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745890289412,"stop":1745890289513}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745890289412,"stop":1745890289513},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890289513,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1745890291505},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890291506,"name":"page.title","stop":1745890291507},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890291509,"name":"locator.clear(input[placeholder=\"Insert your email address\"])","stop":1745890291840},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890291841,"name":"locator.fill(input[placeholder=\"Insert your email address\"])","stop":1745890292163}],"attachments":[],"parameters":[],"start":1745890291507,"name":"Textbox Username filled with data: 59clubqaadmin@yopmail.com","stop":1745890292163},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890292164,"name":"locator.clear(input[placeholder=\"Enter your password\"])","stop":1745890292480},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890292481,"name":"locator.fill(input[placeholder=\"Enter your password\"])","stop":1745890292792}],"attachments":[],"parameters":[],"start":1745890292163,"name":"Textbox Password filled with data: Tulip@345*","stop":1745890292793},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890292794,"name":"page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])","stop":1745890292808},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890292809,"name":"locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])","stop":1745890293141}],"attachments":[],"parameters":[],"start":1745890292793,"name":"The Sign In Button clicked","stop":1745890293142},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890293142,"name":"page.waitForTimeout","stop":1745890298161},{"status":"failed","statusDetails":{"message":"Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n","trace":"Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at ClubSurveyLogin.validateElementVisibility (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:409:29)\n    at ClubSurveyLogin (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:86:20)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:241:3"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890298162,"name":"page.waitForSelector(img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\")","stop":1745890298169},{"status":"failed","statusDetails":{"message":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n","trace":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:245:31"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745890298170,"name":"expect.toBeVisible","stop":1745890298173},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"ea079dc9-6887-4969-808e-07259e541ffb-attachment.png","type":"image/png"}],"parameters":[],"start":1745890307060,"name":"screenshot","stop":1745890307060},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"02959bc5-c244-4a82-96fb-99a6b165084f-attachment.webm","type":"video/webm"}],"parameters":[],"start":1745890307061,"name":"video","stop":1745890307061},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_prompt-0","source":"4c89c500-9a77-4fab-bc8a-08b72972b842-attachment","type":"text/markdown"}],"parameters":[],"start":1745890307061,"name":"_prompt-0","stop":1745890307061},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"e1edcc66-0a83-403a-a56b-1c34e9362ce5-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1745890307062,"name":"trace","stop":1745890307062},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1745890298174,"stop":1745890298326},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745890298326,"stop":1745890298326},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745890298326,"stop":1745890298327},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1745890298678,"stop":1745890298679}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745890298174,"stop":1745890298680}],"attachments":[{"name":"stdout","source":"e1f4dfff-d8a5-423a-8d08-80f8586a4f97-attachment.txt","type":"text/plain"},{"name":"stderr","source":"8ac6e223-a10b-4eed-906d-2c3bfb57894e-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chrome"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > chrome > LandOnSurveyPlatform.test.ts"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-74396-worker-0"},{"name":"parentSuite","value":"chrome"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745890289413,"testCaseId":"5c751e7dff67804374ab9152711c3f3c","fullName":"LandOnSurveyPlatform.test.ts:237:5","stop":1745890298679}
+{
+  "uuid": "eaeef936-0e84-43f6-acb1-20757d75eef2",
+  "name": "SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials",
+  "historyId": "5c751e7dff67804374ab9152711c3f3c:94dadec355fb24357203fcbce2c308f6",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n",
+    "trace": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:245:31"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745890289413,
+                  "stop": 1745890289416
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745890289413,
+              "stop": 1745890289417
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745890289418,
+                  "stop": 1745890289513
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745890289418,
+              "stop": 1745890289513
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745890289412,
+          "stop": 1745890289513
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745890289412,
+      "stop": 1745890289513
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890289513,
+      "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+      "stop": 1745890291505
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890291506,
+      "name": "page.title",
+      "stop": 1745890291507
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745890291509,
+          "name": "locator.clear(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745890291840
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745890291841,
+          "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745890292163
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890291507,
+      "name": "Textbox Username filled with data: 59clubqaadmin@yopmail.com",
+      "stop": 1745890292163
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745890292164,
+          "name": "locator.clear(input[placeholder=\"Enter your password\"])",
+          "stop": 1745890292480
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745890292481,
+          "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+          "stop": 1745890292792
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890292163,
+      "name": "Textbox Password filled with data: Tulip@345*",
+      "stop": 1745890292793
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745890292794,
+          "name": "page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745890292808
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745890292809,
+          "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745890293141
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890292793,
+      "name": "The Sign In Button clicked",
+      "stop": 1745890293142
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890293142,
+      "name": "page.waitForTimeout",
+      "stop": 1745890298161
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n",
+        "trace": "Error: page.waitForSelector: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at ClubSurveyLogin.validateElementVisibility (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:409:29)\n    at ClubSurveyLogin (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:86:20)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:241:3"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890298162,
+      "name": "page.waitForSelector(img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\")",
+      "stop": 1745890298169
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n",
+        "trace": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:245:31"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745890298170,
+      "name": "expect.toBeVisible",
+      "stop": 1745890298173
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "ea079dc9-6887-4969-808e-07259e541ffb-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745890307060,
+      "name": "screenshot",
+      "stop": 1745890307060
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "02959bc5-c244-4a82-96fb-99a6b165084f-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745890307061,
+      "name": "video",
+      "stop": 1745890307061
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_prompt-0",
+          "source": "4c89c500-9a77-4fab-bc8a-08b72972b842-attachment",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1745890307061,
+      "name": "_prompt-0",
+      "stop": 1745890307061
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "e1edcc66-0a83-403a-a56b-1c34e9362ce5-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745890307062,
+      "name": "trace",
+      "stop": 1745890307062
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745890298174,
+          "stop": 1745890298326
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745890298326,
+          "stop": 1745890298326
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745890298326,
+          "stop": 1745890298327
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745890298678,
+          "stop": 1745890298679
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745890298174,
+      "stop": 1745890298680
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "e1f4dfff-d8a5-423a-8d08-80f8586a4f97-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "stderr",
+      "source": "8ac6e223-a10b-4eed-906d-2c3bfb57894e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chrome" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chrome > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-74396-worker-0" },
+    { "name": "parentSuite", "value": "chrome" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745890289413,
+  "testCaseId": "5c751e7dff67804374ab9152711c3f3c",
+  "fullName": "LandOnSurveyPlatform.test.ts:237:5",
+  "stop": 1745890298679
+}

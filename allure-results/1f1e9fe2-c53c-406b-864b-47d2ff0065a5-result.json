@@ -1,0 +1,30 @@
+{
+  "uuid": "1f1e9fe2-c53c-406b-864b-47d2ff0065a5",
+  "name": "Franchise Admin role: Access Franchise Admin dashboard",
+  "historyId": "cccbc19ccda67a00739b691a10a89c6d:054ef217feb7d43c7a5deef3686f1047",
+  "status": "skipped",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "Mobile Pixel 5" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "roleBasedTests.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > Mobile Pixel 5 > roleBasedTests.test.ts > Role-Based Login Tests"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-94154-worker-0" },
+    { "name": "parentSuite", "value": "Mobile Pixel 5" },
+    { "name": "suite", "value": "roleBasedTests.test.ts" },
+    { "name": "subSuite", "value": "Role-Based Login Tests" }
+  ],
+  "links": [],
+  "start": 1745972325229,
+  "testCaseId": "cccbc19ccda67a00739b691a10a89c6d",
+  "fullName": "roleBasedTests.test.ts:12:7",
+  "stop": 1745972325229
+}

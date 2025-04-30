@@ -1,0 +1,205 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Role-Based Login Tests >> Franchise Admin role: Access Franchise Admin dashboard
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:12:7
+
+# Error details
+
+```
+Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('text=Franchise Admin Dashboard')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for locator('text=Franchise Admin Dashboard')
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:17:43
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "Small Logo":
+  - img "Small Logo"
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- button "Toggle Sidebar"
+- heading "Language" [level=1]
+- img
+- img
+- text: English (GB)
+- img
+- img
+- text: English (US)
+- img
+- text: Danish
+- img
+- text: French
+- img
+- text: German
+- img
+- text: Italian
+- img
+- text: Portuguese
+- img
+- text: Spanish
+- img
+- text: Swedish
+- img
+- text: Thai
+- img
+- text: Vietnamese
+- button "Cancel"
+- button "Confirm"
+- navigation:
+  - button "Toggle sidebar":
+    - img
+  - button "59Club Africa" [disabled]
+  - text: /
+  - button "All Groups":
+    - text: All Groups
+    - img
+  - text: /
+  - button "All Venues" [disabled]
+- button "Notifications":
+  - img
+- text: NF
+- img "Logo"
+- heading "59Club Africa" [level=1]
+- img
+- searchbox "Search..."
+- button "Filters":
+  - img
+  - text: Filters
+- img
+- img
+- img
+- text: 2 Venues 8 Surveys 0 Active Surveys 62% Avg. Participation 75% Avg. Completion
+- table:
+  - rowgroup:
+    - row "Groups Venues Active Surveys Participation Completed":
+      - cell "Groups":
+        - text: Groups
+        - img
+      - cell "Venues":
+        - text: Venues
+        - img
+      - cell "Active Surveys":
+        - text: Active Surveys
+        - img
+      - cell "Participation":
+        - text: Participation
+        - img
+        - img
+      - cell "Completed":
+        - text: Completed
+        - img
+        - img
+  - rowgroup:
+    - row "Leisure Centers Leisure Centers 1 0 30% 85%":
+      - cell "Leisure Centers Leisure Centers":
+        - img "Leisure Centers"
+        - text: Leisure Centers
+      - cell "1"
+      - cell "0"
+      - cell "30%"
+      - cell "85%"
+    - row "Ruchika Group Ruchika Group 1 0 15% 13%":
+      - cell "Ruchika Group Ruchika Group":
+        - img "Ruchika Group"
+        - text: Ruchika Group
+      - cell "1"
+      - cell "0"
+      - cell "15%"
+      - cell "13%"
+    - row "test ddd test ddd 0 0 37% 60%":
+      - cell "test ddd test ddd":
+        - img "test ddd"
+        - text: test ddd
+      - cell "0"
+      - cell "0"
+      - cell "37%"
+      - cell "60%"
+- text: Show
+- combobox: "3"
+- text: of 3 groups
+- button [disabled]:
+  - img
+- button "01"
+- button [disabled]:
+  - img
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '../../fixtures/fixture'; // Import the custom test with fixtures
+   2 |
+   3 | test.describe('Role-Based Login Tests', () => {
+   4 |   test('Super Admin role: Access Super Admin dashboard', async ({ loginAsRole }) => {
+   5 |     const page = await loginAsRole('SUPER_ADMIN');
+   6 |
+   7 |     // Assert that the Super Admin dashboard is visible
+   8 |     const superAdminDashboard = page.locator('text=Super Admin Dashboard');
+   9 |     await expect(superAdminDashboard).toBeVisible();
+  10 |   });
+  11 |
+  12 |   test('Franchise Admin role: Access Franchise Admin dashboard', async ({ loginAsRole }) => {
+  13 |     const page = await loginAsRole('FRANCHISE_ADMIN');
+  14 |
+  15 |     // Assert that the Franchise Admin dashboard is visible
+  16 |     const franchiseAdminDashboard = page.locator('text=Franchise Admin Dashboard');
+> 17 |     await expect(franchiseAdminDashboard).toBeVisible();
+     |                                           ^ Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+  18 |   });
+  19 |
+  20 |   test('Group Admin role: Access Group Admin dashboard', async ({ loginAsRole }) => {
+  21 |     const page = await loginAsRole('GROUP_ADMIN');
+  22 |
+  23 |     // Assert that the Group Admin dashboard is visible
+  24 |     const groupAdminDashboard = page.locator('text=Group Admin Dashboard');
+  25 |     await expect(groupAdminDashboard).toBeVisible();
+  26 |   });
+  27 |
+  28 |   test('Venue Admin role: Access Venue Admin dashboard', async ({ loginAsRole }) => {
+  29 |     const page = await loginAsRole('VENUE_ADMIN');
+  30 |
+  31 |     // Assert that the Venue Admin dashboard is visible
+  32 |     const venueAdminDashboard = page.locator('text=Venue Admin Dashboard');
+  33 |     await expect(venueAdminDashboard).toBeVisible();
+  34 |   });
+  35 | });
+```

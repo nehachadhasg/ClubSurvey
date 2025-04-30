@@ -1,1 +1,347 @@
-{"uuid":"87f24f7f-cddb-4157-b4fc-f30755ef266d","name":"SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity","historyId":"f819597be76c239d3e98b0b0cbab2457:969c352bee93c662f3c6f43279ecdeef","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1744305022398,"stop":1744305022400}],"attachments":[],"parameters":[],"name":"fixture: context","start":1744305022398,"stop":1744305022401},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1744305022401,"stop":1744305022501}],"attachments":[],"parameters":[],"name":"fixture: page","start":1744305022401,"stop":1744305022501}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1744305022397,"stop":1744305022501}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1744305022397,"stop":1744305022502},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305022502,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1744305024948},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305024949,"name":"page.title","stop":1744305024952},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305024953,"name":"expect.toContain","stop":1744305024953}],"attachments":[],"parameters":[],"start":1744305022502,"name":"Navigate to the login screen","stop":1744305024953},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305024954,"name":"expect.toBeVisible","stop":1744305025350},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305025351,"name":"expect.toBeVisible","stop":1744305025354},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305025354,"name":"expect.toBeVisible","stop":1744305025357}],"attachments":[],"parameters":[],"start":1744305024953,"name":"Verify login form elements are accessible","stop":1744305025357},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305025357,"name":"expect.toBeVisible","stop":1744305025360}],"attachments":[],"parameters":[],"start":1744305025357,"name":"Verify 'Remember Me' checkbox is accessible","stop":1744305025360},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744305025361,"name":"expect.toBeVisible","stop":1744305025363}],"attachments":[],"parameters":[],"start":1744305025360,"name":"Verify 'Forgot Password' link is accessible","stop":1744305025363},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"786c636c-dd4f-4d65-accc-ec40af10beaa-attachment.png","type":"image/png"}],"parameters":[],"start":1744305025421,"name":"screenshot","stop":1744305025421},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"18ac6a41-561a-4f12-97bc-46443f1c1054-attachment.webm","type":"video/webm"}],"parameters":[],"start":1744305025421,"name":"video","stop":1744305025421},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"40116330-30d5-478a-9f33-109ddc1cc0c9-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1744305025421,"name":"trace","stop":1744305025421},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744305025364,"stop":1744305025386},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1744305025387,"stop":1744305025387},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1744305025387,"stop":1744305025387},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1744305025407,"stop":1744305025408}],"attachments":[],"parameters":[],"name":"After Hooks","start":1744305025363,"stop":1744305025408}],"attachments":[{"name":"stdout","source":"cfb474e4-dfee-4ab2-ab16-837b19f8695c-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-5336-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1744305022400,"testCaseId":"f819597be76c239d3e98b0b0cbab2457","fullName":"LandOnSurveyPlatform.test.ts:75:5","stop":1744305025409}
+{
+  "uuid": "87f24f7f-cddb-4157-b4fc-f30755ef266d",
+  "name": "SANITY-CLUB59-LOGIN-TC03:Validate login form is accessible--@sanity",
+  "historyId": "f819597be76c239d3e98b0b0cbab2457:969c352bee93c662f3c6f43279ecdeef",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1744305022398,
+                  "stop": 1744305022400
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1744305022398,
+              "stop": 1744305022401
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1744305022401,
+                  "stop": 1744305022501
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1744305022401,
+              "stop": 1744305022501
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1744305022397,
+          "stop": 1744305022501
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1744305022397,
+      "stop": 1744305022502
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305022502,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+          "stop": 1744305024948
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305024949,
+          "name": "page.title",
+          "stop": 1744305024952
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305024953,
+          "name": "expect.toContain",
+          "stop": 1744305024953
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744305022502,
+      "name": "Navigate to the login screen",
+      "stop": 1744305024953
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305024954,
+          "name": "expect.toBeVisible",
+          "stop": 1744305025350
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305025351,
+          "name": "expect.toBeVisible",
+          "stop": 1744305025354
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305025354,
+          "name": "expect.toBeVisible",
+          "stop": 1744305025357
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744305024953,
+      "name": "Verify login form elements are accessible",
+      "stop": 1744305025357
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305025357,
+          "name": "expect.toBeVisible",
+          "stop": 1744305025360
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744305025357,
+      "name": "Verify 'Remember Me' checkbox is accessible",
+      "stop": 1744305025360
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744305025361,
+          "name": "expect.toBeVisible",
+          "stop": 1744305025363
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744305025360,
+      "name": "Verify 'Forgot Password' link is accessible",
+      "stop": 1744305025363
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "786c636c-dd4f-4d65-accc-ec40af10beaa-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1744305025421,
+      "name": "screenshot",
+      "stop": 1744305025421
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "18ac6a41-561a-4f12-97bc-46443f1c1054-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1744305025421,
+      "name": "video",
+      "stop": 1744305025421
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "40116330-30d5-478a-9f33-109ddc1cc0c9-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1744305025421,
+      "name": "trace",
+      "stop": 1744305025421
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1744305025364,
+          "stop": 1744305025386
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744305025387,
+          "stop": 1744305025387
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744305025387,
+          "stop": 1744305025387
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1744305025407,
+          "stop": 1744305025408
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1744305025363,
+      "stop": 1744305025408
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "cfb474e4-dfee-4ab2-ab16-837b19f8695c-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-5336-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1744305022400,
+  "testCaseId": "f819597be76c239d3e98b0b0cbab2457",
+  "fullName": "LandOnSurveyPlatform.test.ts:75:5",
+  "stop": 1744305025409
+}

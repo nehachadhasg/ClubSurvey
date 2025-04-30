@@ -1,1 +1,340 @@
-{"uuid":"262a32ad-2b9a-4bca-a6b4-1721f26ce7e2","name":"E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke","historyId":"4cb03a26f37f7855de98357e7d0843f7:969c352bee93c662f3c6f43279ecdeef","status":"failed","statusDetails":{"message":"Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:97:46\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:9)"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1744207230359,"stop":1744207230361}],"attachments":[],"parameters":[],"name":"fixture: context","start":1744207230359,"stop":1744207230362},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1744207230363,"stop":1744207230492}],"attachments":[],"parameters":[],"name":"fixture: page","start":1744207230362,"stop":1744207230492}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1744207230358,"stop":1744207230492}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1744207230358,"stop":1744207230493},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207230493,"name":"page.goto(https://qa.survey.59club.studiographene.xyz)","stop":1744207230856},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207230856,"name":"page.title","stop":1744207230859},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207230859,"name":"expect.toContain","stop":1744207230860}],"attachments":[],"parameters":[],"start":1744207230493,"name":"Navigate to the login screen","stop":1744207230860},{"statusDetails":{},"stage":"running","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207230860,"name":"page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744207231194},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207231194,"name":"locator.isVisible(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744207231209},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:97:46\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:9)"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207231211,"name":"page.waitForSelector(div[role=\"dialog\"][data-state=\"open\"])","stop":1744207231562}],"attachments":[],"parameters":[],"start":1744207231210,"name":"page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744207231236},{"status":"failed","statusDetails":{"message":"Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n","trace":"Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:97:46\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:9)"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744207231236,"name":"locator.click(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])","stop":1744207231256}],"attachments":[],"parameters":[],"start":1744207231210,"name":"The Contact Us Button Button clicked","stop":1744207231256},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"c009498b-09ac-432e-87b7-748c2f9a4eb8-attachment.png","type":"image/png"}],"parameters":[],"start":1744207231310,"name":"screenshot","stop":1744207231310},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_prompt-0","source":"2f7c9578-b548-40c1-af37-544e66dd68aa-attachment","type":"text/markdown"}],"parameters":[],"start":1744207231310,"name":"_prompt-0","stop":1744207231310},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"f6ebc56b-8d68-4845-bfb3-682f611d37e1-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1744207231310,"name":"trace","stop":1744207231310}],"attachments":[{"name":"stdout","source":"d7edaeba-32b2-4f0d-abbf-e7e9ba53cce6-attachment.txt","type":"text/plain"},{"name":"stderr","source":"e082cb3e-ab29-4744-9f84-d92c8e4f19f9-attachment.txt","type":"text/plain"}],"parameters":[],"start":1744207230860,"name":"Verify contactus modal via the contact us button"},{"status":"failed","statusDetails":{"message":"Tearing down \"context\" exceeded the test timeout of 550000ms.","trace":"Tearing down \"context\" exceeded the test timeout of 550000ms."},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744207231211,"stop":1744207231237},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1744207231238,"stop":1744207231238},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1744207231238,"stop":1744207231238}],"attachments":[],"parameters":[],"name":"After Hooks","start":1744207231211,"stop":1744207231259}],"attachments":[],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"smoke"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-49452-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1744207230365,"testCaseId":"4cb03a26f37f7855de98357e7d0843f7","fullName":"LandOnSurveyPlatform.test.ts:47:9","stop":1744207231263}
+{
+  "uuid": "262a32ad-2b9a-4bca-a6b4-1721f26ce7e2",
+  "name": "E2E-CLUB59-31-TC02: Verify Contact Us button opens the Contact Us modal @smoke",
+  "historyId": "4cb03a26f37f7855de98357e7d0843f7:969c352bee93c662f3c6f43279ecdeef",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n",
+    "trace": "Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:97:46\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:9)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1744207230359,
+                  "stop": 1744207230361
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1744207230359,
+              "stop": 1744207230362
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1744207230363,
+                  "stop": 1744207230492
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1744207230362,
+              "stop": 1744207230492
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1744207230358,
+          "stop": 1744207230492
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1744207230358,
+      "stop": 1744207230493
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744207230493,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz)",
+          "stop": 1744207230856
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744207230856,
+          "name": "page.title",
+          "stop": 1744207230859
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744207230859,
+          "name": "expect.toContain",
+          "stop": 1744207230860
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744207230493,
+      "name": "Navigate to the login screen",
+      "stop": 1744207230860
+    },
+    {
+      "statusDetails": {},
+      "stage": "running",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744207230860,
+          "name": "page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1744207231194
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744207231194,
+          "name": "locator.isVisible(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1744207231209
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n",
+            "trace": "Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:97:46\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:9)"
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "start": 1744207231211,
+                  "name": "page.waitForSelector(div[role=\"dialog\"][data-state=\"open\"])",
+                  "stop": 1744207231562
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "start": 1744207231210,
+              "name": "page.waitForSelector(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+              "stop": 1744207231236
+            },
+            {
+              "status": "failed",
+              "statusDetails": {
+                "message": "Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n",
+                "trace": "Error: locator.click: Test ended.\nCall log:\n  - waiting for locator('button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"]')\n    - locator resolved to <button class=\"border border-transparent inline-flex items-center justify-center [&+svg]:transition-all transition-all rounded-sm outline-none width-max-content bg-lime typography-body-1-bold pl-[14px] pr-[35px] pt-[3px] h-[40px] min-w-[123px] hover:bg-greyscale-200 border-b-2 border-transparent !py-[12px] !text-greyscale-1000 hover:!bg-greyscale-200\">Contact us</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:97:46\n    at ClubSurveyLogin.click (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:95:9)"
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1744207231236,
+              "name": "locator.click(button[class*=\"inline-flex\"][class*=\"bg-lime\"][class*=\"typography-body-1-bold\"])",
+              "stop": 1744207231256
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744207231210,
+          "name": "The Contact Us Button Button clicked",
+          "stop": 1744207231256
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "screenshot",
+              "source": "c009498b-09ac-432e-87b7-748c2f9a4eb8-attachment.png",
+              "type": "image/png"
+            }
+          ],
+          "parameters": [],
+          "start": 1744207231310,
+          "name": "screenshot",
+          "stop": 1744207231310
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "_prompt-0",
+              "source": "2f7c9578-b548-40c1-af37-544e66dd68aa-attachment",
+              "type": "text/markdown"
+            }
+          ],
+          "parameters": [],
+          "start": 1744207231310,
+          "name": "_prompt-0",
+          "stop": 1744207231310
+        },
+        {
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [
+            {
+              "name": "trace",
+              "source": "f6ebc56b-8d68-4845-bfb3-682f611d37e1-attachment.zip",
+              "type": "application/vnd.allure.playwright-trace"
+            }
+          ],
+          "parameters": [],
+          "start": 1744207231310,
+          "name": "trace",
+          "stop": 1744207231310
+        }
+      ],
+      "attachments": [
+        {
+          "name": "stdout",
+          "source": "d7edaeba-32b2-4f0d-abbf-e7e9ba53cce6-attachment.txt",
+          "type": "text/plain"
+        },
+        {
+          "name": "stderr",
+          "source": "e082cb3e-ab29-4744-9f84-d92c8e4f19f9-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1744207230860,
+      "name": "Verify contactus modal via the contact us button"
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Tearing down \"context\" exceeded the test timeout of 550000ms.",
+        "trace": "Tearing down \"context\" exceeded the test timeout of 550000ms."
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1744207231211,
+          "stop": 1744207231237
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744207231238,
+          "stop": 1744207231238
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744207231238,
+          "stop": 1744207231238
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1744207231211,
+      "stop": 1744207231259
+    }
+  ],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "smoke" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-49452-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1744207230365,
+  "testCaseId": "4cb03a26f37f7855de98357e7d0843f7",
+  "fullName": "LandOnSurveyPlatform.test.ts:47:9",
+  "stop": 1744207231263
+}

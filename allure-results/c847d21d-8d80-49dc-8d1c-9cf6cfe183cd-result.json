@@ -1,0 +1,30 @@
+{
+  "uuid": "c847d21d-8d80-49dc-8d1c-9cf6cfe183cd",
+  "name": "Venue Admin role: Access Venue Admin dashboard",
+  "historyId": "f77830bf27ec0583775a409836c921b7:94dadec355fb24357203fcbce2c308f6",
+  "status": "skipped",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "Project", "value": "chrome" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "roleBasedTests.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chrome > roleBasedTests.test.ts > Role-Based Login Tests"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-94154-worker-0" },
+    { "name": "parentSuite", "value": "chrome" },
+    { "name": "suite", "value": "roleBasedTests.test.ts" },
+    { "name": "subSuite", "value": "Role-Based Login Tests" }
+  ],
+  "links": [],
+  "start": 1745972325227,
+  "testCaseId": "f77830bf27ec0583775a409836c921b7",
+  "fullName": "roleBasedTests.test.ts:28:7",
+  "stop": 1745972325227
+}

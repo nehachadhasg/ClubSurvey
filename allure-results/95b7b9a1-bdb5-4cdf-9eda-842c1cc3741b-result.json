@@ -1,1 +1,357 @@
-{"uuid":"95b7b9a1-bdb5-4cdf-9eda-842c1cc3741b","name":"SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity","historyId":"d3968715773cc046799798b1a5422d57:969c352bee93c662f3c6f43279ecdeef","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745882459082,"stop":1745882459084}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745882459082,"stop":1745882459085},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745882459085,"stop":1745882459192}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745882459085,"stop":1745882459192}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745882459082,"stop":1745882459193}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745882459081,"stop":1745882459193},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459193,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1745882459578},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459578,"name":"page.title","stop":1745882459584},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459585,"name":"expect.toContain","stop":1745882459586}],"attachments":[],"parameters":[],"start":1745882459193,"name":"Navigate to the login screen","stop":1745882459586},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459587,"name":"expect.toBeVisible","stop":1745882459703},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459703,"name":"locator.fill(input[placeholder=\"Insert your email address\"])","stop":1745882459780},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459781,"name":"expect.toBeVisible","stop":1745882459783},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459783,"name":"locator.fill(input[placeholder=\"Enter your password\"])","stop":1745882459792},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459792,"name":"expect.toBeVisible","stop":1745882459795},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459795,"name":"locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])","stop":1745882459847}],"attachments":[],"parameters":[],"start":1745882459586,"name":"Verify login form elements are accessible","stop":1745882459848},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745882459848,"name":"expect.toBeVisible","stop":1745882461724}],"attachments":[],"parameters":[],"start":1745882459848,"name":"Verify 'My Profile' button is accessible","stop":1745882461724},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"8e2fcbb1-99e4-4b0d-a6cc-11354a207798-attachment.png","type":"image/png"}],"parameters":[],"start":1745882462047,"name":"screenshot","stop":1745882462047},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"fd6d22a6-4bab-4aca-aef2-aaed5a82d9f3-attachment.webm","type":"video/webm"}],"parameters":[],"start":1745882462048,"name":"video","stop":1745882462048},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"ed153400-120e-42aa-821b-d187cfd33e5d-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1745882462049,"name":"trace","stop":1745882462049},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1745882461725,"stop":1745882461764},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745882461764,"stop":1745882461764},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745882461765,"stop":1745882461765},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1745882461910,"stop":1745882461911}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745882461724,"stop":1745882461911}],"attachments":[{"name":"stdout","source":"260230bd-03b3-496f-8705-8f995b856b46-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"safari"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > safari > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-64607-worker-0"},{"name":"parentSuite","value":"safari"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745882459083,"testCaseId":"d3968715773cc046799798b1a5422d57","fullName":"LandOnSurveyPlatform.test.ts:194:5","stop":1745882461911}
+{
+  "uuid": "95b7b9a1-bdb5-4cdf-9eda-842c1cc3741b",
+  "name": "SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity",
+  "historyId": "d3968715773cc046799798b1a5422d57:969c352bee93c662f3c6f43279ecdeef",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745882459082,
+                  "stop": 1745882459084
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745882459082,
+              "stop": 1745882459085
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745882459085,
+                  "stop": 1745882459192
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745882459085,
+              "stop": 1745882459192
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745882459082,
+          "stop": 1745882459193
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745882459081,
+      "stop": 1745882459193
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459193,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+          "stop": 1745882459578
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459578,
+          "name": "page.title",
+          "stop": 1745882459584
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459585,
+          "name": "expect.toContain",
+          "stop": 1745882459586
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745882459193,
+      "name": "Navigate to the login screen",
+      "stop": 1745882459586
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459587,
+          "name": "expect.toBeVisible",
+          "stop": 1745882459703
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459703,
+          "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745882459780
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459781,
+          "name": "expect.toBeVisible",
+          "stop": 1745882459783
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459783,
+          "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+          "stop": 1745882459792
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459792,
+          "name": "expect.toBeVisible",
+          "stop": 1745882459795
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459795,
+          "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745882459847
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745882459586,
+      "name": "Verify login form elements are accessible",
+      "stop": 1745882459848
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745882459848,
+          "name": "expect.toBeVisible",
+          "stop": 1745882461724
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745882459848,
+      "name": "Verify 'My Profile' button is accessible",
+      "stop": 1745882461724
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "8e2fcbb1-99e4-4b0d-a6cc-11354a207798-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745882462047,
+      "name": "screenshot",
+      "stop": 1745882462047
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "fd6d22a6-4bab-4aca-aef2-aaed5a82d9f3-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745882462048,
+      "name": "video",
+      "stop": 1745882462048
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "ed153400-120e-42aa-821b-d187cfd33e5d-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745882462049,
+      "name": "trace",
+      "stop": 1745882462049
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745882461725,
+          "stop": 1745882461764
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745882461764,
+          "stop": 1745882461764
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745882461765,
+          "stop": 1745882461765
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745882461910,
+          "stop": 1745882461911
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745882461724,
+      "stop": 1745882461911
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "260230bd-03b3-496f-8705-8f995b856b46-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "safari" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > safari > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-64607-worker-0" },
+    { "name": "parentSuite", "value": "safari" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745882459083,
+  "testCaseId": "d3968715773cc046799798b1a5422d57",
+  "fullName": "LandOnSurveyPlatform.test.ts:194:5",
+  "stop": 1745882461911
+}

@@ -1,0 +1,415 @@
+{
+  "uuid": "9696412e-4472-4ae3-b99d-700df722dc53",
+  "name": "Venue Admin role: Access Venue Admin dashboard",
+  "historyId": "f77830bf27ec0583775a409836c921b7:054ef217feb7d43c7a5deef3686f1047",
+  "status": "broken",
+  "statusDetails": {
+    "message": "Test timeout of 50000ms exceeded.",
+    "trace": "Test timeout of 50000ms exceeded."
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserType.launch",
+              "start": 1745971898470,
+              "stop": 1745971898879
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: browser",
+          "start": 1745971898465,
+          "stop": 1745971898879
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browser.newContext",
+              "start": 1745971898882,
+              "stop": 1745971898892
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745971898880,
+          "stop": 1745971898900
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "browserContext.newPage",
+              "start": 1745971898901,
+              "stop": 1745971899124
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745971898900,
+          "stop": 1745971899124
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loginAsRole",
+          "start": 1745971899124,
+          "stop": 1745971899124
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745971898400,
+      "stop": 1745971899124
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971899129,
+      "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+      "stop": 1745971899743
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971899744,
+      "name": "page.title",
+      "stop": 1745971899747
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971899746,
+          "name": "locator.clear(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745971899787
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971899787,
+          "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+          "stop": 1745971899796
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971899745,
+      "name": "Textbox Username filled with data: nehava@yopmail.com",
+      "stop": 1745971899796
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971899797,
+          "name": "locator.clear(input[placeholder=\"Enter your password\"])",
+          "stop": 1745971899847
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971899848,
+          "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+          "stop": 1745971899853
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971899796,
+      "name": "Textbox Password filled with data: Club59@123",
+      "stop": 1745971899853
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971899854,
+          "name": "page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745971899865
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1745971899865,
+          "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1745971899907
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971899853,
+      "name": "The Sign In Button clicked",
+      "stop": 1745971899907
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971899908,
+      "name": "page.waitForTimeout",
+      "stop": 1745971909927
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: page.waitForSelector: Test timeout of 50000ms exceeded.\nCall log:\n  - waiting for locator('img[alt=\"Small Logo\"]')\n",
+        "trace": "Error: page.waitForSelector: Test timeout of 50000ms exceeded.\nCall log:\n  - waiting for locator('img[alt=\"Small Logo\"]')\n\n    at ClubSurveyLogin.validateElementVisibility (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:409:29)\n    at ClubSurveyLogin (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:73:20)\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/fixtures/fixture.ts:32:7\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:29:18"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745971909929,
+      "name": "page.waitForSelector(img[alt=\"Small Logo\"])",
+      "stop": 1745971949059
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "f940c9f4-2645-4059-a9dc-2f52838ed44e-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971949704,
+      "name": "screenshot",
+      "stop": 1745971949704
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "7a15c4ba-176f-4d6b-a4fc-f124b243d90b-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971949708,
+      "name": "video",
+      "stop": 1745971949708
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "2f13363d-c1f3-424c-9951-a8feade5cdd5-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1745971949708,
+      "name": "trace",
+      "stop": 1745971949708
+    },
+    {
+      "status": "failed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1745971948824,
+          "stop": 1745971948964
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loginAsRole",
+          "start": 1745971948966,
+          "stop": 1745971948966
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745971948966,
+          "stop": 1745971948966
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745971948966,
+          "stop": 1745971948966
+        },
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: expect.toBeVisible: Target page, context or browser has been closed",
+            "trace": "Error: expect.toBeVisible: Target page, context or browser has been closed\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:33:39"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "expect.toBeVisible",
+          "start": 1745971949061,
+          "stop": 1745971949066
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1745971949553,
+          "stop": 1745971949554
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745971948823,
+      "stop": 1745971949555
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "fcf1aa4c-c8c2-4805-a812-9ae121150a4b-attachment.txt",
+      "type": "text/plain"
+    },
+    {
+      "name": "stderr",
+      "source": "dddfc880-fa2e-47db-bf04-d4efb1b8e1c3-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "Mobile Pixel 5" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "roleBasedTests.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > Mobile Pixel 5 > roleBasedTests.test.ts > Role-Based Login Tests"
+    },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-92986-worker-0" },
+    { "name": "parentSuite", "value": "Mobile Pixel 5" },
+    { "name": "suite", "value": "roleBasedTests.test.ts" },
+    { "name": "subSuite", "value": "Role-Based Login Tests" }
+  ],
+  "links": [],
+  "start": 1745971898471,
+  "testCaseId": "f77830bf27ec0583775a409836c921b7",
+  "fullName": "roleBasedTests.test.ts:28:7",
+  "stop": 1745971949203
+}

@@ -1,0 +1,277 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Role-Based Login Tests >> Venue Admin role: Access Venue Admin dashboard
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:28:7
+
+# Error details
+
+```
+Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+
+Locator: locator('text=Venue Admin Dashboard')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 20000ms
+  - waiting for locator('text=Venue Admin Dashboard')
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/roleBasedTests.test.ts:33:39
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "Small Logo":
+  - img "Small Logo"
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- button "Toggle Sidebar"
+- heading "Language" [level=1]
+- img
+- img
+- text: English (GB)
+- img
+- img
+- text: English (US)
+- img
+- text: Danish
+- img
+- text: French
+- img
+- text: German
+- img
+- text: Italian
+- img
+- text: Portuguese
+- img
+- text: Spanish
+- img
+- text: Swedish
+- img
+- text: Thai
+- img
+- text: Vietnamese
+- button "Cancel"
+- button "Confirm"
+- navigation:
+  - button "Toggle sidebar":
+    - img
+  - button "Delhi Golf Club" [disabled]
+- button "Notifications":
+  - img
+- text: NV
+- heading "Delhi Golf Club" [level=1]
+- img
+- searchbox "Search..."
+- button "Filters":
+  - img
+  - text: Filters
+- button "Add Survey"
+- img
+- img
+- img
+- text: 7 Surveys 0 Active Surveys 62% Avg. Participation 75% Avg. Completion 83% Avg. Score Single Rolling (Single) Rolling (Series)
+- table:
+  - rowgroup:
+    - row "Survey Name Created Date End Date Mailed Participation Completed Score Status":
+      - cell "Survey Name":
+        - text: Survey Name
+        - img
+      - cell "Created Date":
+        - text: Created Date
+        - img
+      - cell "End Date":
+        - text: End Date
+        - img
+      - cell "Mailed":
+        - text: Mailed
+        - img
+        - img
+      - cell "Participation":
+        - text: Participation
+        - img
+        - img
+      - cell "Completed":
+        - text: Completed
+        - img
+        - img
+      - cell "Score":
+        - text: Score
+        - img
+      - cell "Status":
+        - text: Status
+        - img
+      - cell
+  - rowgroup:
+    - row "Survey Golf Course Experience Feedback - - 87% 87% 57% 80% draft":
+      - cell "Survey Golf Course Experience Feedback":
+        - img "Survey"
+        - text: Golf Course Experience Feedback
+      - cell "-"
+      - cell "-"
+      - cell "87%"
+      - cell "87%"
+      - cell "57%"
+      - cell "80%"
+      - cell "draft"
+      - cell:
+        - img
+    - row "Survey Media Upload Test - - 10% 10% 29% 33% draft":
+      - cell "Survey Media Upload Test":
+        - img "Survey"
+        - text: Media Upload Test
+      - cell "-"
+      - cell "-"
+      - cell "10%"
+      - cell "10%"
+      - cell "29%"
+      - cell "33%"
+      - cell "draft"
+      - cell:
+        - img
+    - row "Survey Sanity Testing - - 51% 51% 79% 97% draft":
+      - cell "Survey Sanity Testing":
+        - img "Survey"
+        - text: Sanity Testing
+      - cell "-"
+      - cell "-"
+      - cell "51%"
+      - cell "51%"
+      - cell "79%"
+      - cell "97%"
+      - cell "draft"
+      - cell:
+        - img
+    - row "Survey Untitled Survey - - 74% 74% 87% 46% draft":
+      - cell "Survey Untitled Survey":
+        - img "Survey"
+        - text: Untitled Survey
+      - cell "-"
+      - cell "-"
+      - cell "74%"
+      - cell "74%"
+      - cell "87%"
+      - cell "46%"
+      - cell "draft"
+      - cell:
+        - img
+    - row "Survey RedHat - - 34% 34% 21% 32% draft":
+      - cell "Survey RedHat":
+        - img "Survey"
+        - text: RedHat
+      - cell "-"
+      - cell "-"
+      - cell "34%"
+      - cell "34%"
+      - cell "21%"
+      - cell "32%"
+      - cell "draft"
+      - cell:
+        - img
+    - row "Survey Untitled Survey - - 37% 37% 32% 63% draft":
+      - cell "Survey Untitled Survey":
+        - img "Survey"
+        - text: Untitled Survey
+      - cell "-"
+      - cell "-"
+      - cell "37%"
+      - cell "37%"
+      - cell "32%"
+      - cell "63%"
+      - cell "draft"
+      - cell:
+        - img
+    - row "Survey test14april - - 21% 21% 45% 93% draft":
+      - cell "Survey test14april":
+        - img "Survey"
+        - text: test14april
+      - cell "-"
+      - cell "-"
+      - cell "21%"
+      - cell "21%"
+      - cell "45%"
+      - cell "93%"
+      - cell "draft"
+      - cell:
+        - img
+- text: Show
+- combobox: "7"
+- text: of 7 surveys
+- button [disabled]:
+  - img
+- button "01"
+- button [disabled]:
+  - img
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '../../fixtures/fixture'; // Import the custom test with fixtures
+   2 |
+   3 | test.describe('Role-Based Login Tests', () => {
+   4 |   test('Super Admin role: Access Super Admin dashboard', async ({ loginAsRole }) => {
+   5 |     const page = await loginAsRole('SUPER_ADMIN');
+   6 |
+   7 |     // Assert that the Super Admin dashboard is visible
+   8 |     const superAdminDashboard = page.locator('text=Super Admin Dashboard');
+   9 |     await expect(superAdminDashboard).toBeVisible();
+  10 |   });
+  11 |
+  12 |   test('Franchise Admin role: Access Franchise Admin dashboard', async ({ loginAsRole }) => {
+  13 |     const page = await loginAsRole('FRANCHISE_ADMIN');
+  14 |
+  15 |     // Assert that the Franchise Admin dashboard is visible
+  16 |     const franchiseAdminDashboard = page.locator('text=Franchise Admin Dashboard');
+  17 |     await expect(franchiseAdminDashboard).toBeVisible();
+  18 |   });
+  19 |
+  20 |   test('Group Admin role: Access Group Admin dashboard', async ({ loginAsRole }) => {
+  21 |     const page = await loginAsRole('GROUP_ADMIN');
+  22 |
+  23 |     // Assert that the Group Admin dashboard is visible
+  24 |     const groupAdminDashboard = page.locator('text=Group Admin Dashboard');
+  25 |     await expect(groupAdminDashboard).toBeVisible();
+  26 |   });
+  27 |
+  28 |   test('Venue Admin role: Access Venue Admin dashboard', async ({ loginAsRole }) => {
+  29 |     const page = await loginAsRole('VENUE_ADMIN');
+  30 |
+  31 |     // Assert that the Venue Admin dashboard is visible
+  32 |     const venueAdminDashboard = page.locator('text=Venue Admin Dashboard');
+> 33 |     await expect(venueAdminDashboard).toBeVisible();
+     |                                       ^ Error: Timed out 20000ms waiting for expect(locator).toBeVisible()
+  34 |   });
+  35 | });
+```

@@ -1,1 +1,382 @@
-{"uuid":"26a98907-36cb-477e-996b-52b54b9b5868","name":"SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity","historyId":"d3968715773cc046799798b1a5422d57:94dadec355fb24357203fcbce2c308f6","status":"failed","statusDetails":{"message":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n","trace":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:232:37\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16"},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1744308829601,"stop":1744308829604}],"attachments":[],"parameters":[],"name":"fixture: context","start":1744308829601,"stop":1744308829605},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1744308829605,"stop":1744308829701}],"attachments":[],"parameters":[],"name":"fixture: page","start":1744308829605,"stop":1744308829701}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1744308829600,"stop":1744308829701}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1744308829600,"stop":1744308829701},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308829703,"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","stop":1744308831261},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831261,"name":"page.title","stop":1744308831262},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831263,"name":"expect.toContain","stop":1744308831264}],"attachments":[],"parameters":[],"start":1744308829702,"name":"Navigate to the login screen","stop":1744308831263},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831264,"name":"expect.toBeVisible","stop":1744308831278},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831280,"name":"locator.fill(input[placeholder=\"Insert your email address\"])","stop":1744308831591},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831592,"name":"expect.toBeVisible","stop":1744308831598},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831599,"name":"locator.fill(input[placeholder=\"Enter your password\"])","stop":1744308831960},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831962,"name":"expect.toBeVisible","stop":1744308831968},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308831969,"name":"locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])","stop":1744308832315}],"attachments":[],"parameters":[],"start":1744308831263,"name":"Verify login form elements are accessible","stop":1744308832315},{"status":"failed","statusDetails":{"message":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n","trace":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:232:37\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16"},"stage":"finished","steps":[{"status":"failed","statusDetails":{"message":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n","trace":"Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:232:37\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1744308832316,"name":"expect.toBeVisible","stop":1744308832321}],"attachments":[],"parameters":[],"start":1744308832316,"name":"Verify login was successful","stop":1744308832321},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"screenshot","source":"029db7fa-f6d5-45b3-8a59-ac4d83b3bd73-attachment.png","type":"image/png"}],"parameters":[],"start":1744308832643,"name":"screenshot","stop":1744308832643},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"video","source":"c1728ea5-e1a6-478e-8692-1f3d7a81006d-attachment.webm","type":"video/webm"}],"parameters":[],"start":1744308832643,"name":"video","stop":1744308832643},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"_prompt-0","source":"6c50c28f-6e9a-44e2-974e-2d95195aa807-attachment","type":"text/markdown"}],"parameters":[],"start":1744308832644,"name":"_prompt-0","stop":1744308832644},{"statusDetails":{},"stage":"finished","steps":[],"attachments":[{"name":"trace","source":"7fa5f14a-6cee-4424-a9e8-ced90c6e08f5-attachment.zip","type":"application/vnd.allure.playwright-trace"}],"parameters":[],"start":1744308832644,"name":"trace","stop":1744308832644},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.screenshot","start":1744308832322,"stop":1744308832454},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1744308832454,"stop":1744308832454},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1744308832454,"stop":1744308832454},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"video.saveAs","start":1744308832502,"stop":1744308832502}],"attachments":[],"parameters":[],"name":"After Hooks","start":1744308832321,"stop":1744308832504}],"attachments":[{"name":"stdout","source":"56ef2899-5447-4761-b015-e99e81297741-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"chrome"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > chrome > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-8404-worker-0"},{"name":"parentSuite","value":"chrome"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1744308829603,"testCaseId":"d3968715773cc046799798b1a5422d57","fullName":"LandOnSurveyPlatform.test.ts:194:5","stop":1744308832504}
+{
+  "uuid": "26a98907-36cb-477e-996b-52b54b9b5868",
+  "name": "SANITY-CLUB59-LOGIN-TC04:Validate login with valid credentials--@sanity",
+  "historyId": "d3968715773cc046799798b1a5422d57:94dadec355fb24357203fcbce2c308f6",
+  "status": "failed",
+  "statusDetails": {
+    "message": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n",
+    "trace": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:232:37\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1744308829601,
+                  "stop": 1744308829604
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1744308829601,
+              "stop": 1744308829605
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1744308829605,
+                  "stop": 1744308829701
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1744308829605,
+              "stop": 1744308829701
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1744308829600,
+          "stop": 1744308829701
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1744308829600,
+      "stop": 1744308829701
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308829703,
+          "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+          "stop": 1744308831261
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831261,
+          "name": "page.title",
+          "stop": 1744308831262
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831263,
+          "name": "expect.toContain",
+          "stop": 1744308831264
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744308829702,
+      "name": "Navigate to the login screen",
+      "stop": 1744308831263
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831264,
+          "name": "expect.toBeVisible",
+          "stop": 1744308831278
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831280,
+          "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+          "stop": 1744308831591
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831592,
+          "name": "expect.toBeVisible",
+          "stop": 1744308831598
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831599,
+          "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+          "stop": 1744308831960
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831962,
+          "name": "expect.toBeVisible",
+          "stop": 1744308831968
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308831969,
+          "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+          "stop": 1744308832315
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744308831263,
+      "name": "Verify login form elements are accessible",
+      "stop": 1744308832315
+    },
+    {
+      "status": "failed",
+      "statusDetails": {
+        "message": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n",
+        "trace": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:232:37\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "failed",
+          "statusDetails": {
+            "message": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n",
+            "trace": "Error: expect.toBeVisible: Unexpected token \"=\" while parsing css selector \"img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\". Did you mean to CSS.escape it?\nCall log:\n  - expect.toBeVisible with timeout 20000ms\n  - waiting for img alt=\"Large Logo\" width=\"51\" height=\"18\" decoding=\"async\" data-nimg=\"1\" class=\"h-[17px] w-[48px]\" src=\"/_next/static/media/largeLogo.087c4efb.svg\" style=\"color: transparent\"\n\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:232:37\n    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Regression_Suite/LandOnSurveyPlatform.test.ts:228:16"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1744308832316,
+          "name": "expect.toBeVisible",
+          "stop": 1744308832321
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "start": 1744308832316,
+      "name": "Verify login was successful",
+      "stop": 1744308832321
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "screenshot",
+          "source": "029db7fa-f6d5-45b3-8a59-ac4d83b3bd73-attachment.png",
+          "type": "image/png"
+        }
+      ],
+      "parameters": [],
+      "start": 1744308832643,
+      "name": "screenshot",
+      "stop": 1744308832643
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "video",
+          "source": "c1728ea5-e1a6-478e-8692-1f3d7a81006d-attachment.webm",
+          "type": "video/webm"
+        }
+      ],
+      "parameters": [],
+      "start": 1744308832643,
+      "name": "video",
+      "stop": 1744308832643
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "_prompt-0",
+          "source": "6c50c28f-6e9a-44e2-974e-2d95195aa807-attachment",
+          "type": "text/markdown"
+        }
+      ],
+      "parameters": [],
+      "start": 1744308832644,
+      "name": "_prompt-0",
+      "stop": 1744308832644
+    },
+    {
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "trace",
+          "source": "7fa5f14a-6cee-4424-a9e8-ced90c6e08f5-attachment.zip",
+          "type": "application/vnd.allure.playwright-trace"
+        }
+      ],
+      "parameters": [],
+      "start": 1744308832644,
+      "name": "trace",
+      "stop": 1744308832644
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "page.screenshot",
+          "start": 1744308832322,
+          "stop": 1744308832454
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1744308832454,
+          "stop": 1744308832454
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1744308832454,
+          "stop": 1744308832454
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "video.saveAs",
+          "start": 1744308832502,
+          "stop": 1744308832502
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1744308832321,
+      "stop": 1744308832504
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "56ef2899-5447-4761-b015-e99e81297741-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chrome" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chrome > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-8404-worker-0" },
+    { "name": "parentSuite", "value": "chrome" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1744308829603,
+  "testCaseId": "d3968715773cc046799798b1a5422d57",
+  "fullName": "LandOnSurveyPlatform.test.ts:194:5",
+  "stop": 1744308832504
+}

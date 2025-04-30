@@ -1,0 +1,332 @@
+{
+  "uuid": "4a756b49-b4de-4907-a235-aac7fdffce32",
+  "name": "SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity",
+  "historyId": "b6f42426b50279a745fd641e4d42afca:94dadec355fb24357203fcbce2c308f6",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745972515332,
+                  "stop": 1745972515344
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745972515331,
+              "stop": 1745972515345
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745972515346,
+                  "stop": 1745972515443
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745972515345,
+              "stop": 1745972515443
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745972515330,
+          "stop": 1745972515443
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+              "start": 1745972515445,
+              "stop": 1745972517807
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.title",
+              "start": 1745972517807,
+              "stop": 1745972517808
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.clear(input[placeholder=\"Insert your email address\"])",
+                  "start": 1745972517810,
+                  "stop": 1745972518137
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+                  "start": 1745972518137,
+                  "stop": 1745972518449
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "Textbox Username filled with data: 59clubqaadmin@yopmail.com",
+              "start": 1745972517809,
+              "stop": 1745972518449
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.clear(input[placeholder=\"Enter your password\"])",
+                  "start": 1745972518450,
+                  "stop": 1745972518819
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+                  "start": 1745972518820,
+                  "stop": 1745972519186
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "Textbox Password filled with data: Tulip@345*",
+              "start": 1745972518449,
+              "stop": 1745972519186
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+                  "start": 1745972519187,
+                  "stop": 1745972519203
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+                  "start": 1745972519204,
+                  "stop": 1745972519527
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "The Sign In Button clicked",
+              "start": 1745972519186,
+              "stop": 1745972519527
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.waitForTimeout",
+              "start": 1745972519528,
+              "stop": 1745972529547
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.waitForSelector(img[alt=\"Small Logo\"])",
+              "start": 1745972529548,
+              "stop": 1745972529557
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "locator.isVisible(img[alt=\"Small Logo\"])",
+              "start": 1745972529557,
+              "stop": 1745972529562
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loggedInPage",
+          "start": 1745972515443,
+          "stop": 1745972529562
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745972515329,
+      "stop": 1745972529562
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745972529562,
+      "name": "expect.toBeVisible",
+      "stop": 1745972529571
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loggedInPage",
+          "start": 1745972529571,
+          "stop": 1745972529571
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745972529572,
+          "stop": 1745972529572
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745972529572,
+          "stop": 1745972529572
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745972529571,
+      "stop": 1745972529777
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "d12c6fa6-f184-46b6-a74a-2a2de426919d-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "chrome" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > chrome > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-94428-worker-0" },
+    { "name": "parentSuite", "value": "chrome" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745972515332,
+  "testCaseId": "b6f42426b50279a745fd641e4d42afca",
+  "fullName": "LandOnSurveyPlatform.test.ts:256:5",
+  "stop": 1745972529776
+}

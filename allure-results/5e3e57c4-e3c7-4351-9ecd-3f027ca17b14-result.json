@@ -1,1 +1,332 @@
-{"uuid":"5e3e57c4-e3c7-4351-9ecd-3f027ca17b14","name":"SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity","historyId":"b6f42426b50279a745fd641e4d42afca:c4fc963cc99a3b077b83e5895d51d8ec","status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browser.newContext","start":1745922255167,"stop":1745922255175}],"attachments":[],"parameters":[],"name":"fixture: context","start":1745922255167,"stop":1745922255177},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"browserContext.newPage","start":1745922255177,"stop":1745922255396}],"attachments":[],"parameters":[],"name":"fixture: page","start":1745922255177,"stop":1745922255396}],"attachments":[],"parameters":[],"name":"beforeEach hook","start":1745922255166,"stop":1745922255396},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)","start":1745922255397,"stop":1745922255663},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.title","start":1745922255664,"stop":1745922255667},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.clear(input[placeholder=\"Insert your email address\"])","start":1745922255668,"stop":1745922255717},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.fill(input[placeholder=\"Insert your email address\"])","start":1745922255717,"stop":1745922255734}],"attachments":[],"parameters":[],"name":"Textbox Username filled with data: 59clubqaadmin@yopmail.com","start":1745922255668,"stop":1745922255734},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.clear(input[placeholder=\"Enter your password\"])","start":1745922255735,"stop":1745922255743},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.fill(input[placeholder=\"Enter your password\"])","start":1745922255743,"stop":1745922255752}],"attachments":[],"parameters":[],"name":"Textbox Password filled with data: Tulip@345*","start":1745922255734,"stop":1745922255752},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])","start":1745922255752,"stop":1745922255760},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])","start":1745922255761,"stop":1745922255802}],"attachments":[],"parameters":[],"name":"The Sign In Button clicked","start":1745922255752,"stop":1745922255802},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.waitForTimeout","start":1745922255802,"stop":1745922265821},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"page.waitForSelector(img[alt=\"Small Logo\"])","start":1745922265822,"stop":1745922265832},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"locator.isVisible(img[alt=\"Small Logo\"])","start":1745922265833,"stop":1745922265838}],"attachments":[],"parameters":[],"name":"fixture: loggedInPage","start":1745922255397,"stop":1745922265838}],"attachments":[],"parameters":[],"name":"Before Hooks","start":1745922255166,"stop":1745922265838},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1745922265839,"name":"expect.toBeVisible","stop":1745922265845},{"status":"passed","statusDetails":{},"stage":"finished","steps":[{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: loggedInPage","start":1745922265846,"stop":1745922265846},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: page","start":1745922265846,"stop":1745922265846},{"status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[],"name":"fixture: context","start":1745922265847,"stop":1745922265847}],"attachments":[],"parameters":[],"name":"After Hooks","start":1745922265845,"stop":1745922266095}],"attachments":[{"name":"stdout","source":"fda38dad-41d9-4572-9bf1-003cb34e6bf6-attachment.txt","type":"text/plain"}],"parameters":[{"name":"Project","value":"Viewport 2577x1440"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"playwright"},{"name":"package","value":"LandOnSurveyPlatform.test.ts"},{"name":"titlePath","value":" > Viewport 2577x1440 > LandOnSurveyPlatform.test.ts"},{"name":"tag","value":"sanity"},{"name":"host","value":"Studios-MacBook-Air.local"},{"name":"thread","value":"pid-86206-worker-0"},{"name":"parentSuite","value":"Viewport 2577x1440"},{"name":"suite","value":"LandOnSurveyPlatform.test.ts"}],"links":[],"start":1745922255168,"testCaseId":"b6f42426b50279a745fd641e4d42afca","fullName":"LandOnSurveyPlatform.test.ts:256:5","stop":1745922266094}
+{
+  "uuid": "5e3e57c4-e3c7-4351-9ecd-3f027ca17b14",
+  "name": "SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials @sanity",
+  "historyId": "b6f42426b50279a745fd641e4d42afca:c4fc963cc99a3b077b83e5895d51d8ec",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browser.newContext",
+                  "start": 1745922255167,
+                  "stop": 1745922255175
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: context",
+              "start": 1745922255167,
+              "stop": 1745922255177
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "browserContext.newPage",
+                  "start": 1745922255177,
+                  "stop": 1745922255396
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "fixture: page",
+              "start": 1745922255177,
+              "stop": 1745922255396
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "beforeEach hook",
+          "start": 1745922255166,
+          "stop": 1745922255396
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.goto(https://qa.survey.59club.studiographene.xyz/en-GB/auth/login)",
+              "start": 1745922255397,
+              "stop": 1745922255663
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.title",
+              "start": 1745922255664,
+              "stop": 1745922255667
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.clear(input[placeholder=\"Insert your email address\"])",
+                  "start": 1745922255668,
+                  "stop": 1745922255717
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.fill(input[placeholder=\"Insert your email address\"])",
+                  "start": 1745922255717,
+                  "stop": 1745922255734
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "Textbox Username filled with data: 59clubqaadmin@yopmail.com",
+              "start": 1745922255668,
+              "stop": 1745922255734
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.clear(input[placeholder=\"Enter your password\"])",
+                  "start": 1745922255735,
+                  "stop": 1745922255743
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.fill(input[placeholder=\"Enter your password\"])",
+                  "start": 1745922255743,
+                  "stop": 1745922255752
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "Textbox Password filled with data: Tulip@345*",
+              "start": 1745922255734,
+              "stop": 1745922255752
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "page.waitForSelector(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+                  "start": 1745922255752,
+                  "stop": 1745922255760
+                },
+                {
+                  "status": "passed",
+                  "statusDetails": {},
+                  "stage": "finished",
+                  "steps": [],
+                  "attachments": [],
+                  "parameters": [],
+                  "name": "locator.click(button[type=\"submit\"][class*=\"inline-flex\"][class*=\"bg-dark-green\"][class*=\"typography-body-1-bold\"])",
+                  "start": 1745922255761,
+                  "stop": 1745922255802
+                }
+              ],
+              "attachments": [],
+              "parameters": [],
+              "name": "The Sign In Button clicked",
+              "start": 1745922255752,
+              "stop": 1745922255802
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.waitForTimeout",
+              "start": 1745922255802,
+              "stop": 1745922265821
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "page.waitForSelector(img[alt=\"Small Logo\"])",
+              "start": 1745922265822,
+              "stop": 1745922265832
+            },
+            {
+              "status": "passed",
+              "statusDetails": {},
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "name": "locator.isVisible(img[alt=\"Small Logo\"])",
+              "start": 1745922265833,
+              "stop": 1745922265838
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loggedInPage",
+          "start": 1745922255397,
+          "stop": 1745922265838
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "Before Hooks",
+      "start": 1745922255166,
+      "stop": 1745922265838
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1745922265839,
+      "name": "expect.toBeVisible",
+      "stop": 1745922265845
+    },
+    {
+      "status": "passed",
+      "statusDetails": {},
+      "stage": "finished",
+      "steps": [
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: loggedInPage",
+          "start": 1745922265846,
+          "stop": 1745922265846
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: page",
+          "start": 1745922265846,
+          "stop": 1745922265846
+        },
+        {
+          "status": "passed",
+          "statusDetails": {},
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "name": "fixture: context",
+          "start": 1745922265847,
+          "stop": 1745922265847
+        }
+      ],
+      "attachments": [],
+      "parameters": [],
+      "name": "After Hooks",
+      "start": 1745922265845,
+      "stop": 1745922266095
+    }
+  ],
+  "attachments": [
+    {
+      "name": "stdout",
+      "source": "fda38dad-41d9-4572-9bf1-003cb34e6bf6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [{ "name": "Project", "value": "Viewport 2577x1440" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "playwright" },
+    { "name": "package", "value": "LandOnSurveyPlatform.test.ts" },
+    {
+      "name": "titlePath",
+      "value": " > Viewport 2577x1440 > LandOnSurveyPlatform.test.ts"
+    },
+    { "name": "tag", "value": "sanity" },
+    { "name": "host", "value": "Studios-MacBook-Air.local" },
+    { "name": "thread", "value": "pid-86206-worker-0" },
+    { "name": "parentSuite", "value": "Viewport 2577x1440" },
+    { "name": "suite", "value": "LandOnSurveyPlatform.test.ts" }
+  ],
+  "links": [],
+  "start": 1745922255168,
+  "testCaseId": "b6f42426b50279a745fd641e4d42afca",
+  "fullName": "LandOnSurveyPlatform.test.ts:256:5",
+  "stop": 1745922266094
+}

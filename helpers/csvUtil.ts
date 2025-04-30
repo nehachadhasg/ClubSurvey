@@ -1,7 +1,6 @@
 import * as fs from 'fs';
 import csv from 'csv-parser';
 
-
 export async function readDataFromCSV(filePath: string): Promise<any[]> {
   return new Promise((resolve, reject) => {
     const data: any[] = [];
