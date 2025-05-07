@@ -3,3 +3,7 @@ test-results/
 logs/
 reporter/
 node_modules
+allure-results/
+test-results/
+logs/
+reporter/
