@@ -7117,6 +7117,7 @@ Call log:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [2025-05-07 12:40:50] INFO: Test run started with 4 test(s).
 [2025-05-07 12:40:50] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
 [2025-05-07 12:40:50] INFO: Executing Step : Login title is visible
@@ -9225,6 +9226,8 @@ Call log:
 >>>>>>> 6d8bdce (login tests)
 =======
 >>>>>>> 8fa678e (Added RoleBased Framework)
+=======
+>>>>>>> 621fa84 (login tests)
 [2025-04-30 12:21:35] INFO: Test run started with 16 test(s).
 [2025-04-30 12:21:35] INFO: Test Case Started : Super Admin role: Access Super Admin dashboard
 [2025-04-30 12:21:38] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
@@ -11294,6 +11297,8 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 =======
 =======
 >>>>>>> 4f3a9e4 (Added RoleBased Framework)
+=======
+>>>>>>> 1b4708e (login tests)
 [2025-05-07 12:40:50] INFO: Test run started with 4 test(s).
 [2025-05-07 12:40:50] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
 [2025-05-07 12:40:50] INFO: Executing Step : Login title is visible
@@ -13447,6 +13452,8 @@ Call log:
 =======
 =======
 =======
+=======
+>>>>>>> 17c9d3a (login tests)
 [2025-04-30 12:21:35] INFO: Test run started with 16 test(s).
 [2025-04-30 12:21:35] INFO: Test Case Started : Super Admin role: Access Super Admin dashboard
 [2025-04-30 12:21:38] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
@@ -15506,6 +15513,91 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-12 19:57:03] INFO: Test Case Started : Create User
 [2025-05-12 19:57:09] INFO: Test Case Completed : Create User Status : passed
 [2025-05-12 19:57:09] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 >>>>>>> 1345cf6 (Added RoleBased Framework)
+<<<<<<< HEAD
 >>>>>>> 4f3a9e4 (Added RoleBased Framework)
+<<<<<<< HEAD
 >>>>>>> 8fa678e (Added RoleBased Framework)
+=======
+=======
+=======
+=======
+[2025-05-07 12:40:50] INFO: Test run started with 4 test(s).
+[2025-05-07 12:40:50] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-07 12:40:50] INFO: Executing Step : Login title is visible
+[2025-05-07 12:40:51] INFO: Completed Step : Login title is visible - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Subtext should be visible
+[2025-05-07 12:40:51] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Email label should be visible
+[2025-05-07 12:40:51] INFO: Completed Step : Email label should be visible - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Password label should be visible
+[2025-05-07 12:40:51] INFO: Completed Step : Password label should be visible - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Forgot password link should be visible
+[2025-05-07 12:40:51] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Password input should be visible
+[2025-05-07 12:40:51] INFO: Completed Step : Password input should be visible - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Input type checkbox should exist
+[2025-05-07 12:40:51] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-07 12:40:51] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-07 12:40:51] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-07 12:40:51] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-07 12:40:51] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-07 12:40:52] INFO: Executing Step : Login title is visible
+[2025-05-07 12:40:52] INFO: Completed Step : Login title is visible - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Subtext should be visible
+[2025-05-07 12:40:52] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Email label should be visible
+[2025-05-07 12:40:52] INFO: Completed Step : Email label should be visible - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Password label should be visible
+[2025-05-07 12:40:52] INFO: Completed Step : Password label should be visible - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Forgot password link should be visible
+[2025-05-07 12:40:52] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Password input should be visible
+[2025-05-07 12:40:52] INFO: Completed Step : Password input should be visible - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Input type checkbox should exist
+[2025-05-07 12:40:52] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-07 12:40:52] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-07 12:40:52] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-07 12:40:52] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-07 12:40:52] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-07 12:40:53] INFO: Executing Step : Login title is visible
+[2025-05-07 12:40:53] INFO: Completed Step : Login title is visible - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Subtext should be visible
+[2025-05-07 12:40:53] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Email label should be visible
+[2025-05-07 12:40:53] INFO: Completed Step : Email label should be visible - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Password label should be visible
+[2025-05-07 12:40:53] INFO: Completed Step : Password label should be visible - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Forgot password link should be visible
+[2025-05-07 12:40:53] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Password input should be visible
+[2025-05-07 12:40:53] INFO: Completed Step : Password input should be visible - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Input type checkbox should exist
+[2025-05-07 12:40:53] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-07 12:40:53] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-07 12:40:53] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-07 12:40:53] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-07 12:40:53] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-07 12:40:54] INFO: Executing Step : Login title is visible
+[2025-05-07 12:40:54] INFO: Completed Step : Login title is visible - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Subtext should be visible
+[2025-05-07 12:40:54] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Email label should be visible
+[2025-05-07 12:40:54] INFO: Completed Step : Email label should be visible - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Password label should be visible
+[2025-05-07 12:40:54] INFO: Completed Step : Password label should be visible - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Forgot password link should be visible
+[2025-05-07 12:40:54] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Password input should be visible
+[2025-05-07 12:40:54] INFO: Completed Step : Password input should be visible - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Input type checkbox should exist
+[2025-05-07 12:40:54] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-07 12:40:54] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-07 12:40:54] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-07 12:40:54] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-07 12:40:54] INFO: Test run completed with status: PASSED
+>>>>>>> 7c8244b (login tests)
+>>>>>>> 17c9d3a (login tests)
+>>>>>>> 1b4708e (login tests)
+>>>>>>> 621fa84 (login tests)
