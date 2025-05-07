@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { test, expect } from '../../fixtures/fixture';
 import { SANITY_TAG, E2E_TAG } from '../../../constants/tags';
 import { ClubSurveyLogin } from '../../pages/ClubSurveyLogin';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
-import { base } from '@faker-js/faker/.';
 
 const environment = loadEnvironmentConfig();
 let clubSurveyLogin: ClubSurveyLogin;
@@ -14,7 +14,6 @@ test.beforeEach(async ({ page, context }) => {
 
 test(`SANITY-CLUB59-SURVEYS-PLATFORM-TC01: Navigate to Surveys Platform via 59club Logo ${SANITY_TAG}`, async ({
   page,
-  context,
 }) => {
   // Add test metadata
   test.info().annotations.push(
@@ -42,7 +41,6 @@ test(`SANITY-CLUB59-SURVEYS-PLATFORM-TC01: Navigate to Surveys Platform via 59cl
 
     // Assert that the current URL matches the expected homepage URL
     const currentURL = await page.url();
-
     // Assert that the homepage contains a specific element (e.g., a header or logo)
     const homepageLogo = page.locator(clubSurveyLogin.selectors.clublogo);
     await expect(homepageLogo).toBeVisible();
@@ -164,7 +162,6 @@ test(`E2E-CLUB59-SURVEYS-PLATFORM-001: Complete end-to-end flow ${E2E_TAG}`, asy
   // Step 2: Navigate to the homepage via the 59club logo
   await test.step('Verify redirection to the homepage via the 59club logo', async () => {
     await clubSurveyLogin.verifyLogoRedirection(environment.clubURL);
-
 
     // Assert that the homepage contains a specific element (e.g., a header or logo)
     const homepageLogo = page.locator(clubSurveyLogin.selectors.clublogo);
