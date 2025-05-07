@@ -7115,6 +7115,7 @@ Call log:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [2025-05-07 12:40:50] INFO: Test run started with 4 test(s).
 [2025-05-07 12:40:50] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
 [2025-05-07 12:40:50] INFO: Executing Step : Login title is visible
@@ -9219,6 +9220,8 @@ Call log:
 >>>>>>> 17c9d3a (login tests)
 =======
 >>>>>>> 1345cf6 (Added RoleBased Framework)
+=======
+>>>>>>> 6d8bdce (login tests)
 [2025-04-30 12:21:35] INFO: Test run started with 16 test(s).
 [2025-04-30 12:21:35] INFO: Test Case Started : Super Admin role: Access Super Admin dashboard
 [2025-04-30 12:21:38] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
@@ -11280,8 +11283,11 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-12 19:57:09] INFO: Test run completed with status: PASSED
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1345cf6 (Added RoleBased Framework)
 =======
+=======
+>>>>>>> 6d8bdce (login tests)
 =======
 [2025-05-07 12:40:50] INFO: Test run started with 4 test(s).
 [2025-05-07 12:40:50] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
@@ -11357,6 +11363,7 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-07 12:40:54] INFO: Completed Step : Login button should be visible and disabled - Success
 [2025-05-07 12:40:54] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
 [2025-05-07 12:40:54] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7c8244b (login tests)
 <<<<<<< HEAD
@@ -13404,3 +13411,6 @@ Call log:
 >>>>>>> 1b4bbba (login & contact us)
 =======
 >>>>>>> 1345cf6 (Added RoleBased Framework)
+=======
+>>>>>>> 7c8244b (login tests)
+>>>>>>> 6d8bdce (login tests)
