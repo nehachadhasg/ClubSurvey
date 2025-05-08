@@ -7451,3 +7451,376 @@ Call log:
 [2025-05-08 11:33:50] INFO: Completed Step : Login button should be visible and disabled - Success
 [2025-05-08 11:33:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
 [2025-05-08 11:33:50] INFO: Test run completed with status: PASSED
+[2025-05-08 11:43:08] INFO: Test run started with 1 test(s).
+[2025-05-08 11:43:08] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:43:09] INFO: Executing Step : Login title is visible
+[2025-05-08 11:43:09] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:43:09] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:43:09] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:43:09] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:43:09] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:43:09] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:43:09] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:43:09] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 11:43:09] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 11:43:10] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:43:10] INFO: Test run completed with status: PASSED
+[2025-05-08 11:44:48] INFO: Test run started with 1 test(s).
+[2025-05-08 11:44:48] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:44:49] INFO: Executing Step : Login title is visible
+[2025-05-08 11:44:49] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:44:49] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:44:49] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:44:49] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:44:49] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:44:49] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:44:49] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:44:49] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 11:44:49] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 11:44:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:44:50] INFO: Test run completed with status: PASSED
+[2025-05-08 12:03:11] INFO: Test run started with 1 test(s).
+[2025-05-08 12:03:11] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:03:12] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:03:13] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:03:14] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:03:14] INFO: Test run completed with status: PASSED
+[2025-05-08 12:05:20] INFO: Test run started with 4 test(s).
+[2025-05-08 12:05:20] INFO: Test Case Started : Super Admin role: Access Super Admin dashboard
+[2025-05-08 12:05:21] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-08 12:05:22] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-08 12:05:22] INFO: Executing Step : Textbox Password filled with data: Tulip@345*
+[2025-05-08 12:05:22] INFO: Completed Step : Textbox Password filled with data: Tulip@345* - Success
+[2025-05-08 12:05:22] INFO: Executing Step : The Sign In Button clicked
+[2025-05-08 12:05:22] INFO: Completed Step : The Sign In Button clicked - Error: Error: page.waitForSelector: Target page, context or browser has been closed
+[2025-05-08 12:05:23] INFO: Test Case Completed : Super Admin role: Access Super Admin dashboard Status : failed
+[2025-05-08 12:05:23] INFO: Test Case Started : Franchise Admin role: Access Franchise Admin dashboard @rolebasedlogin
+[2025-05-08 12:05:24] INFO: Executing Step : Textbox Username filled with data: nehafa@yopmail.com
+[2025-05-08 12:05:24] INFO: Completed Step : Textbox Username filled with data: nehafa@yopmail.com - Success
+[2025-05-08 12:05:24] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-08 12:05:25] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Error: Error: locator.fill: Target page, context or browser has been closed
+[2025-05-08 12:05:25] INFO: Test Case Completed : Franchise Admin role: Access Franchise Admin dashboard @rolebasedlogin Status : failed
+[2025-05-08 12:05:25] INFO: Test Case Started : Group Admin role: Access Group Admin dashboard @rolebasedlogin
+[2025-05-08 12:05:26] INFO: Executing Step : Textbox Username filled with data: nehaga@yopmail.com
+[2025-05-08 12:05:27] INFO: Completed Step : Textbox Username filled with data: nehaga@yopmail.com - Success
+[2025-05-08 12:05:27] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-08 12:05:27] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Error: Error: locator.fill: Target page, context or browser has been closed
+[2025-05-08 12:05:28] INFO: Test Case Completed : Group Admin role: Access Group Admin dashboard @rolebasedlogin Status : failed
+[2025-05-08 12:05:28] INFO: Test Case Started : Venue Admin role: Access Venue Admin dashboard @rolebasedlogin
+[2025-05-08 12:05:29] INFO: Executing Step : Textbox Username filled with data: nehava@yopmail.com
+[2025-05-08 12:05:29] INFO: Completed Step : Textbox Username filled with data: nehava@yopmail.com - Success
+[2025-05-08 12:05:29] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-08 12:05:29] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Error: Error: locator.clear: Target page, context or browser has been closed
+[2025-05-08 12:05:30] INFO: Test Case Completed : Venue Admin role: Access Venue Admin dashboard @rolebasedlogin Status : failed
+[2025-05-08 12:05:30] INFO: Test run completed with status: FAILED
+[2025-05-08 12:05:35] INFO: Test run started with 1 test(s).
+[2025-05-08 12:05:35] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:05:36] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:05:37] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:05:38] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:05:38] INFO: Test run completed with status: PASSED
+[2025-05-08 12:07:00] INFO: Test run started with 1 test(s).
+[2025-05-08 12:07:01] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:07:01] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:07:02] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:07:03] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:07:03] INFO: Test run completed with status: PASSED
+[2025-05-08 12:07:55] INFO: Test run started with 1 test(s).
+[2025-05-08 12:07:56] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:07:56] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:07:57] INFO: Completed Step : Enter invalid email - Error: Error: [2mexpect([22m[31mlocator('p[class*="text-error-300"][class*="!typography-body-1"]')[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+
+
+[1mMatcher error[22m: [32mexpected[39m value must be a string or regular expression
+
+Expected has value: [32mundefined[39m
+[2025-05-08 12:07:58] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : failed
+[2025-05-08 12:07:58] INFO: Test run completed with status: FAILED
+[2025-05-08 12:08:51] INFO: Test run started with 1 test(s).
+[2025-05-08 12:08:51] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:08:52] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:09:01] INFO: Completed Step : Enter invalid email - Error: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address"[39m
+Received string: [31m"Please enter a valid email address[7m.[27m"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    12 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Please enter a valid email address.</p>[22m
+[2m       - unexpected value "Please enter a valid email address."[22m
+
+[2025-05-08 12:09:01] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : failed
+[2025-05-08 12:09:01] INFO: Test run completed with status: FAILED
+[2025-05-08 12:09:05] INFO: Test run started with 1 test(s).
+[2025-05-08 12:09:05] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:09:05] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:09:07] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:09:07] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:09:07] INFO: Test run completed with status: PASSED
+[2025-05-08 12:09:38] INFO: Test run started with 1 test(s).
+[2025-05-08 12:09:38] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:09:39] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:09:40] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:09:40] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:09:41] INFO: Test run completed with status: PASSED
+[2025-05-08 12:11:21] INFO: Test run started with 1 test(s).
+[2025-05-08 12:11:21] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:11:22] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:11:23] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:11:23] INFO: Executing Step : Enter valid email
+[2025-05-08 12:11:24] INFO: Completed Step : Enter valid email - Success
+[2025-05-08 12:11:25] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:11:25] INFO: Test run completed with status: PASSED
+[2025-05-08 12:17:19] INFO: Test run started with 1 test(s).
+[2025-05-08 12:17:19] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:17:19] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:17:20] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:17:20] INFO: Executing Step : Enter valid email
+[2025-05-08 12:17:22] INFO: Completed Step : Enter valid email - Success
+[2025-05-08 12:17:22] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : failed
+[2025-05-08 12:17:22] INFO: Test run completed with status: FAILED
+[2025-05-08 12:18:10] INFO: Test run started with 1 test(s).
+[2025-05-08 12:18:10] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 12:18:11] INFO: Executing Step : Enter invalid email
+[2025-05-08 12:18:12] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 12:18:12] INFO: Executing Step : Enter valid email
+[2025-05-08 12:18:13] INFO: Completed Step : Enter valid email - Success
+[2025-05-08 12:18:13] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 12:18:14] INFO: Test run completed with status: PASSED
+[2025-05-08 12:18:17] INFO: Test run started with 1 test(s).
+[2025-05-08 12:18:17] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-08 12:18:18] INFO: Executing Step : Passoword field is empty
+[2025-05-08 12:18:19] INFO: Completed Step : Passoword field is empty - Success
+[2025-05-08 12:18:19] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-08 12:18:19] INFO: Test run completed with status: PASSED
+[2025-05-08 12:19:28] INFO: Test run started with 1 test(s).
+[2025-05-08 12:19:28] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-08 12:19:29] INFO: Executing Step : Passoword field is empty
+[2025-05-08 12:19:30] INFO: Completed Step : Passoword field is empty - Success
+[2025-05-08 12:19:30] INFO: Executing Step : Enter valid password
+[2025-05-08 12:19:31] INFO: Completed Step : Enter valid password - Success
+[2025-05-08 12:19:32] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-08 12:19:32] INFO: Test run completed with status: PASSED
+[2025-05-08 12:21:03] INFO: Test run started with 1 test(s).
+[2025-05-08 12:21:03] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-08 12:21:04] INFO: Executing Step : Passoword field is empty
+[2025-05-08 12:21:05] INFO: Completed Step : Passoword field is empty - Success
+[2025-05-08 12:21:05] INFO: Executing Step : Enter valid password
+[2025-05-08 12:21:06] INFO: Completed Step : Enter valid password - Success
+[2025-05-08 12:21:06] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-08 12:21:07] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-08 12:21:07] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-08 12:21:07] INFO: Test run completed with status: PASSED
+[2025-05-08 12:23:45] INFO: Test run started with 1 test(s).
+[2025-05-08 12:23:45] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-08 12:23:45] INFO: Executing Step : Password field is empty
+[2025-05-08 12:23:47] INFO: Completed Step : Password field is empty - Success
+[2025-05-08 12:23:47] INFO: Executing Step : Enter valid password
+[2025-05-08 12:23:48] INFO: Completed Step : Enter valid password - Success
+[2025-05-08 12:23:48] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-08 12:23:49] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-08 12:23:49] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-08 12:23:49] INFO: Test run completed with status: PASSED
+[2025-05-08 12:26:38] INFO: Test run started with 1 test(s).
+[2025-05-08 12:26:38] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:26:39] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:27:00] INFO: Completed Step : Email field and Password field are empty - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]').first()
+Expected string: [32m"Please enter [7ma valid email address[27m."[39m
+Received string: [31m"Please enter [7myour password[27m."[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]').first()[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Please enter your password.</p>[22m
+[2m       - unexpected value "Please enter your password."[22m
+
+[2025-05-08 12:27:13] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : failed
+[2025-05-08 12:27:13] INFO: Test run completed with status: FAILED
+[2025-05-08 12:28:05] INFO: Test run started with 1 test(s).
+[2025-05-08 12:28:05] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:28:05] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:28:27] INFO: Completed Step : Email field and Password field are empty - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]').first()
+Expected string: [32m"Please enter [7ma valid[27m email address."[39m
+Received string: [31m"Please enter [7myour[27m email address."[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]').first()[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Please enter your email address.</p>[22m
+[2m       - unexpected value "Please enter your email address."[22m
+
+[2025-05-08 12:28:40] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : failed
+[2025-05-08 12:28:40] INFO: Test run completed with status: FAILED
+[2025-05-08 12:29:49] INFO: Test run started with 1 test(s).
+[2025-05-08 12:29:50] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:29:50] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:30:12] INFO: Completed Step : Email field and Password field are empty - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]').first()
+Expected string: [32m"Please enter [7ma valid[27m email address."[39m
+Received string: [31m"Please enter [7myour[27m email address."[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]').first()[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Please enter your email address.</p>[22m
+[2m       - unexpected value "Please enter your email address."[22m
+
+[2025-05-08 12:30:24] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : failed
+[2025-05-08 12:30:24] INFO: Test run completed with status: FAILED
+[2025-05-08 12:31:59] INFO: Test run started with 1 test(s).
+[2025-05-08 12:32:00] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:32:00] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:32:02] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 12:32:02] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 12:32:03] INFO: Test run completed with status: PASSED
+[2025-05-08 12:33:10] INFO: Test run started with 1 test(s).
+[2025-05-08 12:33:11] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:33:11] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:33:13] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 12:33:13] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-08 12:33:14] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-08 12:33:15] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 12:33:15] INFO: Test run completed with status: PASSED
+[2025-05-08 12:33:59] INFO: Test run started with 1 test(s).
+[2025-05-08 12:33:59] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:34:00] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:34:01] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 12:34:01] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-08 12:34:03] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-08 12:34:03] INFO: Executing Step : Enter valid email and valid password
+[2025-05-08 12:34:04] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-08 12:34:05] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 12:34:05] INFO: Test run completed with status: PASSED
+[2025-05-08 12:41:22] INFO: Test run started with 1 test(s).
+[2025-05-08 12:41:22] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 12:41:23] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 12:41:24] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 12:41:24] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-08 12:41:26] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-08 12:41:26] INFO: Executing Step : Enter valid email and valid password
+[2025-05-08 12:41:27] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-08 12:41:28] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 12:41:28] INFO: Test run completed with status: PASSED
+[2025-05-08 13:14:36] INFO: Test run started with 1 test(s).
+[2025-05-08 13:14:36] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 13:14:36] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 13:14:38] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 13:14:38] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-08 13:14:40] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-08 13:14:40] INFO: Executing Step : Enter valid email and valid password
+[2025-05-08 13:14:41] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-08 13:14:41] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-08 13:14:42] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-08 13:14:43] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 13:14:43] INFO: Test run completed with status: PASSED
+[2025-05-08 13:15:36] INFO: Test run started with 1 test(s).
+[2025-05-08 13:15:37] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 13:15:37] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 13:15:39] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 13:15:39] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-08 13:15:40] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-08 13:15:40] INFO: Executing Step : Enter valid email and valid password
+[2025-05-08 13:15:42] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-08 13:15:42] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-08 13:15:43] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-08 13:15:43] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 13:15:43] INFO: Test run completed with status: PASSED
+[2025-05-08 13:15:53] INFO: Test run started with 1 test(s).
+[2025-05-08 13:15:53] INFO: Test Case Started : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e
+[2025-05-08 13:15:54] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-08 13:15:54] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-08 13:15:54] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-08 13:16:15] INFO: Completed Step : Remeber me checkbox is checked - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeChecked[2m()[22m
+
+Locator: locator('div[class*="h-5"][class*="w-5"][class*="bg-greyscale-200"]')
+Expected: checked
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeChecked with timeout 20000ms[22m
+[2m  - waiting for locator('div[class*="h-5"][class*="w-5"][class*="bg-greyscale-200"]')[22m
+
+[2025-05-08 13:16:26] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : failed
+[2025-05-08 13:16:26] INFO: Test run completed with status: FAILED
+[2025-05-08 13:17:28] INFO: Test run started with 1 test(s).
+[2025-05-08 13:17:28] INFO: Test Case Started : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e
+[2025-05-08 13:17:28] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-08 13:17:29] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-08 13:17:29] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-08 13:17:30] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-08 13:17:30] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
+[2025-05-08 13:17:30] INFO: Test run completed with status: PASSED
+[2025-05-08 13:18:32] INFO: Test run started with 1 test(s).
+[2025-05-08 13:18:32] INFO: Test Case Started : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e
+[2025-05-08 13:18:32] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-08 13:18:33] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-08 13:18:33] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-08 13:18:34] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-08 13:18:34] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
+[2025-05-08 13:18:34] INFO: Test run completed with status: PASSED
+[2025-05-08 13:21:44] INFO: Test run started with 5 test(s).
+[2025-05-08 13:21:44] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 13:21:44] INFO: Executing Step : Login title is visible
+[2025-05-08 13:21:45] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Subtext should be visible
+[2025-05-08 13:21:45] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Email label should be visible
+[2025-05-08 13:21:45] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Password label should be visible
+[2025-05-08 13:21:45] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 13:21:45] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Password input should be visible
+[2025-05-08 13:21:45] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 13:21:45] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 13:21:45] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 13:21:45] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 13:21:45] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 13:21:45] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-08 13:21:46] INFO: Executing Step : Enter invalid email
+[2025-05-08 13:21:47] INFO: Completed Step : Enter invalid email - Success
+[2025-05-08 13:21:47] INFO: Executing Step : Enter valid email
+[2025-05-08 13:21:48] INFO: Completed Step : Enter valid email - Success
+[2025-05-08 13:21:48] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-08 13:21:48] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-08 13:21:48] INFO: Executing Step : Password field is empty
+[2025-05-08 13:21:49] INFO: Completed Step : Password field is empty - Success
+[2025-05-08 13:21:50] INFO: Executing Step : Enter valid password
+[2025-05-08 13:21:51] INFO: Completed Step : Enter valid password - Success
+[2025-05-08 13:21:51] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-08 13:21:52] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-08 13:21:52] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-08 13:21:52] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-08 13:21:52] INFO: Executing Step : Email field and Password field are empty
+[2025-05-08 13:21:54] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-08 13:21:54] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-08 13:21:55] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-08 13:21:55] INFO: Executing Step : Enter valid email and valid password
+[2025-05-08 13:21:57] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-08 13:21:57] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-08 13:21:58] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-08 13:21:58] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-08 13:21:58] INFO: Test Case Started : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e
+[2025-05-08 13:21:58] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-08 13:21:59] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-08 13:21:59] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-08 13:22:00] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-08 13:22:00] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
+[2025-05-08 13:22:00] INFO: Test run completed with status: PASSED

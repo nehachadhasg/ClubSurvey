@@ -54,6 +54,12 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     subtext:
       'p[class*="typography-body-1"][class*="text-muted-foreground"][class*="font-body"]',
     inputLabels: 'label[class*="typography-body-1"][class*="text-gray-700"]',
+    errorMessage: 'p[class*="text-error-300"][class*="!typography-body-1"]',
+    emailErrorText: 'Please enter a valid email address.',
+    emailEmptyErrorText: 'Please enter your email address.',
+    passwordErrorText: 'Please enter your password.',
+    showPasswordButton:
+      'button[class*="text-gray-1000"][class*="flex"][class*="cursor-pointer"]',
   };
 
   public someAbstractMethod(): void {
