@@ -66,7 +66,11 @@ test(`SANITY-CLUB59-LOGIN-001: Load Login page ${SANITY_TAG}`, async ({
   });
 });
 
+<<<<<<< HEAD
 test(`E2E-CLUB59-LOGIN-001: Login field validations ${E2E_TAG}`, async ({
+=======
+test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
+>>>>>>> 8ff484b (login tests)
   page,
 }) => {
   test.info().annotations.push(

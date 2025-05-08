@@ -11365,10 +11365,14 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-07 12:40:54] INFO: Test run completed with status: PASSED
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 7c8244b (login tests)
 <<<<<<< HEAD
 >>>>>>> 17c9d3a (login tests)
 =======
+=======
+>>>>>>> 7c8244b (login tests)
+>>>>>>> 8ff484b (login tests)
 =======
 [2025-05-08 11:04:07] INFO: Test run started with 1 test(s).
 [2025-05-08 11:04:07] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
@@ -11635,6 +11639,7 @@ Call log:
 [2025-05-08 11:33:50] INFO: Completed Step : Login button should be visible and disabled - Success
 [2025-05-08 11:33:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
 [2025-05-08 11:33:50] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 8594b13 (login tests)
 <<<<<<< HEAD
@@ -13414,3 +13419,6 @@ Call log:
 =======
 >>>>>>> 7c8244b (login tests)
 >>>>>>> 6d8bdce (login tests)
+=======
+>>>>>>> 8594b13 (login tests)
+>>>>>>> 8ff484b (login tests)
