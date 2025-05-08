@@ -15597,7 +15597,9 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-07 12:40:54] INFO: Completed Step : Login button should be visible and disabled - Success
 [2025-05-07 12:40:54] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
 [2025-05-07 12:40:54] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 >>>>>>> 7c8244b (login tests)
+<<<<<<< HEAD
 >>>>>>> 17c9d3a (login tests)
+<<<<<<< HEAD
 >>>>>>> 1b4708e (login tests)
->>>>>>> 621fa84 (login tests)

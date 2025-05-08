@@ -15597,7 +15597,284 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-07 12:40:54] INFO: Completed Step : Login button should be visible and disabled - Success
 [2025-05-07 12:40:54] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
 [2025-05-07 12:40:54] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 >>>>>>> 7c8244b (login tests)
+<<<<<<< HEAD
 >>>>>>> 17c9d3a (login tests)
+<<<<<<< HEAD
 >>>>>>> 1b4708e (login tests)
+<<<<<<< HEAD
 >>>>>>> 621fa84 (login tests)
+=======
+=======
+=======
+=======
+[2025-05-08 11:04:07] INFO: Test run started with 1 test(s).
+[2025-05-08 11:04:07] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:04:08] INFO: Executing Step : Login title is visible
+[2025-05-08 11:04:11] INFO: Completed Step : Login title is visible - Error: Error: Failed to load the page at https://qa.survey.59club.studiographene.xyz/en-GB/auth/login
+[2025-05-08 11:04:11] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : failed
+[2025-05-08 11:04:11] INFO: Test run completed with status: FAILED
+[2025-05-08 11:04:34] INFO: Test run started with 1 test(s).
+[2025-05-08 11:04:35] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:04:35] INFO: Executing Step : Login title is visible
+[2025-05-08 11:04:36] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:04:36] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:04:36] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:04:36] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:04:36] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:04:36] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:04:36] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:04:36] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 11:04:36] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 11:04:36] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:04:36] INFO: Test run completed with status: PASSED
+[2025-05-08 11:09:33] INFO: Test run started with 1 test(s).
+[2025-05-08 11:09:34] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:09:34] INFO: Executing Step : Login title is visible
+[2025-05-08 11:09:35] INFO: Completed Step : Login title is visible - Error: Error: expect.toBeVisible: Unsupported token "{" while parsing css selector "page.getByRole("heading", { name: "Login" })". Did you mean to CSS.escape it?
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for page.getByRole("heading", { name: "Login" })[22m
+
+[2025-05-08 11:09:35] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : failed
+[2025-05-08 11:09:35] INFO: Test run completed with status: FAILED
+[2025-05-08 11:12:53] INFO: Test run started with 1 test(s).
+[2025-05-08 11:12:53] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:12:53] INFO: Executing Step : Login title is visible
+[2025-05-08 11:12:54] INFO: Completed Step : Login title is visible - Error: Error: locator._expect: selector: expected string, got undefined
+[2025-05-08 11:12:55] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : failed
+[2025-05-08 11:12:55] INFO: Test run completed with status: FAILED
+[2025-05-08 11:13:22] INFO: Test run started with 1 test(s).
+[2025-05-08 11:13:22] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:13:22] INFO: Executing Step : Login title is visible
+[2025-05-08 11:13:23] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:13:23] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:13:23] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:13:23] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:13:23] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:13:23] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:13:23] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:13:23] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 11:13:23] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 11:13:23] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:13:23] INFO: Test run completed with status: PASSED
+[2025-05-08 11:14:53] INFO: Test run started with 1 test(s).
+[2025-05-08 11:14:54] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:14:54] INFO: Executing Step : Login title is visible
+[2025-05-08 11:14:55] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:14:55] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:14:55] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:14:55] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:14:55] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:14:55] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:14:55] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:14:55] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 11:14:55] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 11:14:55] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:14:55] INFO: Test run completed with status: PASSED
+[2025-05-08 11:20:15] INFO: Test run started with 1 test(s).
+[2025-05-08 11:20:15] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:20:16] INFO: Executing Step : Login title is visible
+[2025-05-08 11:20:16] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:20:17] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:20:17] INFO: Test run completed with status: PASSED
+[2025-05-08 11:20:56] INFO: Test run started with 1 test(s).
+[2025-05-08 11:20:56] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:20:57] INFO: Executing Step : Login title is visible
+[2025-05-08 11:20:57] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:20:57] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:20:57] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:20:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:20:58] INFO: Test run completed with status: PASSED
+[2025-05-08 11:22:35] INFO: Test run started with 1 test(s).
+[2025-05-08 11:22:35] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:22:35] INFO: Executing Step : Login title is visible
+[2025-05-08 11:22:36] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:22:36] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:22:36] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:22:36] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:22:37] INFO: Test run completed with status: PASSED
+[2025-05-08 11:23:22] INFO: Test run started with 1 test(s).
+[2025-05-08 11:23:22] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:23:23] INFO: Executing Step : Login title is visible
+[2025-05-08 11:23:23] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:23:23] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:23:23] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:23:24] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:23:24] INFO: Test run completed with status: PASSED
+[2025-05-08 11:23:39] INFO: Test run started with 1 test(s).
+[2025-05-08 11:23:39] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:23:40] INFO: Executing Step : Login title is visible
+[2025-05-08 11:23:40] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:23:40] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:23:40] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:23:40] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:23:40] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:23:41] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:23:41] INFO: Test run completed with status: PASSED
+[2025-05-08 11:24:55] INFO: Test run started with 1 test(s).
+[2025-05-08 11:24:56] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:24:56] INFO: Executing Step : Login title is visible
+[2025-05-08 11:24:56] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:24:56] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:24:56] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:24:56] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:24:56] INFO: Completed Step : Email label should be visible - Error: Error: expect.toBeVisible: Error: strict mode violation: locator('label[class*="typography-body-1"][class*="text-gray-700"]') resolved to 2 elements:
+    1) <label class="typography-body-1 mb-2 block py-[1px] text-gray-700">…</label> aka getByText('Email address*')
+    2) <label class="typography-body-1 mb-2 block py-[1px] text-gray-700">…</label> aka getByText('Password*')
+
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('label[class*="typography-body-1"][class*="text-gray-700"]')[22m
+
+[2025-05-08 11:24:57] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : failed
+[2025-05-08 11:24:57] INFO: Test run completed with status: FAILED
+[2025-05-08 11:25:25] INFO: Test run started with 1 test(s).
+[2025-05-08 11:25:25] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:25:25] INFO: Executing Step : Login title is visible
+[2025-05-08 11:25:26] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:25:26] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:25:26] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:25:26] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:25:26] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:25:26] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:25:26] INFO: Test run completed with status: PASSED
+[2025-05-08 11:26:43] INFO: Test run started with 1 test(s).
+[2025-05-08 11:26:43] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:26:44] INFO: Executing Step : Login title is visible
+[2025-05-08 11:26:44] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:26:44] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:26:44] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:26:44] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:27:04] INFO: Completed Step : Email label should be visible - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('label[class*="typography-body-1"][class*="text-gray-700"] [for="email"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('label[class*="typography-body-1"][class*="text-gray-700"] [for="email"]')[22m
+
+[2025-05-08 11:27:16] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : failed
+[2025-05-08 11:27:16] INFO: Test run completed with status: FAILED
+[2025-05-08 11:27:38] INFO: Test run started with 1 test(s).
+[2025-05-08 11:27:38] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:27:39] INFO: Executing Step : Login title is visible
+[2025-05-08 11:27:39] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:27:39] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:27:39] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:27:39] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:27:59] INFO: Completed Step : Email label should be visible - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('label[class*="typography-body-1"][class*="text-gray-700"][for="email"]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('label[class*="typography-body-1"][class*="text-gray-700"][for="email"]')[22m
+
+[2025-05-08 11:28:12] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : failed
+[2025-05-08 11:28:12] INFO: Test run completed with status: FAILED
+[2025-05-08 11:29:01] INFO: Test run started with 1 test(s).
+[2025-05-08 11:29:02] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:29:02] INFO: Executing Step : Login title is visible
+[2025-05-08 11:29:03] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:29:03] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:29:03] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:29:03] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:29:03] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:29:03] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:29:03] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:29:03] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:29:03] INFO: Test run completed with status: PASSED
+[2025-05-08 11:30:12] INFO: Test run started with 1 test(s).
+[2025-05-08 11:30:12] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:30:13] INFO: Executing Step : Login title is visible
+[2025-05-08 11:30:13] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:30:13] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:30:13] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:30:13] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:30:13] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:30:13] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:30:13] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:30:13] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:30:13] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:30:14] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:30:14] INFO: Test run completed with status: PASSED
+[2025-05-08 11:30:44] INFO: Test run started with 1 test(s).
+[2025-05-08 11:30:45] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:30:45] INFO: Executing Step : Login title is visible
+[2025-05-08 11:30:46] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:30:46] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:30:46] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:30:46] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:30:46] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:30:46] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:30:46] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:30:46] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:30:46] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:30:46] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:30:46] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:30:46] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:30:46] INFO: Test run completed with status: PASSED
+[2025-05-08 11:33:00] INFO: Test run started with 1 test(s).
+[2025-05-08 11:33:01] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:33:01] INFO: Executing Step : Login title is visible
+[2025-05-08 11:33:02] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:33:02] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:33:02] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:33:02] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:33:02] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:33:02] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:33:02] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:33:02] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:33:02] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:33:02] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:33:02] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:33:02] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:33:02] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:33:02] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:33:02] INFO: Test run completed with status: PASSED
+[2025-05-08 11:33:48] INFO: Test run started with 1 test(s).
+[2025-05-08 11:33:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-08 11:33:49] INFO: Executing Step : Login title is visible
+[2025-05-08 11:33:50] INFO: Completed Step : Login title is visible - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Subtext should be visible
+[2025-05-08 11:33:50] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Email label should be visible
+[2025-05-08 11:33:50] INFO: Completed Step : Email label should be visible - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Password label should be visible
+[2025-05-08 11:33:50] INFO: Completed Step : Password label should be visible - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Forgot password link should be visible
+[2025-05-08 11:33:50] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Password input should be visible
+[2025-05-08 11:33:50] INFO: Completed Step : Password input should be visible - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Input type checkbox should exist
+[2025-05-08 11:33:50] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-08 11:33:50] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-08 11:33:50] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-08 11:33:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-08 11:33:50] INFO: Test run completed with status: PASSED
+>>>>>>> 8594b13 (login tests)
+>>>>>>> bfff8d5 (login tests)
+>>>>>>> f16ca8e (login tests)
+>>>>>>> 722663f (login tests)
