@@ -66,11 +66,7 @@ test(`SANITY-CLUB59-LOGIN-001: Load Login page ${SANITY_TAG}`, async ({
   });
 });
 
-<<<<<<< HEAD
 test(`E2E-CLUB59-LOGIN-001: Login field validations ${E2E_TAG}`, async ({
-=======
-test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
->>>>>>> 8ff484b (login tests)
   page,
 }) => {
   test.info().annotations.push(
@@ -104,6 +100,18 @@ test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
     const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
     await expect(errorMessage).not.toBeVisible();
   });
+});
+
+test(`E2E-CLUB59-LOGIN-002: Password field validation ${E2E_TAG}`, async ({
+  page,
+}) => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-002' },
+    {
+      type: 'Test Description',
+      description: 'Password field validation',
+    }
+  );
   await test.step('Password field is empty', async () => {
     await clubSurveyLogin.loadApp(environment.baseURL);
     const emailInput = page.locator(clubSurveyLogin.selectors.emailSelector);
@@ -141,6 +149,18 @@ test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
     await showPasswordButton.click();
     await expect(passwordInput).toHaveAttribute('type', 'text');
   });
+});
+
+test(`E2E-CLUB59-LOGIN-003: Email and Password field validation ${E2E_TAG}`, async ({
+  page,
+}) => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-003' },
+    {
+      type: 'Test Description',
+      description: 'Email and Password field validation',
+    }
+  );
   await test.step('Email field and Password field are empty', async () => {
     await clubSurveyLogin.loadApp(environment.baseURL);
     const emailInput = page.locator(clubSurveyLogin.selectors.emailSelector);
@@ -202,6 +222,18 @@ test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
     await passwordInput.fill('validpassword');
     await expect(loginButton).toBeEnabled();
   });
+});
+
+test(`E2E-CLUB59-LOGIN-004: Remeber me checkbox ${E2E_TAG}`, async ({
+  page,
+}) => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-004' },
+    {
+      type: 'Test Description',
+      description: 'Remeber me checkbox',
+    }
+  );
   await test.step('Remeber me checkbox is not checked', async () => {
     await clubSurveyLogin.loadApp(environment.baseURL);
     await expect(page.locator("//input[@type='checkbox']")).not.toBeChecked();

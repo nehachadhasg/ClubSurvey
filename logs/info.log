@@ -11641,10 +11641,14 @@ Call log:
 [2025-05-08 11:33:50] INFO: Test run completed with status: PASSED
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8594b13 (login tests)
 <<<<<<< HEAD
 >>>>>>> bfff8d5 (login tests)
 =======
+=======
+>>>>>>> 8594b13 (login tests)
+>>>>>>> aac5fa1 (login tests)
 =======
 [2025-05-08 11:43:08] INFO: Test run started with 1 test(s).
 [2025-05-08 11:43:08] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
@@ -12019,6 +12023,7 @@ Call log:
 [2025-05-08 13:22:00] INFO: Completed Step : Remeber me checkbox is checked - Success
 [2025-05-08 13:22:00] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
 [2025-05-08 13:22:00] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> fea83fc (login tests)
 <<<<<<< HEAD
@@ -13422,3 +13427,6 @@ Call log:
 =======
 >>>>>>> 8594b13 (login tests)
 >>>>>>> 8ff484b (login tests)
+=======
+>>>>>>> fea83fc (login tests)
+>>>>>>> aac5fa1 (login tests)
