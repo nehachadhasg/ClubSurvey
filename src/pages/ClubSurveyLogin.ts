@@ -50,6 +50,10 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
       'button[type="button"][class*="typography-label-bold"][class*="cursor-pointer"]',
     myProfileButton:
       'div[class*="typography-body-1-bold"][class*="bg-gold"][class*="cursor-pointer"]',
+    loginTitle: 'h1[class*="typography-heading-2"]',
+    subtext:
+      'p[class*="typography-body-1"][class*="text-muted-foreground"][class*="font-body"]',
+    inputLabels: 'label[class*="typography-body-1"][class*="text-gray-700"]',
   };
 
   public someAbstractMethod(): void {
