@@ -12025,10 +12025,14 @@ Call log:
 [2025-05-08 13:22:00] INFO: Test run completed with status: PASSED
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> fea83fc (login tests)
 <<<<<<< HEAD
 >>>>>>> 30c8ffc (login tests)
 =======
+=======
+>>>>>>> fea83fc (login tests)
+>>>>>>> e86e281 (login & contact us)
 =======
 [2025-05-09 11:39:00] INFO: Test run started with 1 test(s).
 [2025-05-09 11:39:00] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Contact us form @e2e
@@ -13418,6 +13422,7 @@ Call log:
 [2025-05-09 13:42:22] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Contact Us submit flow @e2e Status : passed
 [2025-05-09 13:42:22] INFO: Test run completed with status: FAILED
 >>>>>>> f04acfd (login & contact us)
+<<<<<<< HEAD
 >>>>>>> 1b4bbba (login & contact us)
 =======
 >>>>>>> 1345cf6 (Added RoleBased Framework)
@@ -13430,3 +13435,5 @@ Call log:
 =======
 >>>>>>> fea83fc (login tests)
 >>>>>>> aac5fa1 (login tests)
+=======
+>>>>>>> e86e281 (login & contact us)
