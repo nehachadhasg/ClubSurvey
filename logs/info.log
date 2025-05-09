@@ -12003,5 +12003,1398 @@ Call log:
 [2025-05-08 13:22:00] INFO: Completed Step : Remeber me checkbox is checked - Success
 [2025-05-08 13:22:00] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
 [2025-05-08 13:22:00] INFO: Test run completed with status: PASSED
+<<<<<<< HEAD
 >>>>>>> fea83fc (login tests)
+<<<<<<< HEAD
 >>>>>>> 30c8ffc (login tests)
+=======
+=======
+[2025-05-09 11:39:00] INFO: Test run started with 1 test(s).
+[2025-05-09 11:39:00] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Contact us form @e2e
+[2025-05-09 11:39:04] INFO: Executing Step : Clicking on the contact us button should show a form
+[2025-05-09 11:39:06] INFO: Completed Step : Clicking on the contact us button should show a form - Success
+[2025-05-09 11:39:07] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Contact us form @e2e Status : passed
+[2025-05-09 11:39:07] INFO: Test run completed with status: PASSED
+[2025-05-09 11:39:40] INFO: Test run started with 1 test(s).
+[2025-05-09 11:39:40] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Contact us form @e2e
+[2025-05-09 11:39:41] INFO: Executing Step : Clicking on the contact us button should open a modal
+[2025-05-09 11:39:42] INFO: Completed Step : Clicking on the contact us button should open a modal - Success
+[2025-05-09 11:39:42] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Contact us form @e2e Status : passed
+[2025-05-09 11:39:42] INFO: Test run completed with status: PASSED
+[2025-05-09 11:43:45] INFO: Test run started with 1 test(s).
+[2025-05-09 11:43:45] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 11:43:46] INFO: Executing Step : Clicking on the contact us button should open a modal
+[2025-05-09 11:43:47] INFO: Completed Step : Clicking on the contact us button should open a modal - Success
+[2025-05-09 11:43:48] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 11:43:48] INFO: Test run completed with status: PASSED
+[2025-05-09 11:45:49] INFO: Test run started with 1 test(s).
+[2025-05-09 11:45:49] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 11:45:50] INFO: Executing Step : Clicking on the contact us button should open a modal
+[2025-05-09 11:45:51] INFO: Completed Step : Clicking on the contact us button should open a modal - Success
+[2025-05-09 11:45:52] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 11:45:52] INFO: Test run completed with status: PASSED
+[2025-05-09 11:46:39] INFO: Test run started with 1 test(s).
+[2025-05-09 11:46:39] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 11:46:40] INFO: Executing Step : Clicking on the contact us button should open a modal
+[2025-05-09 11:46:41] INFO: Completed Step : Clicking on the contact us button should open a modal - Error: Error: expect.toBeVisible: Unexpected token "" while parsing css selector "div[class*="cursor-pointer"][class*="bg-greyscale-100"". Did you mean to CSS.escape it?
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for div[class*="cursor-pointer"][class*="bg-greyscale-100"[22m
+
+[2025-05-09 11:46:42] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : failed
+[2025-05-09 11:46:42] INFO: Test run completed with status: FAILED
+[2025-05-09 11:55:38] INFO: Test run started with 1 test(s).
+[2025-05-09 11:55:38] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 11:55:39] INFO: Executing Step : Clicking on the contact us button should open a modal
+[2025-05-09 11:55:40] INFO: Completed Step : Clicking on the contact us button should open a modal - Success
+[2025-05-09 11:55:41] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 11:55:41] INFO: Test run completed with status: PASSED
+[2025-05-09 12:00:19] INFO: Test run started with 1 test(s).
+[2025-05-09 12:00:20] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:00:20] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:00:22] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:00:22] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:00:23] INFO: Test run completed with status: PASSED
+[2025-05-09 12:04:39] INFO: Test run started with 1 test(s).
+[2025-05-09 12:04:40] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:04:40] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:04:42] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:04:43] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:04:43] INFO: Test run completed with status: PASSED
+[2025-05-09 12:07:27] INFO: Test run started with 1 test(s).
+[2025-05-09 12:07:27] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:07:28] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:07:29] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Error: Error: expect.toBeVisible: Error: strict mode violation: locator('label[class*="typography-body-1"][class*="text-gray-700"]:has-text("Email address")') resolved to 2 elements:
+    1) <label class="typography-body-1 mb-2 block py-[1px] text-gray-700">…</label> aka getByText('Email address*').first()
+    2) <label for="email" class="typography-body-1 mb-2 block py-[1px] text-gray-700 typography-body-1">…</label> aka getByLabel('Need help or want to contact').getByText('Email address*')
+
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('label[class*="typography-body-1"][class*="text-gray-700"]:has-text("Email address")')[22m
+
+[2025-05-09 12:07:30] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : failed
+[2025-05-09 12:07:30] INFO: Test run completed with status: FAILED
+[2025-05-09 12:10:16] INFO: Test run started with 1 test(s).
+[2025-05-09 12:10:17] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:10:17] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:10:18] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:10:19] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:10:19] INFO: Test run completed with status: PASSED
+[2025-05-09 12:10:41] INFO: Test run started with 1 test(s).
+[2025-05-09 12:10:41] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-09 12:10:41] INFO: Executing Step : Login title is visible
+[2025-05-09 12:10:42] INFO: Completed Step : Login title is visible - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Subtext should be visible
+[2025-05-09 12:10:42] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Email label should be visible
+[2025-05-09 12:10:42] INFO: Completed Step : Email label should be visible - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Password label should be visible
+[2025-05-09 12:10:42] INFO: Completed Step : Password label should be visible - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Forgot password link should be visible
+[2025-05-09 12:10:42] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Password input should be visible
+[2025-05-09 12:10:42] INFO: Completed Step : Password input should be visible - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Input type checkbox should exist
+[2025-05-09 12:10:42] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-09 12:10:42] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-09 12:10:42] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-09 12:10:42] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-09 12:10:42] INFO: Test run completed with status: PASSED
+[2025-05-09 12:14:07] INFO: Test run started with 1 test(s).
+[2025-05-09 12:14:07] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:14:10] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:14:11] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Error: Error: expect.toBeVisible: Error: strict mode violation: locator('input[name="email"]') resolved to 2 elements:
+    1) <input value="" type="email" name="email" placeholder="Insert your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-f…/> aka getByPlaceholder('Insert your email address')
+    2) <input id="email" type="email" name="email" placeholder="Enter your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-…/> aka getByRole('textbox', { name: 'Email address*' })
+
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('input[name="email"]')[22m
+
+[2025-05-09 12:14:12] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : failed
+[2025-05-09 12:14:12] INFO: Test run completed with status: FAILED
+[2025-05-09 12:14:48] INFO: Test run started with 1 test(s).
+[2025-05-09 12:14:48] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:14:49] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:14:50] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:14:50] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:14:51] INFO: Test run completed with status: PASSED
+[2025-05-09 12:20:23] INFO: Test run started with 1 test(s).
+[2025-05-09 12:20:23] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:20:24] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:20:25] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:20:25] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:20:26] INFO: Test run completed with status: PASSED
+[2025-05-09 12:22:43] INFO: Test run started with 1 test(s).
+[2025-05-09 12:22:44] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:22:44] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:22:45] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:22:45] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the heading text
+[2025-05-09 12:22:45] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the close button
+[2025-05-09 12:22:45] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the subtext
+[2025-05-09 12:22:45] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:22:45] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:22:45] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the email input label
+[2025-05-09 12:22:45] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the message input label
+[2025-05-09 12:22:45] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:22:45] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:22:45] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the email input field
+[2025-05-09 12:22:45] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the message input field
+[2025-05-09 12:22:45] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:22:45] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:22:45] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:22:45] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:22:45] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:22:45] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:22:45] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:22:45] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:22:45] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:22:45] INFO: Executing Step : should display the submit button
+[2025-05-09 12:22:45] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:22:45] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:22:45] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:22:45] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:22:46] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:22:46] INFO: Test run completed with status: PASSED
+[2025-05-09 12:22:56] INFO: Test run started with 1 test(s).
+[2025-05-09 12:22:56] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-09 12:22:56] INFO: Executing Step : Login title is visible
+[2025-05-09 12:22:57] INFO: Completed Step : Login title is visible - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Subtext should be visible
+[2025-05-09 12:22:57] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Email label should be visible
+[2025-05-09 12:22:57] INFO: Completed Step : Email label should be visible - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Password label should be visible
+[2025-05-09 12:22:57] INFO: Completed Step : Password label should be visible - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Forgot password link should be visible
+[2025-05-09 12:22:57] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Password input should be visible
+[2025-05-09 12:22:57] INFO: Completed Step : Password input should be visible - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Input type checkbox should exist
+[2025-05-09 12:22:57] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-09 12:22:57] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-09 12:22:57] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-09 12:22:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-09 12:22:58] INFO: Test run completed with status: PASSED
+[2025-05-09 12:23:04] INFO: Test run started with 1 test(s).
+[2025-05-09 12:23:04] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:23:07] INFO: Executing Step : Clicking on the Contact Us button should open a modal
+[2025-05-09 12:23:08] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:23:08] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the heading text
+[2025-05-09 12:23:08] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the close button
+[2025-05-09 12:23:08] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the subtext
+[2025-05-09 12:23:08] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:23:08] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:23:08] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the email input label
+[2025-05-09 12:23:08] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the message input label
+[2025-05-09 12:23:08] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:23:08] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:23:08] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the email input field
+[2025-05-09 12:23:08] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the message input field
+[2025-05-09 12:23:08] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:23:08] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:23:08] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:23:08] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:23:08] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:23:08] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:23:08] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:23:08] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:23:08] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:23:08] INFO: Executing Step : should display the submit button
+[2025-05-09 12:23:08] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:23:08] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:23:08] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:23:08] INFO: Completed Step : Clicking on the Contact Us button should open a modal - Success
+[2025-05-09 12:23:09] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:23:09] INFO: Test run completed with status: PASSED
+[2025-05-09 12:27:22] INFO: Test run started with 1 test(s).
+[2025-05-09 12:27:22] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:27:23] INFO: Executing Step : Contact Us modal
+[2025-05-09 12:27:24] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:27:24] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the heading text
+[2025-05-09 12:27:24] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the close button
+[2025-05-09 12:27:24] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the subtext
+[2025-05-09 12:27:24] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:27:24] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:27:24] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the email input label
+[2025-05-09 12:27:24] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the message input label
+[2025-05-09 12:27:24] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:27:24] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:27:24] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the email input field
+[2025-05-09 12:27:24] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the message input field
+[2025-05-09 12:27:24] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:27:24] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:27:24] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:27:24] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:27:24] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:27:24] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:27:24] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:27:24] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:27:24] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:27:24] INFO: Executing Step : should display the submit button
+[2025-05-09 12:27:24] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:27:24] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:27:24] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:27:24] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 12:27:25] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:27:25] INFO: Test run completed with status: PASSED
+[2025-05-09 12:31:36] INFO: Test run started with 1 test(s).
+[2025-05-09 12:31:36] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:31:37] INFO: Executing Step : Contact Us modal
+[2025-05-09 12:31:38] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:31:38] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the heading text
+[2025-05-09 12:31:38] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the close button
+[2025-05-09 12:31:38] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the subtext
+[2025-05-09 12:31:38] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:31:38] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:31:38] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the email input label
+[2025-05-09 12:31:38] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the message input label
+[2025-05-09 12:31:38] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:31:38] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:31:38] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the email input field
+[2025-05-09 12:31:38] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the message input field
+[2025-05-09 12:31:38] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:31:38] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:31:38] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:31:38] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:31:38] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:31:38] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:31:38] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:31:38] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:31:38] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the submit button
+[2025-05-09 12:31:38] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:31:38] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:31:38] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:31:38] INFO: Executing Step : should display the contact us image
+[2025-05-09 12:31:38] INFO: Completed Step : should display the contact us image - Error: Error: expect.toBeVisible: Unsupported token "@alt" while parsing css selector "img[@alt="Need help or want to contact us?" and contains(@class, "object-contain")]". Did you mean to CSS.escape it?
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for img[@alt="Need help or want to contact us?" and contains(@class, "object-contain")][22m
+
+[2025-05-09 12:31:38] INFO: Completed Step : Contact Us modal - Error: Error: expect.toBeVisible: Unsupported token "@alt" while parsing css selector "img[@alt="Need help or want to contact us?" and contains(@class, "object-contain")]". Did you mean to CSS.escape it?
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for img[@alt="Need help or want to contact us?" and contains(@class, "object-contain")][22m
+
+[2025-05-09 12:31:39] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : failed
+[2025-05-09 12:31:39] INFO: Test run completed with status: FAILED
+[2025-05-09 12:32:28] INFO: Test run started with 1 test(s).
+[2025-05-09 12:32:28] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:32:29] INFO: Executing Step : Contact Us modal
+[2025-05-09 12:32:30] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:32:30] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the heading text
+[2025-05-09 12:32:30] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the close button
+[2025-05-09 12:32:30] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the subtext
+[2025-05-09 12:32:30] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:32:30] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:32:30] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the email input label
+[2025-05-09 12:32:30] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the message input label
+[2025-05-09 12:32:30] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:32:30] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:32:30] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the email input field
+[2025-05-09 12:32:30] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the message input field
+[2025-05-09 12:32:30] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:32:30] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:32:30] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:32:30] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:32:30] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:32:30] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:32:30] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:32:30] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:32:30] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the submit button
+[2025-05-09 12:32:30] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:32:30] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:32:30] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:32:30] INFO: Executing Step : should display the contact us image
+[2025-05-09 12:32:30] INFO: Completed Step : should display the contact us image - Error: Error: expect.toBeVisible: Unsupported token "@alt" while parsing css selector "img[@alt="Need help or want to contact us?"]". Did you mean to CSS.escape it?
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for img[@alt="Need help or want to contact us?"][22m
+
+[2025-05-09 12:32:30] INFO: Completed Step : Contact Us modal - Error: Error: expect.toBeVisible: Unsupported token "@alt" while parsing css selector "img[@alt="Need help or want to contact us?"]". Did you mean to CSS.escape it?
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for img[@alt="Need help or want to contact us?"][22m
+
+[2025-05-09 12:32:31] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : failed
+[2025-05-09 12:32:31] INFO: Test run completed with status: FAILED
+[2025-05-09 12:34:39] INFO: Test run started with 1 test(s).
+[2025-05-09 12:34:39] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:34:40] INFO: Executing Step : Contact Us modal
+[2025-05-09 12:34:41] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:34:41] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the heading text
+[2025-05-09 12:34:41] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the close button
+[2025-05-09 12:34:41] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the subtext
+[2025-05-09 12:34:41] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:34:41] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:34:41] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the email input label
+[2025-05-09 12:34:41] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the message input label
+[2025-05-09 12:34:41] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:34:41] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:34:41] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the email input field
+[2025-05-09 12:34:41] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the message input field
+[2025-05-09 12:34:41] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:34:41] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:34:41] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:34:41] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:34:41] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:34:41] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:34:41] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:34:41] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:34:41] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the submit button
+[2025-05-09 12:34:41] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:34:41] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:34:41] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:34:41] INFO: Executing Step : should display the contact us image
+[2025-05-09 12:34:41] INFO: Completed Step : should display the contact us image - Success
+[2025-05-09 12:34:41] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 12:34:42] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:34:42] INFO: Test run completed with status: PASSED
+[2025-05-09 12:35:30] INFO: Test run started with 1 test(s).
+[2025-05-09 12:35:30] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 12:35:31] INFO: Executing Step : Contact Us modal
+[2025-05-09 12:35:32] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 12:35:32] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the heading text
+[2025-05-09 12:35:32] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the close button
+[2025-05-09 12:35:32] INFO: Completed Step : should display the close button - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the subtext
+[2025-05-09 12:35:32] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the first name input label
+[2025-05-09 12:35:32] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the last name input label
+[2025-05-09 12:35:32] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the email input label
+[2025-05-09 12:35:32] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the message input label
+[2025-05-09 12:35:32] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the first name input field
+[2025-05-09 12:35:32] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the last name input field
+[2025-05-09 12:35:32] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the email input field
+[2025-05-09 12:35:32] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the message input field
+[2025-05-09 12:35:32] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 12:35:32] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 12:35:32] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 12:35:32] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 12:35:32] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 12:35:32] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 12:35:32] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 12:35:32] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 12:35:32] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the submit button
+[2025-05-09 12:35:32] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 12:35:32] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 12:35:32] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 12:35:32] INFO: Executing Step : should display the image
+[2025-05-09 12:35:32] INFO: Completed Step : should display the image - Success
+[2025-05-09 12:35:32] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 12:35:32] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 12:35:33] INFO: Test run completed with status: PASSED
+[2025-05-09 12:36:24] INFO: Test run started with 1 test(s).
+[2025-05-09 12:36:24] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-09 12:36:25] INFO: Executing Step : Enter invalid email
+[2025-05-09 12:36:26] INFO: Completed Step : Enter invalid email - Success
+[2025-05-09 12:36:26] INFO: Executing Step : Enter valid email
+[2025-05-09 12:36:27] INFO: Completed Step : Enter valid email - Success
+[2025-05-09 12:36:28] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-09 12:36:28] INFO: Test run completed with status: PASSED
+[2025-05-09 12:45:08] INFO: Test run started with 1 test(s).
+[2025-05-09 12:45:08] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:45:09] INFO: Executing Step : Empty input fields
+[2025-05-09 12:45:10] INFO: Executing Step : First name field is empty
+[2025-05-09 12:45:11] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:45:11] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:45:11] INFO: Completed Step : Last name field is empty - Error: Error: expect.toHaveText: Error: strict mode violation: locator('p[class*="text-error-300"][class*="!typography-body-1"]') resolved to 2 elements:
+    1) <p class="!typography-body-1 mt-1 font-body text-error-300">First name is required</p> aka getByText('First name is required')
+    2) <p class="!typography-body-1 mt-1 font-body text-error-300">Last name is required</p> aka getByText('Last name is required')
+
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+
+[2025-05-09 12:45:11] INFO: Completed Step : Empty input fields - Error: Error: expect.toHaveText: Error: strict mode violation: locator('p[class*="text-error-300"][class*="!typography-body-1"]') resolved to 2 elements:
+    1) <p class="!typography-body-1 mt-1 font-body text-error-300">First name is required</p> aka getByText('First name is required')
+    2) <p class="!typography-body-1 mt-1 font-body text-error-300">Last name is required</p> aka getByText('Last name is required')
+
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+
+[2025-05-09 12:45:12] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 12:45:12] INFO: Test run completed with status: FAILED
+[2025-05-09 12:48:47] INFO: Test run started with 1 test(s).
+[2025-05-09 12:48:48] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:48:48] INFO: Executing Step : First name field is empty
+[2025-05-09 12:48:50] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:48:51] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : passed
+[2025-05-09 12:48:51] INFO: Test run completed with status: PASSED
+[2025-05-09 12:49:35] INFO: Test run started with 1 test(s).
+[2025-05-09 12:49:36] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:49:36] INFO: Executing Step : First name field is empty
+[2025-05-09 12:49:38] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:49:38] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:49:39] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 12:49:40] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : passed
+[2025-05-09 12:49:40] INFO: Test run completed with status: PASSED
+[2025-05-09 12:51:36] INFO: Test run started with 1 test(s).
+[2025-05-09 12:51:36] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:51:37] INFO: Executing Step : First name field is empty
+[2025-05-09 12:51:39] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:51:39] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:51:40] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 12:51:40] INFO: Executing Step : Email field is empty
+[2025-05-09 12:51:41] INFO: Completed Step : Email field is empty - Error: Error: locator.fill: Error: strict mode violation: locator('input[name="email"]') resolved to 2 elements:
+    1) <input value="" type="email" name="email" placeholder="Insert your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-f…/> aka getByPlaceholder('Insert your email address')
+    2) <input id="email" type="email" name="email" placeholder="Enter your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-…/> aka getByRole('textbox', { name: 'Email address*' })
+
+Call log:
+[2m  - waiting for locator('input[name="email"]')[22m
+
+[2025-05-09 12:51:42] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 12:51:42] INFO: Test run completed with status: FAILED
+[2025-05-09 12:52:43] INFO: Test run started with 1 test(s).
+[2025-05-09 12:52:43] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:52:44] INFO: Executing Step : First name field is empty
+[2025-05-09 12:52:46] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:52:46] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:52:47] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 12:52:47] INFO: Executing Step : Email field is empty
+[2025-05-09 12:52:48] INFO: Completed Step : Email field is empty - Error: Error: locator.fill: Error: strict mode violation: locator('input[name="email"]:nth-of-type(1)') resolved to 2 elements:
+    1) <input value="" type="email" name="email" placeholder="Insert your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-f…/> aka getByPlaceholder('Insert your email address')
+    2) <input id="email" type="email" name="email" placeholder="Enter your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-…/> aka getByRole('textbox', { name: 'Email address*' })
+
+Call log:
+[2m  - waiting for locator('input[name="email"]:nth-of-type(1)')[22m
+
+[2025-05-09 12:52:49] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 12:52:49] INFO: Test run completed with status: FAILED
+[2025-05-09 12:53:19] INFO: Test run started with 1 test(s).
+[2025-05-09 12:53:19] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:53:20] INFO: Executing Step : First name field is empty
+[2025-05-09 12:53:22] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:53:22] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:53:23] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 12:53:23] INFO: Executing Step : Email field is empty
+[2025-05-09 12:53:24] INFO: Completed Step : Email field is empty - Error: Error: locator.fill: SyntaxError: Failed to execute 'querySelectorAll' on 'Document': 'input[name="email"]:nth(1)' is not a valid selector.
+    at query (<anonymous>:4865:41)
+    at <anonymous>:4875:7
+    at SelectorEvaluatorImpl._cached (<anonymous>:4652:20)
+    at SelectorEvaluatorImpl._queryCSS (<anonymous>:4862:17)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:4742:19)
+    at <anonymous>:4690:29
+    at SelectorEvaluatorImpl._cached (<anonymous>:4652:20)
+    at SelectorEvaluatorImpl.query (<anonymous>:4683:19)
+    at Object.query (<anonymous>:4897:44)
+    at <anonymous>:4855:21
+Call log:
+[2m  - waiting for locator('input[name="email"]:nth(1)')[22m
+
+[2025-05-09 12:53:25] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 12:53:25] INFO: Test run completed with status: FAILED
+[2025-05-09 12:55:55] INFO: Test run started with 1 test(s).
+[2025-05-09 12:55:55] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:55:56] INFO: Executing Step : First name field is empty
+[2025-05-09 12:55:57] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:55:57] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:55:59] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 12:55:59] INFO: Executing Step : Email field is empty
+[2025-05-09 12:56:20] INFO: Completed Step : Email field is empty - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 12:56:29] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 12:56:29] INFO: Test run completed with status: FAILED
+[2025-05-09 12:57:54] INFO: Test run started with 1 test(s).
+[2025-05-09 12:57:54] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 12:57:55] INFO: Executing Step : First name field is empty
+[2025-05-09 12:57:57] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 12:57:57] INFO: Executing Step : Last name field is empty
+[2025-05-09 12:57:58] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 12:57:58] INFO: Executing Step : Email field is empty
+[2025-05-09 12:58:00] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 12:58:00] INFO: Executing Step : Message field is empty
+[2025-05-09 12:58:21] INFO: Completed Step : Message field is empty - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Message must be at least 10 characters long"[39m
+Received string: [31m"Last name is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    14 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Last name is required</p>[22m
+[2m       - unexpected value "Last name is required"[22m
+
+[2025-05-09 12:58:28] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 12:58:28] INFO: Test run completed with status: FAILED
+[2025-05-09 13:00:05] INFO: Test run started with 1 test(s).
+[2025-05-09 13:00:05] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 13:00:05] INFO: Executing Step : First name field is empty
+[2025-05-09 13:00:07] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:00:07] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:00:09] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:00:09] INFO: Executing Step : Email field is empty
+[2025-05-09 13:00:10] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:00:10] INFO: Executing Step : Message field is empty
+[2025-05-09 13:00:31] INFO: Completed Step : Message field is empty - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Message must be at least 10 characters long"[39m
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+
+[2025-05-09 13:00:40] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 13:00:40] INFO: Test run completed with status: FAILED
+[2025-05-09 13:05:25] INFO: Test run started with 1 test(s).
+[2025-05-09 13:05:26] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 13:05:26] INFO: Executing Step : First name field is empty
+[2025-05-09 13:05:28] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:05:28] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:05:29] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:05:29] INFO: Executing Step : Email field is empty
+[2025-05-09 13:05:31] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:05:31] INFO: Executing Step : Message field is empty
+[2025-05-09 13:05:32] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:05:32] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:05:34] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:05:34] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:05:55] INFO: Completed Step : Message field is more than 10 characters - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*=text-sm][class*=text-destructive]')
+Expected string: [32m"Message must be at least 10 characters long"[39m
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*=text-sm][class*=text-destructive]')[22m
+
+[2025-05-09 13:06:00] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 13:06:00] INFO: Test run completed with status: FAILED
+[2025-05-09 13:06:31] INFO: Test run started with 1 test(s).
+[2025-05-09 13:06:31] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 13:06:32] INFO: Executing Step : Contact Us modal
+[2025-05-09 13:06:33] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 13:06:33] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the heading text
+[2025-05-09 13:06:33] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the close button
+[2025-05-09 13:06:33] INFO: Completed Step : should display the close button - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the subtext
+[2025-05-09 13:06:33] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the first name input label
+[2025-05-09 13:06:33] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the last name input label
+[2025-05-09 13:06:33] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the email input label
+[2025-05-09 13:06:33] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the message input label
+[2025-05-09 13:06:33] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the first name input field
+[2025-05-09 13:06:33] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the last name input field
+[2025-05-09 13:06:33] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 13:06:33] INFO: Executing Step : should display the email input field
+[2025-05-09 13:06:53] INFO: Completed Step : should display the email input field - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('input[name="email"][placeholder="Enter your email address"]').nth(1)
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('input[name="email"][placeholder="Enter your email address"]').nth(1)[22m
+
+[2025-05-09 13:06:53] INFO: Completed Step : Contact Us modal - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('input[name="email"][placeholder="Enter your email address"]').nth(1)
+Expected: visible
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toBeVisible with timeout 20000ms[22m
+[2m  - waiting for locator('input[name="email"][placeholder="Enter your email address"]').nth(1)[22m
+
+[2025-05-09 13:07:05] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : failed
+[2025-05-09 13:07:06] INFO: Test run completed with status: FAILED
+[2025-05-09 13:07:22] INFO: Test run started with 1 test(s).
+[2025-05-09 13:07:22] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 13:07:23] INFO: Executing Step : Contact Us modal
+[2025-05-09 13:07:24] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 13:07:24] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the heading text
+[2025-05-09 13:07:24] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the close button
+[2025-05-09 13:07:24] INFO: Completed Step : should display the close button - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the subtext
+[2025-05-09 13:07:24] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the first name input label
+[2025-05-09 13:07:24] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the last name input label
+[2025-05-09 13:07:24] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the email input label
+[2025-05-09 13:07:24] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the message input label
+[2025-05-09 13:07:24] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the first name input field
+[2025-05-09 13:07:24] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the last name input field
+[2025-05-09 13:07:24] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the email input field
+[2025-05-09 13:07:24] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the message input field
+[2025-05-09 13:07:24] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 13:07:24] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 13:07:24] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 13:07:24] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 13:07:24] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 13:07:24] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 13:07:24] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 13:07:24] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 13:07:24] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the submit button
+[2025-05-09 13:07:24] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 13:07:24] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 13:07:24] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 13:07:24] INFO: Executing Step : should display the image
+[2025-05-09 13:07:24] INFO: Completed Step : should display the image - Success
+[2025-05-09 13:07:24] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 13:07:25] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 13:07:25] INFO: Test run completed with status: PASSED
+[2025-05-09 13:07:30] INFO: Test run started with 1 test(s).
+[2025-05-09 13:07:31] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 13:07:31] INFO: Executing Step : First name field is empty
+[2025-05-09 13:07:33] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:07:33] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:07:34] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:07:34] INFO: Executing Step : Email field is empty
+[2025-05-09 13:07:35] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:07:35] INFO: Executing Step : Message field is empty
+[2025-05-09 13:07:37] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:07:37] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:07:38] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:07:38] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:07:40] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:07:41] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : passed
+[2025-05-09 13:07:41] INFO: Test run completed with status: PASSED
+[2025-05-09 13:09:11] INFO: Test run started with 1 test(s).
+[2025-05-09 13:09:12] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 13:09:12] INFO: Executing Step : First name field is empty
+[2025-05-09 13:09:14] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:09:14] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:09:15] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:09:15] INFO: Executing Step : Email field is empty
+[2025-05-09 13:09:17] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:09:17] INFO: Executing Step : Message field is empty
+[2025-05-09 13:09:18] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:09:18] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:09:19] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:09:19] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:09:21] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:09:21] INFO: Executing Step : Invalid email address
+[2025-05-09 13:09:42] INFO: Completed Step : Invalid email address - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 13:09:46] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 13:09:46] INFO: Test run completed with status: FAILED
+[2025-05-09 13:12:13] INFO: Test run started with 1 test(s).
+[2025-05-09 13:12:14] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button @e2e
+[2025-05-09 13:12:15] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:12:16] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:12:16] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:12:18] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:12:19] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button @e2e Status : passed
+[2025-05-09 13:12:19] INFO: Test run completed with status: PASSED
+[2025-05-09 13:12:37] INFO: Test run started with 1 test(s).
+[2025-05-09 13:12:37] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button @e2e
+[2025-05-09 13:12:38] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:12:39] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:12:39] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:12:42] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:12:42] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button @e2e Status : passed
+[2025-05-09 13:12:43] INFO: Test run completed with status: PASSED
+[2025-05-09 13:13:48] INFO: Test run started with 1 test(s).
+[2025-05-09 13:13:48] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button @e2e
+[2025-05-09 13:13:49] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:13:50] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:13:50] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:14:12] INFO: Completed Step : Submit button is enabled when all fields are filled - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Submit")')
+Expected string: [32m"Submitting..."[39m
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Submit")')[22m
+
+[2025-05-09 13:14:23] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button @e2e Status : failed
+[2025-05-09 13:14:23] INFO: Test run completed with status: FAILED
+[2025-05-09 13:15:07] INFO: Test run started with 1 test(s).
+[2025-05-09 13:15:07] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button @e2e
+[2025-05-09 13:15:08] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:15:09] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:15:09] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:15:18] INFO: Completed Step : Submit button is enabled when all fields are filled - Error: Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Submit")')
+Expected string: [32m"Submitting..."[39m
+Received: <element(s) not found>
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Submit")')[22m
+
+[2025-05-09 13:15:19] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button @e2e Status : failed
+[2025-05-09 13:15:19] INFO: Test run completed with status: FAILED
+[2025-05-09 13:17:08] INFO: Test run started with 1 test(s).
+[2025-05-09 13:17:09] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button @e2e
+[2025-05-09 13:17:10] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:17:11] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:17:11] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:17:13] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:17:14] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button @e2e Status : passed
+[2025-05-09 13:17:14] INFO: Test run completed with status: PASSED
+[2025-05-09 13:19:40] INFO: Test run started with 8 test(s).
+[2025-05-09 13:19:40] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-09 13:19:41] INFO: Executing Step : Login title is visible
+[2025-05-09 13:19:41] INFO: Completed Step : Login title is visible - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Subtext should be visible
+[2025-05-09 13:19:41] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Email label should be visible
+[2025-05-09 13:19:41] INFO: Completed Step : Email label should be visible - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Password label should be visible
+[2025-05-09 13:19:41] INFO: Completed Step : Password label should be visible - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Forgot password link should be visible
+[2025-05-09 13:19:41] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Password input should be visible
+[2025-05-09 13:19:41] INFO: Completed Step : Password input should be visible - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Input type checkbox should exist
+[2025-05-09 13:19:41] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-09 13:19:41] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-09 13:19:41] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-09 13:19:42] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-09 13:19:42] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-09 13:19:42] INFO: Executing Step : Enter invalid email
+[2025-05-09 13:19:43] INFO: Completed Step : Enter invalid email - Success
+[2025-05-09 13:19:43] INFO: Executing Step : Enter valid email
+[2025-05-09 13:19:44] INFO: Completed Step : Enter valid email - Success
+[2025-05-09 13:19:45] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-09 13:19:45] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-09 13:19:45] INFO: Executing Step : Password field is empty
+[2025-05-09 13:19:46] INFO: Completed Step : Password field is empty - Success
+[2025-05-09 13:19:46] INFO: Executing Step : Enter valid password
+[2025-05-09 13:19:47] INFO: Completed Step : Enter valid password - Success
+[2025-05-09 13:19:47] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-09 13:19:48] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-09 13:19:49] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-09 13:19:49] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-09 13:19:49] INFO: Executing Step : Email field and Password field are empty
+[2025-05-09 13:19:51] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-09 13:19:51] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-09 13:19:52] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-09 13:19:52] INFO: Executing Step : Enter valid email and valid password
+[2025-05-09 13:19:53] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-09 13:19:53] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-09 13:19:54] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-09 13:19:55] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-09 13:19:55] INFO: Test Case Started : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e
+[2025-05-09 13:19:55] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-09 13:19:55] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-09 13:19:55] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-09 13:19:56] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-09 13:19:57] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
+[2025-05-09 13:19:57] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 13:19:57] INFO: Executing Step : Contact Us modal
+[2025-05-09 13:19:58] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 13:19:58] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the heading text
+[2025-05-09 13:19:58] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the close button
+[2025-05-09 13:19:58] INFO: Completed Step : should display the close button - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the subtext
+[2025-05-09 13:19:58] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the first name input label
+[2025-05-09 13:19:58] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the last name input label
+[2025-05-09 13:19:58] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the email input label
+[2025-05-09 13:19:58] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the message input label
+[2025-05-09 13:19:58] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the first name input field
+[2025-05-09 13:19:58] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the last name input field
+[2025-05-09 13:19:58] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the email input field
+[2025-05-09 13:19:58] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the message input field
+[2025-05-09 13:19:58] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 13:19:58] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 13:19:58] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 13:19:58] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 13:19:58] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 13:19:58] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 13:19:58] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 13:19:58] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 13:19:58] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the submit button
+[2025-05-09 13:19:58] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 13:19:58] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 13:19:58] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 13:19:58] INFO: Executing Step : should display the image
+[2025-05-09 13:19:58] INFO: Completed Step : should display the image - Success
+[2025-05-09 13:19:58] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 13:19:58] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 13:19:58] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Field validations @e2e
+[2025-05-09 13:19:58] INFO: Executing Step : First name field is empty
+[2025-05-09 13:20:00] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:20:00] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:20:01] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:20:01] INFO: Executing Step : Email field is empty
+[2025-05-09 13:20:03] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:20:03] INFO: Executing Step : Message field is empty
+[2025-05-09 13:20:04] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:20:04] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:20:06] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:20:06] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:20:07] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:20:07] INFO: Executing Step : Invalid email address
+[2025-05-09 13:20:29] INFO: Completed Step : Invalid email address - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 13:20:30] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Field validations @e2e Status : failed
+[2025-05-09 13:20:30] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button @e2e
+[2025-05-09 13:20:31] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:20:31] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:20:31] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:20:34] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:20:34] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button @e2e Status : passed
+[2025-05-09 13:20:34] INFO: Test run completed with status: FAILED
+[2025-05-09 13:24:38] INFO: Test run started with 1 test(s).
+[2025-05-09 13:24:39] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e
+[2025-05-09 13:24:40] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:24:41] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:24:41] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:24:43] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:24:43] INFO: Executing Step : Form is submitted successfully
+[2025-05-09 13:24:46] INFO: Completed Step : Form is submitted successfully - Success
+[2025-05-09 13:24:47] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e Status : passed
+[2025-05-09 13:24:47] INFO: Test run completed with status: PASSED
+[2025-05-09 13:26:36] INFO: Test run started with 1 test(s).
+[2025-05-09 13:26:36] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e
+[2025-05-09 13:26:36] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:26:37] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:26:37] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:26:39] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:26:39] INFO: Executing Step : Form is submitted successfully
+[2025-05-09 13:26:42] INFO: Completed Step : Form is submitted successfully - Success
+[2025-05-09 13:26:42] INFO: Executing Step : Go back button is clicked lands on the login page
+[2025-05-09 13:26:45] INFO: Completed Step : Go back button is clicked lands on the login page - Success
+[2025-05-09 13:26:46] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e Status : passed
+[2025-05-09 13:26:46] INFO: Test run completed with status: PASSED
+[2025-05-09 13:27:05] INFO: Test run started with 1 test(s).
+[2025-05-09 13:27:05] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e
+[2025-05-09 13:27:06] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:27:07] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:27:07] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:27:09] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:27:09] INFO: Executing Step : Form is submitted successfully
+[2025-05-09 13:27:11] INFO: Completed Step : Form is submitted successfully - Success
+[2025-05-09 13:27:11] INFO: Executing Step : Go back button is clicked lands on the login page
+[2025-05-09 13:27:14] INFO: Completed Step : Go back button is clicked lands on the login page - Success
+[2025-05-09 13:27:14] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e Status : passed
+[2025-05-09 13:27:15] INFO: Test run completed with status: PASSED
+[2025-05-09 13:29:46] INFO: Test run started with 1 test(s).
+[2025-05-09 13:29:46] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Contact Us field validations @e2e
+[2025-05-09 13:29:46] INFO: Executing Step : First name field is empty
+[2025-05-09 13:29:48] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:29:48] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:29:49] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:29:49] INFO: Executing Step : Email field is empty
+[2025-05-09 13:29:51] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:29:51] INFO: Executing Step : Message field is empty
+[2025-05-09 13:29:52] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:29:52] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:29:54] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:29:54] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:29:55] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:29:55] INFO: Executing Step : Invalid email address
+[2025-05-09 13:30:16] INFO: Completed Step : Invalid email address - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 13:30:20] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Contact Us field validations @e2e Status : failed
+[2025-05-09 13:30:20] INFO: Test run completed with status: FAILED
+[2025-05-09 13:30:55] INFO: Test run started with 8 test(s).
+[2025-05-09 13:30:55] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load login page @sanity
+[2025-05-09 13:30:56] INFO: Executing Step : Login title is visible
+[2025-05-09 13:30:56] INFO: Completed Step : Login title is visible - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Subtext should be visible
+[2025-05-09 13:30:56] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Email label should be visible
+[2025-05-09 13:30:56] INFO: Completed Step : Email label should be visible - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Password label should be visible
+[2025-05-09 13:30:56] INFO: Completed Step : Password label should be visible - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Forgot password link should be visible
+[2025-05-09 13:30:56] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Password input should be visible
+[2025-05-09 13:30:56] INFO: Completed Step : Password input should be visible - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Input type checkbox should exist
+[2025-05-09 13:30:56] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-09 13:30:56] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-09 13:30:56] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-09 13:30:57] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load login page @sanity Status : passed
+[2025-05-09 13:30:57] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Email field validation @e2e
+[2025-05-09 13:30:57] INFO: Executing Step : Enter invalid email
+[2025-05-09 13:30:58] INFO: Completed Step : Enter invalid email - Success
+[2025-05-09 13:30:58] INFO: Executing Step : Enter valid email
+[2025-05-09 13:30:59] INFO: Completed Step : Enter valid email - Success
+[2025-05-09 13:30:59] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Email field validation @e2e Status : passed
+[2025-05-09 13:30:59] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Password field validation @e2e
+[2025-05-09 13:31:00] INFO: Executing Step : Password field is empty
+[2025-05-09 13:31:01] INFO: Completed Step : Password field is empty - Success
+[2025-05-09 13:31:01] INFO: Executing Step : Enter valid password
+[2025-05-09 13:31:02] INFO: Completed Step : Enter valid password - Success
+[2025-05-09 13:31:02] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-09 13:31:03] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-09 13:31:03] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Password field validation @e2e Status : passed
+[2025-05-09 13:31:03] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e
+[2025-05-09 13:31:03] INFO: Executing Step : Email field and Password field are empty
+[2025-05-09 13:31:05] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-09 13:31:05] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-09 13:31:07] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-09 13:31:07] INFO: Executing Step : Enter valid email and valid password
+[2025-05-09 13:31:08] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-09 13:31:08] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-09 13:31:09] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-09 13:31:10] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Email and Password field validation @e2e Status : passed
+[2025-05-09 13:31:10] INFO: Test Case Started : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e
+[2025-05-09 13:31:10] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-09 13:31:10] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-09 13:31:10] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-09 13:31:11] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-09 13:31:11] INFO: Test Case Completed : E2E-CLUB59-LOGIN-004: Remeber me checkbox @e2e Status : passed
+[2025-05-09 13:31:11] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 13:31:12] INFO: Executing Step : Contact Us modal
+[2025-05-09 13:31:12] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 13:31:12] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the heading text
+[2025-05-09 13:31:12] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the close button
+[2025-05-09 13:31:12] INFO: Completed Step : should display the close button - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the subtext
+[2025-05-09 13:31:12] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the first name input label
+[2025-05-09 13:31:12] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the last name input label
+[2025-05-09 13:31:12] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the email input label
+[2025-05-09 13:31:12] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the message input label
+[2025-05-09 13:31:12] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the first name input field
+[2025-05-09 13:31:12] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the last name input field
+[2025-05-09 13:31:12] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the email input field
+[2025-05-09 13:31:12] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the message input field
+[2025-05-09 13:31:12] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 13:31:12] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 13:31:12] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 13:31:12] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 13:31:12] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 13:31:12] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 13:31:12] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 13:31:12] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 13:31:12] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the submit button
+[2025-05-09 13:31:12] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 13:31:12] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 13:31:12] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 13:31:12] INFO: Executing Step : should display the image
+[2025-05-09 13:31:12] INFO: Completed Step : should display the image - Success
+[2025-05-09 13:31:12] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 13:31:13] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 13:31:13] INFO: Test Case Started : E2E-CLUB59-LOGIN-005: Contact Us field validations @e2e
+[2025-05-09 13:31:13] INFO: Executing Step : First name field is empty
+[2025-05-09 13:31:15] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:31:15] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:31:16] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:31:16] INFO: Executing Step : Email field is empty
+[2025-05-09 13:31:18] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:31:18] INFO: Executing Step : Message field is empty
+[2025-05-09 13:31:19] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:31:19] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:31:20] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:31:20] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:31:22] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:31:22] INFO: Executing Step : Invalid email address
+[2025-05-09 13:31:43] INFO: Completed Step : Invalid email address - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 13:31:44] INFO: Test Case Completed : E2E-CLUB59-LOGIN-005: Contact Us field validations @e2e Status : failed
+[2025-05-09 13:31:45] INFO: Test Case Started : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e
+[2025-05-09 13:31:45] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:31:46] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:31:46] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:31:48] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:31:48] INFO: Executing Step : Form is submitted successfully
+[2025-05-09 13:31:51] INFO: Completed Step : Form is submitted successfully - Success
+[2025-05-09 13:31:51] INFO: Executing Step : Go back button is clicked lands on the login page
+[2025-05-09 13:31:54] INFO: Completed Step : Go back button is clicked lands on the login page - Success
+[2025-05-09 13:31:54] INFO: Test Case Completed : E2E-CLUB59-LOGIN-006: Submit button & flow @e2e Status : passed
+[2025-05-09 13:31:55] INFO: Test run completed with status: FAILED
+[2025-05-09 13:36:37] INFO: Test run started with 5 test(s).
+[2025-05-09 13:36:37] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load Login page @sanity
+[2025-05-09 13:36:38] INFO: Executing Step : Login title is visible
+[2025-05-09 13:36:38] INFO: Completed Step : Login title is visible - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Subtext should be visible
+[2025-05-09 13:36:38] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Email label should be visible
+[2025-05-09 13:36:38] INFO: Completed Step : Email label should be visible - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Password label should be visible
+[2025-05-09 13:36:38] INFO: Completed Step : Password label should be visible - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Forgot password link should be visible
+[2025-05-09 13:36:38] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Password input should be visible
+[2025-05-09 13:36:38] INFO: Completed Step : Password input should be visible - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Input type checkbox should exist
+[2025-05-09 13:36:38] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-09 13:36:38] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-09 13:36:38] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-09 13:36:39] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load Login page @sanity Status : passed
+[2025-05-09 13:36:39] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Login field validations @e2e
+[2025-05-09 13:36:39] INFO: Executing Step : Enter invalid email
+[2025-05-09 13:36:40] INFO: Completed Step : Enter invalid email - Success
+[2025-05-09 13:36:40] INFO: Executing Step : Enter valid email
+[2025-05-09 13:36:41] INFO: Completed Step : Enter valid email - Success
+[2025-05-09 13:36:41] INFO: Executing Step : Password field is empty
+[2025-05-09 13:36:42] INFO: Completed Step : Password field is empty - Success
+[2025-05-09 13:36:42] INFO: Executing Step : Enter valid password
+[2025-05-09 13:36:43] INFO: Completed Step : Enter valid password - Success
+[2025-05-09 13:36:43] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-09 13:36:44] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-09 13:36:44] INFO: Executing Step : Email field and Password field are empty
+[2025-05-09 13:36:46] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-09 13:36:46] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-09 13:36:48] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-09 13:36:48] INFO: Executing Step : Enter valid email and valid password
+[2025-05-09 13:36:49] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-09 13:36:49] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-09 13:36:50] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-09 13:36:50] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-09 13:36:50] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-09 13:36:50] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-09 13:36:51] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-09 13:36:52] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Login field validations @e2e Status : passed
+[2025-05-09 13:36:52] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 13:36:52] INFO: Executing Step : Contact Us modal
+[2025-05-09 13:36:53] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 13:36:53] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the heading text
+[2025-05-09 13:36:53] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the close button
+[2025-05-09 13:36:53] INFO: Completed Step : should display the close button - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the subtext
+[2025-05-09 13:36:53] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the first name input label
+[2025-05-09 13:36:53] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the last name input label
+[2025-05-09 13:36:53] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the email input label
+[2025-05-09 13:36:53] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the message input label
+[2025-05-09 13:36:53] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the first name input field
+[2025-05-09 13:36:53] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the last name input field
+[2025-05-09 13:36:53] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the email input field
+[2025-05-09 13:36:53] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the message input field
+[2025-05-09 13:36:53] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 13:36:53] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 13:36:53] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 13:36:53] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 13:36:53] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 13:36:53] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 13:36:53] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 13:36:53] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 13:36:53] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the submit button
+[2025-05-09 13:36:53] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 13:36:53] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 13:36:53] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 13:36:53] INFO: Executing Step : should display the image
+[2025-05-09 13:36:53] INFO: Completed Step : should display the image - Success
+[2025-05-09 13:36:53] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 13:36:53] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 13:36:53] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Contact Us field validations @e2e
+[2025-05-09 13:36:53] INFO: Executing Step : First name field is empty
+[2025-05-09 13:36:55] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:36:55] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:36:56] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:36:56] INFO: Executing Step : Email field is empty
+[2025-05-09 13:36:58] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:36:58] INFO: Executing Step : Message field is empty
+[2025-05-09 13:36:59] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:36:59] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:37:01] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:37:01] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:37:02] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:37:02] INFO: Executing Step : Invalid email address
+[2025-05-09 13:37:24] INFO: Completed Step : Invalid email address - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 13:37:24] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Contact Us field validations @e2e Status : failed
+[2025-05-09 13:37:25] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Contact Us submit flow @e2e
+[2025-05-09 13:37:25] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:37:26] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:37:26] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:37:28] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:37:28] INFO: Executing Step : Form is submitted successfully
+[2025-05-09 13:37:31] INFO: Completed Step : Form is submitted successfully - Success
+[2025-05-09 13:37:31] INFO: Executing Step : Go back button is clicked lands on the login page
+[2025-05-09 13:37:34] INFO: Completed Step : Go back button is clicked lands on the login page - Success
+[2025-05-09 13:37:35] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Contact Us submit flow @e2e Status : passed
+[2025-05-09 13:37:35] INFO: Test run completed with status: FAILED
+[2025-05-09 13:41:24] INFO: Test run started with 5 test(s).
+[2025-05-09 13:41:24] INFO: Test Case Started : SANITY-CLUB59-LOGIN-001: Load Login page @sanity
+[2025-05-09 13:41:25] INFO: Executing Step : Login title is visible
+[2025-05-09 13:41:26] INFO: Completed Step : Login title is visible - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Subtext should be visible
+[2025-05-09 13:41:26] INFO: Completed Step : Subtext should be visible - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Email label should be visible
+[2025-05-09 13:41:26] INFO: Completed Step : Email label should be visible - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Password label should be visible
+[2025-05-09 13:41:26] INFO: Completed Step : Password label should be visible - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Forgot password link should be visible
+[2025-05-09 13:41:26] INFO: Completed Step : Forgot password link should be visible - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Password input should be visible
+[2025-05-09 13:41:26] INFO: Completed Step : Password input should be visible - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Input type checkbox should exist
+[2025-05-09 13:41:26] INFO: Completed Step : Input type checkbox should exist - Success
+[2025-05-09 13:41:26] INFO: Executing Step : Login button should be visible and disabled
+[2025-05-09 13:41:26] INFO: Completed Step : Login button should be visible and disabled - Success
+[2025-05-09 13:41:26] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-001: Load Login page @sanity Status : passed
+[2025-05-09 13:41:26] INFO: Test Case Started : E2E-CLUB59-LOGIN-001: Login field validations @e2e
+[2025-05-09 13:41:26] INFO: Executing Step : Enter invalid email
+[2025-05-09 13:41:27] INFO: Completed Step : Enter invalid email - Success
+[2025-05-09 13:41:27] INFO: Executing Step : Enter valid email
+[2025-05-09 13:41:28] INFO: Completed Step : Enter valid email - Success
+[2025-05-09 13:41:28] INFO: Executing Step : Password field is empty
+[2025-05-09 13:41:30] INFO: Completed Step : Password field is empty - Success
+[2025-05-09 13:41:30] INFO: Executing Step : Enter valid password
+[2025-05-09 13:41:31] INFO: Completed Step : Enter valid password - Success
+[2025-05-09 13:41:31] INFO: Executing Step : Clicking on the eye icon should show the password
+[2025-05-09 13:41:32] INFO: Completed Step : Clicking on the eye icon should show the password - Success
+[2025-05-09 13:41:32] INFO: Executing Step : Email field and Password field are empty
+[2025-05-09 13:41:33] INFO: Completed Step : Email field and Password field are empty - Success
+[2025-05-09 13:41:33] INFO: Executing Step : Enter invalid email and valid password
+[2025-05-09 13:41:35] INFO: Completed Step : Enter invalid email and valid password - Success
+[2025-05-09 13:41:35] INFO: Executing Step : Enter valid email and valid password
+[2025-05-09 13:41:36] INFO: Completed Step : Enter valid email and valid password - Success
+[2025-05-09 13:41:36] INFO: Executing Step : Login button should be enabled when both email and password fields are filled
+[2025-05-09 13:41:37] INFO: Completed Step : Login button should be enabled when both email and password fields are filled - Success
+[2025-05-09 13:41:37] INFO: Executing Step : Remeber me checkbox is not checked
+[2025-05-09 13:41:38] INFO: Completed Step : Remeber me checkbox is not checked - Success
+[2025-05-09 13:41:38] INFO: Executing Step : Remeber me checkbox is checked
+[2025-05-09 13:41:38] INFO: Completed Step : Remeber me checkbox is checked - Success
+[2025-05-09 13:41:39] INFO: Test Case Completed : E2E-CLUB59-LOGIN-001: Login field validations @e2e Status : passed
+[2025-05-09 13:41:39] INFO: Test Case Started : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity
+[2025-05-09 13:41:39] INFO: Executing Step : Contact Us modal
+[2025-05-09 13:41:40] INFO: Executing Step : should display the Contact Us modal form
+[2025-05-09 13:41:40] INFO: Completed Step : should display the Contact Us modal form - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the heading text
+[2025-05-09 13:41:40] INFO: Completed Step : should display the heading text - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the close button
+[2025-05-09 13:41:40] INFO: Completed Step : should display the close button - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the subtext
+[2025-05-09 13:41:40] INFO: Completed Step : should display the subtext - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the first name input label
+[2025-05-09 13:41:40] INFO: Completed Step : should display the first name input label - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the last name input label
+[2025-05-09 13:41:40] INFO: Completed Step : should display the last name input label - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the email input label
+[2025-05-09 13:41:40] INFO: Completed Step : should display the email input label - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the message input label
+[2025-05-09 13:41:40] INFO: Completed Step : should display the message input label - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the first name input field
+[2025-05-09 13:41:40] INFO: Completed Step : should display the first name input field - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the last name input field
+[2025-05-09 13:41:40] INFO: Completed Step : should display the last name input field - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the email input field
+[2025-05-09 13:41:40] INFO: Completed Step : should display the email input field - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the message input field
+[2025-05-09 13:41:40] INFO: Completed Step : should display the message input field - Success
+[2025-05-09 13:41:40] INFO: Executing Step : first name input should have correct placeholder
+[2025-05-09 13:41:40] INFO: Completed Step : first name input should have correct placeholder - Success
+[2025-05-09 13:41:40] INFO: Executing Step : last name input should have correct placeholder
+[2025-05-09 13:41:40] INFO: Completed Step : last name input should have correct placeholder - Success
+[2025-05-09 13:41:40] INFO: Executing Step : email input should have correct placeholder
+[2025-05-09 13:41:40] INFO: Completed Step : email input should have correct placeholder - Success
+[2025-05-09 13:41:40] INFO: Executing Step : message input should have correct placeholder
+[2025-05-09 13:41:40] INFO: Completed Step : message input should have correct placeholder - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the submit button
+[2025-05-09 13:41:40] INFO: Completed Step : should display the submit button - Success
+[2025-05-09 13:41:40] INFO: Executing Step : submit button should be disabled initially
+[2025-05-09 13:41:40] INFO: Completed Step : submit button should be disabled initially - Success
+[2025-05-09 13:41:40] INFO: Executing Step : should display the image
+[2025-05-09 13:41:40] INFO: Completed Step : should display the image - Success
+[2025-05-09 13:41:40] INFO: Completed Step : Contact Us modal - Success
+[2025-05-09 13:41:41] INFO: Test Case Completed : SANITY-CLUB59-LOGIN-002: Load Contact Us modal @sanity Status : passed
+[2025-05-09 13:41:41] INFO: Test Case Started : E2E-CLUB59-LOGIN-002: Contact Us field validations @e2e
+[2025-05-09 13:41:41] INFO: Executing Step : First name field is empty
+[2025-05-09 13:41:42] INFO: Completed Step : First name field is empty - Success
+[2025-05-09 13:41:42] INFO: Executing Step : Last name field is empty
+[2025-05-09 13:41:44] INFO: Completed Step : Last name field is empty - Success
+[2025-05-09 13:41:44] INFO: Executing Step : Email field is empty
+[2025-05-09 13:41:45] INFO: Completed Step : Email field is empty - Success
+[2025-05-09 13:41:45] INFO: Executing Step : Message field is empty
+[2025-05-09 13:41:46] INFO: Completed Step : Message field is empty - Success
+[2025-05-09 13:41:46] INFO: Executing Step : Message field is less than 10 characters
+[2025-05-09 13:41:48] INFO: Completed Step : Message field is less than 10 characters - Success
+[2025-05-09 13:41:48] INFO: Executing Step : Message field is more than 10 characters
+[2025-05-09 13:41:49] INFO: Completed Step : Message field is more than 10 characters - Success
+[2025-05-09 13:41:49] INFO: Executing Step : Invalid email address
+[2025-05-09 13:42:11] INFO: Completed Step : Invalid email address - Error: Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+Locator: locator('p[class*="text-error-300"][class*="!typography-body-1"]')
+Expected string: [32m"Please enter a valid email address."[39m
+Received string: [31m"Email is required"[39m
+Call log:
+[2m  - expect.toHaveText with timeout 20000ms[22m
+[2m  - waiting for locator('p[class*="text-error-300"][class*="!typography-body-1"]')[22m
+[2m    24 × locator resolved to <p class="!typography-body-1 mt-1 font-body text-error-300">Email is required</p>[22m
+[2m       - unexpected value "Email is required"[22m
+
+[2025-05-09 13:42:12] INFO: Test Case Completed : E2E-CLUB59-LOGIN-002: Contact Us field validations @e2e Status : failed
+[2025-05-09 13:42:12] INFO: Test Case Started : E2E-CLUB59-LOGIN-003: Contact Us submit flow @e2e
+[2025-05-09 13:42:13] INFO: Executing Step : Submit button is disabled when all fields are empty
+[2025-05-09 13:42:13] INFO: Completed Step : Submit button is disabled when all fields are empty - Success
+[2025-05-09 13:42:13] INFO: Executing Step : Submit button is enabled when all fields are filled
+[2025-05-09 13:42:16] INFO: Completed Step : Submit button is enabled when all fields are filled - Success
+[2025-05-09 13:42:16] INFO: Executing Step : Form is submitted successfully
+[2025-05-09 13:42:18] INFO: Completed Step : Form is submitted successfully - Success
+[2025-05-09 13:42:18] INFO: Executing Step : Go back button is clicked lands on the login page
+[2025-05-09 13:42:21] INFO: Completed Step : Go back button is clicked lands on the login page - Success
+[2025-05-09 13:42:22] INFO: Test Case Completed : E2E-CLUB59-LOGIN-003: Contact Us submit flow @e2e Status : passed
+[2025-05-09 13:42:22] INFO: Test run completed with status: FAILED
+>>>>>>> f04acfd (login & contact us)
+>>>>>>> 1b4bbba (login & contact us)
