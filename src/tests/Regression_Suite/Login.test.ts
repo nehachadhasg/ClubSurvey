@@ -10,7 +10,7 @@ test.beforeEach(async ({ page, context }) => {
   clubSurveyLogin = new ClubSurveyLogin(page, context);
 });
 
-test(`SANITY-CLUB59-LOGIN-001: Load login page ${SANITY_TAG}`, async ({
+test(`SANITY-CLUB59-LOGIN-001: Load Login page ${SANITY_TAG}`, async ({
   page,
 }) => {
   test.info().annotations.push(
@@ -66,14 +66,14 @@ test(`SANITY-CLUB59-LOGIN-001: Load login page ${SANITY_TAG}`, async ({
   });
 });
 
-test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
+test(`E2E-CLUB59-LOGIN-001: Login field validations ${E2E_TAG}`, async ({
   page,
 }) => {
   test.info().annotations.push(
     { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-001' },
     {
       type: 'Test Description',
-      description: 'Email field validation',
+      description: 'Login field validations',
     }
   );
   await test.step('Enter invalid email', async () => {
@@ -100,18 +100,6 @@ test(`E2E-CLUB59-LOGIN-001: Email field validation ${E2E_TAG}`, async ({
     const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
     await expect(errorMessage).not.toBeVisible();
   });
-});
-
-test(`E2E-CLUB59-LOGIN-002: Password field validation ${E2E_TAG}`, async ({
-  page,
-}) => {
-  test.info().annotations.push(
-    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-002' },
-    {
-      type: 'Test Description',
-      description: 'Password field validation',
-    }
-  );
   await test.step('Password field is empty', async () => {
     await clubSurveyLogin.loadApp(environment.baseURL);
     const emailInput = page.locator(clubSurveyLogin.selectors.emailSelector);
@@ -149,18 +137,6 @@ test(`E2E-CLUB59-LOGIN-002: Password field validation ${E2E_TAG}`, async ({
     await showPasswordButton.click();
     await expect(passwordInput).toHaveAttribute('type', 'text');
   });
-});
-
-test(`E2E-CLUB59-LOGIN-003: Email and Password field validation ${E2E_TAG}`, async ({
-  page,
-}) => {
-  test.info().annotations.push(
-    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-003' },
-    {
-      type: 'Test Description',
-      description: 'Email and Password field validation',
-    }
-  );
   await test.step('Email field and Password field are empty', async () => {
     await clubSurveyLogin.loadApp(environment.baseURL);
     const emailInput = page.locator(clubSurveyLogin.selectors.emailSelector);
@@ -222,18 +198,6 @@ test(`E2E-CLUB59-LOGIN-003: Email and Password field validation ${E2E_TAG}`, asy
     await passwordInput.fill('validpassword');
     await expect(loginButton).toBeEnabled();
   });
-});
-
-test(`E2E-CLUB59-LOGIN-004: Remeber me checkbox ${E2E_TAG}`, async ({
-  page,
-}) => {
-  test.info().annotations.push(
-    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-004' },
-    {
-      type: 'Test Description',
-      description: 'Remeber me checkbox',
-    }
-  );
   await test.step('Remeber me checkbox is not checked', async () => {
     await clubSurveyLogin.loadApp(environment.baseURL);
     await expect(page.locator("//input[@type='checkbox']")).not.toBeChecked();
@@ -245,5 +209,330 @@ test(`E2E-CLUB59-LOGIN-004: Remeber me checkbox ${E2E_TAG}`, async ({
     );
     await rememberMeCheckbox.click();
     await expect(page.locator("//input[@type='checkbox']")).toBeChecked();
+  });
+});
+
+test(`SANITY-CLUB59-LOGIN-002: Load Contact Us modal ${SANITY_TAG}`, async ({
+  page,
+}) => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'SANITY-CLUB59-LOGIN-002' },
+    {
+      type: 'Test Description',
+      description: 'Load Contact Us modal',
+    }
+  );
+  await test.step('Contact Us modal', async () => {
+    await clubSurveyLogin.loadApp(environment.baseURL);
+    const contactUsButton = page.locator(clubSurveyLogin.selectors.contactus);
+    const headingText = page.locator(
+      clubSurveyLogin.selectors.contactUsModalAssert
+    );
+    const subtext = page.locator(
+      clubSurveyLogin.selectors.contactUsModalSubtext
+    );
+    const closeButton = page.locator(
+      clubSurveyLogin.selectors.contactUsModalCloseButton
+    );
+    const firstNameInputLabel = page.locator(
+      clubSurveyLogin.selectors.contactUsFirstNameLabel
+    );
+    const lastNameInputLabel = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameLabel
+    );
+    const emailInputLabel = page
+      .locator(clubSurveyLogin.selectors.contactUsEmailLabel)
+      .nth(1);
+    const messageInputLabel = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageLabel
+    );
+    const firstNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsFirstNameInput
+    );
+    const lastNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameInput
+    );
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    const messageInput = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageInput
+    );
+    const submitButton = page.locator(clubSurveyLogin.selectors.submitButton);
+    const contactUsForm = page.locator(
+      clubSurveyLogin.selectors.contactUsModal
+    );
+    const contactUsImg = page.locator(clubSurveyLogin.selectors.contactUsImg);
+    await contactUsButton.click();
+    await test.step('should display the Contact Us modal form', async () => {
+      await expect(contactUsForm).toBeVisible();
+    });
+    await test.step('should display the heading text', async () => {
+      await expect(headingText).toBeVisible();
+    });
+    await test.step('should display the close button', async () => {
+      await expect(closeButton).toBeVisible();
+    });
+    await test.step('should display the subtext', async () => {
+      await expect(subtext).toBeVisible();
+    });
+    await test.step('should display the first name input label', async () => {
+      await expect(firstNameInputLabel).toBeVisible();
+    });
+    await test.step('should display the last name input label', async () => {
+      await expect(lastNameInputLabel).toBeVisible();
+    });
+    await test.step('should display the email input label', async () => {
+      await expect(emailInputLabel).toBeVisible();
+    });
+    await test.step('should display the message input label', async () => {
+      await expect(messageInputLabel).toBeVisible();
+    });
+    await test.step('should display the first name input field', async () => {
+      await expect(firstNameInput).toBeVisible();
+    });
+    await test.step('should display the last name input field', async () => {
+      await expect(lastNameInput).toBeVisible();
+    });
+    await test.step('should display the email input field', async () => {
+      await expect(emailInput).toBeVisible();
+    });
+    await test.step('should display the message input field', async () => {
+      await expect(messageInput).toBeVisible();
+    });
+    await test.step('first name input should have correct placeholder', async () => {
+      await expect(firstNameInput).toHaveAttribute(
+        'placeholder',
+        'Your first name'
+      );
+    });
+    await test.step('last name input should have correct placeholder', async () => {
+      await expect(lastNameInput).toHaveAttribute(
+        'placeholder',
+        'Your last name'
+      );
+    });
+    await test.step('email input should have correct placeholder', async () => {
+      await expect(emailInput).toHaveAttribute(
+        'placeholder',
+        'Enter your email address'
+      );
+    });
+    await test.step('message input should have correct placeholder', async () => {
+      await expect(messageInput).toHaveAttribute(
+        'placeholder',
+        'Type your message here'
+      );
+    });
+    await test.step('should display the submit button', async () => {
+      await expect(submitButton).toBeVisible();
+    });
+    await test.step('submit button should be disabled initially', async () => {
+      await expect(submitButton).toBeDisabled();
+    });
+    await test.step('should display the image', async () => {
+      await expect(contactUsImg).toBeVisible();
+    });
+  });
+});
+
+test(`E2E-CLUB59-LOGIN-002: Contact Us field validations ${E2E_TAG}`, async ({
+  page,
+}) => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-002' },
+    {
+      type: 'Test Description',
+      description: 'Contact Us field validations',
+    }
+  );
+  const loadContactUsModal = async () => {
+    await clubSurveyLogin.loadApp(environment.baseURL);
+    const contactUsButton = page.locator(clubSurveyLogin.selectors.contactus);
+    await contactUsButton.click();
+  };
+  await test.step('First name field is empty', async () => {
+    await loadContactUsModal();
+    const firstNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsFirstNameInput
+    );
+    const lastNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameInput
+    );
+    await firstNameInput.fill('');
+    await lastNameInput.click();
+    const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
+    await expect(errorMessage).toHaveText(
+      clubSurveyLogin.selectors.firstNameErrorText
+    );
+  });
+  await test.step('Last name field is empty', async () => {
+    await loadContactUsModal();
+    const firstNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsFirstNameInput
+    );
+    const lastNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameInput
+    );
+    await lastNameInput.fill('');
+    await firstNameInput.click();
+    const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
+    await expect(errorMessage).toHaveText(
+      clubSurveyLogin.selectors.lastNameErrorText
+    );
+  });
+  await test.step('Email field is empty', async () => {
+    await loadContactUsModal();
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    const lastNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameInput
+    );
+    await emailInput.fill('');
+    await lastNameInput.click();
+    const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
+    await expect(errorMessage).toHaveText(
+      clubSurveyLogin.selectors.contactUsEmptyEmailErrorText
+    );
+  });
+  await test.step('Message field is empty', async () => {
+    await loadContactUsModal();
+    const messageInput = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageInput
+    );
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    await messageInput.fill('');
+    await emailInput.click();
+    const errorMessage = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageError
+    );
+    await expect(errorMessage).toHaveText(
+      clubSurveyLogin.selectors.messageErrorText
+    );
+  });
+  await test.step('Message field is less than 10 characters', async () => {
+    await loadContactUsModal();
+    const messageInput = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageInput
+    );
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    await messageInput.fill('Hello');
+    await emailInput.click();
+    const errorMessage = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageError
+    );
+    await expect(errorMessage).toHaveText(
+      clubSurveyLogin.selectors.messageErrorText
+    );
+  });
+  await test.step('Message field is more than 10 characters', async () => {
+    await loadContactUsModal();
+    const messageInput = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageInput
+    );
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    await messageInput.fill('Hello World');
+    await emailInput.click();
+    const errorMessage = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageError
+    );
+    await expect(errorMessage).not.toBeVisible();
+  });
+  await test.step('Invalid email address', async () => {
+    await loadContactUsModal();
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    const lastNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameInput
+    );
+    await emailInput.fill('invalidemail');
+    await lastNameInput.click();
+    const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
+    await expect(errorMessage).toHaveText(
+      clubSurveyLogin.selectors.emailErrorText
+    );
+  });
+});
+
+test(`E2E-CLUB59-LOGIN-003: Contact Us submit flow ${E2E_TAG}`, async ({
+  page,
+}) => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'E2E-CLUB59-LOGIN-003' },
+    {
+      type: 'Test Description',
+      description: 'Contact Us submit flow',
+    }
+  );
+  const loadContactUsModal = async () => {
+    await clubSurveyLogin.loadApp(environment.baseURL);
+    const contactUsButton = page.locator(clubSurveyLogin.selectors.contactus);
+    await contactUsButton.click();
+  };
+  const fillFormFields = async () => {
+    const firstNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsFirstNameInput
+    );
+    const lastNameInput = page.locator(
+      clubSurveyLogin.selectors.contactUsLastNameInput
+    );
+    const emailInput = page.locator(
+      clubSurveyLogin.selectors.contactUsEmailInput
+    );
+    const messageInput = page.locator(
+      clubSurveyLogin.selectors.contactUsMessageInput
+    );
+    await firstNameInput.fill('John');
+    await lastNameInput.fill('Doe');
+    await emailInput.fill('john.doe@example.com');
+    await messageInput.fill('Hello World');
+  };
+  await test.step('Submit button is disabled when all fields are empty', async () => {
+    await loadContactUsModal();
+    const submitButton = page.locator(clubSurveyLogin.selectors.submitButton);
+    await expect(submitButton).toBeDisabled();
+  });
+  await test.step('Submit button is enabled when all fields are filled', async () => {
+    await loadContactUsModal();
+    await fillFormFields();
+    const submitButton = page.locator(clubSurveyLogin.selectors.submitButton);
+    await expect(submitButton).toBeEnabled();
+  });
+  await test.step('Form is submitted successfully', async () => {
+    await loadContactUsModal();
+    await fillFormFields();
+    const submitButton = page.locator(clubSurveyLogin.selectors.submitButton);
+    const goBackButton = page.locator(
+      clubSurveyLogin.selectors.contactUsGoBackButton
+    );
+    await submitButton.click();
+    await expect(
+      page.locator(clubSurveyLogin.selectors.contactUsSuccessTitle)
+    ).toBeVisible();
+    await expect(
+      page.locator(clubSurveyLogin.selectors.contactUsSuccessSubtext)
+    ).toBeVisible();
+    await expect(goBackButton).toBeVisible();
+  });
+  await test.step('Go back button is clicked lands on the login page', async () => {
+    await loadContactUsModal();
+    await fillFormFields();
+    const submitButton = page.locator(clubSurveyLogin.selectors.submitButton);
+    const goBackButton = page.locator(
+      clubSurveyLogin.selectors.contactUsGoBackButton
+    );
+    await submitButton.click();
+    await goBackButton.click();
+    await expect(
+      page.locator(clubSurveyLogin.selectors.loginTitle)
+    ).toBeVisible();
   });
 });
