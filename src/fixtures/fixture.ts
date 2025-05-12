@@ -10,7 +10,6 @@ type TestFixtures = {
   loginAsRole: any;
   loginAsRole: any;
   loggedInPage2: Page; // A page object after login
-  ) => Promise<Page>;
 };
 
 // Extend the base test with custom fixtures

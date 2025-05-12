@@ -13,7 +13,6 @@ export const environment = {
       password: 'Club59@123',
     },
     /*FRANCHISE_ADMIN: {
-    FRANCHISE_ADMIN: {
       username: 'nehafa@yopmail.com',
       password: 'Club59@123',
     },

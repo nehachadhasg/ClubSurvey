@@ -3,3 +3,7 @@ allure-results/
 test-results/
 logs/
 reporter/
+<<<<<<< HEAD
+=======
+node_modules
+>>>>>>> 4f3a9e4 (Added RoleBased Framework)
