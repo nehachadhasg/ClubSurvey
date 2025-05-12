@@ -58,8 +58,34 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
    * Login method to handle role-based login
    * @param role - The role of the user (e.g., SUPER_ADMIN, FRANCHISE_ADMIN, GROUP_ADMIN, VENUE_ADMIN)
    */
-
-  public async ClubSurveyLogin(
+  public async ClubSurveyLogin(credentials: { username: string; password: string }) {
+    const { username, password } = credentials;
+  
+    // Load the application using the baseURL from the environment
+    await this.loadApp(environment.baseURL);
+  
+    const pageTitle = await this.page.title();
+    if (pageTitle.startsWith('59club')) {
+      // Fill in the username and password fields
+      await this.type(this.selectors.emailSelector, 'Username', username);
+      await this.type(this.selectors.passwordSelector, 'Password', password);
+  
+      // Click the login button
+      await this.click(this.selectors.loginButtonSelector, 'Sign In', 'Button');
+  
+      // Wait for the dashboard to load
+      await this.wait('maxWait');
+  
+      // Validate that the dashboard logo is visible
+      await this.validateElementVisibility(
+        this.selectors.clubsmalllogodashboard,
+        'Club Small Logo'
+      );
+    } else {
+      console.log('Login page is Skipped');
+    }
+  }
+  /*public async ClubSurveyLogin(
     role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
   ) {
     // Access credentials from the environment object
@@ -88,7 +114,7 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     } else {
       console.log('Login page is Skipped');
     }
-  }
+  }*/
 
   public async verifyLogoRedirection(expectedURL: string) {
     // Ensure the 59club logo is visible

@@ -7,7 +7,7 @@ export function loadEnvironmentConfig() {
   switch (ENV.toLowerCase()) {
     case 'qa':
       return qaEnvironment;
-    case 'staging':
+    case 'uat':
       return uatEnvironment;
     default:
       throw new Error(`Unknown environment: ${ENV}`);
