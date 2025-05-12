@@ -17,3 +17,13 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 Make sure that arguments are regular expressions matching test files.
 You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-04-08 20:59:13] ERROR: Test Error: Error: No tests found
+[2025-05-07 12:32:17] ERROR: Test Error: Error: Package subpath './.' is not defined by "exports" in /Users/nehachadha/59club_playwright/node_modules/@faker-js/faker/package.json
+[2025-05-07 12:32:17] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-12 06:56:43] ERROR: Test Error: TypeError: Cannot read properties of undefined (reading 'beforeEach')
+[2025-05-12 06:56:43] ERROR: Test Error: TypeError: Cannot read properties of undefined (reading 'describe')
+[2025-05-12 06:57:54] ERROR: Test Error: TypeError: Cannot read properties of undefined (reading 'beforeEach')
+[2025-05-12 12:22:33] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.

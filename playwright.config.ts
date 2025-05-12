@@ -74,9 +74,15 @@ export default defineConfig({
             '--no-proxy-server',
           ],
         },
+        
       },
     },
     {
+      name: 'api',
+      testDir: './APIServices'
+    },
+
+    /*{
       name: 'safari',
       use: {
         browserName: 'webkit', // WebKit is the engine used by Safari
@@ -87,7 +93,7 @@ export default defineConfig({
           args: ['--start-maximized'], // Add any additional arguments if needed
         },
       },
-    },
+    },*/
     /*
      // Viewport: 375 x 667 (e.g., iPhone SE)
      {
@@ -179,21 +185,21 @@ export default defineConfig({
       },
     },
 */
-    // Mobile iPhone 12
+    /*// Mobile iPhone 12
     {
       name: 'Mobile iPhone 12',
       use: {
         ...devices['iPhone 12'], // Predefined device descriptor for iPhone 12
       },
-    },
+    },*/
 
-    // Mobile Pixel 5
+    /* Mobile Pixel 5
     {
       name: 'Mobile Pixel 5',
       use: {
         ...devices['Pixel 5'], // Predefined device descriptor for Pixel 5
       },
-    },
+    },*/
 
     /* ...(
       true ? [{

@@ -1,0 +1,4 @@
+Error validating visibility of Club Small Logo: TimeoutError: page.waitForSelector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('img[alt="Small Logo"]')
+

@@ -1,12 +1,12 @@
-import { test as base, expect, Page, BrowserContext } from '@playwright/test';
+/*import { test as base, expect, Page, BrowserContext } from '@playwright/test';
 import { ClubSurveyLogin } from '../pages/ClubSurveyLogin';
-import { loadEnvironmentConfig } from '../../config/configLoader';
+import { UserManagementAPI } from '../../helpers/userManagementAPI';import { loadEnvironmentConfig } from '../../config/configLoader';
+import { FakerData  } from '../../helpers/fakerUtils';
 
 type TestFixtures = {
   loggedInPage: Page; // A page object after login
   loggedInPage2: Page; // A page object after login
-  loginAsRole: (
-    role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
+  loginAsRole: any;
   ) => Promise<Page>;
 };
 
@@ -37,21 +37,52 @@ export const test = base.extend<TestFixtures>({
 
   loginAsRole: async (
     { page, context }: { page: Page; context: BrowserContext },
-    use
   ) => {
-    const clubSurveyLogin = new ClubSurveyLogin(page, context);
+    const userManagementAPI = new UserManagementAPI();
+    const admintoken = await userManagementAPI.authenticateSuperAdmin();
+    console.log('Admin Token:', admintoken);
+
+    // Create Franchise, Group, and Venue hierarchy
+    const franchiseId = await userManagementAPI.createFranchise('IshuNew Franchise 1403');
+    //const groupId = await userManagementAPI.createGroup(franchiseId, 'Test Group');
+    //const venueId = await userManagementAPI.createVenue(groupId, 'Test Venue');
+
+    // Create users for each role
+   // const franchiseAdminFirstname = FakerData.getFirstName();
+    //const franchiseAdminLastname = FakerData.getLastName();
+    //const locale = 'ENGLISH (GB)';
+    const role_id = 2; // Assuming 1 is the role ID for Franchise Admin
+    //const timezone = '(GMT - 08h00) Pacific Standard Time'; // Assuming UTC is the timezone
+    //const franchiseAdminEmail = FakerData.getEmail();
+    
+    
+    //const groupAdminUsername = 'groupadmin@test.com';
+    //const venueAdminUsername = 'venueadmin@test.com';
+
+    await userManagementAPI.createUser(String(franchiseId), role_id);
+    //await userManagementAPI.createUser(groupAdminUsername, 'Password123', 'GROUP_ADMIN', groupId);
+    //await userManagementAPI.createUser(venueAdminUsername, 'Password123', 'VENUE_ADMIN', venueId);
 
     // Provide a function to log in as a specific role
-    await use(
-      async (
-        role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
-      ) => {
-        await clubSurveyLogin.ClubSurveyLogin(role);
+    /*await use(async (role: 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN') => {
+        const clubSurveyLogin = new ClubSurveyLogin(page, context);
+      
+        const credentials = {
+          FRANCHISE_ADMIN: { username: franchiseAdminEmail, password: 'Club59@123' },
+          GROUP_ADMIN: { username: groupAdminUsername, password: 'Password123' },
+          VENUE_ADMIN: { username: venueAdminUsername, password: 'Password123' },
+        };
+      
+        // Get the credentials for the specified role
+        const { username, password } = credentials[role];
+      
+        // Pass the credentials object to ClubSurveyLogin
+        await clubSurveyLogin.ClubSurveyLogin({ username, password });
+      
         return page;
-      }
-    );
+      });
   },
 });
 
 // Re-export `expect` from Playwright
-export { expect };
+export { expect };*/
