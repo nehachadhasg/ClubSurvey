@@ -8,7 +8,6 @@ type TestFixtures = {
   loggedInPage: Page; // A page object after login
   loggedInPage2: Page; // A page object after login
   loginAsRole: any;
-  ) => Promise<Page>;
 };
 
 // Extend the base test with custom fixtures
@@ -28,8 +27,23 @@ export const test = base.extend<TestFixtures>({
 
   // Login as SUPER_ADMIN_2
   loggedInPage2: async (
+    loggedInPage: async (
+        { page, context }: { page: Page; context: BrowserContext },
+        use
+      ) => {
+        const clubSurveyLogin = new ClubSurveyLogin(page, context);
+      
+        // Perform login using the ClubSurveyLogin class
+        await clubSurveyLogin.ClubSurveyLogin({
+          username: '59clubqaadmin@yopmail.com', // Replace with actual SUPER_ADMIN username
+          password: 'Tulip@345*', // Replace with actual SUPER_ADMIN password
+        });
+      
+        // Provide the logged-in page to the test
+        await use(page);
+      },
+  loginAsRole: async (
     { page, context }: { page: Page; context: BrowserContext },
-    use
   ) => {
     const clubSurveyLogin = new ClubSurveyLogin(page, context);
     await clubSurveyLogin.ClubSurveyLogin('SUPER_ADMIN_2');
