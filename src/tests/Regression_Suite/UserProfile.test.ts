@@ -3,16 +3,26 @@ import { test, expect } from '../../fixtures/fixture';
 import { SANITY_TAG, E2E_TAG } from '../../../constants/tags';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
 import { UserProfile } from '../../pages/UserProfile';
+import { Page } from 'playwright';
 
 const environment = loadEnvironmentConfig();
 let userProfile: UserProfile;
+
+const navigateToProfilePage = async (page: Page) => {
+  await page.locator(userProfile.selectors.userProfileIconClosed).click();
+  await expect(
+    page.locator(userProfile.selectors.userProfileIconOpen)
+  ).toBeVisible();
+  const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
+  await myProfileOption.click();
+};
 
 test.beforeEach(async ({ page, context }) => {
   userProfile = new UserProfile(page, context);
 });
 
 test(`E2E-CLUB59-USER-PROFILE-01: Login to the platform and verify user profile page ${E2E_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
   test.info().annotations.push(
@@ -28,7 +38,7 @@ test(`E2E-CLUB59-USER-PROFILE-01: Login to the platform and verify user profile 
     expect(pageTitle).toContain('59club');
   });
   await test.step('Login to the platform', async () => {
-    const dashboardLogo = loggedInPage.locator(
+    const dashboardLogo = loggedInPage2.locator(
       userProfile.selectors.clubsmalllogodashboard
     );
     await expect(dashboardLogo).toBeVisible();
@@ -86,19 +96,11 @@ test(`E2E-CLUB59-USER-PROFILE-01: Login to the platform and verify user profile 
 });
 
 test(`SANITY-CLUB59-USER-PROFILE-01: Verify First Name is Editable ${SANITY_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
-  const navigateToProfilePage = async () => {
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page', async () => {
-    await navigateToProfilePage();
+    await navigateToProfilePage(page);
   });
   await test.step('Verify First Name is Editable', async () => {
     const firstNameInput = page.locator(userProfile.selectors.firstNameInput);
@@ -111,19 +113,11 @@ test(`SANITY-CLUB59-USER-PROFILE-01: Verify First Name is Editable ${SANITY_TAG}
 });
 
 test(`SANITY-CLUB59-USER-PROFILE-02: Verify Surname is Editable ${SANITY_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
-  const navigateToProfilePage = async () => {
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page', async () => {
-    await navigateToProfilePage();
+    await navigateToProfilePage(page);
   });
   await test.step('Verify Surname is Editable', async () => {
     const surnameInput = page.locator(userProfile.selectors.surnameInput);
@@ -136,19 +130,11 @@ test(`SANITY-CLUB59-USER-PROFILE-02: Verify Surname is Editable ${SANITY_TAG}`, 
 });
 
 test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
-  const navigateToProfilePage = async () => {
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page', async () => {
-    await navigateToProfilePage();
+    await navigateToProfilePage(page);
   });
   await test.step('Verify First Name is Editable', async () => {
     const emailInput = page.locator(userProfile.selectors.emailInput);
@@ -161,19 +147,11 @@ test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, as
 });
 
 test(`SANITY-CLUB59-USER-PROFILE-04: Verify Role is View-Only ${SANITY_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
-  const navigateToProfilePage = async () => {
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page', async () => {
-    await navigateToProfilePage();
+    await navigateToProfilePage(page);
   });
   await test.step('Role field is non-editable (read-only)', async () => {
     const roleSelectInput = page.locator(userProfile.selectors.roleSelectInput);
@@ -182,19 +160,11 @@ test(`SANITY-CLUB59-USER-PROFILE-04: Verify Role is View-Only ${SANITY_TAG}`, as
 });
 
 test(`SANITY-CLUB59-USER-PROFILE-05: Open Change Password Pop-up ${SANITY_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
-  const navigateToProfilePage = async () => {
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page', async () => {
-    await navigateToProfilePage();
+    await navigateToProfilePage(page);
   });
   await test.step('Click "Change Password" button', async () => {
     const changePasswordButton = page.locator(
@@ -219,19 +189,11 @@ test(`SANITY-CLUB59-USER-PROFILE-05: Open Change Password Pop-up ${SANITY_TAG}`,
 });
 
 test(`SANITY-CLUB59-USER-PROFILE-06: Cancel Change Password ${SANITY_TAG}`, async ({
-  loggedInPage,
+  loggedInPage2,
   page,
 }) => {
-  const navigateToProfilePage = async () => {
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page', async () => {
-    await navigateToProfilePage();
+    await navigateToProfilePage(page);
   });
   await test.step('Open Change Password pop-up', async () => {
     const changePasswordButton = page.locator(
@@ -246,5 +208,418 @@ test(`SANITY-CLUB59-USER-PROFILE-06: Cancel Change Password ${SANITY_TAG}`, asyn
       .nth(1);
     await cancelChangePasswordButton.click();
     await expect(myProfileHeader).toBeVisible();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-07: Validate Password Requirements ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Open Change Password pop-up', async () => {
+    const changePasswordButton = page.locator(
+      userProfile.selectors.changePasswordButton
+    );
+    await changePasswordButton.click();
+  });
+  await test.step('Enter a valid current password', async () => {
+    const currentPasswordInput = page
+      .locator(userProfile.selectors.currentPasswordInput)
+      .nth(1);
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await currentPasswordInput.fill(
+      environment.credentials.SUPER_ADMIN_2.password
+    );
+    await expect(confirmChangePasswordButton).toBeDisabled();
+  });
+  await test.step('Enter a new password with min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character', async () => {
+    const newPasswordInput = page
+      .locator(userProfile.selectors.newPasswordInput)
+      .nth(1);
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await newPasswordInput.fill('Password123!');
+    await expect(confirmChangePasswordButton).toBeDisabled();
+  });
+  await test.step('Confirm the same password', async () => {
+    const confirmNewPasswordInput = page
+      .locator(userProfile.selectors.confirmNewPasswordInput)
+      .nth(1);
+    await confirmNewPasswordInput.fill('Password123!');
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await expect(confirmChangePasswordButton).toBeEnabled();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-08: Successful Password Change ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Open Change Password pop-up', async () => {
+    const changePasswordButton = page.locator(
+      userProfile.selectors.changePasswordButton
+    );
+    await changePasswordButton.click();
+  });
+  await test.step('Enter a valid current password', async () => {
+    const currentPasswordInput = page
+      .locator(userProfile.selectors.currentPasswordInput)
+      .nth(1);
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await currentPasswordInput.fill(
+      environment.credentials.SUPER_ADMIN_2.password
+    );
+    await expect(confirmChangePasswordButton).toBeDisabled();
+  });
+  await test.step('Enter a new password with min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character', async () => {
+    const newPasswordInput = page
+      .locator(userProfile.selectors.newPasswordInput)
+      .nth(1);
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await newPasswordInput.fill('Password123!');
+    await expect(confirmChangePasswordButton).toBeDisabled();
+  });
+  await test.step('Confirm the same password', async () => {
+    const confirmNewPasswordInput = page
+      .locator(userProfile.selectors.confirmNewPasswordInput)
+      .nth(1);
+    await confirmNewPasswordInput.fill('Password123!');
+  });
+  await test.step('Click "Change Password"', async () => {
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await confirmChangePasswordButton.click();
+    await page.waitForTimeout(1000);
+  });
+  await test.step('Success message should be visible', async () => {
+    const changePasswordSuccessHeader = page.locator(
+      userProfile.selectors.changePasswordSuccessHeader
+    );
+    const changePasswordSuccessMessage = page.locator(
+      userProfile.selectors.changePasswordSuccessMessage
+    );
+    await expect(changePasswordSuccessHeader).toBeVisible();
+    await expect(changePasswordSuccessMessage).toBeVisible();
+  });
+  await test.step('Revert password changes', async () => {
+    await page.goto(
+      'https://qa.survey.59club.studiographene.xyz/en-GB/my-profile'
+    );
+    await page.waitForTimeout(1000);
+    const changePasswordButton = page.locator(
+      userProfile.selectors.changePasswordButton
+    );
+    await changePasswordButton.click();
+    const currentPasswordInput = page
+      .locator(userProfile.selectors.currentPasswordInput)
+      .nth(1);
+    await currentPasswordInput.fill('Password123!');
+    const newPasswordInput = page
+      .locator(userProfile.selectors.newPasswordInput)
+      .nth(1);
+    await newPasswordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+    const confirmNewPasswordInput = page
+      .locator(userProfile.selectors.confirmNewPasswordInput)
+      .nth(1);
+    await confirmNewPasswordInput.fill(
+      environment.credentials.SUPER_ADMIN_2.password
+    );
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await confirmChangePasswordButton.click();
+    await page.waitForTimeout(500);
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-09: Logout All Other Sessions ${SANITY_TAG}`, async ({
+  page,
+}) => {
+  const loginAndNavigateToProfilePage = async () => {
+    await userProfile.loadApp(environment.baseURL);
+    const emailInput = page.locator(userProfile.selectors.emailSelector);
+    const passwordInput = page.locator(userProfile.selectors.passwordSelector);
+    const loginButton = page.locator(userProfile.selectors.loginButtonSelector);
+    await emailInput.fill(environment.credentials.SUPER_ADMIN_2.username);
+    await passwordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+    await loginButton.click();
+    await page.waitForTimeout(1000);
+    await page.locator(userProfile.selectors.userProfileIconClosed).click();
+    await expect(
+      page.locator(userProfile.selectors.userProfileIconOpen)
+    ).toBeVisible();
+    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
+    await myProfileOption.click();
+  };
+  await test.step('Navigate to Profile page and open another tab in the same browser', async () => {
+    await loginAndNavigateToProfilePage();
+    const newPage = await page.context().newPage();
+    await newPage.goto(environment.baseURL);
+  });
+  await test.step('Go back to the original tab and open Change Password pop-up', async () => {
+    await page.bringToFront();
+    const changePasswordButton = page.locator(
+      userProfile.selectors.changePasswordButton
+    );
+    await changePasswordButton.click();
+  });
+  await test.step('Enter a valid current password', async () => {
+    const currentPasswordInput = page
+      .locator(userProfile.selectors.currentPasswordInput)
+      .nth(1);
+    await currentPasswordInput.fill(
+      environment.credentials.SUPER_ADMIN_2.password
+    );
+  });
+  await test.step('Enter a new password with min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character', async () => {
+    const newPasswordInput = page
+      .locator(userProfile.selectors.newPasswordInput)
+      .nth(1);
+    await newPasswordInput.fill('Password123!');
+  });
+  await test.step('Confirm the same password', async () => {
+    const confirmNewPasswordInput = page
+      .locator(userProfile.selectors.confirmNewPasswordInput)
+      .nth(1);
+    await confirmNewPasswordInput.fill('Password123!');
+  });
+  await test.step('Click "Change Password"', async () => {
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await confirmChangePasswordButton.click();
+    await page.waitForTimeout(1000);
+  });
+  await test.step('Revert password changes', async () => {
+    await page.goto(
+      'https://qa.survey.59club.studiographene.xyz/en-GB/my-profile'
+    );
+    await page.waitForTimeout(1000);
+    const changePasswordButton = page.locator(
+      userProfile.selectors.changePasswordButton
+    );
+    await changePasswordButton.click();
+    const currentPasswordInput = page
+      .locator(userProfile.selectors.currentPasswordInput)
+      .nth(1);
+    await currentPasswordInput.fill('Password123!');
+    const newPasswordInput = page
+      .locator(userProfile.selectors.newPasswordInput)
+      .nth(1);
+    await newPasswordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+    const confirmNewPasswordInput = page
+      .locator(userProfile.selectors.confirmNewPasswordInput)
+      .nth(1);
+    await confirmNewPasswordInput.fill(
+      environment.credentials.SUPER_ADMIN_2.password
+    );
+    const confirmChangePasswordButton = page
+      .locator(userProfile.selectors.confirmChangePasswordButton)
+      .nth(1);
+    await confirmChangePasswordButton.click();
+    await page.waitForTimeout(500);
+  });
+  await test.step('Check session status in other tab', async () => {
+    const newPage = page.context().pages()[1];
+    await newPage.bringToFront();
+    await newPage.locator(userProfile.selectors.userProfileIconClosed).click();
+    await newPage.locator(userProfile.selectors.myProfileOption).click();
+    await expect(
+      newPage.locator(userProfile.selectors.loginButtonSelector)
+    ).toBeVisible();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-10: Select Language from Dropdown ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Click on Default Language dropdown', async () => {
+    const defaultLanguageSelect = page.locator(
+      userProfile.selectors.defaultLanguageSelect
+    );
+    await defaultLanguageSelect.click();
+  });
+  await test.step('View list of options', async () => {
+    const options = page.getByRole('option');
+    await expect(options).toHaveCount(11);
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-11: Verify Default Language Field ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Check the value in Default Language dropdown', async () => {
+    const defaultLanguageSelect = page.locator(
+      userProfile.selectors.defaultLanguageSelect
+    );
+    const currentUrl = page.url();
+    expect(currentUrl).toContain('en-GB');
+    await expect(defaultLanguageSelect).toHaveText('English (GB)');
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-12: Select Preferred Date Format ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Click on Date Format dropdown', async () => {
+    const dateFormatSelect = page.locator(
+      userProfile.selectors.dateFormatSelect
+    );
+    await dateFormatSelect.click();
+  });
+  await test.step('Select a valid date format', async () => {
+    const options = page.getByRole('option');
+    const ddMMyyyyOption = options.nth(0);
+    await ddMMyyyyOption.click();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-13: Select Preferred Time Format ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Click on Time Format dropdown', async () => {
+    const timeFormatSelect = page.locator(
+      userProfile.selectors.timeFormatSelect
+    );
+    await timeFormatSelect.click();
+  });
+  await test.step('Select a valid time format', async () => {
+    const options = page.getByRole('option');
+    const hhmmOption = options.nth(0);
+    await hhmmOption.click();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-14: Enable Update Button on Edit - Language/Date/Time ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Click on Default Language dropdown', async () => {
+    const defaultLanguageSelect = page.locator(
+      userProfile.selectors.defaultLanguageSelect
+    );
+    await defaultLanguageSelect.click();
+  });
+  await test.step('View list of options', async () => {
+    const options = page.getByRole('option');
+    await expect(options).toHaveCount(11);
+    await options.nth(4).click();
+  });
+  await test.step('Enable Update Button', async () => {
+    const updateButton = page.locator(userProfile.selectors.updateButton);
+    await expect(updateButton).toBeEnabled();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-15: Save Language/Date/Time Preferences ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Update Language Preferences', async () => {
+    const defaultLanguageSelect = page.locator(
+      userProfile.selectors.defaultLanguageSelect
+    );
+    await defaultLanguageSelect.click();
+    const options = page.getByRole('option');
+    await options.nth(6).click();
+  });
+  await test.step('Click "Update" button', async () => {
+    const updateButton = page.locator(userProfile.selectors.updateButton);
+    await updateButton.click();
+  });
+  await test.step('Verify Success Message', async () => {
+    const onUpdateSuccessText = page.locator(
+      userProfile.selectors.onUpdateSuccessText
+    );
+    await expect(onUpdateSuccessText).toBeVisible();
+  });
+  await test.step('Close Success Modal', async () => {
+    const closeSuccessModalButton = page.locator(
+      userProfile.selectors.closeSuccessModalButton
+    );
+    await closeSuccessModalButton.click();
+  });
+  await test.step('Revert changes', async () => {
+    const defaultLanguageSelect = page.locator(
+      userProfile.selectors.defaultLanguageSelect
+    );
+    await defaultLanguageSelect.click();
+    const options = page.getByRole('option');
+    await options.nth(0).click();
+    const updateButton = page.locator(userProfile.selectors.updateButton);
+    await updateButton.click();
+    const closeSuccessModalButton = page.locator(
+      userProfile.selectors.closeSuccessModalButton
+    );
+    await closeSuccessModalButton.click();
+  });
+});
+
+test(`SANITY-CLUB59-USER-PROFILE-16: Warn on Unsaved Changes ${SANITY_TAG}`, async ({
+  loggedInPage2,
+  page,
+}) => {
+  await test.step('Navigate to Profile page', async () => {
+    await navigateToProfilePage(page);
+  });
+  await test.step('Make changes to Language/Date/Time', async () => {
+    const defaultLanguageSelect = page.locator(
+      userProfile.selectors.defaultLanguageSelect
+    );
+    await defaultLanguageSelect.click();
+    const options = page.getByRole('option');
+    await options.nth(1).click();
+  });
+  await test.step('Try to navigate away without saving', async () => {
+    await page.locator(userProfile.selectors.navbarAnchor).click();
+  });
+  await test.step('Verify Warning Message', async () => {
+    const onUpdateWarningText = page.locator(
+      userProfile.selectors.onUpdateWarningText
+    );
+    await expect(onUpdateWarningText).toBeVisible();
+  });
+  await test.step('Close Warning Modal', async () => {
+    const closeModalButton = page.locator(
+      userProfile.selectors.closeSuccessModalButton
+    );
+    await closeModalButton.click();
   });
 });

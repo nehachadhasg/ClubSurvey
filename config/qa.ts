@@ -6,6 +6,10 @@ export const environment = {
       username: '59clubqaadmin@yopmail.com',
       password: 'Tulip@345*',
     },
+    SUPER_ADMIN_2: {
+      username: 'superadmin1@yopmail.com',
+      password: 'Club59@123',
+    },
     FRANCHISE_ADMIN: {
       username: 'nehafa@yopmail.com',
       password: 'Club59@123',

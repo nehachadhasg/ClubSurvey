@@ -16,9 +16,9 @@ export class UserProfile extends PlaywrightWrapper {
     loginButtonSelector:
       'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
     userProfileIconClosed:
-      'div[type="button"][data-state="closed"][class*="bg-gold"][class*="text-black"]:has-text("JD")',
+      'div[type="button"][data-state="closed"][class*="bg-gold"][class*="text-black"]:has-text("CD")',
     userProfileIconOpen:
-      'div[type="button"][data-state="open"][class*="bg-gold"][class*="text-black"]:has-text("JD")',
+      'div[type="button"][data-state="open"][class*="bg-gold"][class*="text-black"]:has-text("CD")',
     dropdownMenu:
       'div[role="menu"][class*="z-50"][class*="min-w-[8rem]"][data-state="open"]',
     myProfileOption: 'div[role="menuitem"]:has-text("My Profile")',
@@ -49,6 +49,25 @@ export class UserProfile extends PlaywrightWrapper {
       'input[placeholder="Enter your password"][name*="confirmPassword"]',
     cancelChangePasswordButton:
       'button[class*="font-body"][type="button"]:has-text("Cancel")',
+    confirmChangePasswordButton:
+      'button[class*="font-body"][type="submit"]:has-text("Change Password")',
+    changePasswordSuccessHeader:
+      'h2[class*="typography-heading-2"][class*="text-greyscale-1000"]:has-text("Success!")',
+    changePasswordSuccessMessage:
+      'p[class*="typography-body-1"][class*="text-greyscale-800"]:has-text("Your password has been updated successfully.")',
+    defaultLanguageSelect:
+      'button[role="combobox"][name="language"][class*="h-10"][class*="rounded-sm"]',
+    dateFormatSelect:
+      'button[role="combobox"][name="dateFormat"][class*="h-10"][class*="rounded-sm"]',
+    timeFormatSelect:
+      'button[role="combobox"][name="timeFormat"][class*="h-10"][class*="rounded-sm"]',
+    onUpdateSuccessText:
+      'p[class*="leading-[20px]"][class*="text-greyscale-1000"]:has-text("Profile updated successfully")',
+    closeSuccessModalButton:
+      'button[type="button"][class*="text-foreground/50"][aria-label="Close alert"]',
+    navbarAnchor: 'a[href="/en-GB/overview"]',
+    onUpdateWarningText:
+      'p[class*="leading-[20px]"][class*="text-greyscale-1000"]:has-text("You have unsaved changes. Are you sure you want to leave this page?")',
   };
 
   public someAbstractMethod(): void {
@@ -57,7 +76,12 @@ export class UserProfile extends PlaywrightWrapper {
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   public async UserProfile(
-    role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
+    role:
+      | 'SUPER_ADMIN'
+      | 'SUPER_ADMIN_2'
+      | 'FRANCHISE_ADMIN'
+      | 'GROUP_ADMIN'
+      | 'VENUE_ADMIN'
   ) {
     const { username, password } = environment.credentials[role];
     await this.loadApp(environment.baseURL);
@@ -67,7 +91,7 @@ export class UserProfile extends PlaywrightWrapper {
       await this.type(this.selectors.emailSelector, 'Username', username);
       await this.type(this.selectors.passwordSelector, 'Password', password);
       await this.click(this.selectors.loginButtonSelector, 'Sign In', 'Button');
-      await this.wait('minWait');
+      await this.page.waitForTimeout(1000);
       await this.validateElementVisibility(
         this.selectors.clubsmalllogodashboard,
         'Club Small Logo'
