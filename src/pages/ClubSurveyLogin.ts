@@ -130,6 +130,14 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
   }
   /*public async ClubSurveyLogin(
     role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
+
+  public async ClubSurveyLogin(
+    role:
+      | 'SUPER_ADMIN'
+      | 'SUPER_ADMIN_2'
+      | 'FRANCHISE_ADMIN'
+      | 'GROUP_ADMIN'
+      | 'VENUE_ADMIN'
   ) {
     // Access credentials from the environment object
     const { username, password } = environment.credentials[role];
