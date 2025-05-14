@@ -15,6 +15,7 @@ const navigateToProfilePage = async (page: Page) => {
   ).toBeVisible();
   const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
   await myProfileOption.click();
+  console.log("here")
 };
 
 test.beforeEach(async ({ page, context }) => {
