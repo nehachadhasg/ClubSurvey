@@ -3,32 +3,13 @@ import { ClubSurveyLogin } from '../pages/ClubSurveyLogin';
 import { UserManagementAPI } from '../../helpers/userManagementAPI';import { loadEnvironmentConfig } from '../../config/configLoader';
 import { FakerData  } from '../../helpers/fakerUtils';
 
-
 type TestFixtures = {
   loggedInPage: Page; // A page object after login
-  loggedInPage2: Page; // A page object after login
-  loginAsRole: any;
-  loginAsRole: any;
-  loggedInPage2: Page; // A page object after login
+   loginAsRole: any;
 };
 
 // Extend the base test with custom fixtures
 export const test = base.extend<TestFixtures>({
-  loggedInPage: async (
-    { page, context }: { page: Page; context: BrowserContext },
-    use
-  ) => {
-    const clubSurveyLogin = new ClubSurveyLogin(page, context);
-
-    // Perform login using the ClubSurveyLogin class
-    await clubSurveyLogin.ClubSurveyLogin('SUPER_ADMIN');
-
-    // Provide the logged-in page to the test
-    await use(page);
-  },
-
-  // Login as SUPER_ADMIN_2
-  loggedInPage2: async (
     loggedInPage: async (
         { page, context }: { page: Page; context: BrowserContext },
         use
@@ -44,37 +25,6 @@ export const test = base.extend<TestFixtures>({
         // Provide the logged-in page to the test
         await use(page);
       },
-  loggedInPage: async (
-    { page, context }: { page: Page; context: BrowserContext },
-    use
-  ) => {
-    const clubSurveyLogin = new ClubSurveyLogin(page, context);
-
-    // Perform login using the ClubSurveyLogin class
-    await clubSurveyLogin.ClubSurveyLogin('SUPER_ADMIN');
-
-    // Provide the logged-in page to the test
-    await use(page);
-  },
-
-  // Login as SUPER_ADMIN_2
-  loggedInPage2: async (
-    { page, context }: { page: Page; context: BrowserContext },
-    use
-  ) => {
-    const clubSurveyLogin = new ClubSurveyLogin(page, context);
-    await clubSurveyLogin.ClubSurveyLogin('SUPER_ADMIN_2');
-    await use(page);
-  },
-
-  loginAsRole: async (
-    { page, context }: { page: Page; context: BrowserContext },
-  ) => {
-    const clubSurveyLogin = new ClubSurveyLogin(page, context);
-    await clubSurveyLogin.ClubSurveyLogin('SUPER_ADMIN_2');
-    await use(page);
-  },
-
   loginAsRole: async (
     { page, context }: { page: Page; context: BrowserContext },
   ) => {

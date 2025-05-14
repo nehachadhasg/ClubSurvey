@@ -1,2 +1,0 @@
-Successfully loaded the URL: https://qa.survey.59club.studiographene.xyz
-Contact Us is visible as expected.

@@ -1,4 +1,0 @@
-Error validating visibility of Club Large Logo: Error: page.waitForSelector: Unexpected token "=" while parsing css selector "img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"". Did you mean to CSS.escape it?
-Call log:
-  - waiting for img alt="Large Logo" width="51" height="18" decoding="async" data-nimg="1" class="h-[17px] w-[48px]" src="/_next/static/media/largeLogo.087c4efb.svg" style="color: transparent"
-
