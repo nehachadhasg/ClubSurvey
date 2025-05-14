@@ -88,6 +88,8 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
       'button[class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Go back")',
     showPasswordButton:
       'button[class*="text-gray-1000"][class*="flex"][class*="cursor-pointer"]',
+    forgotPasswordButton:
+      'button[class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Forgot password?")',
   };
 
   public someAbstractMethod(): void {
