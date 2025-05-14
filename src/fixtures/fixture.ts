@@ -3,6 +3,7 @@ import { ClubSurveyLogin } from '../pages/ClubSurveyLogin';
 import { UserManagementAPI } from '../../helpers/userManagementAPI';import { loadEnvironmentConfig } from '../../config/configLoader';
 import { FakerData  } from '../../helpers/fakerUtils';
 
+
 type TestFixtures = {
   loggedInPage: Page; // A page object after login
   loggedInPage2: Page; // A page object after login
