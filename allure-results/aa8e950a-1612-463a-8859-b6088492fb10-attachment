@@ -1,0 +1,206 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Role-Based Permissions Tests >> GROUPADMIN Role - Validate Permissions
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Roles/RoleBasesConfig.test.ts:64:13
+
+# Error details
+
+```
+Error: locator.clear: Test timeout of 20000ms exceeded.
+Call log:
+  - waiting for locator('input[placeholder="Insert your email address"]')
+    - locator resolved to <input value="" type="email" name="email" placeholder="Insert your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-f…/>
+    - fill("")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:39:40
+    at ClubSurveyLogin.type (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/playwright.ts:38:16)
+    at ClubSurveyLogin (/Users/nehachadha/59club_playwright/playwright-automation-framework/src/pages/ClubSurveyLogin.ts:70:18)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Roles/RoleBasesConfig.test.ts:85:13
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "logo":
+  - img "logo"
+- region:
+  - group:
+    - img "Enhance Service & Sales Excellence"
+  - group:
+    - img "Unlock Powerful Insights"
+  - group:
+    - img "Train & Excel with Expert Guidance"
+- heading "Enhance Service & Sales Excellence" [level=3]
+- paragraph: 59Club is the industry leading customer service analyst and training provider, operating across the UK, Ireland, Europe, USA, Canada, Middle East, Africa, Asia, Australia & New Zealand.
+- button "Go to slide 1"
+- button "Go to slide 2"
+- button "Go to slide 3"
+- button "Contact us"
+- img
+- heading "Login" [level=1]
+- paragraph: Please enter your details
+- text: Email address*
+- textbox "Insert your email address"
+- text: Password*
+- button "Forgot your password?"
+- textbox "Enter your password"
+- button:
+  - img
+- checkbox "Remember me"
+- text: Remember me
+- button "Login" [disabled]
+```
+
+# Test source
+
+```ts
+   1 | import { Page, test, expect, BrowserContext, Locator } from '@playwright/test';
+   2 | import * as path from 'path';
+   3 | import fs from 'fs';
+   4 | //import { ACCESS_MATRIX, Role } from '../constants/accessMatrix';
+   5 | import { ROLES } from '../constants/roles';
+   6 |
+   7 |
+   8 | import axios from 'axios';
+   9 |
+   10 | export abstract class PlaywrightWrapper {
+   11 |   readonly page: Page;
+   12 |   readonly context: BrowserContext;
+   13 |   private static newPage: Page | null = null;
+   14 |
+   15 |   protected getNewPage(): Page {
+   16 |     if (!PlaywrightWrapper.newPage) {
+   17 |       throw new Error(
+   18 |         'New tab is not initialized. Did you forget to call childTab()?'
+   19 |       );
+   20 |     }
+   21 |     return PlaywrightWrapper.newPage;
+   22 |   }
+   23 |   constructor(page: Page, context: BrowserContext) {
+   24 |     this.page = page;
+   25 |     this.context = context;
+   26 |   }
+   27 |   //added concrete subclassthat implements abstract method.
+   28 |   abstract someAbstractMethod(): void; // Example abstract method
+   29 |
+   30 |   /**
+   31 |    * Types into the specified textbox after clearing any existing text.
+   32 |    *
+   33 |    * @param {string} locator - The locator for the textbox element.
+   34 |    * @param {string} name - The name of the textbox element.
+   35 |    * @param {string} data - The data to be typed into the textbox.
+   36 |    */
+   37 |   async type(locator: string, name: string, data: string) {
+   38 |     await test.step(`Textbox ${name} filled with data: ${data}`, async () => {
+>  39 |       await this.page.locator(locator).clear();
+      |                                        ^ Error: locator.clear: Test timeout of 20000ms exceeded.
+   40 |       await this.page.locator(locator).fill(data);
+   41 |     });
+   42 |   }
+   43 |
+   44 |   /**
+   45 |    * Types into the specified textbox, clears existing text, and presses <ENTER>.
+   46 |    * @param {string} locator - The locator for the textbox element.
+   47 |    * @param {string} name - The name of the textbox element.
+   48 |    * @param {string} data - The data to be typed into the textbox.
+   49 |    */
+   50 |   async fillAndEnter(locator: string, name: string, data: string) {
+   51 |     await test.step(`Textbox ${name} filled with data: ${data}`, async () => {
+   52 |       await this.page.locator(locator).clear();
+   53 |       await this.page.fill(locator, data, { force: true });
+   54 |       await this.page.focus(locator);
+   55 |       await this.page.keyboard.press('Enter');
+   56 |     });
+   57 |   }
+   58 |
+   59 |   /**
+   60 |    * Types the specified data into a textbox using keyboard input, after clearing existing text.
+   61 |    * @param {string} locator - The locator for the textbox element.
+   62 |    * @param {string} data - The data to be typed into the textbox.
+   63 |    */
+   64 |   async keyboardType(locator: string, data: string) {
+   65 |     await test.step(`Textbox filled with data: ${data}`, async () => {
+   66 |       await this.page.locator(locator).clear();
+   67 |       await this.page.focus(locator);
+   68 |       await this.page.keyboard.type(data, { delay: 100 });
+   69 |     });
+   70 |   }
+   71 |
+   72 |   /**
+   73 |    * Types the specified data into a textbox and presses <Enter> after clearing the existing text.
+   74 |    * @param {string} locator - The locator for the textbox element.
+   75 |    * @param {string} name - The name of the textbox element.
+   76 |    * @param {string} data - The data to be typed into the textbox.
+   77 |    */
+   78 |   async typeAndEnter(locator: string, name: string, data: string) {
+   79 |     await test.step(`Textbox ${name} filled with data: ${data}`, async () => {
+   80 |       await this.page.locator(locator).clear();
+   81 |       await this.page.keyboard.type(data, { delay: 400 });
+   82 |       await this.page.keyboard.press('Enter');
+   83 |     });
+   84 |   }
+   85 |
+   86 |   /**
+   87 |    * Clicks on the specified textbox element.
+   88 |    * @param {string} locator - The locator for the element.
+   89 |    * @param {string} name - The name of the element.
+   90 |    * @param {string} type - The type of the element
+   91 |    */
+   92 |   async click(locator: string, name: string, type: string) {
+   93 |     await test.step(`The ${name} ${type} clicked`, async () => {
+   94 |       await this.page.waitForSelector(locator, { state: 'visible' });
+   95 |       await this.page.locator(locator).click();
+   96 |     });
+   97 |   }
+   98 |
+   99 |   async forceClick(locator: string, name: string, type: string) {
+  100 |     await test.step(`The ${name} ${type} clicked`, async () => {
+  101 |       await this.page.waitForSelector(locator, { state: 'visible' });
+  102 |       await this.page.locator(locator).click({ force: true });
+  103 |     });
+  104 |   }
+  105 |
+  106 |   async storeState(path: string): Promise<void> {
+  107 |     try {
+  108 |       await this.context.storageState({ path });
+  109 |       console.log(`Storage state saved to: ${path}`);
+  110 |     } catch (error) {
+  111 |       console.error(`Failed to save storage state to: ${path}`, error);
+  112 |     }
+  113 |   }
+  114 |
+  115 |   /**
+  116 |    * Loads the specified URL in the browser.
+  117 |    *
+  118 |    * @param {string} url - The URL to navigate to.
+  119 |    */
+  120 |   public async loadApp(url: string) {
+  121 |     try {
+  122 |       await this.page.goto(url); // Increased timeout for 60 seconds
+  123 |       console.log(`Successfully loaded the URL: ${url}`);
+  124 |     } catch (error) {
+  125 |       console.log(`Error loading the page at ${url}:`);
+  126 |       throw new Error(`Failed to load the page at ${url}`);
+  127 |     }
+  128 |   }
+  129 |
+  130 |   /**
+  131 |    * Retrieves the inner text of the specified element.
+  132 |    *
+  133 |    * @param {string} locator - The locator for the element.
+  134 |    * @returns {Promise<string>} - The inner text of the element.
+  135 |    */
+  136 |   async getInnerText(locator: string): Promise<string> {
+  137 |     return await this.page.locator(locator).innerText();
+  138 |   }
+  139 |
+```

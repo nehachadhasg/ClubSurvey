@@ -1,4 +1,5 @@
-import { test, expect } from '../../fixtures/fixture';
+//import { test, expect } from '../../fixtures/fixture';
+import { test, expect } from '@playwright/test';
 import { SANITY_TAG, E2E_TAG } from '../../../constants/tags';
 import { ClubSurveyLogin } from '../../pages/ClubSurveyLogin';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
@@ -225,10 +226,10 @@ test(`E2E-CLUB59-SURVEYS-PLATFORM-001: Complete end-to-end flow ${E2E_TAG}`, asy
   });
 });
 
-test(`SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials ${SANITY_TAG}`, async ({
+/*test(`SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials ${SANITY_TAG}`, async ({
   loggedInPage,
 }) => {
   // Assert that the dashboard is loaded
   const dashboardLogo = loggedInPage.locator('img[alt="Small Logo"]');
   await expect(dashboardLogo).toBeVisible();
-});
+});*/

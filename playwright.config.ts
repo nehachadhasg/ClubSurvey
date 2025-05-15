@@ -1,17 +1,19 @@
 import { defineConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 import { loadEnvironmentConfig } from './config/configLoader';
+import { SUPER_ADMIN_TAG, FRANCHISE_ADMIN_TAG, GROUP_ADMIN_TAG, VENUE_ADMIN_TAG } from './constants/tags';
+
 
 const environment = loadEnvironmentConfig();
 const timestamp = Date.now();
 const reportDir = `./reporter/playwright-reports-${timestamp}`;
 export default defineConfig({
-  timeout: 50000,
+  timeout: 20000,
 
   expect: {
     timeout: 20000,
   },
-  testDir: 'src/tests/Regression_Suite',
+  testDir: 'src/tests/Roles',
 
   fullyParallel: true,
   retries: 0,
@@ -80,6 +82,22 @@ export default defineConfig({
     {
       name: 'api',
       testDir: './APIServices'
+    },
+    {
+      name: 'SuperAdmin Tests',
+      grep: new RegExp(SUPER_ADMIN_TAG), // Run only tests tagged with '@superadmin'
+    },
+    {
+      name: 'FranchiseAdmin Tests',
+      grep: new RegExp(FRANCHISE_ADMIN_TAG), // Run only tests tagged with '@franchiseadmin'
+    },
+    {
+      name: 'GroupAdmin Tests',
+      grep: new RegExp(GROUP_ADMIN_TAG), // Run only tests tagged with '@groupadmin'
+    },
+    {
+      name: 'VenueAdmin Tests',
+      grep: new RegExp(VENUE_ADMIN_TAG), // Run only tests tagged with '@venueadmin'
     },
 
     /*{

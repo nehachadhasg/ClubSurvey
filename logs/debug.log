@@ -9171,3 +9171,725 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-12 19:57:03] INFO: Test Case Started : Create User
 [2025-05-12 19:57:09] INFO: Test Case Completed : Create User Status : passed
 [2025-05-12 19:57:09] INFO: Test run completed with status: PASSED
+[2025-05-13 14:02:26] INFO: Test run started with 0 test(s).
+[2025-05-13 14:02:26] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:02:26] INFO: Test run completed with status: FAILED
+[2025-05-13 14:02:45] INFO: Test run started with 0 test(s).
+[2025-05-13 14:02:45] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:02:45] INFO: Test run completed with status: FAILED
+[2025-05-13 14:04:01] INFO: Test run started with 0 test(s).
+[2025-05-13 14:04:01] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:04:01] INFO: Test run completed with status: FAILED
+[2025-05-13 14:04:40] INFO: Test run started with 0 test(s).
+[2025-05-13 14:04:40] ERROR: Test Error: Error: Failed to read users.json or file is empty.
+[2025-05-13 14:04:40] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:04:40] INFO: Test run completed with status: FAILED
+[2025-05-13 14:10:25] INFO: Test run started with 0 test(s).
+[2025-05-13 14:10:25] ERROR: Test Error: Error: Failed to read users.json or file is empty.
+[2025-05-13 14:10:25] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:10:25] INFO: Test run completed with status: FAILED
+[2025-05-13 14:10:45] INFO: Test run started with 0 test(s).
+[2025-05-13 14:10:45] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:10:45] INFO: Test run completed with status: FAILED
+[2025-05-13 14:11:41] INFO: Test run started with 0 test(s).
+[2025-05-13 14:11:41] ERROR: Test Error: Error: Failed to read users.json or file is empty.
+[2025-05-13 14:11:41] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:11:41] INFO: Test run completed with status: FAILED
+[2025-05-13 14:27:01] INFO: Test run started with 0 test(s).
+[2025-05-13 14:27:01] ERROR: Test Error: Error: Failed to read users.json: users.json is empty or invalid.
+[2025-05-13 14:27:01] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:27:01] INFO: Test run completed with status: FAILED
+[2025-05-13 14:28:35] INFO: Test run started with 0 test(s).
+[2025-05-13 14:28:35] ERROR: Test Error: Error: Failed to read users.json: users.json is empty or invalid.
+[2025-05-13 14:28:35] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 14:28:35] INFO: Test run completed with status: FAILED
+[2025-05-13 15:33:34] INFO: Test run started with 0 test(s).
+[2025-05-13 15:33:34] ERROR: Test Error: Error: No tests found
+[2025-05-13 15:33:34] INFO: Test run completed with status: FAILED
+[2025-05-13 15:47:33] INFO: Test run started with 0 test(s).
+[2025-05-13 15:47:33] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 15:47:33] INFO: Test run completed with status: FAILED
+[2025-05-13 15:48:11] INFO: Test run started with 0 test(s).
+[2025-05-13 15:48:11] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 15:48:11] INFO: Test run completed with status: FAILED
+[2025-05-13 15:50:03] INFO: Test run started with 0 test(s).
+[2025-05-13 15:50:03] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 15:50:03] INFO: Test run completed with status: FAILED
+[2025-05-13 15:52:34] INFO: Test run started with 0 test(s).
+[2025-05-13 15:52:34] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 15:52:34] INFO: Test run completed with status: FAILED
+[2025-05-13 15:53:32] INFO: Test run started with 4 test(s).
+[2025-05-13 15:53:33] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-13 15:53:33] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-13 15:53:33] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-13 15:53:33] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 15:53:33] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-13 15:53:33] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 15:53:33] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-13 15:53:33] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 15:53:33] INFO: Test run completed with status: FAILED
+[2025-05-13 15:57:46] INFO: Test run started with 0 test(s).
+[2025-05-13 15:57:46] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 15:57:46] INFO: Test run completed with status: FAILED
+[2025-05-13 15:59:12] INFO: Test run started with 0 test(s).
+[2025-05-13 15:59:12] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 15:59:12] INFO: Test run completed with status: FAILED
+[2025-05-13 16:02:15] INFO: Test run started with 4 test(s).
+[2025-05-13 16:02:15] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-13 16:02:15] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-13 16:02:15] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-13 16:02:15] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:02:15] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-13 16:02:15] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:02:15] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-13 16:02:15] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:02:15] INFO: Test run completed with status: FAILED
+[2025-05-13 16:02:23] INFO: Test run started with 4 test(s).
+[2025-05-13 16:02:23] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-13 16:02:23] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-13 16:02:23] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-13 16:02:23] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:02:23] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-13 16:02:23] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:02:23] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-13 16:02:23] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:02:23] INFO: Test run completed with status: FAILED
+[2025-05-13 16:04:42] INFO: Test run started with 0 test(s).
+[2025-05-13 16:04:42] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 16:04:42] INFO: Test run completed with status: FAILED
+[2025-05-13 16:09:28] INFO: Test run started with 0 test(s).
+[2025-05-13 16:09:28] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 16:09:28] INFO: Test run completed with status: INTERRUPTED
+[2025-05-13 16:10:20] INFO: Test run started with 0 test(s).
+[2025-05-13 16:10:20] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-13 16:10:20] INFO: Test run completed with status: FAILED
+[2025-05-13 16:15:37] INFO: Test run started with 4 test(s).
+[2025-05-13 16:15:38] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-13 16:15:38] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-13 16:15:38] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-13 16:15:38] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:15:38] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-13 16:15:38] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:15:38] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-13 16:15:38] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-13 16:15:38] INFO: Test run completed with status: FAILED
+[2025-05-13 16:39:35] INFO: Test run started with 1 test(s).
+[2025-05-13 16:39:36] INFO: Test Case Started : Create User
+[2025-05-13 16:39:37] INFO: Test Case Completed : Create User Status : failed
+[2025-05-13 16:39:37] INFO: Test run completed with status: FAILED
+[2025-05-13 16:41:50] INFO: Test run started with 1 test(s).
+[2025-05-13 16:41:51] INFO: Test Case Started : Create User
+[2025-05-13 16:41:57] INFO: Test Case Completed : Create User Status : passed
+[2025-05-13 16:41:57] INFO: Test run completed with status: PASSED
+[2025-05-14 04:38:35] INFO: Test run started with 4 test(s).
+[2025-05-14 04:38:36] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 04:38:36] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-14 04:38:36] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 04:38:36] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 04:38:36] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 04:38:36] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 04:38:36] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 04:38:36] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 04:38:36] INFO: Test run completed with status: FAILED
+[2025-05-14 05:01:07] INFO: Test run started with 4 test(s).
+[2025-05-14 05:01:08] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:01:14] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-14 05:01:14] ERROR: Test Error: [31mTesting stopped early after 1 maximum allowed failures.[39m
+[2025-05-14 05:01:14] INFO: Test run completed with status: FAILED
+[2025-05-14 05:01:58] INFO: Test run started with 4 test(s).
+[2025-05-14 05:01:59] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:06:14] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-14 05:06:14] ERROR: Test Error: [31mTesting stopped early after 1 maximum allowed failures.[39m
+[2025-05-14 05:06:15] INFO: Test run completed with status: FAILED
+[2025-05-14 05:06:54] INFO: Test run started with 4 test(s).
+[2025-05-14 05:06:55] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:18:32] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-14 05:18:32] ERROR: Test Error: [31mTesting stopped early after 1 maximum allowed failures.[39m
+[2025-05-14 05:18:32] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:18:42] INFO: Test run started with 4 test(s).
+[2025-05-14 05:18:44] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:24:04] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : failed
+[2025-05-14 05:24:04] ERROR: Test Error: [31mTesting stopped early after 1 maximum allowed failures.[39m
+[2025-05-14 05:24:04] INFO: Test run completed with status: FAILED
+[2025-05-14 05:25:33] INFO: Test run started with 4 test(s).
+[2025-05-14 05:25:35] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:29:15] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:29:16] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:29:53] INFO: Test run started with 4 test(s).
+[2025-05-14 05:29:55] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:30:49] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:30:49] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:32:29] INFO: Test run started with 4 test(s).
+[2025-05-14 05:32:31] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:32:32] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:32:32] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 05:32:32] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 05:32:32] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 05:32:32] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 05:32:32] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 05:32:32] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 05:32:32] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:32:57] INFO: Test run started with 4 test(s).
+[2025-05-14 05:32:59] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:33:13] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 05:33:14] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 05:33:14] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 05:33:15] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 05:33:15] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:33:15] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:33:26] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 05:33:26] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 05:33:27] INFO: Executing Step : Textbox Username filled with data: Brenna74@gmail.com
+[2025-05-14 05:33:28] INFO: Completed Step : Textbox Username filled with data: Brenna74@gmail.com - Success
+[2025-05-14 05:33:28] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 05:33:29] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 05:33:29] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:33:29] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:33:41] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:33:41] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:41:35] INFO: Test run started with 4 test(s).
+[2025-05-14 05:41:36] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:41:46] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 05:41:47] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 05:41:47] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 05:41:48] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 05:41:48] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:41:48] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:42:01] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 05:42:01] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 05:42:02] INFO: Executing Step : Textbox Username filled with data: Nigel52@hotmail.com
+[2025-05-14 05:42:02] INFO: Completed Step : Textbox Username filled with data: Nigel52@hotmail.com - Success
+[2025-05-14 05:42:02] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 05:42:03] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 05:42:03] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:42:03] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:42:19] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : failed
+[2025-05-14 05:42:21] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 05:42:30] INFO: Executing Step : Textbox Username filled with data: Syble20@gmail.com
+[2025-05-14 05:42:31] INFO: Completed Step : Textbox Username filled with data: Syble20@gmail.com - Success
+[2025-05-14 05:42:31] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 05:42:31] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 05:42:31] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:42:32] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:43:03] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:43:03] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:44:41] INFO: Test run started with 4 test(s).
+[2025-05-14 05:44:43] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:44:52] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 05:44:53] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 05:44:53] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 05:44:54] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 05:44:54] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:44:54] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:45:05] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 05:45:05] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 05:45:06] INFO: Executing Step : Textbox Username filled with data: Colten_Abernathy58@hotmail.com
+[2025-05-14 05:45:07] INFO: Completed Step : Textbox Username filled with data: Colten_Abernathy58@hotmail.com - Success
+[2025-05-14 05:45:07] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 05:45:08] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 05:45:08] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:45:08] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:45:57] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 05:46:00] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 05:46:09] INFO: Executing Step : Textbox Username filled with data: Kaela65@hotmail.com
+[2025-05-14 05:46:09] INFO: Completed Step : Textbox Username filled with data: Kaela65@hotmail.com - Success
+[2025-05-14 05:46:09] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 05:46:10] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 05:46:10] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 05:46:11] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 05:46:21] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:46:21] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 05:47:30] INFO: Test run started with 4 test(s).
+[2025-05-14 05:47:31] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 05:47:38] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 05:47:39] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:09:41] INFO: Test run started with 4 test(s).
+[2025-05-14 06:09:42] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:11:12] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 06:11:12] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:11:27] INFO: Test run started with 4 test(s).
+[2025-05-14 06:11:28] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:12:14] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 06:12:14] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:12:59] INFO: Test run started with 4 test(s).
+[2025-05-14 06:13:10] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:15:14] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 06:15:14] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:15:52] INFO: Test run started with 4 test(s).
+[2025-05-14 06:16:00] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:18:49] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 06:18:50] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:19:04] INFO: Test run started with 4 test(s).
+[2025-05-14 06:19:11] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:25:14] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:26:06] INFO: Test run started with 4 test(s).
+[2025-05-14 06:26:11] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:26:27] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 06:26:27] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 06:26:27] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 06:26:28] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 06:26:28] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 06:26:28] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 06:40:32] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:41:49] INFO: Test run started with 4 test(s).
+[2025-05-14 06:41:55] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 06:42:36] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 06:42:36] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 06:42:36] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 06:42:37] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 06:42:37] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 06:42:37] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 06:42:57] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 06:42:57] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 06:43:20] INFO: Executing Step : Textbox Username filled with data: Sabrina_Walter@hotmail.com
+[2025-05-14 06:43:21] INFO: Completed Step : Textbox Username filled with data: Sabrina_Walter@hotmail.com - Success
+[2025-05-14 06:43:21] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 06:43:22] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 06:43:22] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 06:43:22] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 06:44:05] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 06:44:13] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 06:44:36] INFO: Executing Step : Textbox Username filled with data: Ivah43@gmail.com
+[2025-05-14 06:44:37] INFO: Completed Step : Textbox Username filled with data: Ivah43@gmail.com - Success
+[2025-05-14 06:44:37] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 06:44:38] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 06:44:38] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 06:44:38] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 06:44:44] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 06:44:56] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 08:06:51] INFO: Test run started with 4 test(s).
+[2025-05-14 08:06:58] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:09:23] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:10:06] INFO: Test run started with 4 test(s).
+[2025-05-14 08:10:14] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:21:32] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 08:21:32] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:21:44] INFO: Test run started with 4 test(s).
+[2025-05-14 08:21:46] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:26:26] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 08:26:26] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:26:46] INFO: Test run started with 4 test(s).
+[2025-05-14 08:26:48] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:28:24] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 08:28:24] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:36:35] INFO: Test run started with 4 test(s).
+[2025-05-14 08:36:37] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:37:52] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:41:50] INFO: Test run started with 4 test(s).
+[2025-05-14 08:41:52] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:45:16] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 08:45:17] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:49:32] INFO: Test run started with 4 test(s).
+[2025-05-14 08:49:34] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:51:23] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 08:51:23] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 08:51:54] INFO: Test run started with 4 test(s).
+[2025-05-14 08:51:55] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 08:52:12] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 08:52:13] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 08:52:13] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 08:52:14] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 08:52:14] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 08:52:14] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 08:52:37] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 08:52:39] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 08:53:03] INFO: Executing Step : Textbox Username filled with data: Eliane71@hotmail.com
+[2025-05-14 08:53:03] INFO: Completed Step : Textbox Username filled with data: Eliane71@hotmail.com - Success
+[2025-05-14 08:53:03] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 08:53:04] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 08:53:04] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 08:53:04] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 08:53:20] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 08:53:23] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 08:54:04] INFO: Executing Step : Textbox Username filled with data: Lorine48@gmail.com
+[2025-05-14 08:54:05] INFO: Completed Step : Textbox Username filled with data: Lorine48@gmail.com - Error: Error: locator.clear: Test timeout of 20000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[placeholder="Insert your email address"]')[22m
+[2m    - locator resolved to <input value="" type="email" name="email" placeholder="Insert your email address" class="h-10 px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none !typography-body-1 w-f…/>[22m
+[2m    - fill("")[22m
+[2m  - attempting fill action[22m
+[2m    - waiting for element to be visible, enabled and editable[22m
+
+[2025-05-14 08:54:05] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 08:54:08] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 08:54:34] INFO: Executing Step : Textbox Username filled with data: Helena.Padberg@yahoo.com
+[2025-05-14 08:54:35] INFO: Completed Step : Textbox Username filled with data: Helena.Padberg@yahoo.com - Error: Error: locator.clear: Test timeout of 20000ms exceeded.
+Call log:
+[2m  - waiting for locator('input[placeholder="Insert your email address"]')[22m
+
+[2025-05-14 08:54:47] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 08:54:47] INFO: Test run completed with status: FAILED
+[2025-05-14 09:08:56] INFO: Test run started with 4 test(s).
+[2025-05-14 09:08:58] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:09:13] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:09:14] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:09:14] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:09:14] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:09:14] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:09:15] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:09:40] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 09:09:42] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:10:05] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 09:13:54] INFO: Test run started with 4 test(s).
+[2025-05-14 09:13:55] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:14:42] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:14:42] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:14:42] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:14:43] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:14:43] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:14:43] INFO: Completed Step : The Sign In Button clicked - Error: Error: page.waitForSelector: Target page, context or browser has been closed
+[2025-05-14 09:14:44] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 09:14:47] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:14:50] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 09:14:50] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 09:14:50] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 09:14:50] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 09:14:50] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : skipped
+[2025-05-14 09:14:51] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 09:15:01] INFO: Test run started with 4 test(s).
+[2025-05-14 09:15:03] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:15:21] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:15:22] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:15:22] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:15:23] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:15:23] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:15:23] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:15:45] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 09:15:47] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:16:25] INFO: Executing Step : Textbox Username filled with data: Rashad.Jacobs66@gmail.com
+[2025-05-14 09:16:26] INFO: Completed Step : Textbox Username filled with data: Rashad.Jacobs66@gmail.com - Error: Error: locator.fill: Target page, context or browser has been closed
+[2025-05-14 09:16:28] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 09:16:31] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 09:16:50] INFO: Executing Step : Textbox Username filled with data: Angeline45@gmail.com
+[2025-05-14 09:16:50] INFO: Completed Step : Textbox Username filled with data: Angeline45@gmail.com - Success
+[2025-05-14 09:16:50] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 09:16:51] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 09:16:51] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:16:51] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:17:03] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 09:17:10] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 09:20:20] INFO: Test run started with 4 test(s).
+[2025-05-14 09:20:22] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:20:36] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:20:37] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:20:37] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:20:37] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:20:37] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:20:38] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:21:03] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : timedOut
+[2025-05-14 09:21:06] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:21:22] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 09:36:05] INFO: Test run started with 1 test(s).
+[2025-05-14 09:36:06] INFO: Test Case Started : Create User
+[2025-05-14 09:36:12] INFO: Test Case Completed : Create User Status : passed
+[2025-05-14 09:36:12] INFO: Test run completed with status: PASSED
+[2025-05-14 09:37:15] INFO: Test run started with 4 test(s).
+[2025-05-14 09:37:15] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:37:20] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:37:21] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:37:21] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:37:21] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:37:21] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:37:22] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:37:33] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 09:37:33] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:37:34] INFO: Executing Step : Textbox Username filled with data: Jaida_Torphy55@gmail.com
+[2025-05-14 09:37:34] INFO: Completed Step : Textbox Username filled with data: Jaida_Torphy55@gmail.com - Success
+[2025-05-14 09:37:34] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 09:37:35] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 09:37:35] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:37:35] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:37:43] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 09:37:51] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 09:39:16] INFO: Test run started with 4 test(s).
+[2025-05-14 09:39:16] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:39:20] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:39:21] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:39:21] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:39:22] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:39:22] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:39:22] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:39:33] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 09:39:33] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:39:34] INFO: Executing Step : Textbox Username filled with data: Jaida_Torphy55@gmail.com
+[2025-05-14 09:39:34] INFO: Completed Step : Textbox Username filled with data: Jaida_Torphy55@gmail.com - Success
+[2025-05-14 09:39:34] INFO: Executing Step : Textbox Password filled with data: club59@123
+[2025-05-14 09:39:35] INFO: Completed Step : Textbox Password filled with data: club59@123 - Success
+[2025-05-14 09:39:35] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:39:35] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:39:43] INFO: Test run completed with status: INTERRUPTED
+[2025-05-14 09:39:52] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : interrupted
+[2025-05-14 09:42:13] INFO: Test run started with 0 test(s).
+[2025-05-14 09:42:13] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-14 09:42:13] INFO: Test run completed with status: FAILED
+[2025-05-14 09:42:45] INFO: Test run started with 1 test(s).
+[2025-05-14 09:42:46] INFO: Test Case Started : Create User
+[2025-05-14 09:42:52] INFO: Test Case Completed : Create User Status : passed
+[2025-05-14 09:42:52] INFO: Test run completed with status: PASSED
+[2025-05-14 09:43:04] INFO: Test run started with 4 test(s).
+[2025-05-14 09:43:05] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 09:43:09] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 09:43:10] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 09:43:10] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 09:43:10] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 09:43:10] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:43:11] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:43:22] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 09:43:22] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 09:43:22] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-14 09:43:23] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-14 09:43:23] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 09:43:24] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 09:43:24] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:43:24] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:43:35] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 09:43:35] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 09:43:36] INFO: Executing Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com
+[2025-05-14 09:43:37] INFO: Completed Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com - Success
+[2025-05-14 09:43:37] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 09:43:37] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 09:43:37] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:43:38] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:43:49] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : passed
+[2025-05-14 09:43:49] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 09:43:50] INFO: Executing Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com
+[2025-05-14 09:43:50] INFO: Completed Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com - Success
+[2025-05-14 09:43:50] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 09:43:51] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 09:43:51] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 09:43:51] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 09:44:02] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 09:44:03] INFO: Test run completed with status: PASSED
+[2025-05-14 09:45:42] INFO: Test run started with 0 test(s).
+[2025-05-14 09:45:42] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-14 09:45:42] INFO: Test run completed with status: FAILED
+[2025-05-14 10:10:12] INFO: Test run started with 0 test(s).
+[2025-05-14 10:10:12] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-14 10:10:12] INFO: Test run completed with status: FAILED
+[2025-05-14 10:11:31] INFO: Test run started with 4 test(s).
+[2025-05-14 10:11:32] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 10:11:37] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 10:11:38] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 10:11:38] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 10:11:38] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 10:11:38] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 10:11:39] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 10:11:50] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 10:11:50] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 10:11:51] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-14 10:11:51] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-14 10:11:51] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 10:11:52] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 10:11:52] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 10:11:52] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 10:12:03] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 10:12:03] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 10:12:04] INFO: Executing Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com
+[2025-05-14 10:12:05] INFO: Completed Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com - Success
+[2025-05-14 10:12:05] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 10:12:05] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 10:12:05] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 10:12:06] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 10:12:17] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : passed
+[2025-05-14 10:12:17] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 10:12:18] INFO: Executing Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com
+[2025-05-14 10:12:18] INFO: Completed Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com - Success
+[2025-05-14 10:12:18] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 10:12:19] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 10:12:19] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 10:12:19] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 10:12:30] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 10:12:31] INFO: Test run completed with status: PASSED
+[2025-05-14 12:11:18] INFO: Test run started with 4 test(s).
+[2025-05-14 12:11:18] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 12:11:25] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 12:11:26] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 12:11:26] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 12:11:27] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 12:11:27] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:11:27] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:11:38] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:11:38] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 12:11:39] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-14 12:11:40] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-14 12:11:40] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:11:41] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:11:41] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:11:41] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:11:52] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:11:52] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 12:11:53] INFO: Executing Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com
+[2025-05-14 12:11:53] INFO: Completed Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com - Success
+[2025-05-14 12:11:53] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:11:54] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:11:54] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:11:54] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:12:08] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : failed
+[2025-05-14 12:12:09] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 12:12:12] INFO: Executing Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com
+[2025-05-14 12:12:12] INFO: Completed Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com - Success
+[2025-05-14 12:12:12] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:12:13] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:12:13] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:12:13] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:12:25] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:12:25] INFO: Test run completed with status: FAILED
+[2025-05-14 12:56:13] INFO: Test run started with 4 test(s).
+[2025-05-14 12:56:14] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 12:56:20] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 12:56:20] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 12:56:20] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 12:56:21] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 12:56:21] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:56:21] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:56:34] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:56:34] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 12:56:35] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-14 12:56:36] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-14 12:56:36] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:56:36] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:56:36] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:56:37] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:56:48] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:56:48] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 12:56:49] INFO: Executing Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com
+[2025-05-14 12:56:49] INFO: Completed Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com - Success
+[2025-05-14 12:56:49] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:56:50] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:56:50] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:56:50] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:57:02] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:57:02] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 12:57:03] INFO: Executing Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com
+[2025-05-14 12:57:04] INFO: Completed Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com - Success
+[2025-05-14 12:57:04] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:57:04] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:57:04] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:57:05] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:57:16] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:57:16] INFO: Test run completed with status: PASSED
+[2025-05-14 12:58:54] INFO: Test run started with 4 test(s).
+[2025-05-14 12:58:54] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 12:58:59] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 12:58:59] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 12:58:59] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 12:59:00] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 12:59:00] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:59:00] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:59:12] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:59:12] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 12:59:13] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-14 12:59:13] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-14 12:59:13] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:59:14] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:59:14] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:59:14] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:59:26] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:59:26] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 12:59:26] INFO: Executing Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com
+[2025-05-14 12:59:27] INFO: Completed Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com - Success
+[2025-05-14 12:59:27] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:59:28] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:59:28] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:59:28] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:59:39] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:59:39] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 12:59:40] INFO: Executing Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com
+[2025-05-14 12:59:41] INFO: Completed Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com - Success
+[2025-05-14 12:59:41] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 12:59:41] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 12:59:41] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 12:59:42] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 12:59:53] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 12:59:53] INFO: Test run completed with status: PASSED
+[2025-05-14 13:14:02] INFO: Test run started with 0 test(s).
+[2025-05-14 13:14:02] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-14 13:14:02] INFO: Test run completed with status: FAILED
+[2025-05-14 13:15:29] INFO: Test run started with 0 test(s).
+[2025-05-14 13:15:29] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-14 13:15:29] INFO: Test run completed with status: FAILED
+[2025-05-14 13:18:45] INFO: Test run started with 0 test(s).
+[2025-05-14 13:18:45] ERROR: Test Error: Error: No tests found.
+Make sure that arguments are regular expressions matching test files.
+You may need to escape symbols like "$" or "*" and quote the arguments.
+[2025-05-14 13:18:45] INFO: Test run completed with status: FAILED
+[2025-05-14 13:23:14] INFO: Test run started with 4 test(s).
+[2025-05-14 13:23:14] INFO: Test Case Started : SUPERADMIN Role - Validate Permissions
+[2025-05-14 13:23:20] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-14 13:23:21] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-14 13:23:21] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-14 13:23:21] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-14 13:23:21] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 13:23:22] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 13:23:33] INFO: Test Case Completed : SUPERADMIN Role - Validate Permissions Status : passed
+[2025-05-14 13:23:33] INFO: Test Case Started : FRANCHISEADMIN Role - Validate Permissions
+[2025-05-14 13:23:34] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-14 13:23:34] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-14 13:23:34] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 13:23:35] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 13:23:35] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 13:23:35] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 13:23:47] INFO: Test Case Completed : FRANCHISEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 13:23:47] INFO: Test Case Started : GROUPADMIN Role - Validate Permissions
+[2025-05-14 13:23:47] INFO: Executing Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com
+[2025-05-14 13:23:48] INFO: Completed Step : Textbox Username filled with data: Marlin_Ondricka11@hotmail.com - Success
+[2025-05-14 13:23:48] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 13:23:49] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 13:23:49] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 13:23:49] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 13:24:00] INFO: Test Case Completed : GROUPADMIN Role - Validate Permissions Status : passed
+[2025-05-14 13:24:00] INFO: Test Case Started : VENUEADMIN Role - Validate Permissions
+[2025-05-14 13:24:01] INFO: Executing Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com
+[2025-05-14 13:24:02] INFO: Completed Step : Textbox Username filled with data: Vanessa.Bogisich@yahoo.com - Success
+[2025-05-14 13:24:02] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-14 13:24:02] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-14 13:24:02] INFO: Executing Step : The Sign In Button clicked
+[2025-05-14 13:24:03] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-14 13:24:14] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
+[2025-05-14 13:24:14] INFO: Test run completed with status: PASSED

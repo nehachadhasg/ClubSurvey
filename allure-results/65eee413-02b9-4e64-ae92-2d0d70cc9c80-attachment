@@ -1,0 +1,180 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Role-Based Permissions Tests >> GROUPADMIN Role - Validate Permissions
+- Location: /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Roles/RoleBasesConfig.test.ts:26:13
+
+# Error details
+
+```
+Error: expect(received).toBeTruthy()
+
+Received: false
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Roles/RoleBasesConfig.test.ts:61:38
+```
+
+# Page snapshot
+
+```yaml
+- alert
+- link "Small Logo":
+  - img "Small Logo"
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- list:
+  - listitem:
+    - link:
+      - button:
+        - img
+  - listitem:
+    - link:
+      - button:
+        - img
+- button "Toggle Sidebar"
+- heading "Language" [level=1]
+- img
+- img
+- text: English (GB)
+- img
+- img
+- text: English (US)
+- img
+- text: Danish
+- img
+- text: French
+- img
+- text: German
+- img
+- text: Italian
+- img
+- text: Portuguese
+- img
+- text: Spanish
+- img
+- text: Swedish
+- img
+- text: Thai
+- img
+- text: Vietnamese
+- button "Cancel"
+- button "Confirm"
+- navigation:
+  - button "Toggle sidebar":
+    - img
+  - heading "Settings" [level=1]
+- button "Notifications":
+  - img
+- text: EJ
+- heading "Settings" [level=1]
+- img
+- heading "Users 147" [level=2]
+- paragraph: View and edit user details and permissions
+- img
+- heading "Venues 1" [level=2]
+- paragraph: Configure and manage venue details
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | import { JsonReader } from '../../../helpers/jsonReader';
+   3 | import { ClubSurveyLogin } from '../../pages/ClubSurveyLogin';
+   4 | import { SettingsPage } from '../../pages/SettingsPage';
+   5 | import { ROLE_CONFIG } from '../../../constants/roleConfig';
+   6 | import { ROLES } from '../../../constants/roles';
+   7 | import { UserData } from '../../../data/users.interface';
+   8 | import path from 'path';
+   9 |
+  10 | type RoleName = keyof typeof ROLE_CONFIG;
+  11 | const filePath = '/Users/nehachadha/59club_playwright/playwright-automation-framework/data/users.json';
+  12 |
+  13 | test.describe('Role-Based Permissions Tests', () => {
+  14 |     let users: UserData;
+  15 |
+  16 |     // Load pre-generated users.json file
+  17 |     test.beforeEach(() => {
+  18 |         users = JsonReader.readJson(filePath) as UserData;
+  19 |         if (!users || Object.keys(users).length === 0) {
+  20 |             throw new Error('users.json is empty or invalid. Please run the data generation script.');
+  21 |         }
+  22 |     });
+  23 |
+  24 |     // Iterate through roles and run individual tests
+  25 |     Object.entries(ROLES).forEach(([roleName, roleId]) => {
+  26 |         test(`${roleName} Role - Validate Permissions`, async ({ page, context }) => {
+  27 |             // Add a tag for the role
+  28 |             const roleTag =
+  29 |                 roleName === 'SUPERADMIN'
+  30 |                     ? '@superadmin'
+  31 |                     : roleName === 'FRANCHISEADMIN'
+  32 |                     ? '@franchiseadmin'
+  33 |                     : roleName === 'GROUPADMIN'
+  34 |                     ? '@groupadmin'
+  35 |                     : '@venueadmin';
+  36 |
+  37 |             test.info().annotations.push({ type: 'tag', description: roleTag });
+  38 |
+  39 |             // Fetch user credentials for the current role
+  40 |             const user = users[roleId];
+  41 |             if (!user || !user.username || !user.password) {
+  42 |                 throw new Error(`User credentials for role ${roleName} (role_id: ${roleId}) are missing in users.json.`);
+  43 |             }
+  44 |
+  45 |             // Login as the user
+  46 |             const loginPage = new ClubSurveyLogin(page, context);
+  47 |             await loginPage.ClubSurveyLogin({ username: user.username, password: user.password });
+  48 |
+  49 |             // Validate Permissions for Each Section
+  50 |             const rolePermissions = ROLE_CONFIG[roleName as RoleName];
+  51 |
+  52 |             // Validate Settings Permissions
+  53 |             if (rolePermissions.settings.view) {
+  54 |                 const settingsPage = new SettingsPage(page);
+  55 |                 await settingsPage.navigateToSettings();
+  56 |             }
+  57 |
+  58 |             // Validate Users Permissions
+  59 |             if (rolePermissions.users.view) {
+  60 |                 const canViewUsers = await page.isVisible('text=Users'); // Replace with actual selector
+> 61 |                 expect(canViewUsers).toBeTruthy();
+     |                                      ^ Error: expect(received).toBeTruthy()
+  62 |             }
+  63 |
+  64 |             if (rolePermissions.users.create) {
+  65 |                 console.log(`${roleName} can create users.`);
+  66 |             }
+  67 |
+  68 |             if (rolePermissions.users.edit) {
+  69 |                 console.log(`${roleName} can edit users.`);
+  70 |             }
+  71 |
+  72 |             if (rolePermissions.users.delete) {
+  73 |                 console.log(`${roleName} can delete users.`);
+  74 |             }
+  75 |
+  76 |             // Add similar validations for other sections (e.g., translations, surveys, franchises, groups, venues)
+  77 |         });
+  78 |     });
+  79 | });
+```

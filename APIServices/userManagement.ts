@@ -1,9 +1,10 @@
-import { httpRequest } from "../helpers/requestUtils";
-import { environment } from "../config/qa";
-import { FakerData } from "../helpers/fakerUtils";
-import { UserData } from "../data/users.interface";import test from "playwright/test"; 
-import { writeUserToFile } from '../helpers/playwright';
-import { updateJSONFile } from "../helpers/jsonDataHandler";
+import { httpRequest } from "../helpers/requestUtils.ts";
+import { environment } from "../config/qa.ts";
+import { FakerData } from "../helpers/fakerUtils.ts";
+import { UserData } from "../data/users.interface.ts";
+import test from "playwright/test"; 
+import { writeUserToFile } from '../helpers/playwright.ts';
+import { updateJSONFile } from "../helpers/jsonDataHandler.ts";
 
  
 // Authenticate as Super Admin and get a token
@@ -138,7 +139,7 @@ export async function createFranchiseAdmin(franchiseId: string,
         updateJSONFile<UserData>('../data/users.json', {
             [role_id]: {
                 username: username_FA,
-                password: 'club59@123',
+                password: 'Club59@123',
                 role_id: role_id,
             }
         });
@@ -188,7 +189,7 @@ export async function createGroupAdmin(groupId: string,
         updateJSONFile<UserData>('../data/users.json', {
             [role_id]: {
                 username: username_GA,
-                password: 'club59@123',
+                password: 'Club59@123',
                 role_id: role_id,
             }
         });
@@ -226,7 +227,7 @@ export async function createVenueAdmin(VenueId: string,
             updateJSONFile<UserData>('../data/users.json', {
                 [role_id]: {
                     username: username_VA,
-                    password: 'club59@123',
+                    password: 'Club59@123',
                     role_id: role_id,
                 }
             });

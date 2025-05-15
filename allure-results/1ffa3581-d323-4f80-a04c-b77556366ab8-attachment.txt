@@ -1,0 +1,203 @@
+Error making POST request: AxiosError: write EPIPE
+    at Function.AxiosError.from (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/axios/lib/core/AxiosError.js:92:14)
+    at RedirectableRequest.handleRequestError (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/axios/lib/adapters/http.js:620:25)
+    at RedirectableRequest.emit (node:events:507:28)
+    at ClientRequest.eventHandlers.<computed> (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/follow-redirects/index.js:49:24)
+    at ClientRequest.emit (node:events:507:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at TLSSocket.socketErrorListener (node:_http_client:518:5)
+    at TLSSocket.emit (node:events:507:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/axios/lib/core/Axios.js:45:41)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at httpRequest (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/requestUtils.ts:76:42)
+    at authenticateSuperAdmin (/Users/nehachadha/59club_playwright/playwright-automation-framework/APIServices/userManagement.ts:11:22)
+    at createVenueAdmin (/Users/nehachadha/59club_playwright/playwright-automation-framework/APIServices/userManagement.ts:221:42)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Roles/RoleBasesConfig.test.ts:49:13
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:299:11
+    at TimeoutManager.withRunnable (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/timeoutManager.js:69:14)
+    at TestInfoImpl._runWithTimeout (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:297:7)
+    at FixtureRunner.resolveParametersAndRunFunction (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/fixtureRunner.js:236:5)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:521:13
+    at TestInfoImpl._runAsStep (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:286:7)
+    at WorkerMain._runAllHooksForSuite (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:504:9)
+    at WorkerMain._runBeforeAllHooksForSuite (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:497:5)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:320:37
+    at TestInfoImpl._runAsStep (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:286:7)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:315:7
+    at WorkerMain._runTest (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:292:5)
+    at WorkerMain.runTestGroup (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:207:11)
+    at process.<anonymous> (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/common/process.js:95:22) {
+  syscall: 'write',
+  code: 'EPIPE',
+  errno: -32,
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function [FormData]], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      Connection: 'keep-alive',
+      'User-Agent': 'axios/1.9.0',
+      'Content-Length': '80',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    method: 'post',
+    url: 'https://qa.surveyapi.59club.studiographene.xyz/api/users/login',
+    data: '{"email":"59clubqaadmin@yopmail.com","password":"Tulip@765*","rememberMe":false}',
+    allowAbsoluteUrls: true
+  },
+  request: <ref *1> Writable {
+    _events: {
+      close: undefined,
+      error: [Function: handleRequestError],
+      prefinish: undefined,
+      finish: undefined,
+      drain: undefined,
+      response: [Function: handleResponse],
+      socket: [Function: handleRequestSocket]
+    },
+    _writableState: WritableState {
+      highWaterMark: 65536,
+      length: 0,
+      corked: 0,
+      onwrite: [Function: bound onwrite],
+      writelen: 0,
+      bufferedIndex: 0,
+      pendingcb: 0,
+      [Symbol(kState)]: 17580812,
+      [Symbol(kBufferedValue)]: null
+    },
+    _maxListeners: undefined,
+    _options: {
+      maxRedirects: 21,
+      maxBodyLength: Infinity,
+      protocol: 'https:',
+      path: '/api/users/login',
+      method: 'POST',
+      headers: [Object: null prototype],
+      agents: [Object],
+      auth: undefined,
+      family: undefined,
+      beforeRedirect: [Function: dispatchBeforeRedirect],
+      beforeRedirects: [Object],
+      hostname: 'qa.surveyapi.59club.studiographene.xyz',
+      port: '',
+      agent: undefined,
+      nativeProtocols: [Object],
+      pathname: '/api/users/login'
+    },
+    _ended: true,
+    _ending: true,
+    _redirectCount: 0,
+    _redirects: [],
+    _requestBodyLength: 80,
+    _requestBodyBuffers: [ [Object] ],
+    _eventsCount: 3,
+    _onNativeResponse: [Function (anonymous)],
+    _currentRequest: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '80',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: false,
+      _header: 'POST /api/users/login HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'Connection: keep-alive\r\n' +
+        'User-Agent: axios/1.9.0\r\n' +
+        'Content-Length: 80\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: qa.surveyapi.59club.studiographene.xyz\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/api/users/login',
+      _ended: false,
+      res: null,
+      aborted: false,
+      timeoutCb: [Function: emitRequestTimeout],
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: true,
+      host: 'qa.surveyapi.59club.studiographene.xyz',
+      protocol: 'https:',
+      _redirectable: [Circular *1],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _currentUrl: 'https://qa.surveyapi.59club.studiographene.xyz/api/users/login',
+    [Symbol(shapeMode)]: true,
+    [Symbol(kCapture)]: false
+  },
+  cause: Error: write EPIPE
+      at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:87:19)
+      at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+      at writevGeneric (node:internal/stream_base_commons:137:26)
+      at TLSSocket.Socket._writeGeneric (node:net:969:11)
+      at TLSSocket.Socket._writev (node:net:978:8)
+      at doWrite (node:internal/streams/writable:594:12)
+      at clearBuffer (node:internal/streams/writable:773:5)
+      at TLSSocket.Writable.uncork (node:internal/streams/writable:529:7)
+      at ClientRequest._flushOutput (node:_http_outgoing:1223:10)
+      at ClientRequest._flush (node:_http_outgoing:1197:22)
+      at onSocketNT (node:_http_client:921:9)
+      at processTicksAndRejections (node:internal/process/task_queues:91:21) {
+    errno: -32,
+    code: 'EPIPE',
+    syscall: 'write'
+  }
+}
+Error during user creation: write EPIPE

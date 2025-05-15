@@ -1,0 +1,24 @@
+Error reading or parsing the file: /Users/nehachadha/59club_playwright/playwright-automation-framework/data/users.json Error: ENOENT: no such file or directory, open '/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/Users/nehachadha/59club_playwright/playwright-automation-framework/data/users.json'
+    at Object.readFileSync (node:fs:443:20)
+    at Function.readJson (/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/jsonReader.ts:14:36)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/src/tests/Roles/RoleBasesConfig.test.ts:52:32
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:299:11
+    at TimeoutManager.withRunnable (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/timeoutManager.js:69:14)
+    at TestInfoImpl._runWithTimeout (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:297:7)
+    at FixtureRunner.resolveParametersAndRunFunction (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/fixtureRunner.js:236:5)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:521:13
+    at TestInfoImpl._runAsStep (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:286:7)
+    at WorkerMain._runAllHooksForSuite (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:504:9)
+    at WorkerMain._runBeforeAllHooksForSuite (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:497:5)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:320:37
+    at TestInfoImpl._runAsStep (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/testInfo.js:286:7)
+    at /Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:315:7
+    at WorkerMain._runTest (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:292:5)
+    at WorkerMain.runTestGroup (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/worker/workerMain.js:207:11)
+    at process.<anonymous> (/Users/nehachadha/59club_playwright/playwright-automation-framework/node_modules/playwright/lib/common/process.js:95:22) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/nehachadha/59club_playwright/playwright-automation-framework/helpers/Users/nehachadha/59club_playwright/playwright-automation-framework/data/users.json'
+}

@@ -1,7 +1,7 @@
 import test from "playwright/test";
-import { authenticateSuperAdmin, createFranchise,createGroup,getTimezone,createVenue, createFranchiseAdmin, createGroupAdmin, createVenueAdmin } from "./userManagement";
+import { authenticateSuperAdmin, createFranchise,createGroup,getTimezone,createVenue, createFranchiseAdmin, createGroupAdmin, createVenueAdmin } from "./userManagement.ts";
 import { fr } from "@faker-js/faker";
-import { clearUsersFile } from '../helpers/playwright'; // Import clearUsersFile
+import { clearUsersFile } from '../helpers/playwright.ts'; // Import clearUsersFile
 
 test.beforeAll(async () => {
     // Clear the users.json file before running tests
