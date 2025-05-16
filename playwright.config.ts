@@ -77,6 +77,7 @@ export default defineConfig({
           ],
         },
         
+        
       },
     },
     {
@@ -211,6 +212,7 @@ export default defineConfig({
       },
     },*/
 
+    /* Mobile Pixel 5
     /* Mobile Pixel 5
     {
       name: 'Mobile Pixel 5',

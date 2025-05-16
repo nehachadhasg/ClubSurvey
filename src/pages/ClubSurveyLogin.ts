@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 //import { Page } from "@playwright/test";
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
@@ -23,7 +25,7 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     clublogo: 'img[alt="logo"][src*="clubLogo"]',
     contactus:
       'button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]',
-    // contactus: 'button[contains(text(), "Contact us") and contains(@class, "inline-flex") and contains(@class, "bg-lime")]',
+    contactUsImg: 'img[alt*="Need help or want to contact us?"]',
     imgscroller1:
       'img[@alt="Unlock Powerful Insights" and contains(@src, "loginsecond") and contains(@class, "object-contain")]',
     imgscroller2:
@@ -31,7 +33,9 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     imgscroller3:
       'img[@alt="Train & Excel with Expert Guidance" and contains(@src, "loginthird") and contains(@class, "object-contain")]',
     loginButton:
-      'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
+      'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Login")',
+    submitButton:
+      'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Submit")',
     rememberme: 'div[class*="h-5"][class*="w-5"][class*="bg-greyscale-200"]',
     togglebutton:
       'button[contains(@class, "text-gray-1000") and contains(@class, "flex") and contains(@class, "cursor-pointer") and contains(@class, "px-3")]',
@@ -41,13 +45,51 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     contactUsModal: 'div[role="dialog"][data-state="open"]',
     contactUsModalAssert:
       'h2[class*="typography-heading"]:has-text("Need help")',
+    contactUsModalSubtext:
+      'p[class*="typography-body-1"]:has-text("Your identity will be shared with the venue in order to respond to your query, however your survey responses will remain in keeping with your chosen anonymity selection.")',
     contactUsModalCloseButton:
-      'div[class*="cursor-pointer"][class*="bg-greyscale-100"',
+      'div[class*="cursor-pointer"][class*="bg-greyscale-100"][class*="z-[15]"][class*="h-[40px]"][class*="w-[40px]"]',
     carouselcontainer: 'div[role="region"][aria-roledescription="carousel"]',
     forgotpassword:
       'button[type="button"][class*="typography-label-bold"][class*="cursor-pointer"]',
     myProfileButton:
       'div[class*="typography-body-1-bold"][class*="bg-gold"][class*="cursor-pointer"]',
+    loginTitle: 'h1[class*="typography-heading-2"]',
+    subtext:
+      'p[class*="typography-body-1"][class*="text-muted-foreground"][class*="font-body"]',
+    inputLabels: 'label[class*="typography-body-1"][class*="text-gray-700"]',
+    contactUsFirstNameLabel:
+      'label[class*="typography-body-1"][class*="text-gray-700"]:has-text("First name")',
+    contactUsLastNameLabel:
+      'label[class*="typography-body-1"][class*="text-gray-700"]:has-text("Last name")',
+    contactUsEmailLabel:
+      'label[class*="typography-body-1"][class*="text-gray-700"]:has-text("Email address")',
+    contactUsMessageLabel:
+      'label[class*="typography-body-1"][class*="text-gray-700"]:has-text("Message")',
+    contactUsFirstNameInput: 'input[name="firstName"]',
+    contactUsLastNameInput: 'input[name="lastName"]',
+    contactUsEmailInput:
+      'input[name="email"][placeholder="Enter your email address"]',
+    contactUsMessageInput: 'textarea[name="message"]',
+    errorMessage: 'p[class*="text-error-300"][class*="!typography-body-1"]',
+    contactUsMessageError: 'p[class*=text-sm][class*=text-destructive]',
+    emailErrorText: 'Please enter a valid email address.',
+    emailEmptyErrorText: 'Please enter your email address.',
+    passwordErrorText: 'Please enter your password.',
+    firstNameErrorText: 'First name is required',
+    lastNameErrorText: 'Last name is required',
+    contactUsEmptyEmailErrorText: 'Email is required',
+    messageErrorText: 'Message must be at least 10 characters long',
+    contactUsSuccessTitle:
+      'h2[class*="typography-heading"]:has-text("Success!")',
+    contactUsSuccessSubtext:
+      'p[class*="typography-body-1"]:has-text("Your message has been sent. We will respond to you as soon as possible.")',
+    contactUsGoBackButton:
+      'button[class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Go back")',
+    showPasswordButton:
+      'button[class*="text-gray-1000"][class*="flex"][class*="cursor-pointer"]',
+    forgotPasswordButton:
+      'button[class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Forgot password?")',
   };
 
   public someAbstractMethod(): void {
