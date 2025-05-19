@@ -83,6 +83,8 @@ export class UserProfile extends PlaywrightWrapper {
       | 'GROUP_ADMIN'
       | 'VENUE_ADMIN'
   ) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const { username, password } = environment.credentials[role];
     await this.loadApp(environment.baseURL);
 
