@@ -13,6 +13,7 @@ export default defineConfig({
   expect: {
     timeout: 20000,
   },
+  //testDir: 'src/tests/Regression_Suite',
   testDir: 'src/tests/Roles',
 
   fullyParallel: true,
@@ -36,13 +37,9 @@ export default defineConfig({
     video: 'retain-on-failure',
     ignoreHTTPSErrors: true,
     bypassCSP: true,
-    // storageState: "logins/salesforceLogin.json"
   },
 
-  // testMatch: [
-  //   '*/tests/admin/adminGroups_CustomerAdminGroupUserCreation/**/*.spec.ts',
-  //   '*/tests/admin/adminGroups2/**/*.spec.ts',
-  // ],
+
 
   projects: [
     /*  {
@@ -76,6 +73,7 @@ export default defineConfig({
             '--no-proxy-server',
           ],
         },
+        
         
       },
     },
@@ -211,6 +209,7 @@ export default defineConfig({
       },
     },*/
 
+    /* Mobile Pixel 5
     /* Mobile Pixel 5
     {
       name: 'Mobile Pixel 5',

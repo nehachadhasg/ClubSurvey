@@ -9893,3 +9893,147 @@ You may need to escape symbols like "$" or "*" and quote the arguments.
 [2025-05-14 13:24:03] INFO: Completed Step : The Sign In Button clicked - Success
 [2025-05-14 13:24:14] INFO: Test Case Completed : VENUEADMIN Role - Validate Permissions Status : passed
 [2025-05-14 13:24:14] INFO: Test run completed with status: PASSED
+[2025-05-19 17:46:09] INFO: Test run started with 8 test(s).
+[2025-05-19 17:46:09] INFO: Test Case Started : @superadmin - Validate Franchises Permissions
+[2025-05-19 17:46:14] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:46:17] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:46:17] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:46:17] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:46:17] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:46:18] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:46:28] INFO: Test Case Completed : @superadmin - Validate Franchises Permissions Status : passed
+[2025-05-19 17:46:28] INFO: Test Case Started : @superadmin - Validate Groups Permissions
+[2025-05-19 17:46:29] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:46:29] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:46:29] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:46:30] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:46:30] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:46:31] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:46:41] INFO: Test Case Completed : @superadmin - Validate Groups Permissions Status : passed
+[2025-05-19 17:46:41] INFO: Test Case Started : @superadmin - Validate View Permission
+[2025-05-19 17:46:42] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:46:42] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:46:42] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:46:43] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:46:43] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:46:43] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:46:53] INFO: Executing Step : The Settings Button button clicked
+[2025-05-19 17:46:54] INFO: Completed Step : The Settings Button button clicked - Success
+[2025-05-19 17:46:54] INFO: Test Case Completed : @superadmin - Validate View Permission Status : passed
+[2025-05-19 17:46:54] INFO: Test Case Started : @superadmin - Validate View Permission
+[2025-05-19 17:46:55] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:46:56] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:46:56] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:46:56] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:46:56] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:46:57] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:47:07] INFO: Executing Step : The Settings Button button clicked
+[2025-05-19 17:47:07] INFO: Completed Step : The Settings Button button clicked - Success
+[2025-05-19 17:47:08] INFO: Test Case Completed : @superadmin - Validate View Permission Status : passed
+[2025-05-19 17:47:09] INFO: Test Case Started : @superadmin - Validate Franchises Permissions
+[2025-05-19 17:47:13] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:47:14] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:47:14] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:47:14] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:47:14] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:47:14] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:47:24] INFO: Test Case Completed : @superadmin - Validate Franchises Permissions Status : passed
+[2025-05-19 17:47:24] INFO: Test Case Started : @superadmin - Validate Groups Permissions
+[2025-05-19 17:47:25] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:47:25] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:47:25] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:47:25] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:47:25] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:47:25] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:47:35] INFO: Test Case Completed : @superadmin - Validate Groups Permissions Status : passed
+[2025-05-19 17:47:35] INFO: Test Case Started : @superadmin - Validate View Permission
+[2025-05-19 17:47:36] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:47:36] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:47:36] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:47:36] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:47:36] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:47:36] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:47:46] INFO: Executing Step : The Settings Button button clicked
+[2025-05-19 17:47:46] INFO: Completed Step : The Settings Button button clicked - Success
+[2025-05-19 17:47:46] INFO: Test Case Completed : @superadmin - Validate View Permission Status : passed
+[2025-05-19 17:47:46] INFO: Test Case Started : @superadmin - Validate View Permission
+[2025-05-19 17:47:47] INFO: Executing Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com
+[2025-05-19 17:47:47] INFO: Completed Step : Textbox Username filled with data: 59clubqaadmin@yopmail.com - Success
+[2025-05-19 17:47:47] INFO: Executing Step : Textbox Password filled with data: Tulip@765*
+[2025-05-19 17:47:47] INFO: Completed Step : Textbox Password filled with data: Tulip@765* - Success
+[2025-05-19 17:47:47] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:47:47] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:47:57] INFO: Executing Step : The Settings Button button clicked
+[2025-05-19 17:47:57] INFO: Completed Step : The Settings Button button clicked - Success
+[2025-05-19 17:47:57] INFO: Test Case Completed : @superadmin - Validate View Permission Status : passed
+[2025-05-19 17:47:58] INFO: Test run completed with status: PASSED
+[2025-05-19 17:48:24] INFO: Test run started with 8 test(s).
+[2025-05-19 17:48:24] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:48:28] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:48:28] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:48:28] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:48:29] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:48:29] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:48:30] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:48:40] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:48:40] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:48:41] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:48:42] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:48:42] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:48:43] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:48:43] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:48:43] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:48:53] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:48:53] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:48:54] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:48:55] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:48:55] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:48:55] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:48:55] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:48:56] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:49:06] INFO: Executing Step : The Settings Button button clicked
+[2025-05-19 17:49:06] INFO: Completed Step : The Settings Button button clicked - Success
+[2025-05-19 17:49:07] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:49:07] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:49:07] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:49:08] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:49:08] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:49:09] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:49:09] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:49:09] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:49:19] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:49:21] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:49:26] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:49:26] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:49:26] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:49:26] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:49:26] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:49:26] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:49:36] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:49:36] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:49:37] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:49:37] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:49:37] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:49:37] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:49:37] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:49:37] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:49:48] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:49:48] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:49:48] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:49:48] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:49:48] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:49:48] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:49:48] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:49:49] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:49:59] INFO: Executing Step : The Settings Button button clicked
+[2025-05-19 17:49:59] INFO: Completed Step : The Settings Button button clicked - Success
+[2025-05-19 17:49:59] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:49:59] INFO: Test Case Started : @franchiseadmin - Validate View Permission
+[2025-05-19 17:50:00] INFO: Executing Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com
+[2025-05-19 17:50:00] INFO: Completed Step : Textbox Username filled with data: Eugenia_Grimes@gmail.com - Success
+[2025-05-19 17:50:00] INFO: Executing Step : Textbox Password filled with data: Club59@123
+[2025-05-19 17:50:00] INFO: Completed Step : Textbox Password filled with data: Club59@123 - Success
+[2025-05-19 17:50:00] INFO: Executing Step : The Sign In Button clicked
+[2025-05-19 17:50:00] INFO: Completed Step : The Sign In Button clicked - Success
+[2025-05-19 17:50:10] INFO: Test Case Completed : @franchiseadmin - Validate View Permission Status : passed
+[2025-05-19 17:50:10] INFO: Test run completed with status: PASSED

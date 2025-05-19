@@ -8,18 +8,10 @@ export const environment = {
       username: '59clubqaadmin@yopmail.com',
       password: 'Tulip@765*',
     },
-    /*FRANCHISE_ADMIN: {
-      username: 'nehafa@yopmail.com',
+    SUPER_ADMIN_2: {
+      username: 'superadmin1@yopmail.com',
       password: 'Club59@123',
-    },
-    GROUP_ADMIN: {
-      username: 'nehaga@yopmail.com',
-      password: 'Club59@123',
-    },
-    VENUE_ADMIN: {
-      username: 'nehava@yopmail.com',
-      password: 'Club59@123',
-    },*/
+    }
   },
   clubURL: 'https://www.59club.com/',
 };
