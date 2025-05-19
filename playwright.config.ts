@@ -76,6 +76,7 @@ export default defineConfig({
             '--no-proxy-server',
           ],
         },
+        
       },
     },
     {
