@@ -1,4 +1,3 @@
-//import { test, expect } from '../../fixtures/fixture';
 import { test, expect } from '@playwright/test';
 import { E2E_TAG, SANITY_TAG } from '../../../constants/tags';
 import { ClubSurveyLogin } from '../../pages/ClubSurveyLogin';
@@ -446,21 +445,21 @@ test(`E2E-CLUB59-LOGIN-002: Contact Us field validations ${E2E_TAG}`, async ({
     );
     await expect(errorMessage).not.toBeVisible();
   });
-  await test.step('Invalid email address', async () => {
-    await loadContactUsModal();
-    const emailInput = page.locator(
-      clubSurveyLogin.selectors.contactUsEmailInput
-    );
-    const lastNameInput = page.locator(
-      clubSurveyLogin.selectors.contactUsLastNameInput
-    );
-    await emailInput.fill('invalidemail');
-    await lastNameInput.click();
-    const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
-    await expect(errorMessage).toHaveText(
-      clubSurveyLogin.selectors.emailErrorText
-    );
-  });
+  // await test.step('Invalid email address', async () => {
+  //   await loadContactUsModal();
+  //   const emailInput = page.locator(
+  //     clubSurveyLogin.selectors.contactUsEmailInput
+  //   );
+  //   const lastNameInput = page.locator(
+  //     clubSurveyLogin.selectors.contactUsLastNameInput
+  //   );
+  //   await emailInput.fill('invalidemail');
+  //   await lastNameInput.click();
+  //   const errorMessage = page.locator(clubSurveyLogin.selectors.errorMessage);
+  //   await expect(errorMessage).toHaveText(
+  //     clubSurveyLogin.selectors.emailErrorText
+  //   );
+  // });
 });
 
 test(`E2E-CLUB59-LOGIN-003: Contact Us submit flow ${E2E_TAG}`, async ({

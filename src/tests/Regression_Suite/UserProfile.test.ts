@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-//import { test, expect } from '../../fixtures/fixture';
 import { test, expect } from '@playwright/test';
 import { SANITY_TAG, E2E_TAG } from '../../../constants/tags';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
@@ -16,12 +15,21 @@ const navigateToProfilePage = async (page: Page) => {
   ).toBeVisible();
   const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
   await myProfileOption.click();
-  console.log("here")
+};
+
+const login = async (page: Page) => {
+  const emailInput = page.locator(userProfile.selectors.emailSelector);
+  const passwordInput = page.locator(userProfile.selectors.passwordSelector);
+  const loginButton = page.locator(userProfile.selectors.loginButtonSelector);
+  await emailInput.fill(environment.credentials.SUPER_ADMIN_2.username);
+  await passwordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+  await loginButton.click();
+  await page.waitForTimeout(1000);
 };
 
 test.beforeEach(async ({ page, context }) => {
   userProfile = new UserProfile(page, context);
-  await userProfile.UserProfile('SUPER_ADMIN_2');
+  await userProfile.loadApp(environment.baseURL);
 });
 
 test(`E2E-CLUB59-USER-PROFILE-01: Login to the platform and verify user profile page ${E2E_TAG}`, async ({
@@ -35,12 +43,11 @@ test(`E2E-CLUB59-USER-PROFILE-01: Login to the platform and verify user profile 
     }
   );
   await test.step('Load login screen', async () => {
-  //  await userProfile.loadApp(environment.baseURL);
-  //  await userProfile.UserProfile('SUPER_ADMIN_2');
     const pageTitle = await page.title();
     expect(pageTitle).toContain('59club');
   });
   await test.step('Login to the platform', async () => {
+    await login(page);
     const dashboardLogo = page.locator(
       userProfile.selectors.clubsmalllogodashboard
     );
@@ -102,6 +109,7 @@ test(`SANITY-CLUB59-USER-PROFILE-01: Verify First Name is Editable ${SANITY_TAG}
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Verify First Name is Editable', async () => {
@@ -118,6 +126,7 @@ test(`SANITY-CLUB59-USER-PROFILE-02: Verify Surname is Editable ${SANITY_TAG}`, 
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Verify Surname is Editable', async () => {
@@ -134,6 +143,7 @@ test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, as
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Verify First Name is Editable', async () => {
@@ -150,6 +160,7 @@ test(`SANITY-CLUB59-USER-PROFILE-04: Verify Role is View-Only ${SANITY_TAG}`, as
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Role field is non-editable (read-only)', async () => {
@@ -162,6 +173,7 @@ test(`SANITY-CLUB59-USER-PROFILE-05: Open Change Password Pop-up ${SANITY_TAG}`,
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Click "Change Password" button', async () => {
@@ -190,6 +202,7 @@ test(`SANITY-CLUB59-USER-PROFILE-06: Cancel Change Password ${SANITY_TAG}`, asyn
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Open Change Password pop-up', async () => {
@@ -212,6 +225,7 @@ test(`SANITY-CLUB59-USER-PROFILE-07: Validate Password Requirements ${SANITY_TAG
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Open Change Password pop-up', async () => {
@@ -258,6 +272,7 @@ test(`SANITY-CLUB59-USER-PROFILE-08: Successful Password Change ${SANITY_TAG}`, 
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Open Change Password pop-up', async () => {
@@ -345,24 +360,9 @@ test(`SANITY-CLUB59-USER-PROFILE-08: Successful Password Change ${SANITY_TAG}`, 
 test(`SANITY-CLUB59-USER-PROFILE-09: Logout All Other Sessions ${SANITY_TAG}`, async ({
   page,
 }) => {
-  const loginAndNavigateToProfilePage = async () => {
-    await userProfile.loadApp(environment.baseURL);
-    const emailInput = page.locator(userProfile.selectors.emailSelector);
-    const passwordInput = page.locator(userProfile.selectors.passwordSelector);
-    const loginButton = page.locator(userProfile.selectors.loginButtonSelector);
-    await emailInput.fill(environment.credentials.SUPER_ADMIN_2.username);
-    await passwordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
-    await loginButton.click();
-    await page.waitForTimeout(1000);
-    await page.locator(userProfile.selectors.userProfileIconClosed).click();
-    await expect(
-      page.locator(userProfile.selectors.userProfileIconOpen)
-    ).toBeVisible();
-    const myProfileOption = page.locator(userProfile.selectors.myProfileOption);
-    await myProfileOption.click();
-  };
   await test.step('Navigate to Profile page and open another tab in the same browser', async () => {
-    await loginAndNavigateToProfilePage();
+    await login(page);
+    await navigateToProfilePage(page);
     const newPage = await page.context().newPage();
     await newPage.goto(environment.baseURL);
   });
@@ -444,6 +444,7 @@ test(`SANITY-CLUB59-USER-PROFILE-10: Select Language from Dropdown ${SANITY_TAG}
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Click on Default Language dropdown', async () => {
@@ -462,6 +463,7 @@ test(`SANITY-CLUB59-USER-PROFILE-11: Verify Default Language Field ${SANITY_TAG}
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Check the value in Default Language dropdown', async () => {
@@ -478,6 +480,7 @@ test(`SANITY-CLUB59-USER-PROFILE-12: Select Preferred Date Format ${SANITY_TAG}`
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Click on Date Format dropdown', async () => {
@@ -497,6 +500,7 @@ test(`SANITY-CLUB59-USER-PROFILE-13: Select Preferred Time Format ${SANITY_TAG}`
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Click on Time Format dropdown', async () => {
@@ -516,6 +520,7 @@ test(`SANITY-CLUB59-USER-PROFILE-14: Enable Update Button on Edit - Language/Dat
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Click on Default Language dropdown', async () => {
@@ -539,6 +544,7 @@ test(`SANITY-CLUB59-USER-PROFILE-15: Save Language/Date/Time Preferences ${SANIT
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Update Language Preferences', async () => {
@@ -585,6 +591,7 @@ test(`SANITY-CLUB59-USER-PROFILE-16: Warn on Unsaved Changes ${SANITY_TAG}`, asy
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
+    await login(page);
     await navigateToProfilePage(page);
   });
   await test.step('Make changes to Language/Date/Time', async () => {

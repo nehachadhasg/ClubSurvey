@@ -1,8 +1,12 @@
 import { defineConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
 import { loadEnvironmentConfig } from './config/configLoader';
-import { SUPER_ADMIN_TAG, FRANCHISE_ADMIN_TAG, GROUP_ADMIN_TAG, VENUE_ADMIN_TAG } from './constants/tags';
-
+import {
+  SUPER_ADMIN_TAG,
+  FRANCHISE_ADMIN_TAG,
+  GROUP_ADMIN_TAG,
+  VENUE_ADMIN_TAG,
+} from './constants/tags';
 
 const environment = loadEnvironmentConfig();
 const timestamp = Date.now();
@@ -13,8 +17,7 @@ export default defineConfig({
   expect: {
     timeout: 20000,
   },
-  //testDir: 'src/tests/Regression_Suite',
-  testDir: 'src/tests/Roles',
+  testDir: 'src/tests',
 
   fullyParallel: true,
   retries: 0,
@@ -73,13 +76,11 @@ export default defineConfig({
             '--no-proxy-server',
           ],
         },
-        
-        
       },
     },
     {
       name: 'api',
-      testDir: './APIServices'
+      testDir: './APIServices',
     },
     {
       name: 'SuperAdmin Tests',
