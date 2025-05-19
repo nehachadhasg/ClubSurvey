@@ -1,1 +1,0 @@
-Cleared user data file: /Users/nehachadha/59club_playwright/playwright-automation-framework/data/users.json

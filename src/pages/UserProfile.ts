@@ -79,9 +79,6 @@ export class UserProfile extends PlaywrightWrapper {
     role:
       | 'SUPER_ADMIN'
       | 'SUPER_ADMIN_2'
-      | 'FRANCHISE_ADMIN'
-      | 'GROUP_ADMIN'
-      | 'VENUE_ADMIN'
   ) {
     const { username, password } = environment.credentials[role];
     await this.loadApp(environment.baseURL);

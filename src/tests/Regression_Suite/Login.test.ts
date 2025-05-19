@@ -1,4 +1,5 @@
-import { test, expect } from '../../fixtures/fixture';
+//import { test, expect } from '../../fixtures/fixture';
+import { test, expect } from '@playwright/test';
 import { E2E_TAG, SANITY_TAG } from '../../../constants/tags';
 import { ClubSurveyLogin } from '../../pages/ClubSurveyLogin';
 import { loadEnvironmentConfig } from '../../../config/configLoader';

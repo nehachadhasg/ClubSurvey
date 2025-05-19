@@ -1,4 +1,0 @@
-Error validating visibility of Club Small Logo: Error: page.waitForSelector: Test ended.
-Call log:
-  - waiting for locator('img[alt="Small Logo"]')
-

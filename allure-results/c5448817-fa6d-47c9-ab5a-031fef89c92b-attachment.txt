@@ -1,5 +1,0 @@
-Successfully loaded the URL: https://qa.survey.59club.studiographene.xyz/en-GB/auth/login
-Club Small Logo is visible as expected.
-VENUEADMIN can create users.
-VENUEADMIN can edit users.
-VENUEADMIN can delete users.
