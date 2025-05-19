@@ -80,6 +80,8 @@ export class UserProfile extends PlaywrightWrapper {
       | 'SUPER_ADMIN'
       | 'SUPER_ADMIN_2'
   ) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const { username, password } = environment.credentials[role];
     await this.loadApp(environment.baseURL);
 

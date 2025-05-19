@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { test, expect } from '@playwright/test';
 import { SANITY_TAG, E2E_TAG } from '../../../constants/tags';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
