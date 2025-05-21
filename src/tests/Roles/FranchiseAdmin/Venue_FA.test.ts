@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { VenuePage } from '../../../pages/VenuePage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -9,6 +9,10 @@ import { UserData } from '../../../../data/users.interface';
 let rolePermissions: any;
 let franchiseAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
+
 
 test.describe('FRANCHISEADMIN - Venues Permissions Tests', () => {
   let venuePage: VenuePage;
@@ -16,6 +20,11 @@ test.describe('FRANCHISEADMIN - Venues Permissions Tests', () => {
 
   // Load Franchise Admin credentials and permissions before all tests
   test.beforeAll(async () => {
+
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage();
+
     const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
@@ -34,21 +43,28 @@ test.describe('FRANCHISEADMIN - Venues Permissions Tests', () => {
     if (!rolePermissions) {
       throw new Error('Franchise Admin permissions are missing in roleConfig.ts.');
     }
-  });
-
-  // Initialize page objects and login before each test
-  test.beforeEach(async ({ page, context }) => {
     clubSurveyLogin = new ClubSurveyLogin(page, context);
-    // venuePage = new VenuePage(page, context);
+    venuePage = new VenuePage(page, context);
 
     await clubSurveyLogin.ClubSurveyLogin({
       username: franchiseAdminCredentials.username,
       password: franchiseAdminCredentials.password,
-    });
+
+  });
+
+  // // Initialize page objects and login before each test
+  // test.beforeEach(async ({ page, context }) => {
+  //   clubSurveyLogin = new ClubSurveyLogin(page, context);
+  //   // venuePage = new VenuePage(page, context);
+
+  //   await clubSurveyLogin.ClubSurveyLogin({
+  //     username: franchiseAdminCredentials.username,
+  //     password: franchiseAdminCredentials.password,
+  //   });
   });
 
   // Test: Validate View Permission
-  test('@franchiseadmin - Validate View Permission', async () => {
+  test('@franchiseadmin - Validate Venue Permission', async () => {
     if (rolePermissions.venues.view === 'ownFranchise') {
       console.log('Franchise Admin has permission to view venues in their own franchise.');
     //   await venuePage.navigateToVenuesPage();

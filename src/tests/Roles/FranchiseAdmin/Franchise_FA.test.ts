@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { FranchisePage } from '../../../pages/FranchisePage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -9,6 +9,10 @@ import { UserData } from '../../../../data/users.interface';
 let rolePermissions: any;
 let franchiseAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
+
 
 test.describe('FRANCHISEADMIN - Franchises Permissions Tests', () => {
   let franchisePage: FranchisePage;
@@ -16,6 +20,11 @@ test.describe('FRANCHISEADMIN - Franchises Permissions Tests', () => {
 
   // Load Franchise Admin credentials and permissions before all tests
   test.beforeAll(async () => {
+    // Manually create a browser instance
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage();
+
     const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
@@ -34,21 +43,29 @@ test.describe('FRANCHISEADMIN - Franchises Permissions Tests', () => {
     if (!rolePermissions) {
       throw new Error('Franchise Admin permissions are missing in roleConfig.ts.');
     }
-  });
 
-  // Initialize page objects and login before each test
-  test.beforeEach(async ({ page, context }) => {
     clubSurveyLogin = new ClubSurveyLogin(page, context);
-    // franchisePage = new FranchisePage(page, context);
+    franchisePage = new FranchisePage(page, context);
 
     await clubSurveyLogin.ClubSurveyLogin({
       username: franchiseAdminCredentials.username,
       password: franchiseAdminCredentials.password,
-    });
   });
+});
+
+  // // Initialize page objects and login before each test
+  // test.beforeEach(async ({ page, context }) => {
+  //   clubSurveyLogin = new ClubSurveyLogin(page, context);
+  //   franchisePage = new FranchisePage(page, context);
+
+  //   await clubSurveyLogin.ClubSurveyLogin({
+  //     username: franchiseAdminCredentials.username,
+  //     password: franchiseAdminCredentials.password,
+  //   });
+  // });
 
   // Test: Validate View Permission
-  test('@franchiseadmin - Validate View Permission', async () => {
+  test('@franchiseadmin - Validate Franchise Permission', async () => {
     if (!rolePermissions.franchises.view) {
       console.log('Franchise Admin does NOT have permission to view franchises.');
       expect(rolePermissions.franchises.view).toBeFalsy();
