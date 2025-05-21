@@ -37,7 +37,7 @@ export const ROLE_CONFIG = {
     },
     VENUEADMIN: {
         settings: { view: ['Users'], create: false, edit: false, delete: false },
-        users: { view: 'venueManagers', create: 'staffMembers', edit: 'staffMembers', delete: 'staffMembers' },
+        users: { view: 'venueManagersAndStaff', create: 'staffMembers', edit: 'staffMembers', delete: 'staffMembers' },
         translations: { view: false, create: false, edit: false, delete: false },
         surveys: {
             questionBank: { view: false, create: false, edit: false, delete: false },
