@@ -16,20 +16,34 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
 
   // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
-    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
+    const usersFilePath = path.resolve(
+      __dirname,
+      '../../../../data/users.json'
+    );
     users = JsonReader.readJson(usersFilePath) as UserData;
 
     if (!users || Object.keys(users).length === 0) {
-      throw new Error('users.json is empty or invalid. Please run the data generation script.');
+      throw new Error(
+        'users.json is empty or invalid. Please run the data generation script.'
+      );
     }
 
-    const superAdminUser = Object.values(users).find((user: any) => user.role_id === 1);
+    const superAdminUser = Object.values(users).find(
+      (user: any) => user.role_id === 1
+    );
 
-    if (!superAdminUser || !superAdminUser.username || !superAdminUser.password) {
+    if (
+      !superAdminUser ||
+      !superAdminUser.username ||
+      !superAdminUser.password
+    ) {
       throw new Error('SUPERADMIN credentials are missing in users.json.');
     }
 
-    superAdminCredentials = { username: superAdminUser.username, password: superAdminUser.password };
+    superAdminCredentials = {
+      username: superAdminUser.username,
+      password: superAdminUser.password,
+    };
     rolePermissions = ROLE_CONFIG['SUPERADMIN'];
     if (!rolePermissions) {
       throw new Error('SUPERADMIN permissions are missing in roleConfig.ts.');
@@ -45,6 +59,7 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
+    await userPage.navigateToUsersPage();
   });
 
   // Test: Validate Groups Permissions
