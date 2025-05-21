@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { FranchisePage } from '../../../pages/FranchisePage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -9,6 +9,9 @@ import { UserData } from '../../../../data/users.interface';
 let rolePermissions: any;
 let groupAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
 
 test.describe('GROUPADMIN - Franchises Permissions Tests', () => {
   let franchisePage: FranchisePage;
@@ -16,6 +19,11 @@ test.describe('GROUPADMIN - Franchises Permissions Tests', () => {
 
   // Load Group Admin credentials and permissions before all tests
   test.beforeAll(async () => {
+
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage();
+
     const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
@@ -23,7 +31,7 @@ test.describe('GROUPADMIN - Franchises Permissions Tests', () => {
       throw new Error('users.json is empty or invalid. Please run the data generation script.');
     }
 
-    const groupAdminUser = Object.values(users).find((user: any) => user.role_id === 3);
+    const groupAdminUser = Object.values(users).find((user: any) => user.role_id === 4);
 
     if (!groupAdminUser || !groupAdminUser.username || !groupAdminUser.password) {
       throw new Error('Group Admin credentials are missing in users.json.');
@@ -39,7 +47,7 @@ test.describe('GROUPADMIN - Franchises Permissions Tests', () => {
   // Initialize page objects and login before each test
   test.beforeEach(async ({ page, context }) => {
     clubSurveyLogin = new ClubSurveyLogin(page, context);
-    // franchisePage = new FranchisePage(page, context);
+    franchisePage = new FranchisePage(page, context);
 
     await clubSurveyLogin.ClubSurveyLogin({
       username: groupAdminCredentials.username,
@@ -48,7 +56,7 @@ test.describe('GROUPADMIN - Franchises Permissions Tests', () => {
   });
 
   // Test: Validate View Permission
-  test('@groupadmin - Validate View Permission', async () => {
+  test('@groupadmin - Validate Franchise Permission', async () => {
     if (!rolePermissions.franchises.view) {
       console.log('Group Admin does NOT have permission to view franchises.');
       expect(rolePermissions.franchises.view).toBeFalsy();

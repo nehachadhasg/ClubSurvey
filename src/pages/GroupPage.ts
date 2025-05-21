@@ -1,11 +1,14 @@
-import { expect, Page } from '@playwright/test';
+import { expect, Page, BrowserContext } from '@playwright/test';
+import { PlaywrightWrapper } from '../../helpers/playwright';
 
-export class GroupPage {
-    private page: Page;
-
-    constructor(page: Page) {
-        this.page = page;
+export class GroupPage extends PlaywrightWrapper {
+    constructor(page: Page, context: BrowserContext) {
+      super(page, context);
     }
+
+    public someAbstractMethod(): void {
+        console.log('Abstract method implemented in UserProfile');
+      }
 
     async navigateToGroup() {
         await this.page.goto('/group');

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { UserPage } from '../../../pages/UserPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -9,6 +9,9 @@ import { UserData } from '../../../../data/users.interface';
 let rolePermissions: any;
 let venueAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
 
 test.describe('VENUEADMIN - Users Permissions Tests', () => {
   let userPage: UserPage;
@@ -16,6 +19,10 @@ test.describe('VENUEADMIN - Users Permissions Tests', () => {
 
   // Load Venue Admin credentials and permissions before all tests
   test.beforeAll(async () => {
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage();
+    
     const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
@@ -34,10 +41,7 @@ test.describe('VENUEADMIN - Users Permissions Tests', () => {
     if (!rolePermissions) {
       throw new Error('Venue Admin permissions are missing in roleConfig.ts.');
     }
-  });
 
-  // Initialize page objects and login before each test
-  test.beforeEach(async ({ page, context }) => {
     clubSurveyLogin = new ClubSurveyLogin(page, context);
     userPage = new UserPage(page, context);
 
@@ -46,6 +50,17 @@ test.describe('VENUEADMIN - Users Permissions Tests', () => {
       password: venueAdminCredentials.password,
     });
   });
+
+  // Initialize page objects and login before each test
+  // test.beforeEach(async ({ page, context }) => {
+  //   clubSurveyLogin = new ClubSurveyLogin(page, context);
+  //   userPage = new UserPage(page, context);
+
+  //   await clubSurveyLogin.ClubSurveyLogin({
+  //     username: venueAdminCredentials.username,
+  //     password: venueAdminCredentials.password,
+  //   });
+  // });
 
   // Test: Validate View Permission
   test('@venueadmin - Validate View Permission', async () => {

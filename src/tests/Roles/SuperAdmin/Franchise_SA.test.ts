@@ -1,21 +1,30 @@
-import { test, expect } from '@playwright/test';
-import { UserPage } from '../../../pages/UserPage';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
+import { FranchisePage } from 'pages/FranchisePage';
 
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
 
-test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
-  let userPage: UserPage;
+test.describe('SUPERADMIN - Groups Permissions Tests', () => {
+  let franchisePage: FranchisePage;
   let clubSurveyLogin: ClubSurveyLogin;
 
   // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
+    // Manually create a browser instance
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage();
+
+    // Load users.json
     const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
@@ -23,6 +32,7 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
       throw new Error('users.json is empty or invalid. Please run the data generation script.');
     }
 
+    // Extract SUPERADMIN credentials
     const superAdminUser = Object.values(users).find((user: any) => user.role_id === 1);
 
     if (!superAdminUser || !superAdminUser.username || !superAdminUser.password) {
@@ -30,21 +40,27 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
     }
 
     superAdminCredentials = { username: superAdminUser.username, password: superAdminUser.password };
+
+    // Load SUPERADMIN role permissions
     rolePermissions = ROLE_CONFIG['SUPERADMIN'];
     if (!rolePermissions) {
       throw new Error('SUPERADMIN permissions are missing in roleConfig.ts.');
     }
-  });
 
-  // Initialize page objects and login before each test
-  test.beforeEach(async ({ page, context }) => {
+    // Initialize page objects
     clubSurveyLogin = new ClubSurveyLogin(page, context);
-    userPage = new UserPage(page, context);
+    franchisePage = new FranchisePage(page, context);
 
+    // Perform login
     await clubSurveyLogin.ClubSurveyLogin({
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
+  });
+
+  // Close the browser after all tests
+  test.afterAll(async () => {
+    await browser.close();
   });
 
   // Test: Validate Franchises Permissions
