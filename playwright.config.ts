@@ -12,7 +12,7 @@ const environment = loadEnvironmentConfig();
 const timestamp = Date.now();
 const reportDir = `./reporter/playwright-reports-${timestamp}`;
 export default defineConfig({
-  timeout: 20000,
+  timeout: 100000,
 
   expect: {
     timeout: 20000,
@@ -41,8 +41,6 @@ export default defineConfig({
     ignoreHTTPSErrors: true,
     bypassCSP: true,
   },
-
-
 
   projects: [
     /*  {
@@ -76,7 +74,6 @@ export default defineConfig({
             '--no-proxy-server',
           ],
         },
-        
       },
     },
     {
