@@ -11,8 +11,8 @@ const login = async (page: Page) => {
   const emailInput = page.locator(navigation.selectors.emailSelector);
   const passwordInput = page.locator(navigation.selectors.passwordSelector);
   const loginButton = page.locator(navigation.selectors.loginButtonSelector);
-  await emailInput.fill(environment.credentials.SUPER_ADMIN_2.username);
-  await passwordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+  await emailInput.fill(environment.credentials.SUPER_ADMIN.username);
+  await passwordInput.fill(environment.credentials.SUPER_ADMIN.password);
   await loginButton.click();
   await page.waitForTimeout(1000);
 };
@@ -79,7 +79,9 @@ test(`SANITY-CLUB59-NAVIGATION-02: Verify navigation bar is visible and can be t
   });
 });
 
-test(`SANITY-CLUB59-NAVIGATION-03: Verify 'Overview' tab is highlighted when on landing dashboard ${SANITY_TAG}`, async ({
+// TEST IS SKIPPED SINCE DEFAULT INITIAL PAGE IS NOT "OVERVIEW" BUT "DASHBOARDS" - Overview page is still in development
+// TODO: UN-SKIP THIS TEST WHEN OVERVIEW PAGE IS READY
+test.skip(`SANITY-CLUB59-NAVIGATION-03: Verify 'Overview' tab is highlighted when on landing dashboard ${SANITY_TAG}`, async ({
   page,
 }) => {
   test.info().annotations.push(

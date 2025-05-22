@@ -75,11 +75,7 @@ export class UserProfile extends PlaywrightWrapper {
   }
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-  public async UserProfile(
-    role:
-      | 'SUPER_ADMIN'
-      | 'SUPER_ADMIN_2'
-  ) {
+  public async UserProfile(role: 'SUPER_ADMIN') {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const { username, password } = environment.credentials[role];

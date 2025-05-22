@@ -44,12 +44,7 @@ export class Navigation extends PlaywrightWrapper {
 
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   public async Navigation(
-    role:
-      | 'SUPER_ADMIN'
-      | 'SUPER_ADMIN_2'
-      | 'FRANCHISE_ADMIN'
-      | 'GROUP_ADMIN'
-      | 'VENUE_ADMIN'
+    role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
   ) {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore

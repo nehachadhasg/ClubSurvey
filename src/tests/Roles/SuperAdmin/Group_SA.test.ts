@@ -1,4 +1,12 @@
-import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import {
+  test,
+  chromium,
+  Browser,
+  BrowserContext,
+  Page,
+  expect,
+} from '@playwright/test';
+import { faker } from '@faker-js/faker/locale/en';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
@@ -6,6 +14,7 @@ import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 import { GroupPage } from 'pages/GroupPage';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
@@ -17,26 +26,24 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
   let groupPage: GroupPage;
   let clubSurveyLogin: ClubSurveyLogin;
 
-  // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
-    // Manually create a browser instance
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
-
-    // Load users.json
-    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
+    const usersFilePath = path.resolve(
+      __dirname,
+      '../../../../data/users.json'
+    );
     users = JsonReader.readJson(usersFilePath) as UserData;
-
     if (!users || Object.keys(users).length === 0) {
       throw new Error(
         'users.json is empty or invalid. Please run the data generation script.'
       );
     }
-
-    // Extract SUPERADMIN credentials
-    const superAdminUser = Object.values(users).find((user: any) => user.role_id === 1);
-
+    const superAdminUser = Object.values(users).find(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (user: any) => user.role_id === 1
+    );
     if (
       !superAdminUser ||
       !superAdminUser.username ||
@@ -44,54 +51,53 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
     ) {
       throw new Error('SUPERADMIN credentials are missing in users.json.');
     }
+    superAdminCredentials = {
+      username: superAdminUser.username,
+      password: superAdminUser.password,
+    };
 
-    superAdminCredentials = { username: superAdminUser.username, password: superAdminUser.password };
-
-    // Load SUPERADMIN role permissions
     rolePermissions = ROLE_CONFIG['SUPERADMIN'];
     if (!rolePermissions) {
       throw new Error('SUPERADMIN permissions are missing in roleConfig.ts.');
     }
-
-    // Initialize page objects
     clubSurveyLogin = new ClubSurveyLogin(page, context);
     groupPage = new GroupPage(page, context);
-
-    // Perform login
     await clubSurveyLogin.ClubSurveyLogin({
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
-    await userPage.navigateToUsersPage();
+    await groupPage.navigateToGroupsPage();
   });
 
-  // Close the browser after all tests
-  test.afterAll(async () => {
-    await browser.close();
-  });
-
-  // Test: Validate Groups Permissions
-  test('@superadmin - Validate Groups Permissions', async () => {
+  test('@superadmin - Verify Super Admin can manage groups.', async () => {
     const groupsPermissions = rolePermissions.groups;
-
-    if (groupsPermissions.view) {
-      console.log('SUPERADMIN has permission to view groups.');
-      // Call logic to navigate to groups page and validate view functionality
-    }
-
-    if (groupsPermissions.create) {
-      console.log('SUPERADMIN has permission to create groups.');
-      // Call logic to create a group
-    }
-
-    if (groupsPermissions.edit) {
-      console.log('SUPERADMIN has permission to edit groups.');
-      // Call logic to edit a group
-    }
-
-    if (groupsPermissions.delete) {
-      console.log('SUPERADMIN has permission to delete groups.');
-      // Call logic to delete a group
+    if (
+      groupsPermissions.create &&
+      groupsPermissions.edit &&
+      groupsPermissions.delete
+    ) {
+      const cards = groupPage.page.locator(groupPage.selectors.settingsCards);
+      await cards.nth(4).click();
+      await groupPage.page.waitForTimeout(2000);
+      const groupName = faker.company
+        .name()
+        .slice(0, 10)
+        .replace(/[^a-zA-Z\s]/g, '');
+      await groupPage.createGroup({
+        groupName,
+      });
+      await groupPage.page.waitForTimeout(2000);
+      await groupPage.editGroup({ groupName });
+      await groupPage.page.waitForTimeout(2000);
+      await groupPage.deleteGroup();
+      await groupPage.page.waitForTimeout(2000);
+      await expect(
+        groupPage.page.getByText('The group was deleted successfully.')
+      ).toBeVisible();
+    } else {
+      throw new Error(
+        'SUPERADMIN does not have permission to create, edit, or delete groups.'
+      );
     }
   });
 });
