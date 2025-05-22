@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
-import { loadEnvironmentConfig } from '../../config/configLoader';
+// import { loadEnvironmentConfig } from '../../config/configLoader';
 
 export class UserPage extends PlaywrightWrapper {
   constructor(page: Page, context: BrowserContext) {
