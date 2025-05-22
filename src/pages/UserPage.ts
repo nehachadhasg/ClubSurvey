@@ -2,7 +2,6 @@
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
 import { loadEnvironmentConfig } from '../../config/configLoader';
-// import { expect } from '@playwright/test';
 
 export class UserPage extends PlaywrightWrapper {
   constructor(page: Page, context: BrowserContext) {
@@ -63,14 +62,19 @@ export class UserPage extends PlaywrightWrapper {
     // await this.click(this.selectors.usersButton, 'Users Button', 'button');
   }
 
-  // Create a new user
-  async createUser() {
+  async createUser({
+    firstName,
+    lastName,
+    email,
+  }: {
+    firstName: string;
+    lastName: string;
+    email: string;
+  }) {
     await this.page.locator(this.selectors.addUsersButton).click();
-    await this.page.locator(this.selectors.firstNameInput).fill('Shrek');
-    await this.page.locator(this.selectors.lastNameInput).fill('Nado');
-    await this.page
-      .locator(this.selectors.emailInput)
-      .fill('justshrekingaroundhere@example.com');
+    await this.page.locator(this.selectors.firstNameInput).fill(firstName);
+    await this.page.locator(this.selectors.lastNameInput).fill(lastName);
+    await this.page.locator(this.selectors.emailInput).fill(email);
     await this.page.locator(this.selectors.roleSelectInput).click();
     await this.page.getByRole('option', { name: 'Franchise Admin' }).click();
     await this.page.locator(this.selectors.assignToSelectInput).click();
@@ -78,24 +82,26 @@ export class UserPage extends PlaywrightWrapper {
     await this.page.locator(this.selectors.createUserButton).click();
   }
 
-  // Edit an existing user
-  async editUser() {
-    await this.page
-      .locator(this.selectors.searchUsers)
-      .fill('justshrekingaroundhere@example.com');
-    await this.page.getByText('Shrek Nado').click();
+  async editUser({
+    firstName,
+    lastName,
+    email,
+  }: {
+    firstName: string;
+    lastName: string;
+    email: string;
+  }) {
+    await this.page.locator(this.selectors.searchUsers).fill(email);
+    await this.page.getByText(`${firstName} ${lastName}`).click();
     await this.page.locator(this.selectors.editUserButton).click();
     await this.page.locator(this.selectors.firstNameInput).fill('Fiona');
-    await this.page.locator(this.selectors.lastNameInput).fill('Princess');
+    await this.page.locator(this.selectors.lastNameInput).fill('Almighty');
     await this.page.locator(this.selectors.createUserButton).click();
   }
 
-  // Delete a user
-  async deleteUser() {
-    await this.page
-      .locator(this.selectors.searchUsers)
-      .fill('justshrekingaroundhere@example.com');
-    await this.page.getByText('Fiona Princess').click();
+  async deleteUser({ email }: { email: string }) {
+    await this.page.locator(this.selectors.searchUsers).fill(email);
+    await this.page.getByText('Fiona Almighty').click();
     await this.page.locator(this.selectors.editUserButton).click();
     await this.page.locator(this.selectors.deleteUserButton).click();
     await this.page.locator(this.selectors.confirmDeleteButton).nth(1).click();

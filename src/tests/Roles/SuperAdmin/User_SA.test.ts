@@ -3,9 +3,11 @@ import { UserPage } from '../../../pages/UserPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
+import { faker } from '@faker-js/faker/locale/en';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
@@ -151,14 +153,18 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       rolePermissions.users.edit === 'allExceptSuperAdmin' &&
       rolePermissions.users.delete === 'allExceptSuperAdmin'
     ) {
+      const firstName = faker.person.firstName();
+      const lastName = faker.person.lastName();
+      const email = faker.internet.email();
+
       const cards = userPage.page.locator(userPage.selectors.settingsCards);
       await cards.nth(0).click();
       await userPage.page.waitForTimeout(2000);
-      await userPage.createUser();
+      await userPage.createUser({ firstName, lastName, email });
       await userPage.page.waitForTimeout(2000);
-      await userPage.editUser();
+      await userPage.editUser({ firstName, lastName, email });
       await userPage.page.waitForTimeout(2000);
-      await userPage.deleteUser();
+      await userPage.deleteUser({ email });
       await expect(
         userPage.page.getByText('The user was deleted successfully.')
       ).toBeVisible();
