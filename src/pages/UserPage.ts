@@ -58,7 +58,7 @@ export class UserPage extends PlaywrightWrapper {
       'button'
     );
   }
-
+  
   async createUser({
     firstName,
     lastName,

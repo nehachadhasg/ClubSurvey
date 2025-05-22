@@ -88,7 +88,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       throw new Error('SUPERADMIN does not have permission to view users.');
     }
   });
-
+  
   test('@superadmin - Verify Super Admin can view all user types including other Super Admins.', async () => {
     const cards = userPage.page.locator(userPage.selectors.settingsCards);
     await cards.nth(0).click();

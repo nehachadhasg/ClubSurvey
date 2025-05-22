@@ -13,6 +13,7 @@ import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 import { GroupPage } from 'pages/GroupPage';
+import { UserPage } from 'pages/UserPage';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
@@ -55,7 +56,6 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
       username: superAdminUser.username,
       password: superAdminUser.password,
     };
-
     rolePermissions = ROLE_CONFIG['SUPERADMIN'];
     if (!rolePermissions) {
       throw new Error('SUPERADMIN permissions are missing in roleConfig.ts.');
