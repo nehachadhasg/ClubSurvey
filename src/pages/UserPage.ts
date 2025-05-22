@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
-// import { loadEnvironmentConfig } from '../../config/configLoader';
 
 export class UserPage extends PlaywrightWrapper {
   constructor(page: Page, context: BrowserContext) {
@@ -52,14 +51,12 @@ export class UserPage extends PlaywrightWrapper {
     console.log('Abstract method implemented in UserPage');
   }
 
-  // Navigate to the Users page
   async navigateToUsersPage() {
     await this.click(
       this.selectors.settingsbutton,
       'Settings Button',
       'button'
     );
-    // await this.click(this.selectors.usersButton, 'Users Button', 'button');
   }
 
   async createUser({
@@ -105,10 +102,5 @@ export class UserPage extends PlaywrightWrapper {
     await this.page.locator(this.selectors.editUserButton).click();
     await this.page.locator(this.selectors.deleteUserButton).click();
     await this.page.locator(this.selectors.confirmDeleteButton).nth(1).click();
-  }
-
-  // Validate that the Users table is visible
-  async validateUsersTableVisible() {
-    // await this.validateElementVisibility(this.selectors.userTable, 'Users Table');
   }
 }

@@ -183,34 +183,4 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       );
     }
   });
-
-  // Test: Validate Create Permission
-  // test('@superadmin - Validate Create Permission', async () => {
-  //   if (rolePermissions.users.create !== 'allExceptSuperAdmin') {
-  //     await userPage.navigateToUsersPage();
-  //   //  await userPage.createUser('newuser@example.com', 'Password123', 'VenueAdmin');
-  //   } else {
-  //     throw new Error('SUPERADMIN does not have permission to create users.');
-  //   }
-  // });
-
-  // // Test: Validate Edit Permission
-  // test('@superadmin - Validate Edit Permission', async () => {
-  //   if (rolePermissions.users.edit !== 'allExceptSuperAdmin') {
-  //     await userPage.navigateToUsersPage();
-  //   //  await userPage.editUser('newuser@example.com', 'GroupAdmin');
-  //   } else {
-  //     throw new Error('SUPERADMIN does not have permission to edit users.');
-  //   }
-  // });
-
-  // // Test: Validate Delete Permission
-  // test('@superadmin - Validate Delete Permission', async () => {
-  //   if (rolePermissions.users.delete !== 'allExceptSuperAdmin') {
-  //     await userPage.navigateToUsersPage();
-  //   //  await userPage.deleteUser('newuser@example.com');
-  //   } else {
-  //     throw new Error('SUPERADMIN does not have permission to delete users.');
-  //   }
-  // });
 });
