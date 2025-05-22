@@ -2,21 +2,28 @@
   "1": {
     "username": "59clubqaadmin@yopmail.com",
     "password": "Tulip@765*",
-    "role_id": 1
+    "role_id": 1,
+    "user_id": "9bc5c1af-0209-4f34-9ce4-572f98fa07e2"
   },
   "2": {
-    "username": "Eugenia_Grimes@gmail.com",
+    "username": "Noe_Goyette@yahoo.com",
     "password": "Club59@123",
-    "role_id": 2
+    "role_id": 2,
+    "user_id": "9bc5c1af-0209-4f34-9ce4-572f98fa07e2"
   },
   "4": {
-    "username": "Marlin_Ondricka11@hotmail.com",
+    "username": "Samanta_Kertzmann@gmail.com",
     "password": "Club59@123",
-    "role_id": 4
+    "role_id": 4,
+    "user_id": "9d493580-dc89-4ed0-aee9-ad49bc28affd"
   },
   "5": {
-    "username": "Vanessa.Bogisich@yahoo.com",
+    "username": "Yasmine_Smith76@gmail.com",
     "password": "Club59@123",
-    "role_id": 5
-  }
+    "role_id": 5,
+    "user_id": "4c2c40b5-d0e1-4272-ba8a-a4134b4f5802"
+  },
+  "franchiseAdmin": "9bc5c1af-0209-4f34-9ce4-572f98fa07e2",
+  "groupAdmin": "9d493580-dc89-4ed0-aee9-ad49bc28affd",
+  "venueAdmin": "4c2c40b5-d0e1-4272-ba8a-a4134b4f5802"
 }

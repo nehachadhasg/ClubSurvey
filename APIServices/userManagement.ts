@@ -5,7 +5,10 @@ import { UserData } from "../data/users.interface.ts";
 import test from "playwright/test"; 
 import { writeUserToFile } from '../helpers/playwright.ts';
 import { updateJSONFile } from "../helpers/jsonDataHandler.ts";
+import { JsonReader } from '../helpers/jsonReader';
+import * as path from 'path';
 
+ 
  
 // Authenticate as Super Admin and get a token
   export async function authenticateSuperAdmin() {
@@ -135,12 +138,14 @@ export async function createFranchiseAdmin(franchiseId: string,
             }
         });
         console.log("User created successfully:", response.data);
-        let username_FA = response.data.data.email;
+        const username_FA = response.data.data.email;
+        const user_ID = response.data.data.id;
         updateJSONFile<UserData>('../data/users.json', {
             [role_id]: {
                 username: username_FA,
                 password: 'Club59@123',
                 role_id: role_id,
+                user_id: user_ID,
             }
         });
         let username_SA = environment.credentials.SUPER_ADMIN.username;
@@ -151,14 +156,17 @@ export async function createFranchiseAdmin(franchiseId: string,
                 username: username_SA ,
                 password: password_SA,
                 role_id: role_id,
+                user_id: user_ID,
             }
         });
+        return user_ID;
         // Write user data to JSON file
 //        writeUserToFile(username_FA, 'club59@123', role_id);
         } catch (error: any) {
             console.error('Error during user creation:', error.response?.data || error.message);
             throw new Error('User creation failed');
             }
+            
         }
 
 
@@ -185,14 +193,17 @@ export async function createGroupAdmin(groupId: string,
             }
         });
         console.log("User created successfully:", response.data);
-        let username_GA = response.data.data.email;
+        const username_GA = response.data.data.email;
+        const user_ID = response.data.data.id;
         updateJSONFile<UserData>('../data/users.json', {
             [role_id]: {
                 username: username_GA,
                 password: 'Club59@123',
                 role_id: role_id,
+                user_id: user_ID,
             }
         });
+        return user_ID;
 //        writeUserToFile(username_GA, 'club59@123', role_id);
 
         } catch (error: any) {
@@ -223,20 +234,172 @@ export async function createVenueAdmin(VenueId: string,
                 }
             });
             console.log("User created successfully:", response.data);
-            let username_VA = response.data.data.email;
+            const username_VA = response.data.data.email;
+            const user_ID = response.data.data.id;
+            console.log("User ID:", user_ID);
             updateJSONFile<UserData>('../data/users.json', {
                 [role_id]: {
                     username: username_VA,
                     password: 'Club59@123',
                     role_id: role_id,
+                    user_id: user_ID,
                 }
             });
- //           writeUserToFile(username_VA, 'club59@123', role_id);
+            return user_ID;
 
             } catch (error: any) {
                 console.error('Error during user creation:', error.response?.data || error.message);
                 throw new Error('User creation failed');
                 }
             }
+
+export async function deleteUser(userId: string,) {
+    try {
+        const response = await httpRequest({
+
+           
+
+            // users = JsonReader.readJson(usersFilePath) as UserData;
+
+            // if (!users || Object.keys(users).length === 0) {
+            //   throw new Error('users.json is empty or invalid. Please run the data generation script.');
+            // }
+        
+            // Extract SUPERADMIN credentials
+            // const superAdminUser = Object.values(users).find((user: any) => user.role_id === 1);
+        
+            method: 'DELETE',
+            endPoint: `${environment.apiBaseURL}/users/delete/${userId}`,
+            contentType: 'json',
+            // userData: {
+            //     "assignTo": [franchiseId],
+            //     "email": FakerData.getEmail(),
+            //     "first_name": FakerData.getFirstName(),
+            //     "last_name": FakerData.getLastName(),
+            //     "locale": "en-GB",
+            //     "role_id": role_id,
+            //     "timeZone": "(GMT - 08h00) Pacific Standard Time",
+            // },
+            customHeaders: {
+                Authorization: `Bearer ${await authenticateSuperAdmin()}`
+            }
+        });
+        console.log("User deleted successfully:", response.data.message);
+        // const username_FA = response.data.data.email;
+        // const user_ID = response.data.data.id;
+        // updateJSONFile<UserData>('../data/users.json', {
+        //     [role_id]: {
+        //         username: username_FA,
+        //         password: 'Club59@123',
+        //         role_id: role_id,
+        //         user_id: user_ID,
+        //     }
+        // });
+        // let username_SA = environment.credentials.SUPER_ADMIN.username;
+        // let password_SA = environment.credentials.SUPER_ADMIN.password;
+        // role_id = 1;
+        // updateJSONFile<UserData>('../data/users.json', {
+        //     [1]: {
+        //         username: username_SA,
+        //         password: password_SA,
+        //         role_id: role_id,
+        //         user_id: user_ID,
+        //     }
+        // });
+        // return user_ID;
+        // Write user data to JSON file
+        //        writeUserToFile(username_FA, 'club59@123', role_id);
+    } catch (error: any) {
+        console.error('Error during user deletion:', error.response?.data || error.message);
+        throw new Error('User deletion failed');
+    }
+
+}
+
+
+
+// Create a User and Assign to Group Admin Role
+export async function deleteGroupAdmin(groupId: string,
+    role_id: number) {
+    try {
+        const response = await httpRequest({
+            method: 'POST',
+            endPoint: `${environment.apiBaseURL}/users/register`,
+            contentType: 'json',
+            userData: {
+                "assignTo": [groupId],
+                "email": FakerData.getEmail(),
+                "first_name": FakerData.getFirstName(),
+                "last_name": FakerData.getLastName(),
+                "locale": "en-GB",
+                "role_id": role_id,
+                "timeZone": "(GMT - 08h00) Pacific Standard Time",
+            },
+            customHeaders: {
+                Authorization: `Bearer ${await authenticateSuperAdmin()}`
+            }
+        });
+        console.log("User created successfully:", response.data);
+        const username_GA = response.data.data.email;
+        const user_ID = response.data.data.id;
+        updateJSONFile<UserData>('../data/users.json', {
+            [role_id]: {
+                username: username_GA,
+                password: 'Club59@123',
+                role_id: role_id,
+                user_id: user_ID,
+            }
+        });
+        return user_ID;
+        //        writeUserToFile(username_GA, 'club59@123', role_id);
+
+    } catch (error: any) {
+        console.error('Error during user creation:', error.response?.data || error.message);
+        throw new Error('User creation failed');
+    }
+}
+            
+export async function deleteVenueAdmin(VenueId: string, 
+    role_id: number){
+    try {
+            const response = await httpRequest({
+                method: 'POST',
+                endPoint: `${environment.apiBaseURL}/users/register`,
+                contentType: 'json',
+                userData: {
+                    "assignTo": [VenueId],
+                    "email": FakerData.getEmail(),
+                    "first_name": FakerData.getFirstName(),
+                    "last_name": FakerData.getLastName(),
+                    "locale": "en-GB",
+                    "role_id": role_id,
+                    "timeZone": "(GMT - 08h00) Pacific Standard Time",
+                },
+                customHeaders: {
+                    Authorization: `Bearer ${await authenticateSuperAdmin()}`
+                }
+            });
+        console.log("User created successfully:", response.data);
+        const username_VA = response.data.data.email;
+        const user_ID = response.data.data.id;
+        console.log("User ID:", user_ID);
+        updateJSONFile<UserData>('../data/users.json', {
+            [role_id]: {
+                username: username_VA,
+                password: 'Club59@123',
+                role_id: role_id,
+                user_id: user_ID,
+            }
+        });
+        return user_ID;
+
+    } catch (error: any) {
+        console.error('Error during user creation:', error.response?.data || error.message);
+        throw new Error('User creation failed');
+    }
+}
+            
+            
+
     
 

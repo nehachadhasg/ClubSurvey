@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { UserPage } from '../../../pages/UserPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -11,6 +11,9 @@ import { UserData } from '../../../../data/users.interface';
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
 
 test.describe('SUPERADMIN - Users Permissions Tests', () => {
   let userPage: UserPage;
@@ -18,10 +21,10 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
 
   // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
-    const usersFilePath = path.resolve(
-      __dirname,
-      '../../../../data/users.json'
-    );
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage(); 
+    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
     if (!users || Object.keys(users).length === 0) {
@@ -50,10 +53,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
     if (!rolePermissions) {
       throw new Error('SUPERADMIN permissions are missing in roleConfig.ts.');
     }
-  });
 
-  // Initialize page objects and login before each test
-  test.beforeEach(async ({ page, context }) => {
     clubSurveyLogin = new ClubSurveyLogin(page, context);
     userPage = new UserPage(page, context);
 
@@ -61,8 +61,18 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
-    await userPage.navigateToUsersPage();
   });
+
+  // Initialize page objects and login before each test
+  // test.beforeEach(async ({ page, context }) => {
+  //   clubSurveyLogin = new ClubSurveyLogin(page, context);
+  //   userPage = new UserPage(page, context);
+
+  //   await clubSurveyLogin.ClubSurveyLogin({
+  //       username: superAdminCredentials.username,
+  //       password: superAdminCredentials.password,
+  //     });
+  // });
 
   test('@superadmin - Verify Super Admin has access to all tabs in the Settings section.', async () => {
     if (rolePermissions.users.view === 'all') {
@@ -156,7 +166,6 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       const firstName = faker.person.firstName();
       const lastName = faker.person.lastName();
       const email = faker.internet.email();
-
       const cards = userPage.page.locator(userPage.selectors.settingsCards);
       await cards.nth(0).click();
       await userPage.page.waitForTimeout(2000);

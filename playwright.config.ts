@@ -80,10 +80,10 @@ export default defineConfig({
       name: 'api',
       testDir: './APIServices',
     },
-    {
-      name: 'SuperAdmin Tests',
-      grep: new RegExp(SUPER_ADMIN_TAG), // Run only tests tagged with '@superadmin'
-    },
+    // {
+    //   name: 'SuperAdmin Tests',
+    //   grep: new RegExp(SUPER_ADMIN_TAG), // Run only tests tagged with '@superadmin'
+    // },
     {
       name: 'FranchiseAdmin Tests',
       grep: new RegExp(FRANCHISE_ADMIN_TAG), // Run only tests tagged with '@franchiseadmin'

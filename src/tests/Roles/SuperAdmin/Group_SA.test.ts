@@ -1,25 +1,31 @@
-import { test, expect } from '@playwright/test';
-import { UserPage } from '../../../pages/UserPage';
+import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
+import { GroupPage } from 'pages/GroupPage';
 
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
+let browser: Browser;
+let context: BrowserContext;
+let page: Page;
 
-test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
-  let userPage: UserPage;
+test.describe('SUPERADMIN - Groups Permissions Tests', () => {
+  let groupPage: GroupPage;
   let clubSurveyLogin: ClubSurveyLogin;
 
   // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
-    const usersFilePath = path.resolve(
-      __dirname,
-      '../../../../data/users.json'
-    );
+    // Manually create a browser instance
+    browser = await chromium.launch({ headless: false });
+    context = await browser.newContext();
+    page = await context.newPage();
+
+    // Load users.json
+    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     users = JsonReader.readJson(usersFilePath) as UserData;
 
     if (!users || Object.keys(users).length === 0) {
@@ -28,9 +34,8 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
       );
     }
 
-    const superAdminUser = Object.values(users).find(
-      (user: any) => user.role_id === 1
-    );
+    // Extract SUPERADMIN credentials
+    const superAdminUser = Object.values(users).find((user: any) => user.role_id === 1);
 
     if (
       !superAdminUser ||
@@ -40,26 +45,29 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
       throw new Error('SUPERADMIN credentials are missing in users.json.');
     }
 
-    superAdminCredentials = {
-      username: superAdminUser.username,
-      password: superAdminUser.password,
-    };
+    superAdminCredentials = { username: superAdminUser.username, password: superAdminUser.password };
+
+    // Load SUPERADMIN role permissions
     rolePermissions = ROLE_CONFIG['SUPERADMIN'];
     if (!rolePermissions) {
       throw new Error('SUPERADMIN permissions are missing in roleConfig.ts.');
     }
-  });
 
-  // Initialize page objects and login before each test
-  test.beforeEach(async ({ page, context }) => {
+    // Initialize page objects
     clubSurveyLogin = new ClubSurveyLogin(page, context);
-    userPage = new UserPage(page, context);
+    groupPage = new GroupPage(page, context);
 
+    // Perform login
     await clubSurveyLogin.ClubSurveyLogin({
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
     await userPage.navigateToUsersPage();
+  });
+
+  // Close the browser after all tests
+  test.afterAll(async () => {
+    await browser.close();
   });
 
   // Test: Validate Groups Permissions
@@ -68,22 +76,22 @@ test.describe('SUPERADMIN - Franchises and Groups Permissions Tests', () => {
 
     if (groupsPermissions.view) {
       console.log('SUPERADMIN has permission to view groups.');
-      // call logic to navigate to groups page and validate view functionality
+      // Call logic to navigate to groups page and validate view functionality
     }
 
-    // if (groupsPermissions.create) {
-    //   console.log('SUPERADMIN has permission to create groups.');
-    //   // call logic to create a group
-    // }
+    if (groupsPermissions.create) {
+      console.log('SUPERADMIN has permission to create groups.');
+      // Call logic to create a group
+    }
 
-    // if (groupsPermissions.edit) {
-    //   console.log('SUPERADMIN has permission to edit groups.');
-    //   // call logic to edit a group
-    // }
+    if (groupsPermissions.edit) {
+      console.log('SUPERADMIN has permission to edit groups.');
+      // Call logic to edit a group
+    }
 
-    // if (groupsPermissions.delete) {
-    //   console.log('SUPERADMIN has permission to delete groups.');
-    //   // call logic to delete a group
-    // }
+    if (groupsPermissions.delete) {
+      console.log('SUPERADMIN has permission to delete groups.');
+      // Call logic to delete a group
+    }
   });
 });
