@@ -24,7 +24,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
     context = await browser.newContext();
     page = await context.newPage();
     
-    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
+   // const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     const usersFilePath = path.resolve(
       __dirname,
       '../../../../data/users.json'

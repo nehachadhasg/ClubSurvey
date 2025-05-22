@@ -69,7 +69,7 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
-    await UserPage.navigateToUsersPage();
+   // await groupPage.navigateToGroupPage();
   });
 
   // Close the browser after all tests
