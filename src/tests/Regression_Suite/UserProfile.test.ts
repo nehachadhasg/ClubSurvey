@@ -20,8 +20,8 @@ const login = async (page: Page) => {
   const emailInput = page.locator(userProfile.selectors.emailSelector);
   const passwordInput = page.locator(userProfile.selectors.passwordSelector);
   const loginButton = page.locator(userProfile.selectors.loginButtonSelector);
-  await emailInput.fill(environment.credentials.SUPER_ADMIN_2.username);
-  await passwordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+  await emailInput.fill(environment.credentials.SUPER_ADMIN.username);
+  await passwordInput.fill(environment.credentials.SUPER_ADMIN.password);
   await loginButton.click();
   await page.waitForTimeout(1000);
 };
@@ -241,7 +241,7 @@ test(`SANITY-CLUB59-USER-PROFILE-07: Validate Password Requirements ${SANITY_TAG
       .locator(userProfile.selectors.confirmChangePasswordButton)
       .nth(1);
     await currentPasswordInput.fill(
-      environment.credentials.SUPER_ADMIN_2.password
+      environment.credentials.SUPER_ADMIN.password
     );
     await expect(confirmChangePasswordButton).toBeDisabled();
   });
@@ -288,7 +288,7 @@ test(`SANITY-CLUB59-USER-PROFILE-08: Successful Password Change ${SANITY_TAG}`, 
       .locator(userProfile.selectors.confirmChangePasswordButton)
       .nth(1);
     await currentPasswordInput.fill(
-      environment.credentials.SUPER_ADMIN_2.password
+      environment.credentials.SUPER_ADMIN.password
     );
     await expect(confirmChangePasswordButton).toBeDisabled();
   });
@@ -341,12 +341,12 @@ test(`SANITY-CLUB59-USER-PROFILE-08: Successful Password Change ${SANITY_TAG}`, 
     const newPasswordInput = page
       .locator(userProfile.selectors.newPasswordInput)
       .nth(1);
-    await newPasswordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+    await newPasswordInput.fill(environment.credentials.SUPER_ADMIN.password);
     const confirmNewPasswordInput = page
       .locator(userProfile.selectors.confirmNewPasswordInput)
       .nth(1);
     await confirmNewPasswordInput.fill(
-      environment.credentials.SUPER_ADMIN_2.password
+      environment.credentials.SUPER_ADMIN.password
     );
     const confirmChangePasswordButton = page
       .locator(userProfile.selectors.confirmChangePasswordButton)
@@ -377,7 +377,7 @@ test(`SANITY-CLUB59-USER-PROFILE-09: Logout All Other Sessions ${SANITY_TAG}`, a
       .locator(userProfile.selectors.currentPasswordInput)
       .nth(1);
     await currentPasswordInput.fill(
-      environment.credentials.SUPER_ADMIN_2.password
+      environment.credentials.SUPER_ADMIN.password
     );
   });
   await test.step('Enter a new password with min 8 characters, 1 uppercase, 1 lowercase, 1 number, 1 special character', async () => {
@@ -415,12 +415,12 @@ test(`SANITY-CLUB59-USER-PROFILE-09: Logout All Other Sessions ${SANITY_TAG}`, a
     const newPasswordInput = page
       .locator(userProfile.selectors.newPasswordInput)
       .nth(1);
-    await newPasswordInput.fill(environment.credentials.SUPER_ADMIN_2.password);
+    await newPasswordInput.fill(environment.credentials.SUPER_ADMIN.password);
     const confirmNewPasswordInput = page
       .locator(userProfile.selectors.confirmNewPasswordInput)
       .nth(1);
     await confirmNewPasswordInput.fill(
-      environment.credentials.SUPER_ADMIN_2.password
+      environment.credentials.SUPER_ADMIN.password
     );
     const confirmChangePasswordButton = page
       .locator(userProfile.selectors.confirmChangePasswordButton)

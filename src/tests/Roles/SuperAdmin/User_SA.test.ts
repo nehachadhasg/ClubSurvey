@@ -1,11 +1,20 @@
-import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import {
+  test,
+  expect,
+  chromium,
+  Browser,
+  BrowserContext,
+  Page,
+} from '@playwright/test';
 import { UserPage } from '../../../pages/UserPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
+import { faker } from '@faker-js/faker/locale/en';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
@@ -17,14 +26,10 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
   let userPage: UserPage;
   let clubSurveyLogin: ClubSurveyLogin;
 
-  // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
-    
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
-    
-   // const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
     const usersFilePath = path.resolve(
       __dirname,
       '../../../../data/users.json'
@@ -38,6 +43,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
     }
 
     const superAdminUser = Object.values(users).find(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (user: any) => user.role_id === 1
     );
 
@@ -82,12 +88,11 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       throw new Error('SUPERADMIN does not have permission to view users.');
     }
   });
-
+  
   test('@superadmin - Verify Super Admin can view all user types including other Super Admins.', async () => {
+    const cards = userPage.page.locator(userPage.selectors.settingsCards);
+    await cards.nth(0).click();
     if (rolePermissions.users.view === 'all') {
-      const cards = userPage.page.locator(userPage.selectors.settingsCards);
-      await cards.nth(0).click();
-      await userPage.page.waitForTimeout(1000);
       const usersTableHeading = userPage.page.locator(
         userPage.selectors.usersTableHeading
       );
@@ -131,12 +136,10 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
 
   test('@superadmin - Ensure Super Admin cannot edit or delete other Super Admin users.', async () => {
     if (rolePermissions.users.edit === 'allExceptSuperAdmin') {
-      const cards = userPage.page.locator(userPage.selectors.settingsCards);
-      await cards.nth(0).click();
-      await userPage.page.waitForTimeout(1000);
-      const superAdmin = userPage.page
-        .locator(userPage.selectors.superAdmin)
-        .nth(0);
+      await userPage.page
+        .locator(userPage.selectors.searchUsers)
+        .fill(superAdminCredentials.username);
+      const superAdmin = userPage.page.locator(userPage.selectors.superAdmin);
       const editUserButton = userPage.page
         .locator(userPage.selectors.editUserButton)
         .nth(0);
@@ -144,6 +147,9 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       await superAdmin.click();
       await userPage.page.waitForTimeout(500);
       await expect(editUserButton).not.toBeVisible();
+      await userPage.page
+        .locator(userPage.selectors.closeActionsPopUpButton)
+        .click();
     } else {
       throw new Error(
         'SUPERADMIN does not have permission to edit or delete other Super Admin users.'
@@ -157,14 +163,14 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       rolePermissions.users.edit === 'allExceptSuperAdmin' &&
       rolePermissions.users.delete === 'allExceptSuperAdmin'
     ) {
-      const cards = userPage.page.locator(userPage.selectors.settingsCards);
-      await cards.nth(0).click();
+      const firstName = faker.person.firstName();
+      const lastName = faker.person.lastName();
+      const email = faker.internet.email();
+      await userPage.createUser({ firstName, lastName, email });
       await userPage.page.waitForTimeout(2000);
-      await userPage.createUser();
+      await userPage.editUser({ firstName, lastName, email });
       await userPage.page.waitForTimeout(2000);
-      await userPage.editUser();
-      await userPage.page.waitForTimeout(2000);
-      await userPage.deleteUser();
+      await userPage.deleteUser({ email });
       await expect(
         userPage.page.getByText('The user was deleted successfully.')
       ).toBeVisible();
@@ -174,34 +180,4 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       );
     }
   });
-
-  // Test: Validate Create Permission
-  // test('@superadmin - Validate Create Permission', async () => {
-  //   if (rolePermissions.users.create !== 'allExceptSuperAdmin') {
-  //     await userPage.navigateToUsersPage();
-  //   //  await userPage.createUser('newuser@example.com', 'Password123', 'VenueAdmin');
-  //   } else {
-  //     throw new Error('SUPERADMIN does not have permission to create users.');
-  //   }
-  // });
-
-  // // Test: Validate Edit Permission
-  // test('@superadmin - Validate Edit Permission', async () => {
-  //   if (rolePermissions.users.edit !== 'allExceptSuperAdmin') {
-  //     await userPage.navigateToUsersPage();
-  //   //  await userPage.editUser('newuser@example.com', 'GroupAdmin');
-  //   } else {
-  //     throw new Error('SUPERADMIN does not have permission to edit users.');
-  //   }
-  // });
-
-  // // Test: Validate Delete Permission
-  // test('@superadmin - Validate Delete Permission', async () => {
-  //   if (rolePermissions.users.delete !== 'allExceptSuperAdmin') {
-  //     await userPage.navigateToUsersPage();
-  //   //  await userPage.deleteUser('newuser@example.com');
-  //   } else {
-  //     throw new Error('SUPERADMIN does not have permission to delete users.');
-  //   }
-  // });
 });
