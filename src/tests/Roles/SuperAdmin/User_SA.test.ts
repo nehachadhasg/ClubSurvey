@@ -90,10 +90,9 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
   });
 
   test('@superadmin - Verify Super Admin can view all user types including other Super Admins.', async () => {
+    const cards = userPage.page.locator(userPage.selectors.settingsCards);
+    await cards.nth(0).click();
     if (rolePermissions.users.view === 'all') {
-      const cards = userPage.page.locator(userPage.selectors.settingsCards);
-      await cards.nth(0).click();
-      await userPage.page.waitForTimeout(1000);
       const usersTableHeading = userPage.page.locator(
         userPage.selectors.usersTableHeading
       );
@@ -137,12 +136,10 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
 
   test('@superadmin - Ensure Super Admin cannot edit or delete other Super Admin users.', async () => {
     if (rolePermissions.users.edit === 'allExceptSuperAdmin') {
-      const cards = userPage.page.locator(userPage.selectors.settingsCards);
-      await cards.nth(0).click();
-      await userPage.page.waitForTimeout(1000);
-      const superAdmin = userPage.page
-        .locator(userPage.selectors.superAdmin)
-        .nth(0);
+      await userPage.page
+        .locator(userPage.selectors.searchUsers)
+        .fill(superAdminCredentials.username);
+      const superAdmin = userPage.page.locator(userPage.selectors.superAdmin);
       const editUserButton = userPage.page
         .locator(userPage.selectors.editUserButton)
         .nth(0);
@@ -150,6 +147,9 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       await superAdmin.click();
       await userPage.page.waitForTimeout(500);
       await expect(editUserButton).not.toBeVisible();
+      await userPage.page
+        .locator(userPage.selectors.closeActionsPopUpButton)
+        .click();
     } else {
       throw new Error(
         'SUPERADMIN does not have permission to edit or delete other Super Admin users.'
@@ -166,9 +166,6 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       const firstName = faker.person.firstName();
       const lastName = faker.person.lastName();
       const email = faker.internet.email();
-      const cards = userPage.page.locator(userPage.selectors.settingsCards);
-      await cards.nth(0).click();
-      await userPage.page.waitForTimeout(2000);
       await userPage.createUser({ firstName, lastName, email });
       await userPage.page.waitForTimeout(2000);
       await userPage.editUser({ firstName, lastName, email });

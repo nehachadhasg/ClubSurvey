@@ -69,7 +69,6 @@ test.describe('SUPERADMIN - Franchises Permissions Tests', () => {
 
   test('@superadmin - Verify Super Admin can manage franchises.', async () => {
     const franchisesPermissions = rolePermissions.franchises;
-
     if (
       franchisesPermissions.create &&
       franchisesPermissions.edit &&
@@ -80,7 +79,6 @@ test.describe('SUPERADMIN - Franchises Permissions Tests', () => {
       );
       await cards.nth(3).click();
       await franchisePage.page.waitForTimeout(2000);
-
       const franchiseName = faker.company.name().slice(0, 10);
       const firstName = faker.person.firstName();
       const lastName = faker.person.lastName();
