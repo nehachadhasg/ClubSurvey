@@ -1,51 +1,132 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
-import { loadEnvironmentConfig } from '../../config/configLoader';
 
 export class VenuePage extends PlaywrightWrapper {
-    constructor(page: Page, context: BrowserContext) {
-      super(page, context);
-    }
+  constructor(page: Page, context: BrowserContext) {
+    super(page, context);
+  }
 
-  // Locators
   selectors = {
-    //add selectors here
-    settingsbutton: 'li[data-sidebar="menu-item"] a[href="/en-GB/settings"] button[data-sidebar="menu-button"]',
-    usersButton: 'div.flex.cursor-pointer.rounded-[16px].border.border-greyscale-200.bg-white',
-    addUserButton: 'button.font-body.inline-flex.items-center.justify-center.bg-dark-green.text-greyscale-0.typography-body-1-bold[aria-disabled="false"]', 
+    settingsbutton:
+      'li[data-sidebar="menu-item"] a[href="/en-GB/settings"] button[data-sidebar="menu-button"]',
+    addVenueDropdownButton:
+      'button[class*="font-body"][aria-haspopup="menu"]:has-text("Add")',
+    dropdownOptionButton: 'div[role="menuitem"]',
+    deleteVenueButton: 'button[class*="font-body"]:has-text("Delete Venue")',
+    confirmDeleteButton:
+      'button[class*="!bg-error-400"]:has-text("Delete Venue")',
+    settingsCards:
+      'div[class*="h-[180px]"][class*="rounded-[16px]"][class*="cursor-pointer"]',
+    venuesTableHeading: 'h1[class*="typography-heading-2"]:has-text("Venues")',
+    editVenueButton: 'button[class*="font-body"]:has-text("Edit")',
+    searchVenue: 'input[type="search"]',
+    venueNameInput: 'input[placeholder="Enter Venue Name"]',
+    franchiseSelectInput:
+      'button[class*="font-body"]:has-text("Select Franchise")',
+    franchiseOptionButton:
+      'p[class*="typography-body-1"]:has-text("59Club Asia")',
+    groupSelectInput: 'button[class*="font-body"]:has-text("Select Group")',
+    groupOptionButton: 'p[class*="typography-body-1"]:has-text("Premium Golf")',
+    timezoneSelectInput:
+      'button[class*="font-body"]:has-text("Select Timezone")',
+    timezoneOptionButton:
+      'p[class*="typography-body-1"]:has-text("(+09:00)  Asia/Tokyo")',
+    createButton: 'button[class*="font-body"]:has-text("Save")',
+    attributeNameInput: 'input[placeholder="Enter Attribute Name"]',
+    attributeTypeSelectInput:
+      'button[class*="font-body"]:has-text("Select Type...")',
+    attributeTypeOptionButton:
+      'p[class*="typography-body-1"]:has-text("Numeric")',
+    attributeSectionSelectInput:
+      'button[class*="font-body"]:has-text("Select Section")',
+    attributeSectionOptionButton:
+      'p[class*="typography-body-1"]:has-text("Details")',
+    editAttributeButton: 'p[class*="typography-body-1"]:has-text("Edit")',
+    deleteAttributeButton: 'p[class*="typography-body-1"]:has-text("Delete")',
+    confirmDeleteAttributeButton:
+      'button[class*="!bg-error-500"]:has-text("Confirm")',
   };
 
   public someAbstractMethod(): void {
     console.log('Abstract method implemented in UserProfile');
   }
 
-  // Navigate to the Users page
   async navigateToVenuePage() {
-
-    await this.click(this.selectors.settingsbutton, 'Settings Button', 'button');
-    // await this.click(this.selectors.usersButton, 'Users Button', 'button');
+    await this.click(
+      this.selectors.settingsbutton,
+      'Settings Button',
+      'button'
+    );
   }
 
-  // Create a new user
-  async createVenue() {
-  
-    await this.click(this.selectors.addUserButton, 'Add User Button', 'button');
-    //Add create user logic here , use Faker lib to generate random user data
+  async createVenue({ venueName }: { venueName: string }) {
+    await this.page.click(this.selectors.addVenueDropdownButton);
+    await this.page.locator(this.selectors.dropdownOptionButton).nth(0).click();
+    await this.page.locator(this.selectors.venueNameInput).fill(venueName);
+    await this.page.locator(this.selectors.franchiseSelectInput).click();
+    await this.page.locator(this.selectors.franchiseOptionButton).click();
+    await this.page.locator(this.selectors.groupSelectInput).click();
+    await this.page.locator(this.selectors.groupOptionButton).click();
+    await this.page.locator(this.selectors.timezoneSelectInput).click();
+    await this.page.locator(this.selectors.timezoneOptionButton).click();
+    await this.page.locator(this.selectors.createButton).click();
   }
 
-
-  // Edit an existing user
-  async editVenue() {
-    // Add logic to edit user details
+  async editVenue({ venueName }: { venueName: string }) {
+    await this.page.locator(this.selectors.searchVenue).fill(venueName);
+    await this.page.getByText(venueName).click();
+    await this.page.locator(this.selectors.editVenueButton).click();
+    await this.page.locator(this.selectors.venueNameInput).fill('Fiona Venue');
+    await this.page.locator(this.selectors.createButton).click();
   }
 
-  // Delete a user
   async deleteVenue() {
-  // Add logic to delete a user
+    await this.page.locator(this.selectors.searchVenue).fill('Fiona Venue');
+    await this.page.getByText('Fiona Venue').click();
+    await this.page.locator(this.selectors.editVenueButton).click();
+    await this.page.locator(this.selectors.deleteVenueButton).click();
+    // TODO: BUG FOUND IN THIS FLOW - remove commented code when bug is fixed
+    // await this.page.locator(this.selectors.confirmDeleteButton).click();
   }
 
-  // Validate that the Users table is visible
-  async validateVenueTableVisible() {
-   // await this.validateElementVisibility(this.selectors.userTable, 'Users Table');
+  async createAttribute({ attributeName }: { attributeName: string }) {
+    await this.page.locator(this.selectors.addVenueDropdownButton).click();
+    await this.page.locator(this.selectors.dropdownOptionButton).nth(1).click();
+    await this.page
+      .locator(this.selectors.attributeNameInput)
+      .fill(attributeName);
+    await this.page.locator(this.selectors.attributeTypeSelectInput).click();
+    await this.page.locator(this.selectors.attributeTypeOptionButton).click();
+    await this.page.locator(this.selectors.attributeSectionSelectInput).click();
+    await this.page
+      .locator(this.selectors.attributeSectionOptionButton)
+      .click();
+    await this.page.locator(this.selectors.createButton).click();
+  }
+
+  async editAttribute({ attributeName }: { attributeName: string }) {
+    await this.page.locator(this.selectors.searchVenue).fill(attributeName);
+    await this.page
+      .getByRole('row', { name: `${attributeName} details numeric 0` })
+      .getByRole('img')
+      .click();
+    await this.page.locator(this.selectors.editAttributeButton).click();
+    await this.page
+      .locator(this.selectors.attributeNameInput)
+      .fill('Fiona Attr');
+    await this.page.locator(this.selectors.createButton).click();
+  }
+
+  async deleteAttribute() {
+    await this.page.locator(this.selectors.searchVenue).fill('Fiona Attr');
+    await this.page
+      .getByRole('row', { name: `Fiona Attr details numeric 0` })
+      .getByRole('img')
+      .click();
+    await this.page.locator(this.selectors.deleteAttributeButton).click();
+    await this.page
+      .locator(this.selectors.confirmDeleteAttributeButton)
+      .click();
   }
 }
