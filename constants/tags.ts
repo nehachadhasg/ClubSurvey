@@ -4,6 +4,7 @@ export const REGRESSION_TAG = '@regression';
 export const ROLEBASEDLOGIN = '@rolebasedlogin';
 
 // Role-based tags
+export const SUPER_ADMIN_TAG = '@superadmin';
 export const FRANCHISE_ADMIN_TAG = '@franchiseadmin';
 export const GROUP_ADMIN_TAG = '@groupadmin';
-export const VENUE_ADMIN_TAG = '@venueadmin';
+export const VENUE_ADMIN_TAG = '@venueadmin';   

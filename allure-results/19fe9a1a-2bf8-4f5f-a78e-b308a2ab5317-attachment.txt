@@ -1,2 +1,0 @@
-Successfully loaded the URL: /en-GB/auth/login
-logo is visible as expected.
