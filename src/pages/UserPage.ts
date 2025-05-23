@@ -58,7 +58,7 @@ export class UserPage extends PlaywrightWrapper {
       'button'
     );
   }
-  
+
   async createUser({
     firstName,
     lastName,
@@ -82,25 +82,37 @@ export class UserPage extends PlaywrightWrapper {
   async editUser({
     firstName,
     lastName,
+    newFirstName,
+    newLastName,
     email,
   }: {
     firstName: string;
     lastName: string;
     email: string;
+    newFirstName: string;
+    newLastName: string;
   }) {
     await this.page.locator(this.selectors.searchUsers).fill(email);
     await this.page.getByText(`${firstName} ${lastName}`).click();
     await this.page.locator(this.selectors.editUserButton).click();
-    await this.page.locator(this.selectors.firstNameInput).fill('Fiona');
-    await this.page.locator(this.selectors.lastNameInput).fill('Almighty');
+    await this.page.locator(this.selectors.firstNameInput).fill(newFirstName);
+    await this.page.locator(this.selectors.lastNameInput).fill(newLastName);
     await this.page.locator(this.selectors.createUserButton).click();
   }
 
-  async deleteUser({ email }: { email: string }) {
+  async deleteUser({
+    newFirstName,
+    newLastName,
+    email,
+  }: {
+    newFirstName: string;
+    newLastName: string;
+    email: string;
+  }) {
     await this.page.locator(this.selectors.searchUsers).fill(email);
-    await this.page.getByText('Fiona Almighty').click();
+    await this.page.getByText(`${newFirstName} ${newLastName}`).click();
     await this.page.locator(this.selectors.editUserButton).click();
     await this.page.locator(this.selectors.deleteUserButton).click();
-    await this.page.locator(this.selectors.confirmDeleteButton).nth(1).click();
+    await this.page.locator(this.selectors.confirmDeleteButton).nth(2).click();
   }
 }

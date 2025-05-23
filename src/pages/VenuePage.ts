@@ -73,17 +73,23 @@ export class VenuePage extends PlaywrightWrapper {
     await this.page.locator(this.selectors.createButton).click();
   }
 
-  async editVenue({ venueName }: { venueName: string }) {
+  async editVenue({
+    venueName,
+    newVenueName,
+  }: {
+    venueName: string;
+    newVenueName: string;
+  }) {
     await this.page.locator(this.selectors.searchVenue).fill(venueName);
     await this.page.getByText(venueName).click();
     await this.page.locator(this.selectors.editVenueButton).click();
-    await this.page.locator(this.selectors.venueNameInput).fill('Fiona Venue');
+    await this.page.locator(this.selectors.venueNameInput).fill(newVenueName);
     await this.page.locator(this.selectors.createButton).click();
   }
 
-  async deleteVenue() {
-    await this.page.locator(this.selectors.searchVenue).fill('Fiona Venue');
-    await this.page.getByText('Fiona Venue').click();
+  async deleteVenue({ newVenueName }: { newVenueName: string }) {
+    await this.page.locator(this.selectors.searchVenue).fill(newVenueName);
+    await this.page.getByText(newVenueName).click();
     await this.page.locator(this.selectors.editVenueButton).click();
     await this.page.locator(this.selectors.deleteVenueButton).click();
     // TODO: BUG FOUND IN THIS FLOW - remove commented code when bug is fixed
@@ -105,7 +111,13 @@ export class VenuePage extends PlaywrightWrapper {
     await this.page.locator(this.selectors.createButton).click();
   }
 
-  async editAttribute({ attributeName }: { attributeName: string }) {
+  async editAttribute({
+    attributeName,
+    newAttributeName,
+  }: {
+    attributeName: string;
+    newAttributeName: string;
+  }) {
     await this.page.locator(this.selectors.searchVenue).fill(attributeName);
     await this.page
       .getByRole('row', { name: `${attributeName} details numeric 0` })
@@ -114,14 +126,14 @@ export class VenuePage extends PlaywrightWrapper {
     await this.page.locator(this.selectors.editAttributeButton).click();
     await this.page
       .locator(this.selectors.attributeNameInput)
-      .fill('Fiona Attr');
+      .fill(newAttributeName);
     await this.page.locator(this.selectors.createButton).click();
   }
 
-  async deleteAttribute() {
-    await this.page.locator(this.selectors.searchVenue).fill('Fiona Attr');
+  async deleteAttribute({ newAttributeName }: { newAttributeName: string }) {
+    await this.page.locator(this.selectors.searchVenue).fill(newAttributeName);
     await this.page
-      .getByRole('row', { name: `Fiona Attr details numeric 0` })
+      .getByRole('row', { name: `${newAttributeName} details numeric 0` })
       .getByRole('img')
       .click();
     await this.page.locator(this.selectors.deleteAttributeButton).click();

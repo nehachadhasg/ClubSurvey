@@ -86,21 +86,23 @@ test.describe('SUPERADMIN - Venue Permissions Tests', () => {
       await cards.nth(5).click();
       await venuePage.page.waitForTimeout(1000);
       const venueName = faker.company.name().slice(0, 10);
+      const newVenueName = faker.company.name().slice(0, 10);
       const attributeName = faker.company.name().slice(0, 5);
+      const newAttributeName = faker.company.name().slice(0, 5);
       await venuePage.createVenue({
         venueName,
       });
       await venuePage.page.waitForTimeout(2000);
-      await venuePage.editVenue({ venueName });
+      await venuePage.editVenue({ venueName, newVenueName });
       await venuePage.page.waitForTimeout(2000);
-      await venuePage.deleteVenue();
+      await venuePage.deleteVenue({ newVenueName });
       await venuePage.page.waitForTimeout(2000);
 
       await venuePage.createAttribute({ attributeName });
       await venuePage.page.waitForTimeout(2000);
-      await venuePage.editAttribute({ attributeName });
+      await venuePage.editAttribute({ attributeName, newAttributeName });
       await venuePage.page.waitForTimeout(2000);
-      await venuePage.deleteAttribute();
+      await venuePage.deleteAttribute({ newAttributeName });
       await venuePage.page.waitForTimeout(2000);
       await expect(
         venuePage.page.getByText('The attribute has been deleted successfully.')
