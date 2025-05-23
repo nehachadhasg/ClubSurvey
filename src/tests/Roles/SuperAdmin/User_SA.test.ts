@@ -88,7 +88,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       throw new Error('SUPERADMIN does not have permission to view users.');
     }
   });
-  
+
   test('@superadmin - Verify Super Admin can view all user types including other Super Admins.', async () => {
     const cards = userPage.page.locator(userPage.selectors.settingsCards);
     await cards.nth(0).click();
@@ -166,11 +166,21 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       const firstName = faker.person.firstName();
       const lastName = faker.person.lastName();
       const email = faker.internet.email();
+
+      const newFirstName = faker.person.firstName();
+      const newLastName = faker.person.lastName();
+
       await userPage.createUser({ firstName, lastName, email });
       await userPage.page.waitForTimeout(2000);
-      await userPage.editUser({ firstName, lastName, email });
+      await userPage.editUser({
+        firstName,
+        lastName,
+        email,
+        newFirstName,
+        newLastName,
+      });
       await userPage.page.waitForTimeout(2000);
-      await userPage.deleteUser({ email });
+      await userPage.deleteUser({ newFirstName, newLastName, email });
       await expect(
         userPage.page.getByText('The user was deleted successfully.')
       ).toBeVisible();

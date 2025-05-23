@@ -6,6 +6,7 @@ import {
   BrowserContext,
   Page,
 } from '@playwright/test';
+import { faker } from '@faker-js/faker/locale/en';
 import { VenuePage } from '../../../pages/VenuePage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -13,6 +14,7 @@ import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
 let superAdminCredentials: { username: string; password: string };
 let users: UserData;
@@ -20,11 +22,10 @@ let browser: Browser;
 let context: BrowserContext;
 let page: Page;
 
-test.describe.skip('SUPERADMIN - Users Permissions Tests', () => {
+test.describe('SUPERADMIN - Venue Permissions Tests', () => {
   let venuePage: VenuePage;
   let clubSurveyLogin: ClubSurveyLogin;
 
-  // Load SUPERADMIN credentials and permissions before all tests
   test.beforeAll(async () => {
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
@@ -43,6 +44,7 @@ test.describe.skip('SUPERADMIN - Users Permissions Tests', () => {
     }
 
     const superAdminUser = Object.values(users).find(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (user: any) => user.role_id === 1
     );
 
@@ -70,57 +72,45 @@ test.describe.skip('SUPERADMIN - Users Permissions Tests', () => {
       username: superAdminCredentials.username,
       password: superAdminCredentials.password,
     });
+    await venuePage.navigateToVenuePage();
   });
 
-  // Initialize page objects and login before each test
-  // test.beforeEach(async ({ page, context }) => {
-  //   clubSurveyLogin = new ClubSurveyLogin(page, context);
-  //   userPage = new UserPage(page, context);
+  test('@superadmin - Verify Super Admin can manage venues and venue attributes.', async () => {
+    const venuesPermissions = rolePermissions.venues;
+    if (
+      venuesPermissions.create &&
+      venuesPermissions.edit &&
+      venuesPermissions.delete
+    ) {
+      const cards = venuePage.page.locator(venuePage.selectors.settingsCards);
+      await cards.nth(5).click();
+      await venuePage.page.waitForTimeout(1000);
+      const venueName = faker.company.name().slice(0, 10);
+      const newVenueName = faker.company.name().slice(0, 10);
+      const attributeName = faker.company.name().slice(0, 5);
+      const newAttributeName = faker.company.name().slice(0, 5);
+      await venuePage.createVenue({
+        venueName,
+      });
+      await venuePage.page.waitForTimeout(2000);
+      await venuePage.editVenue({ venueName, newVenueName });
+      await venuePage.page.waitForTimeout(2000);
+      await venuePage.deleteVenue({ newVenueName });
+      await venuePage.page.waitForTimeout(2000);
 
-  //   await clubSurveyLogin.ClubSurveyLogin({
-  //     username: superAdminCredentials.username,
-  //     password: superAdminCredentials.password,
-  //   });
-  // });
-
-  // Test: Validate View Permission
-  test('@superadmin - Validate Venue Permission', async () => {
-    if (rolePermissions.users.view === 'all') {
-      await venuePage.navigateToVenuePage();
-      //   const isUserTableVisible = await userPage.isElementVisible(userPage.selectors.userTable);
-      //   expect(isUserTableVisible).toBeTruthy();
+      await venuePage.createAttribute({ attributeName });
+      await venuePage.page.waitForTimeout(2000);
+      await venuePage.editAttribute({ attributeName, newAttributeName });
+      await venuePage.page.waitForTimeout(2000);
+      await venuePage.deleteAttribute({ newAttributeName });
+      await venuePage.page.waitForTimeout(2000);
+      await expect(
+        venuePage.page.getByText('The attribute has been deleted successfully.')
+      ).toBeVisible();
     } else {
-      throw new Error('SUPERADMIN does not have permission to view users.');
+      throw new Error(
+        'SUPERADMIN does not have permission to create, edit, or delete venues.'
+      );
     }
   });
-
-  // Test: Validate Create Permission
-  //   test('@superadmin - Validate Create Permission', async () => {
-  //     if (rolePermissions.users.create !== 'allExceptSuperAdmin') {
-  //       await userPage.navigateToUsersPage();
-  //     //   await userPage.createUser('newuser@example.com', 'Password123', 'VenueAdmin');
-  //     } else {
-  //       throw new Error('SUPERADMIN does not have permission to create users.');
-  //     }
-  //   });
-
-  //   // Test: Validate Edit Permission
-  //   test('@superadmin - Validate Edit Permission', async () => {
-  //     if (rolePermissions.users.edit !== 'allExceptSuperAdmin') {
-  //       await userPage.navigateToUsersPage();
-  //     //   await userPage.editUser('newuser@example.com', 'GroupAdmin');
-  //     } else {
-  //       throw new Error('SUPERADMIN does not have permission to edit users.');
-  //     }
-  //   });
-
-  //   // Test: Validate Delete Permission
-  //   test('@superadmin - Validate Delete Permission', async () => {
-  //     if (rolePermissions.users.delete !== 'allExceptSuperAdmin') {
-  //       await userPage.navigateToUsersPage();
-  //     //   await userPage.deleteUser('newuser@example.com');
-  //     } else {
-  //       throw new Error('SUPERADMIN does not have permission to delete users.');
-  //     }
-  //   });
 });

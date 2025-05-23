@@ -10,8 +10,6 @@ export class FranchisePage extends PlaywrightWrapper {
   public selectors = {
     settingsbutton:
       'li[data-sidebar="menu-item"] a[href="/en-GB/settings"] button[data-sidebar="menu-button"]',
-    usersButton:
-      'div.flex.cursor-pointer.rounded-[16px].border.border-greyscale-200.bg-white',
     addFranchiseButton: 'button[class*="font-body"]:has-text("Add Franchise")',
     deleteFranchiseButton:
       'button[class*="font-body"]:has-text("Delete Franchise")',

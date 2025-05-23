@@ -86,10 +86,15 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
       await groupPage.createGroup({
         groupName,
       });
+      const newGroupName = faker.company
+        .name()
+        .slice(0, 10)
+        .replace(/[^a-zA-Z\s]/g, '');
+
       await groupPage.page.waitForTimeout(2000);
-      await groupPage.editGroup({ groupName });
+      await groupPage.editGroup({ groupName, newGroupName });
       await groupPage.page.waitForTimeout(2000);
-      await groupPage.deleteGroup();
+      await groupPage.deleteGroup({ newGroupName });
       await groupPage.page.waitForTimeout(2000);
       await expect(
         groupPage.page.getByText('The group was deleted successfully.')
