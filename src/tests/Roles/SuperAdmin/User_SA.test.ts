@@ -92,6 +92,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
   test('@superadmin - Verify Super Admin can view all user types including other Super Admins.', async () => {
     const cards = userPage.page.locator(userPage.selectors.settingsCards);
     await cards.nth(0).click();
+    await userPage.page.waitForTimeout(2000);
     if (rolePermissions.users.view === 'all') {
       const usersTableHeading = userPage.page.locator(
         userPage.selectors.usersTableHeading
@@ -129,6 +130,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       await expect(franchiseAdmin).toBeVisible();
       await expect(groupManager).toBeVisible();
       await expect(superAdmin).toBeVisible();
+      await userPage.page.reload();
     } else {
       throw new Error('SUPERADMIN does not have permission to view users.');
     }
@@ -150,6 +152,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       await userPage.page
         .locator(userPage.selectors.closeActionsPopUpButton)
         .click();
+      await userPage.page.reload();
     } else {
       throw new Error(
         'SUPERADMIN does not have permission to edit or delete other Super Admin users.'

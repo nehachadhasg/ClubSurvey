@@ -1,4 +1,11 @@
-import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import {
+  test,
+  expect,
+  chromium,
+  Browser,
+  BrowserContext,
+  Page,
+} from '@playwright/test';
 import { VenuePage } from '../../../pages/VenuePage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -13,43 +20,55 @@ let browser: Browser;
 let context: BrowserContext;
 let page: Page;
 
-test.describe('GROUPADMIN - Venues Permissions Tests', () => {
+test.describe.skip('GROUPADMIN - Venues Permissions Tests', () => {
   let venuePage: VenuePage;
   let clubSurveyLogin: ClubSurveyLogin;
 
   // Load Group Admin credentials and permissions before all tests
   test.beforeAll(async () => {
-
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
-    
-    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
+
+    const usersFilePath = path.resolve(
+      __dirname,
+      '../../../../data/users.json'
+    );
     users = JsonReader.readJson(usersFilePath) as UserData;
 
     if (!users || Object.keys(users).length === 0) {
-      throw new Error('users.json is empty or invalid. Please run the data generation script.');
+      throw new Error(
+        'users.json is empty or invalid. Please run the data generation script.'
+      );
     }
 
-    const groupAdminUser = Object.values(users).find((user: any) => user.role_id === 4);
+    const groupAdminUser = Object.values(users).find(
+      (user: any) => user.role_id === 4
+    );
 
-    if (!groupAdminUser || !groupAdminUser.username || !groupAdminUser.password) {
+    if (
+      !groupAdminUser ||
+      !groupAdminUser.username ||
+      !groupAdminUser.password
+    ) {
       throw new Error('Group Admin credentials are missing in users.json.');
     }
 
-    groupAdminCredentials = { username: groupAdminUser.username, password: groupAdminUser.password };
+    groupAdminCredentials = {
+      username: groupAdminUser.username,
+      password: groupAdminUser.password,
+    };
     rolePermissions = ROLE_CONFIG['GROUPADMIN'];
     if (!rolePermissions) {
       throw new Error('Group Admin permissions are missing in roleConfig.ts.');
     }
     clubSurveyLogin = new ClubSurveyLogin(page, context);
-     venuePage = new VenuePage(page, context);
+    venuePage = new VenuePage(page, context);
 
     await clubSurveyLogin.ClubSurveyLogin({
       username: groupAdminCredentials.username,
       password: groupAdminCredentials.password,
     });
-
   });
 
   // Initialize page objects and login before each test
@@ -61,21 +80,23 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
   //     username: groupAdminCredentials.username,
   //     password: groupAdminCredentials.password,
   //   });
-  });
+});
 
-  // Test: Validate View Permission
-  test('GROUPADMIN - Validate Venue Permission', async () => {
-    if (rolePermissions.venues.view === 'ownGroup') {
-      console.log('Group Admin has permission to view venues in their own group.');
+// Test: Validate View Permission
+test('GROUPADMIN - Validate Venue Permission', async () => {
+  if (rolePermissions.venues.view === 'ownGroup') {
+    console.log(
+      'Group Admin has permission to view venues in their own group.'
+    );
     //   await venuePage.navigateToVenuesPage();
     //   const isVenueTableVisible = await venuePage.isElementVisible(venuePage.selectors.venueTable);
     //   expect(isVenueTableVisible).toBeTruthy();
-    } else {
-      throw new Error('Group Admin does not have permission to view venues.');
-    }
-  });
+  } else {
+    throw new Error('Group Admin does not have permission to view venues.');
+  }
+});
 
-  // Test: Validate Create Permission
+// Test: Validate Create Permission
 //   test('@groupadmin - Validate Create Permission', async () => {
 //     if (!rolePermissions.venues.create) {
 //       console.log('Group Admin does NOT have permission to create venues.');

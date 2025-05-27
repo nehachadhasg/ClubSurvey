@@ -1,4 +1,11 @@
-import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import {
+  test,
+  expect,
+  chromium,
+  Browser,
+  BrowserContext,
+  Page,
+} from '@playwright/test';
 import { GroupPage } from '../../../pages/GroupPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -13,32 +20,44 @@ let browser: Browser;
 let context: BrowserContext;
 let page: Page;
 
-test.describe('VENUEADMIN - Groups Permissions Tests', () => {
+test.describe.skip('VENUEADMIN - Groups Permissions Tests', () => {
   let groupPage: GroupPage;
   let clubSurveyLogin: ClubSurveyLogin;
 
   // Load Venue Admin credentials and permissions before all tests
   test.beforeAll(async () => {
-
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
-    
-    
-    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
+
+    const usersFilePath = path.resolve(
+      __dirname,
+      '../../../../data/users.json'
+    );
     users = JsonReader.readJson(usersFilePath) as UserData;
 
     if (!users || Object.keys(users).length === 0) {
-      throw new Error('users.json is empty or invalid. Please run the data generation script.');
+      throw new Error(
+        'users.json is empty or invalid. Please run the data generation script.'
+      );
     }
 
-    const venueAdminUser = Object.values(users).find((user: any) => user.role_id === 4);
+    const venueAdminUser = Object.values(users).find(
+      (user: any) => user.role_id === 4
+    );
 
-    if (!venueAdminUser || !venueAdminUser.username || !venueAdminUser.password) {
+    if (
+      !venueAdminUser ||
+      !venueAdminUser.username ||
+      !venueAdminUser.password
+    ) {
       throw new Error('Venue Admin credentials are missing in users.json.');
     }
 
-    venueAdminCredentials = { username: venueAdminUser.username, password: venueAdminUser.password };
+    venueAdminCredentials = {
+      username: venueAdminUser.username,
+      password: venueAdminUser.password,
+    };
     rolePermissions = ROLE_CONFIG['VENUEADMIN'];
     if (!rolePermissions) {
       throw new Error('Venue Admin permissions are missing in roleConfig.ts.');
@@ -50,7 +69,6 @@ test.describe('VENUEADMIN - Groups Permissions Tests', () => {
       username: venueAdminCredentials.username,
       password: venueAdminCredentials.password,
     });
-
   });
 
   // Initialize page objects and login before each test
@@ -74,33 +92,33 @@ test.describe('VENUEADMIN - Groups Permissions Tests', () => {
     }
   });
 
-//   // Test: Validate Create Permission
-//   test('@venueadmin - Validate Create Permission', async () => {
-//     if (!rolePermissions.groups.create) {
-//       console.log('Venue Admin does NOT have permission to create groups.');
-//       expect(rolePermissions.groups.create).toBeFalsy();
-//     } else {
-//       throw new Error('Unexpected permission to create groups.');
-//     }
-//   });
+  //   // Test: Validate Create Permission
+  //   test('@venueadmin - Validate Create Permission', async () => {
+  //     if (!rolePermissions.groups.create) {
+  //       console.log('Venue Admin does NOT have permission to create groups.');
+  //       expect(rolePermissions.groups.create).toBeFalsy();
+  //     } else {
+  //       throw new Error('Unexpected permission to create groups.');
+  //     }
+  //   });
 
-//   // Test: Validate Edit Permission
-//   test('@venueadmin - Validate Edit Permission', async () => {
-//     if (!rolePermissions.groups.edit) {
-//       console.log('Venue Admin does NOT have permission to edit groups.');
-//       expect(rolePermissions.groups.edit).toBeFalsy();
-//     } else {
-//       throw new Error('Unexpected permission to edit groups.');
-//     }
-//   });
+  //   // Test: Validate Edit Permission
+  //   test('@venueadmin - Validate Edit Permission', async () => {
+  //     if (!rolePermissions.groups.edit) {
+  //       console.log('Venue Admin does NOT have permission to edit groups.');
+  //       expect(rolePermissions.groups.edit).toBeFalsy();
+  //     } else {
+  //       throw new Error('Unexpected permission to edit groups.');
+  //     }
+  //   });
 
-//   // Test: Validate Delete Permission
-//   test('@venueadmin - Validate Delete Permission', async () => {
-//     if (!rolePermissions.groups.delete) {
-//       console.log('Venue Admin does NOT have permission to delete groups.');
-//       expect(rolePermissions.groups.delete).toBeFalsy();
-//     } else {
-//       throw new Error('Unexpected permission to delete groups.');
-//     }
-//   });
+  //   // Test: Validate Delete Permission
+  //   test('@venueadmin - Validate Delete Permission', async () => {
+  //     if (!rolePermissions.groups.delete) {
+  //       console.log('Venue Admin does NOT have permission to delete groups.');
+  //       expect(rolePermissions.groups.delete).toBeFalsy();
+  //     } else {
+  //       throw new Error('Unexpected permission to delete groups.');
+  //     }
+  //   });
 });

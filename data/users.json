@@ -3,27 +3,27 @@
     "username": "59qaadmin@yopmail.com",
     "password": "SecurePass123!",
     "role_id": 1,
-    "user_id": "9bc5c1af-0209-4f34-9ce4-572f98fa07e2"
+    "user_id": "b6b9d7da-0c98-46ea-8d48-716b84f225d3"
   },
   "2": {
-    "username": "Noe_Goyette@yahoo.com",
+    "username": "Giuseppe39@hotmail.com",
     "password": "Club59@123",
     "role_id": 2,
-    "user_id": "9bc5c1af-0209-4f34-9ce4-572f98fa07e2"
+    "user_id": "b6b9d7da-0c98-46ea-8d48-716b84f225d3"
   },
   "4": {
-    "username": "Samanta_Kertzmann@gmail.com",
+    "username": "Zane_Thiel75@hotmail.com",
     "password": "Club59@123",
     "role_id": 4,
-    "user_id": "9d493580-dc89-4ed0-aee9-ad49bc28affd"
+    "user_id": "54da4a90-f938-4826-82d5-e45ba265c850"
   },
   "5": {
-    "username": "Yasmine_Smith76@gmail.com",
+    "username": "Hadley_Shanahan87@hotmail.com",
     "password": "Club59@123",
     "role_id": 5,
-    "user_id": "4c2c40b5-d0e1-4272-ba8a-a4134b4f5802"
+    "user_id": "8b74df90-3c02-4c11-9318-c821c59e00b6"
   },
-  "franchiseAdmin": "9bc5c1af-0209-4f34-9ce4-572f98fa07e2",
-  "groupAdmin": "9d493580-dc89-4ed0-aee9-ad49bc28affd",
-  "venueAdmin": "4c2c40b5-d0e1-4272-ba8a-a4134b4f5802"
+  "franchiseAdmin": "b6b9d7da-0c98-46ea-8d48-716b84f225d3",
+  "groupAdmin": "54da4a90-f938-4826-82d5-e45ba265c850",
+  "venueAdmin": "8b74df90-3c02-4c11-9318-c821c59e00b6"
 }
