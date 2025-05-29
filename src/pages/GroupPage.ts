@@ -34,11 +34,17 @@ export class GroupPage extends PlaywrightWrapper {
     );
   }
 
-  async createGroup({ groupName }: { groupName: string }) {
+  async createGroup({
+    groupName,
+    franchiseOption,
+  }: {
+    groupName: string;
+    franchiseOption: string;
+  }) {
     await this.page.locator(this.selectors.addGroupButton).click();
     await this.page.locator(this.selectors.groupNameInput).fill(groupName);
     await this.page.locator(this.selectors.franchiseSelectInput).click();
-    await this.page.getByRole('menuitem', { name: '59Club Asia' }).click();
+    await this.page.getByRole('menuitem', { name: franchiseOption }).click();
     await this.page.locator(this.selectors.createGroupButton).click();
   }
 

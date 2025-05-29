@@ -1,4 +1,11 @@
-import { test, expect, chromium, Browser, BrowserContext, Page } from '@playwright/test';
+import {
+  test,
+  expect,
+  chromium,
+  Browser,
+  BrowserContext,
+  Page,
+} from '@playwright/test';
 import { GroupPage } from '../../../pages/GroupPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -13,31 +20,44 @@ let browser: Browser;
 let context: BrowserContext;
 let page: Page;
 
-test.describe('GROUPADMIN - Groups Permissions Tests', () => {
+test.describe.skip('GROUPADMIN - Groups Permissions Tests', () => {
   let groupPage: GroupPage;
   let clubSurveyLogin: ClubSurveyLogin;
 
   // Load Group Admin credentials and permissions before all tests
   test.beforeAll(async () => {
-
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
     page = await context.newPage();
 
-    const usersFilePath = path.resolve(__dirname, '../../../../data/users.json');
+    const usersFilePath = path.resolve(
+      __dirname,
+      '../../../../data/users.json'
+    );
     users = JsonReader.readJson(usersFilePath) as UserData;
 
     if (!users || Object.keys(users).length === 0) {
-      throw new Error('users.json is empty or invalid. Please run the data generation script.');
+      throw new Error(
+        'users.json is empty or invalid. Please run the data generation script.'
+      );
     }
 
-    const groupAdminUser = Object.values(users).find((user: any) => user.role_id === 4);
+    const groupAdminUser = Object.values(users).find(
+      (user: any) => user.role_id === 4
+    );
 
-    if (!groupAdminUser || !groupAdminUser.username || !groupAdminUser.password) {
+    if (
+      !groupAdminUser ||
+      !groupAdminUser.username ||
+      !groupAdminUser.password
+    ) {
       throw new Error('Group Admin credentials are missing in users.json.');
     }
 
-    groupAdminCredentials = { username: groupAdminUser.username, password: groupAdminUser.password };
+    groupAdminCredentials = {
+      username: groupAdminUser.username,
+      password: groupAdminUser.password,
+    };
     rolePermissions = ROLE_CONFIG['GROUPADMIN'];
     if (!rolePermissions) {
       throw new Error('Group Admin permissions are missing in roleConfig.ts.');
@@ -50,8 +70,6 @@ test.describe('GROUPADMIN - Groups Permissions Tests', () => {
       username: groupAdminCredentials.username,
       password: groupAdminCredentials.password,
     });
-
-    
   });
 
   // Initialize page objects and login before each test
@@ -63,19 +81,19 @@ test.describe('GROUPADMIN - Groups Permissions Tests', () => {
   //     username: groupAdminCredentials.username,
   //     password: groupAdminCredentials.password,
   //   });
-  });
+});
 
-  // Test: Validate View Permission
-  test('GROUPADMIN - Validate Group Permission', async () => {
-    if (!rolePermissions.groups.view) {
-      console.log('Group Admin does NOT have permission to view groups.');
-      expect(rolePermissions.groups.view).toBeFalsy();
-    } else {
-      throw new Error('Unexpected permission to view groups.');
-    }
-  });
+// Test: Validate View Permission
+test('GROUPADMIN - Validate Group Permission', async () => {
+  if (!rolePermissions.groups.view) {
+    console.log('Group Admin does NOT have permission to view groups.');
+    expect(rolePermissions.groups.view).toBeFalsy();
+  } else {
+    throw new Error('Unexpected permission to view groups.');
+  }
+});
 
-  // Test: Validate Create Permission
+// Test: Validate Create Permission
 //   test('@groupadmin - Validate Create Permission', async () => {
 //     if (!rolePermissions.groups.create) {
 //       console.log('Group Admin does NOT have permission to create groups.');

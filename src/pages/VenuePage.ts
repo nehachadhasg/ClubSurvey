@@ -60,14 +60,22 @@ export class VenuePage extends PlaywrightWrapper {
     );
   }
 
-  async createVenue({ venueName }: { venueName: string }) {
+  async createVenue({
+    venueName,
+    franchiseOption,
+    groupOption,
+  }: {
+    venueName: string;
+    franchiseOption: string;
+    groupOption: string;
+  }) {
     await this.page.click(this.selectors.addVenueDropdownButton);
     await this.page.locator(this.selectors.dropdownOptionButton).nth(0).click();
     await this.page.locator(this.selectors.venueNameInput).fill(venueName);
     await this.page.locator(this.selectors.franchiseSelectInput).click();
-    await this.page.locator(this.selectors.franchiseOptionButton).click();
+    await this.page.getByRole('menuitem', { name: franchiseOption }).click();
     await this.page.locator(this.selectors.groupSelectInput).click();
-    await this.page.locator(this.selectors.groupOptionButton).click();
+    await this.page.getByRole('menuitem', { name: groupOption }).click();
     await this.page.locator(this.selectors.timezoneSelectInput).click();
     await this.page.locator(this.selectors.timezoneOptionButton).click();
     await this.page.locator(this.selectors.createButton).click();

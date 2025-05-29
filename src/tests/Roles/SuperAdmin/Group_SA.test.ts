@@ -13,7 +13,6 @@ import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 import { GroupPage } from 'pages/GroupPage';
-import { UserPage } from 'pages/UserPage';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
@@ -85,6 +84,7 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
         .replace(/[^a-zA-Z\s]/g, '');
       await groupPage.createGroup({
         groupName,
+        franchiseOption: '59Club Asia',
       });
       const newGroupName = faker.company
         .name()

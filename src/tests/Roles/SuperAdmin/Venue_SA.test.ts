@@ -73,6 +73,9 @@ test.describe('SUPERADMIN - Venue Permissions Tests', () => {
       password: superAdminCredentials.password,
     });
     await venuePage.navigateToVenuePage();
+    const cards = venuePage.page.locator(venuePage.selectors.settingsCards);
+    await cards.nth(5).click();
+    await venuePage.page.waitForTimeout(1000);
   });
 
   test('@superadmin - Verify Super Admin can manage venues and venue attributes.', async () => {
@@ -82,15 +85,14 @@ test.describe('SUPERADMIN - Venue Permissions Tests', () => {
       venuesPermissions.edit &&
       venuesPermissions.delete
     ) {
-      const cards = venuePage.page.locator(venuePage.selectors.settingsCards);
-      await cards.nth(5).click();
-      await venuePage.page.waitForTimeout(1000);
       const venueName = faker.company.name().slice(0, 10);
       const newVenueName = faker.company.name().slice(0, 10);
       const attributeName = faker.company.name().slice(0, 5);
       const newAttributeName = faker.company.name().slice(0, 5);
       await venuePage.createVenue({
         venueName,
+        franchiseOption: '59Club Asia',
+        groupOption: 'Premium Golf',
       });
       await venuePage.page.waitForTimeout(2000);
       await venuePage.editVenue({ venueName, newVenueName });
