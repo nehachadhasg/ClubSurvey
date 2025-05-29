@@ -1,19 +1,23 @@
-import { expect, Page } from '@playwright/test';
+import { PlaywrightWrapper } from '../../helpers/playwright';
 
-export class SettingsPage {
-    private page: Page;
+export class SettingsPage extends PlaywrightWrapper {
+someAbstractMethod(): void {
+        console.log('This is a placeholder for an abstract method. Implement as needed.');
+}
 
-    constructor(page: Page) {
-        this.page = page;
-    }
+  // Locators
+  selectors = {
+    settingsButton: 'text=Settings', // Replace with the actual selector
+    usersButton: 'text=Users', // Replace with the actual selector
+  };
 
-    async navigateToSettings() {
-        await this.page.goto('/settings');
-    }
+  // Navigate to the settings page
+  async navigateToSettings() {
+    await this.click(this.selectors.settingsButton, 'Settings Button', 'button');
+  }
 
-    async validateCards(expectedCards: string[]) {
-        for (const card of expectedCards) {
-            await expect(this.page.locator(`text=${card}`)).toBeVisible();
-        }
-    }
+  // Validate that the Users button is visible
+  async validateUsersButtonVisible() {
+    await this.validateElementVisibility(this.selectors.usersButton, 'Users Button');
+  }
 }

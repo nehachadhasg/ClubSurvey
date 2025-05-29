@@ -577,17 +577,7 @@ export abstract class PlaywrightWrapper {
   async fillwithNewInstance(selector: string, data: string) {
     await this.getNewPage().fill(selector, data);
   }
-  // async radioButton(locator: string, name: string) {
-  //     await test.step(`Checkbox ${name} is selected`, async () => {
 
-  //       if(!await this.page.isChecked(locator)){
-  //         await this.page.focus(locator)
-  //         await this.page.check(locator, { force: true });
-  //       }else{
-  //         console.log("The button is already checked")
-  //       }
-  //     })
-  // }
 }
 // Concrete implementation
 export class ConcretePlaywrightWrapper extends PlaywrightWrapper {
@@ -658,19 +648,3 @@ console.log(roleId);
 }
 
 
-/**
- * Fetch permissions for a specific role.
- * @param {string} role - The role name (e.g., 'SuperAdmin', 'FranchiseAdmin').
- * @returns {object} - The permissions for the role.
- 
-export function getPermissionsForRole(role: string): typeof ACCESS_MATRIX[Role] {
-  // Resolve role name to role type
-  const resolvedRole = Object.keys(ROLES).find((key) => key === role.toUpperCase()) as Role;
-
-  if (!resolvedRole || !ACCESS_MATRIX[resolvedRole]) {
-      throw new Error(`No permissions defined for role: ${role}`);
-  }
-
-  return ACCESS_MATRIX[resolvedRole];
-}
-*/
