@@ -173,7 +173,13 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
       const newFirstName = faker.person.firstName();
       const newLastName = faker.person.lastName();
 
-      await userPage.createUser({ firstName, lastName, email });
+      await userPage.createUser({
+        firstName,
+        lastName,
+        email,
+        role: 'Franchise Admin',
+        assignTo: '59Club Asia',
+      });
       await userPage.page.waitForTimeout(2000);
       await userPage.editUser({
         firstName,
