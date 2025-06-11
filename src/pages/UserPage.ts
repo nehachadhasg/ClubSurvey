@@ -26,6 +26,7 @@ export class UserPage extends PlaywrightWrapper {
     translator: 'span[class*="leading-[18px]"]:has-text("Translator")',
     venueManager: 'span[class*="leading-[18px]"]:has-text("Venue Manager")',
     superAdmin: 'span[class*="leading-[18px]"]:has-text("Super Admin")',
+    groupAdmin: 'span[class*="leading-[18px]"]:has-text("Group Manager")',
     franchiseAdmin:
       'span[class*="leading-[18px]"]:has-text("Franchise Manager")',
     groupManager: 'span[class*="leading-[18px]"]:has-text("Group Manager")',
@@ -62,20 +63,24 @@ export class UserPage extends PlaywrightWrapper {
   async createUser({
     firstName,
     lastName,
+    role,
+    assignTo,
     email,
   }: {
     firstName: string;
     lastName: string;
     email: string;
+    role: string;
+    assignTo: string;
   }) {
     await this.page.locator(this.selectors.addUsersButton).click();
     await this.page.locator(this.selectors.firstNameInput).fill(firstName);
     await this.page.locator(this.selectors.lastNameInput).fill(lastName);
     await this.page.locator(this.selectors.emailInput).fill(email);
     await this.page.locator(this.selectors.roleSelectInput).click();
-    await this.page.getByRole('option', { name: 'Franchise Admin' }).click();
+    await this.page.getByRole('option', { name: role }).click();
     await this.page.locator(this.selectors.assignToSelectInput).click();
-    await this.page.getByRole('menuitem', { name: '59Club Asia' }).click();
+    await this.page.getByRole('menuitem', { name: assignTo }).click();
     await this.page.locator(this.selectors.createUserButton).click();
   }
 

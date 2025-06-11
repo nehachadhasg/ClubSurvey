@@ -1,11 +1,12 @@
 import {
   test,
-  expect,
   chromium,
   Browser,
   BrowserContext,
   Page,
+  expect,
 } from '@playwright/test';
+import { faker } from '@faker-js/faker/locale/en';
 import { UserPage } from '../../../pages/UserPage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
@@ -13,6 +14,7 @@ import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
 let groupAdminCredentials: { username: string; password: string };
 let users: UserData;
@@ -20,11 +22,10 @@ let browser: Browser;
 let context: BrowserContext;
 let page: Page;
 
-test.describe.skip('GROUPADMIN - Users Permissions Tests', () => {
+test.describe('GROUPADMIN - Users Permissions Tests', () => {
   let userPage: UserPage;
   let clubSurveyLogin: ClubSurveyLogin;
 
-  // Load Group Admin credentials and permissions before all tests
   test.beforeAll(async () => {
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
@@ -43,6 +44,7 @@ test.describe.skip('GROUPADMIN - Users Permissions Tests', () => {
     }
 
     const groupAdminUser = Object.values(users).find(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (user: any) => user.role_id === 4
     );
 
@@ -70,62 +72,98 @@ test.describe.skip('GROUPADMIN - Users Permissions Tests', () => {
       username: groupAdminCredentials.username,
       password: groupAdminCredentials.password,
     });
-
-    // Initialize page objects and login before each test
-    // test.beforeEach(async ({ page, context }) => {
-    //   clubSurveyLogin = new ClubSurveyLogin(page, context);
-    //   userPage = new UserPage(page, context);
-
-    //   await clubSurveyLogin.ClubSurveyLogin({
-    //     username: groupAdminCredentials.username,
-    //     password: groupAdminCredentials.password,
-    //   });
   });
 
-  // Test: Validate View Permission
-  test('GROUPADMIN - Validate Users Permission', async () => {
-    if (rolePermissions.users.view === 'groupManagersAndStaff') {
-      console.log(
-        'Group Admin has permission to view group managers and staff.'
-      );
+  test('@groupadmin - Verify Group Manager can access only Users and Venues tabs in Settings.', async () => {
+    if (
+      rolePermissions.settings.view.includes('Users') &&
+      rolePermissions.settings.view.includes('Venues')
+    ) {
       await userPage.navigateToUsersPage();
-      //   const isUserTableVisible = await userPage.isElementVisible(userPage.selectors.userTable);
-      //   expect(isUserTableVisible).toBeTruthy();
+      const cards = userPage.page.locator(userPage.selectors.settingsCards);
+      await expect(cards).toHaveCount(2);
+      await expect(cards.nth(0)).toHaveText(/Users/);
+      await expect(cards.nth(1)).toHaveText(/Venues/);
     } else {
-      throw new Error('Group Admin does not have permission to view users.');
+      throw new Error(
+        'GROUPADMIN does not have permission to view Users and Venues.'
+      );
     }
   });
 
-  //   // Test: Validate Create Permission
-  //   test('@groupadmin - Validate Create Permission', async () => {
-  //     if (rolePermissions.users.create === 'venueManagerAndStaff') {
-  //       console.log('Group Admin has permission to create venue managers and staff.');
-  //       await userPage.navigateToUsersPage();
-  //     //   await userPage.createUser('newuser@example.com', 'Password123', 'VenueManager');
-  //     } else {
-  //       throw new Error('Group Admin does not have permission to create users.');
-  //     }
-  //   });
+  test('@groupadmin - Verify Group Manager can create, edit, and delete users of type Venue Manager or Staff Member.', async () => {
+    if (
+      rolePermissions.users.create === 'venueManagerAndStaff' &&
+      rolePermissions.users.edit === 'venueManagerAndStaff' &&
+      rolePermissions.users.delete === 'venueManagerAndStaff'
+    ) {
+      await userPage.navigateToUsersPage();
+      const cards = userPage.page.locator(userPage.selectors.settingsCards);
+      await cards.nth(0).click();
 
-  //   // Test: Validate Edit Permission
-  //   test('@groupadmin - Validate Edit Permission', async () => {
-  //     if (rolePermissions.users.edit === 'venueManagerAndStaff') {
-  //       console.log('Group Admin has permission to edit venue managers and staff.');
-  //       await userPage.navigateToUsersPage();
-  //     //   await userPage.editUser('existinguser@example.com', 'UpdatedRole');
-  //     } else {
-  //       throw new Error('Group Admin does not have permission to edit users.');
-  //     }
-  //   });
+      const firstName = faker.person.firstName();
+      const lastName = faker.person.lastName();
+      const email = faker.internet.email();
+      const role = 'Venue Manager';
+      const assignTo = 'Web services';
 
-  //   // Test: Validate Delete Permission
-  //   test('@groupadmin - Validate Delete Permission', async () => {
-  //     if (rolePermissions.users.delete === 'venueManagerAndStaff') {
-  //       console.log('Group Admin has permission to delete venue managers and staff.');
-  //       await userPage.navigateToUsersPage();
-  //     //   await userPage.deleteUser('userToDelete@example.com');
-  //     } else {
-  //       throw new Error('Group Admin does not have permission to delete users.');
-  //     }
-  //   });
+      const newFirstName = faker.person.firstName();
+      const newLastName = faker.person.lastName();
+
+      await userPage.createUser({
+        firstName,
+        lastName,
+        email,
+        role,
+        assignTo,
+      });
+      await userPage.page.waitForTimeout(2000);
+      await userPage.editUser({
+        firstName,
+        lastName,
+        email,
+        newFirstName,
+        newLastName,
+      });
+      await userPage.page.waitForTimeout(2000);
+      await userPage.deleteUser({ newFirstName, newLastName, email });
+      await expect(
+        userPage.page.getByText('The user was deleted successfully.')
+      ).toBeVisible();
+    } else {
+      throw new Error(
+        'GROUPADMIN does not have permission to create, edit, and delete users of type Venue Manager or Staff Member.'
+      );
+    }
+  });
+
+  test('@groupadmin - Verify Group Manager can view but not edit or delete other Group Managers in their group.', async () => {
+    if (rolePermissions.users.view === 'groupManagersAndStaff') {
+      await userPage.navigateToUsersPage();
+      const cards = userPage.page.locator(userPage.selectors.settingsCards);
+      await cards.nth(0).click();
+
+      await userPage.page
+        .locator(userPage.selectors.searchUsers)
+        .fill('John Princess');
+
+      const groupAdmin = userPage.page.locator(userPage.selectors.groupAdmin);
+      const editUserButton = userPage.page
+        .locator(userPage.selectors.editUserButton)
+        .nth(0);
+
+      await expect(groupAdmin).toBeVisible();
+      await groupAdmin.click();
+      await userPage.page.waitForTimeout(500);
+      await expect(editUserButton).not.toBeVisible();
+      await userPage.page
+        .locator(userPage.selectors.closeActionsPopUpButton)
+        .click();
+      await userPage.page.reload();
+    } else {
+      throw new Error(
+        'GROUPADMIN has permission to view other Group Managers in their group.'
+      );
+    }
+  });
 });

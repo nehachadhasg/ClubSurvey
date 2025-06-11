@@ -1,10 +1,10 @@
 import {
   test,
-  expect,
   chromium,
   Browser,
   BrowserContext,
   Page,
+  expect,
 } from '@playwright/test';
 import { VenuePage } from '../../../pages/VenuePage';
 import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
@@ -13,6 +13,7 @@ import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
 import { UserData } from '../../../../data/users.interface';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let rolePermissions: any;
 let groupAdminCredentials: { username: string; password: string };
 let users: UserData;
@@ -20,11 +21,10 @@ let browser: Browser;
 let context: BrowserContext;
 let page: Page;
 
-test.describe.skip('GROUPADMIN - Venues Permissions Tests', () => {
+test.describe('GROUPADMIN - Venues Permissions Tests', () => {
   let venuePage: VenuePage;
   let clubSurveyLogin: ClubSurveyLogin;
 
-  // Load Group Admin credentials and permissions before all tests
   test.beforeAll(async () => {
     browser = await chromium.launch({ headless: false });
     context = await browser.newContext();
@@ -43,6 +43,7 @@ test.describe.skip('GROUPADMIN - Venues Permissions Tests', () => {
     }
 
     const groupAdminUser = Object.values(users).find(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (user: any) => user.role_id === 4
     );
 
@@ -71,57 +72,48 @@ test.describe.skip('GROUPADMIN - Venues Permissions Tests', () => {
     });
   });
 
-  // Initialize page objects and login before each test
-  // test.beforeEach(async ({ page, context }) => {
-  //   clubSurveyLogin = new ClubSurveyLogin(page, context);
-  //    venuePage = new VenuePage(page, context);
+  test('@groupadmin - Verify Group Manager can only view venues that belong to their group.', async () => {
+    if (rolePermissions.venues.view === 'ownGroup') {
+      await venuePage.navigateToVenuePage();
+      const cards = venuePage.page.locator(venuePage.selectors.settingsCards);
+      await cards.nth(1).click();
+      await venuePage.page.waitForTimeout(2000);
+      await venuePage.page
+        .locator(venuePage.selectors.searchVenue)
+        .fill('Web services');
+      await venuePage.page.waitForTimeout(2000);
+      const venue = venuePage.page.getByText('Convergence').nth(0);
+      await expect(venue).toBeVisible();
+    } else {
+      throw new Error(
+        'GROUPADMIN does not have permission to view venues that belong to their group.'
+      );
+    }
+  });
 
-  //   await clubSurveyLogin.ClubSurveyLogin({
-  //     username: groupAdminCredentials.username,
-  //     password: groupAdminCredentials.password,
-  //   });
+  test('@groupadmin - Ensure Group Manager cannot edit, delete, or create venues.', async () => {
+    if (
+      rolePermissions.venues.create === false &&
+      rolePermissions.venues.edit === false &&
+      rolePermissions.venues.delete === false
+    ) {
+      await venuePage.navigateToVenuePage();
+      const cards = venuePage.page.locator(venuePage.selectors.settingsCards);
+      await cards.nth(1).click();
+      await venuePage.page.waitForTimeout(2000);
+      await venuePage.page
+        .locator(venuePage.selectors.searchVenue)
+        .fill('Web services');
+      await venuePage.page.getByText('Convergence').nth(0).click();
+      await venuePage.page.waitForTimeout(2000);
+      const editVenueButton = venuePage.page.locator(
+        venuePage.selectors.editVenueButton
+      );
+      await expect(editVenueButton).not.toBeVisible();
+    } else {
+      throw new Error(
+        'GROUPADMIN has permission to edit, delete, or create venues.'
+      );
+    }
+  });
 });
-
-// Test: Validate View Permission
-test('GROUPADMIN - Validate Venue Permission', async () => {
-  if (rolePermissions.venues.view === 'ownGroup') {
-    console.log(
-      'Group Admin has permission to view venues in their own group.'
-    );
-    //   await venuePage.navigateToVenuesPage();
-    //   const isVenueTableVisible = await venuePage.isElementVisible(venuePage.selectors.venueTable);
-    //   expect(isVenueTableVisible).toBeTruthy();
-  } else {
-    throw new Error('Group Admin does not have permission to view venues.');
-  }
-});
-
-// Test: Validate Create Permission
-//   test('@groupadmin - Validate Create Permission', async () => {
-//     if (!rolePermissions.venues.create) {
-//       console.log('Group Admin does NOT have permission to create venues.');
-//       expect(rolePermissions.venues.create).toBeFalsy();
-//     } else {
-//       throw new Error('Unexpected permission to create venues.');
-//     }
-//   });
-
-//   // Test: Validate Edit Permission
-//   test('@groupadmin - Validate Edit Permission', async () => {
-//     if (!rolePermissions.venues.edit) {
-//       console.log('Group Admin does NOT have permission to edit venues.');
-//       expect(rolePermissions.venues.edit).toBeFalsy();
-//     } else {
-//       throw new Error('Unexpected permission to edit venues.');
-//     }
-//   });
-
-//   // Test: Validate Delete Permission
-//   test('@groupadmin - Validate Delete Permission', async () => {
-//     if (!rolePermissions.venues.delete) {
-//       console.log('Group Admin does NOT have permission to delete venues.');
-//       expect(rolePermissions.venues.delete).toBeFalsy();
-//     } else {
-//       throw new Error('Unexpected permission to delete venues.');
-//     }
-//   });
