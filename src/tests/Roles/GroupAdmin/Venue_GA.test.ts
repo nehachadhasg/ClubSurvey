@@ -80,7 +80,7 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
       await venuePage.page.waitForTimeout(2000);
       await venuePage.page
         .locator(venuePage.selectors.searchVenue)
-        .fill('Web services');
+        .fill('Methodologies');
       await venuePage.page.waitForTimeout(2000);
       const venue = venuePage.page.getByText('Convergence').nth(0);
       await expect(venue).toBeVisible();
@@ -103,7 +103,7 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
       await venuePage.page.waitForTimeout(2000);
       await venuePage.page
         .locator(venuePage.selectors.searchVenue)
-        .fill('Web services');
+        .fill('Methodologies');
       await venuePage.page.getByText('Convergence').nth(0).click();
       await venuePage.page.waitForTimeout(2000);
       const editVenueButton = venuePage.page.locator(
