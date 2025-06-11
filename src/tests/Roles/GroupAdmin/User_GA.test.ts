@@ -105,7 +105,7 @@ test.describe('GROUPADMIN - Users Permissions Tests', () => {
       const lastName = faker.person.lastName();
       const email = faker.internet.email();
       const role = 'Venue Manager';
-      const assignTo = 'Web services';
+      const assignTo = 'Methodologies';
 
       const newFirstName = faker.person.firstName();
       const newLastName = faker.person.lastName();
