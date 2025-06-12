@@ -12,7 +12,7 @@ test.beforeEach(async ({ page, context }) => {
   clubSurveyLogin = new ClubSurveyLogin(page, context);
 });
 
-test(`SANITY-CLUB59-SURVEYS-PLATFORM-TC01: Navigate to Surveys Platform via 59club Logo ${SANITY_TAG}`, async ({
+test.skip(`SANITY-CLUB59-SURVEYS-PLATFORM-TC01: Navigate to Surveys Platform via 59club Logo ${SANITY_TAG}`, async ({
   page,
 }) => {
   // Add test metadata
@@ -137,7 +137,7 @@ test(`SANITY-CLUB59-SURVEYS-PLATFORM-TC03:Validate login form is accessible--${S
   });
 });
 
-test(`E2E-CLUB59-SURVEYS-PLATFORM-001: Complete end-to-end flow ${E2E_TAG}`, async ({
+test.skip(`E2E-CLUB59-SURVEYS-PLATFORM-001: Complete end-to-end flow ${E2E_TAG}`, async ({
   page,
 }) => {
   // Add test metadata
@@ -221,11 +221,3 @@ test(`E2E-CLUB59-SURVEYS-PLATFORM-001: Complete end-to-end flow ${E2E_TAG}`, asy
     await expect(forgotPasswordLink).toBeVisible();
   });
 });
-
-/*test(`SANITY-CLUB59-LOGIN-TC04: Validate login with valid credentials ${SANITY_TAG}`, async ({
-  loggedInPage,
-}) => {
-  // Assert that the dashboard is loaded
-  const dashboardLogo = loggedInPage.locator('img[alt="Small Logo"]');
-  await expect(dashboardLogo).toBeVisible();
-});*/

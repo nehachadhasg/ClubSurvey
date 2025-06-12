@@ -12,7 +12,7 @@ export class UserProfile extends PlaywrightWrapper {
   public selectors = {
     emailSelector: 'input[placeholder="Insert your email address"]',
     passwordSelector: 'input[placeholder="Enter your password"]',
-    clubsmalllogodashboard: 'img[alt="Small Logo"]',
+    clubsmalllogodashboard: 'img[alt="59club logo"][width="24"]',
     loginButtonSelector:
       'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
     userProfileIconClosed:
