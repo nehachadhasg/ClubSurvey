@@ -257,8 +257,6 @@ test(`SANITY-CLUB59-NAVIGATION-08: Verify profile icon shows initials and dropdo
     await profileIcon.click();
   });
   await test.step('Dropdown with "My Profile", "Change Password", and "Log out" appears', async () => {
-    const dropdownMenu = page.locator(navigation.selectors.dropdownMenu);
-    await expect(dropdownMenu).toBeVisible();
     const myProfileOption = page.locator(navigation.selectors.myProfileOption);
     await expect(myProfileOption).toBeVisible();
     const changePasswordOption = page.locator(

@@ -12,8 +12,8 @@ export class Navigation extends PlaywrightWrapper {
   public selectors = {
     emailSelector: 'input[placeholder="Insert your email address"]',
     passwordSelector: 'input[placeholder="Enter your password"]',
-    clubSmallLogo: 'img[alt="Small Logo"]',
-    clubLargeLogo: 'img[alt="Large Logo"]',
+    clubSmallLogo: 'img[alt="59club logo"][width="24"]',
+    clubLargeLogo: 'img[alt="59club logo"][width="51"]',
     loginButtonSelector:
       'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
     openSidebarButton: 'button[aria-label="Toggle sidebar"]',
