@@ -76,6 +76,10 @@ test.describe('FRANCHISEADMIN - Franchises Permissions Tests', () => {
     await franchisePage.navigateToFranchise();
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@franchiseadmin - Verify Franchise Admin can access all Settings tabs except "Franchises".', async () => {
     const franchisesPermissions = rolePermissions.settings;
     if (franchisesPermissions.view === 'allExceptFranchises') {

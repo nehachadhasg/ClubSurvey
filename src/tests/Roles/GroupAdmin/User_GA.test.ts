@@ -74,6 +74,10 @@ test.describe('GROUPADMIN - Users Permissions Tests', () => {
     });
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@groupadmin - Verify Group Manager can access only Users and Venues tabs in Settings.', async () => {
     if (
       rolePermissions.settings.view.includes('Users') &&

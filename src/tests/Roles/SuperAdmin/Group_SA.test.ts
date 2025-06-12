@@ -68,6 +68,10 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
     await groupPage.navigateToGroupsPage();
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@superadmin - Verify Super Admin can manage groups.', async () => {
     const groupsPermissions = rolePermissions.groups;
     if (
