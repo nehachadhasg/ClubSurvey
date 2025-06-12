@@ -119,13 +119,13 @@ test.describe('VENUEADMIN - Users Permissions Tests', () => {
       const cards = userPage.page.locator(userPage.selectors.settingsCards);
       await cards.nth(0).click();
       await userPage.page.waitForTimeout(2000);
-      const firstName = faker.person.firstName();
-      const lastName = faker.person.lastName();
+      const firstName = faker.person.firstName().slice(0, 4);
+      const lastName = faker.person.lastName().slice(0, 4);
       const email = faker.internet.email();
       const role = 'Staff Member';
       const assignTo = 'Methodologies';
-      const newFirstName = faker.person.firstName();
-      const newLastName = faker.person.lastName();
+      const newFirstName = faker.person.firstName().slice(0, 4);
+      const newLastName = faker.person.lastName().slice(0, 4);
 
       await userPage.page.locator(userPage.selectors.addUsersButton).click();
       await userPage.page
