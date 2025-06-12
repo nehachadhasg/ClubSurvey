@@ -72,6 +72,10 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
     });
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@groupadmin - Verify Group Manager can only view venues that belong to their group.', async () => {
     if (rolePermissions.venues.view === 'ownGroup') {
       await venuePage.navigateToVenuePage();
@@ -82,7 +86,7 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
         .locator(venuePage.selectors.searchVenue)
         .fill('Methodologies');
       await venuePage.page.waitForTimeout(2000);
-      const venue = venuePage.page.getByText('Convergence').nth(0);
+      const venue = venuePage.page.getByText('Solutions').nth(0);
       await expect(venue).toBeVisible();
     } else {
       throw new Error(
@@ -104,7 +108,7 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
       await venuePage.page
         .locator(venuePage.selectors.searchVenue)
         .fill('Methodologies');
-      await venuePage.page.getByText('Convergence').nth(0).click();
+      await venuePage.page.getByText('Solutions').nth(0).click();
       await venuePage.page.waitForTimeout(2000);
       const editVenueButton = venuePage.page.locator(
         venuePage.selectors.editVenueButton

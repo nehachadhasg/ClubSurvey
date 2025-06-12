@@ -74,6 +74,10 @@ test.describe('VENUEADMIN - Users Permissions Tests', () => {
     });
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@venueadmin - Verify Venue Manager has access to the Users tab in the Settings section.', async () => {
     if (rolePermissions.settings.view.includes('Users')) {
       await userPage.navigateToUsersPage();

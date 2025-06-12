@@ -67,6 +67,10 @@ test.describe('SUPERADMIN - Franchises Permissions Tests', () => {
     await franchisePage.navigateToFranchise();
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@superadmin - Verify Super Admin can manage franchises.', async () => {
     const franchisesPermissions = rolePermissions.franchises;
     if (

@@ -79,6 +79,10 @@ test.describe('FRANCHISEADMIN - Venues Permissions Tests', () => {
     await venuePage.page.waitForTimeout(2000);
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@franchiseadmin - Verify Franchise Admin can manage venues and attributes under their own franchise.', async () => {
     if (
       rolePermissions.venues.create === 'ownFranchise' &&
@@ -87,8 +91,8 @@ test.describe('FRANCHISEADMIN - Venues Permissions Tests', () => {
     ) {
       const venueName = faker.company.name().slice(0, 10);
       const newVenueName = faker.company.name().slice(0, 10);
-      const franchiseOption = 'Channels';
-      const groupOption = 'Mindshare';
+      const franchiseOption = 'Solutions';
+      const groupOption = 'Solutions';
       await venuePage.createVenue({
         venueName,
         franchiseOption,

@@ -78,6 +78,10 @@ test.describe('SUPERADMIN - Venue Permissions Tests', () => {
     await venuePage.page.waitForTimeout(1000);
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@superadmin - Verify Super Admin can manage venues and venue attributes.', async () => {
     const venuesPermissions = rolePermissions.venues;
     if (
@@ -99,7 +103,8 @@ test.describe('SUPERADMIN - Venue Permissions Tests', () => {
       await venuePage.page.waitForTimeout(2000);
       await venuePage.deleteVenue({ newVenueName });
       await venuePage.page.waitForTimeout(2000);
-
+      await venuePage.page.keyboard.press('Escape');
+      await venuePage.page.waitForTimeout(1000);
       await venuePage.createAttribute({ attributeName });
       await venuePage.page.waitForTimeout(2000);
       await venuePage.editAttribute({ attributeName, newAttributeName });

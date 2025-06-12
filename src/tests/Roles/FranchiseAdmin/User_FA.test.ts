@@ -79,6 +79,10 @@ test.describe('FRANCHISEADMIN - Users Permissions Tests', () => {
     await userPage.page.waitForTimeout(2000);
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@franchiseadmin - Verify Franchise Admin can manage users of all types except Super Admin and other Franchise Admins.', async () => {
     if (
       rolePermissions.users.create === 'allExceptSuperAdminAndFranchiseAdmin' &&
@@ -103,12 +107,14 @@ test.describe('FRANCHISEADMIN - Users Permissions Tests', () => {
       expect(
         page.getByRole('option', { name: 'Super Admin' })
       ).not.toBeVisible();
-      await userPage.page.getByLabel('Group Manager').click();
+      await userPage.page
+        .getByRole('option', { name: 'Group Manager' })
+        .click();
       await userPage.page.getByRole('button', { name: 'Cancel' }).click();
       await userPage.page.getByRole('button', { name: 'Confirm' }).click();
       await userPage.page
         .locator(userPage.selectors.searchUsers)
-        .fill('Lori_Goldner31@gmail.com');
+        .fill('john_silva@yopmail.com');
       await userPage.page.getByText('Franchise Manager').click();
       await expect(
         userPage.page.locator(userPage.selectors.editUserButton)

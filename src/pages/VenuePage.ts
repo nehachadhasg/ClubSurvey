@@ -46,6 +46,7 @@ export class VenuePage extends PlaywrightWrapper {
     deleteAttributeButton: 'p[class*="typography-body-1"]:has-text("Delete")',
     confirmDeleteAttributeButton:
       'button[class*="!bg-error-500"]:has-text("Confirm")',
+    threeDots: 'svg[class*="lucide lucide-ellipsis w-full h-4 w-4 rotate-90"]',
   };
 
   public someAbstractMethod(): void {
@@ -100,8 +101,7 @@ export class VenuePage extends PlaywrightWrapper {
     await this.page.getByText(newVenueName).click();
     await this.page.locator(this.selectors.editVenueButton).click();
     await this.page.locator(this.selectors.deleteVenueButton).click();
-    // TODO: BUG FOUND IN THIS FLOW - remove commented code when bug is fixed
-    // await this.page.locator(this.selectors.confirmDeleteButton).click();
+    await this.page.locator(this.selectors.confirmDeleteButton).click();
   }
 
   async createAttribute({ attributeName }: { attributeName: string }) {
@@ -127,10 +127,7 @@ export class VenuePage extends PlaywrightWrapper {
     newAttributeName: string;
   }) {
     await this.page.locator(this.selectors.searchVenue).fill(attributeName);
-    await this.page
-      .getByRole('row', { name: `${attributeName} details numeric 0` })
-      .getByRole('img')
-      .click();
+    await this.page.locator(this.selectors.threeDots).click();
     await this.page.locator(this.selectors.editAttributeButton).click();
     await this.page
       .locator(this.selectors.attributeNameInput)
@@ -140,10 +137,7 @@ export class VenuePage extends PlaywrightWrapper {
 
   async deleteAttribute({ newAttributeName }: { newAttributeName: string }) {
     await this.page.locator(this.selectors.searchVenue).fill(newAttributeName);
-    await this.page
-      .getByRole('row', { name: `${newAttributeName} details numeric 0` })
-      .getByRole('img')
-      .click();
+    await this.page.locator(this.selectors.threeDots).click();
     await this.page.locator(this.selectors.deleteAttributeButton).click();
     await this.page
       .locator(this.selectors.confirmDeleteAttributeButton)

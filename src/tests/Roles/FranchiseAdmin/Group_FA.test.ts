@@ -80,9 +80,13 @@ test.describe('FRANCHISEADMIN - Groups Permissions Tests', () => {
     await groupPage.page.waitForTimeout(2000);
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@franchiseadmin - Verify Franchise Admin can only view groups under their own franchise.', async () => {
     if (rolePermissions.groups.view === 'ownFranchise') {
-      await expect(groupPage.page.getByText('Channels').nth(0)).toBeVisible();
+      await expect(groupPage.page.getByText('Solutions').nth(0)).toBeVisible();
     } else {
       throw new Error(
         'FRANCHISEADMIN has permission to view groups under other franchises'
@@ -104,7 +108,7 @@ test.describe('FRANCHISEADMIN - Groups Permissions Tests', () => {
         .name()
         .slice(0, 10)
         .replace(/[^a-zA-Z\s]/g, '');
-      const franchiseOption = 'Channels';
+      const franchiseOption = 'Solutions';
       await groupPage.createGroup({
         groupName,
         franchiseOption,

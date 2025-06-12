@@ -74,6 +74,10 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
     await userPage.navigateToUsersPage();
   });
 
+  test.afterAll(async () => {
+    await browser.close();
+  });
+
   test('@superadmin - Verify Super Admin has access to all tabs in the Settings section.', async () => {
     if (rolePermissions.users.view === 'all') {
       const cards = userPage.page.locator(userPage.selectors.settingsCards);
