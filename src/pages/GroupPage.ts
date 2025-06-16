@@ -20,6 +20,8 @@ export class GroupPage extends PlaywrightWrapper {
     franchiseSelectInput:
       'button[aria-haspopup="menu"][type="button"]:has-text("Select Franchise")',
     createGroupButton: 'button[class*="font-body"]:has-text("Save")',
+    groupDropdown: 'button[type="button"]:has-text("Eyeballs")',
+    venueDropdown: 'button[type="button"]:has-text("All Venues")',
   };
 
   public someAbstractMethod(): void {

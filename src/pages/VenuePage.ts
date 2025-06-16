@@ -47,6 +47,7 @@ export class VenuePage extends PlaywrightWrapper {
     confirmDeleteAttributeButton:
       'button[class*="!bg-error-500"]:has-text("Confirm")',
     threeDots: 'svg[class*="lucide lucide-ellipsis w-full h-4 w-4 rotate-90"]',
+    venueDropdown: 'button[type="button"]:has-text("Bandwidth")',
   };
 
   public someAbstractMethod(): void {
