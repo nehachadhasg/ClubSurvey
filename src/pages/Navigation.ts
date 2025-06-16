@@ -36,6 +36,12 @@ export class Navigation extends PlaywrightWrapper {
     myProfileOption: 'div[role="menuitem"]:has-text("My Profile")',
     changePasswordOption: 'div[role="menuitem"]:has-text("Change Password")',
     logoutOption: 'div[role="menuitem"]:has-text("Logout")',
+    metricsDashboard: 'div[aria-label="Dashboard Statistics"]',
+    franchisesTable: 'table[aria-label="franchises table"]',
+    filtersButton: 'button[aria-label="Filters - Open filter menu"]',
+    searchBar: 'input[placeholder="Search..."]',
+    applyFiltersButton: 'button:has-text("Apply Now")',
+    metricsDashboardDiv: 'div[class*="relative flex w-1/4 flex-col pl-6"]',
   };
 
   public someAbstractMethod(): void {

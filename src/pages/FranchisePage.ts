@@ -26,6 +26,9 @@ export class FranchisePage extends PlaywrightWrapper {
     lastNameInput: 'input[placeholder="Enter Last Name"]',
     emailInput: 'input[placeholder="Enter Email Address"]',
     createFranchiseButton: 'button[class*="font-body"]:has-text("Save")',
+    groupDropdown: 'button[type="button"]:has-text("All Groups")',
+    venueDropdown: 'button[type="button"]:has-text("All Venues")',
+    franchiseDropdown: 'button[type="button"]:has-text("Models")',
   };
 
   public someAbstractMethod(): void {
