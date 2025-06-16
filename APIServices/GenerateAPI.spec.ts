@@ -1,7 +1,8 @@
 import test from "playwright/test";
-import { authenticateSuperAdmin, createFranchise,createGroup,getTimezone,createVenue, createFranchiseAdmin, createGroupAdmin, createVenueAdmin } from "./userManagement";
+import { authenticateSuperAdmin, createFranchise,createGroup,getTimezone,createVenue, createFranchiseAdmin, createGroupAdmin, createVenueAdmin } from "./userManagement.ts";
 import { fr } from "@faker-js/faker";
-import { clearUsersFile } from '../helpers/playwright'; // Import clearUsersFile
+import { clearUsersFile } from '../helpers/playwright.ts'; // Import clearUsersFile
+import { updateJSONFile } from "../helpers/jsonDataHandler.ts";
 
 test.beforeAll(async () => {
     // Clear the users.json file before running tests
@@ -14,9 +15,16 @@ test('Create User', async () => {
     const groupId = await createGroup(franchiseId);
     const timezoneId = await getTimezone();
     const venueId = await createVenue(franchiseId, groupId, timezoneId);
-    await createFranchiseAdmin(franchiseId, 2);
-    await createGroupAdmin(groupId, 4);
-    await createVenueAdmin(venueId, 5);
+    const userId_FA = await createFranchiseAdmin(franchiseId, 2);
+    const userId_GA = await createGroupAdmin(groupId, 4);
+    const userId_VA = await createVenueAdmin(venueId, 5);
+
+        // Save user IDs to users.json
+        updateJSONFile('../data/users.json', {
+            franchiseAdmin: userId_FA,
+            groupAdmin: userId_GA,
+            venueAdmin: userId_VA,
+        });
 
     }
 );

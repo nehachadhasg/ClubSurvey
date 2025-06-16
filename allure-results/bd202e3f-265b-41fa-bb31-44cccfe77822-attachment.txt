@@ -1,3 +1,0 @@
-Successfully loaded the URL: /en-GB/auth/login
-Contact Us is visible as expected.
-Contact Us Modal is visible as expected.

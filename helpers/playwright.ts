@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Page, test, expect, BrowserContext, Locator } from '@playwright/test';
 import * as path from 'path';
 import fs from 'fs';
 //import { ACCESS_MATRIX, Role } from '../constants/accessMatrix';
 import { ROLES } from '../constants/roles';
-
 
 import axios from 'axios';
 
@@ -445,7 +447,7 @@ export abstract class PlaywrightWrapper {
       const element = this.page.locator(locator);
       await this.page.waitForSelector(locator, {
         state: 'attached',
-        timeout: 60000,
+        timeout: 1000,
         strict: true,
       });
       if (await element.isVisible()) {
@@ -547,6 +549,7 @@ export abstract class PlaywrightWrapper {
     await test.step(`Checkbox ${name} is selected`, async () => {
       await this.page.focus(locator);
       await this.page.check(locator, { force: true });
+      // eslint-disable-next-line prefer-const
       let value = await this.page.isChecked(locator);
       if (value == false) {
         console.log('The CheckBox is not Clicked');
@@ -577,17 +580,6 @@ export abstract class PlaywrightWrapper {
   async fillwithNewInstance(selector: string, data: string) {
     await this.getNewPage().fill(selector, data);
   }
-  // async radioButton(locator: string, name: string) {
-  //     await test.step(`Checkbox ${name} is selected`, async () => {
-
-  //       if(!await this.page.isChecked(locator)){
-  //         await this.page.focus(locator)
-  //         await this.page.check(locator, { force: true });
-  //       }else{
-  //         console.log("The button is already checked")
-  //       }
-  //     })
-  // }
 }
 // Concrete implementation
 export class ConcretePlaywrightWrapper extends PlaywrightWrapper {
@@ -601,10 +593,9 @@ const outputFilePath = path.join(__dirname, '../data/users.json');
  * Clears the content of the users.json file by overwriting it with an empty array.
  */
 export async function clearUsersFile() {
-    fs.writeFileSync(outputFilePath, JSON.stringify([], null, 2));
-    console.log(`Cleared user data file: ${outputFilePath}`);
+  fs.writeFileSync(outputFilePath, JSON.stringify([], null, 2));
+  console.log(`Cleared user data file: ${outputFilePath}`);
 }
-
 
 // Helper function to write user data to a JSON file
 /**
@@ -615,20 +606,23 @@ export async function clearUsersFile() {
  * @param {number} role_id - The role ID of the user.
  */
 
-export function  writeUserToFile(username: string, password: string, role_id: number) {
-
+export function writeUserToFile(
+  username: string,
+  password: string,
+  role_id: number
+) {
   const userData = {
     [role_id]: {
       username,
       password,
-      role_id
-    }
+      role_id,
+    },
   };
 
   let existingData: any[] = [];
   if (fs.existsSync(outputFilePath)) {
-      const fileContent = fs.readFileSync(outputFilePath, 'utf-8');
-      existingData = JSON.parse(fileContent);
+    const fileContent = fs.readFileSync(outputFilePath, 'utf-8');
+    existingData = JSON.parse(fileContent);
   }
 
   existingData.push(userData);
@@ -637,40 +631,25 @@ export function  writeUserToFile(username: string, password: string, role_id: nu
   console.log(`User data written to file: ${outputFilePath}`);
 }
 
-
-export function getUserCredentials(role: string | number): { username: string; password: string } {
-   // Resolve role name to role ID if a string is passed
-   const roleId = typeof role === 'string' ? ROLES[role as keyof typeof ROLES] : role;
-console.log(roleId);
-   if (!roleId) {
-       throw new Error(`Invalid role: ${role}`);
-   }
-
-   // Read users.json file
-   const users = JSON.parse(fs.readFileSync(outputFilePath, 'utf-8'));
-   const user = users.find((u: { role_id: number }) => u.role_id === roleId);
-
-   if (user) {
-       return { username: user.username, password: user.password };
-   }
-
-   throw new Error(`No user found for role: ${role}`);
-}
-
-
-/**
- * Fetch permissions for a specific role.
- * @param {string} role - The role name (e.g., 'SuperAdmin', 'FranchiseAdmin').
- * @returns {object} - The permissions for the role.
- 
-export function getPermissionsForRole(role: string): typeof ACCESS_MATRIX[Role] {
-  // Resolve role name to role type
-  const resolvedRole = Object.keys(ROLES).find((key) => key === role.toUpperCase()) as Role;
-
-  if (!resolvedRole || !ACCESS_MATRIX[resolvedRole]) {
-      throw new Error(`No permissions defined for role: ${role}`);
+export function getUserCredentials(role: string | number): {
+  username: string;
+  password: string;
+} {
+  // Resolve role name to role ID if a string is passed
+  const roleId =
+    typeof role === 'string' ? ROLES[role as keyof typeof ROLES] : role;
+  console.log(roleId);
+  if (!roleId) {
+    throw new Error(`Invalid role: ${role}`);
   }
 
-  return ACCESS_MATRIX[resolvedRole];
+  // Read users.json file
+  const users = JSON.parse(fs.readFileSync(outputFilePath, 'utf-8'));
+  const user = users.find((u: { role_id: number }) => u.role_id === roleId);
+
+  if (user) {
+    return { username: user.username, password: user.password };
+  }
+
+  throw new Error(`No user found for role: ${role}`);
 }
-*/

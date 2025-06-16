@@ -1,4 +1,0 @@
-Error validating visibility of 59club Logo: Error: page.waitForSelector: Unsupported token "@alt" while parsing css selector "img[@alt="logo" and contains(@src, "clubLogo")]". Did you mean to CSS.escape it?
-Call log:
-  - waiting for img[@alt="logo" and contains(@src, "clubLogo")]
-
