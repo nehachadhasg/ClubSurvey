@@ -82,27 +82,4 @@ export class SurveyDetails extends PlaywrightWrapper {
     await this.page.locator(this.selectors.getStartedButton).click();
     await this.page.waitForTimeout(500);
   }
-
-  // public async login(
-  //   role: 'SUPER_ADMIN' | 'FRANCHISE_ADMIN' | 'GROUP_ADMIN' | 'VENUE_ADMIN'
-  // ) {
-  //   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //   // @ts-ignore
-  //   const { username, password } = environment.credentials[role];
-  //   await this.loadApp(environment.baseURL);
-
-  //   const pageTitle = await this.page.title();
-  //   if (pageTitle.startsWith('59club')) {
-  //     await this.type(this.selectors.emailSelector, 'Username', username);
-  //     await this.type(this.selectors.passwordSelector, 'Password', password);
-  //     await this.click(this.selectors.loginButtonSelector, 'Sign In', 'Button');
-  //     await this.page.waitForTimeout(1000);
-  //     await this.validateElementVisibility(
-  //       this.selectors.clubSmallLogo,
-  //       'Club Small Logo'
-  //     );
-  //   } else {
-  //     console.log('Login page is Skipped');
-  //   }
-  // }
 }
