@@ -28,7 +28,7 @@ export class SurveyDetails extends PlaywrightWrapper {
       'h2[class*="typography-heading-2 px-6 pb-6 pt-6 tracking-[-0.96px] md:pt-12"]:has-text("Survey Details")',
     backButton: 'button[aria-label="Back"]',
     surveyName:
-      'div[class*="max-w-[200px] truncate sm:max-w-[300px] md:max-w-[400px]"]',
+      'div[class*="max-w-[200px] truncate sm:max-w-[300px] md:max-w-[300px]"]',
     progressSteps: 'div[class*="flex cursor-pointer items-center gap-2"]',
     previewButton: 'button[title="Preview"]:has-text("Preview")',
     translationDropdown:

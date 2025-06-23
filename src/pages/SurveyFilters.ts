@@ -55,13 +55,13 @@ export class SurveyFilters extends PlaywrightWrapper {
     filterNameInput: 'input[placeholder="Enter Filter name"]',
     optionsInput: 'input[placeholder="Add Choice..."]',
     addOptionButton:
-      'div[class*=" flex cursor-pointer items-center justify-center rounded-sm p-2 text-greyscale-1000"]',
+      'div[class*="cursor-pointer flex items-center justify-center rounded-sm p-2 text-greyscale-1000"]',
     saveFilterButton: 'button[title="Save"]:has-text("Save")',
     selectedFilters: 'div[data-testid="filter-info-container"]',
     threeDotsButton:
       'svg[class="lucide lucide-ellipsis-vertical w-full"][data-testid="menu-trigger"]',
     deleteButton:
-      'p[class="typography-body-1 max-w-[350px] truncate  undefined"]:has-text("Delete")',
+      'p[class*="typography-body-1 max-w-[350px] truncate  text-greyscale-900"]:has-text("Delete")',
     deletedFilters: 'p:has-text("Deleted (1)")',
     restoreButton:
       'button[class*="font-body inline-flex items-center justify-center w-content rounded-sm transition-all active:scale-[0.98] bg-background text-greyscale-1000 typography-body-1-bold hover:bg-greyscale-200 focus:shadow-dark-green focus:bg-greyscale-200 focus:ring focus:ring-offset-2 focus:ring-offset-dark-green focus:ring-lime-shadow focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-dark-green focus-visible:ring-lime-shadow focus-visible:outline-none active:bg-greyscale-300 disabled:bg-background disabled:text-greyscale-600 disabled:cursor-not-allowed aria-disabled:bg-background aria-disabled:text-greyscale-600 aria-disabled:cursor-not-allowed px-[20px] py-[13px] max-h-[40px] max-w-content flex max-w-fit items-center justify-center gap-1 !p-2 hover:bg-greyscale-300"]:has-text("Add")',
