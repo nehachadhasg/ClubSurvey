@@ -100,6 +100,16 @@ export class SurveyQuestions extends PlaywrightWrapper {
     currencyDropdown: 'button[name="currrency-Pound £"]',
     answerBankButton: 'button:has-text("Answer Bank")',
     trashIcon: 'div[title="Delete Item"]',
+    descriptionText: 'p[class="typography-body-1 text-placeholder1"]',
+    tooltipIcon:
+      'svg[class="lucide lucide-info text-placeholder1"][width="16"][height="16"]',
+    removeDescriptionButton:
+      'p[class*="typography-label-bold mt-4 flex cursor-pointer items-center justify-start gap-2 text-greyscale-1000"]:has-text("Remove description")',
+    questionSettingsTooltips:
+      'svg[class="lucide lucide-info -ml-1 text-placeholder1"][width="17.5"][height="17.5"]',
+    selectMandatoryCommentsDropdown: 'span:has-text("Select options...")',
+    uploadIcon: 'svg[class="lucide lucide-upload"][width="16"][height="16"]',
+    uploadedImage: 'img[class="max-h-80 w-full object-cover object-center"]',
   };
 
   public someAbstractMethod(): void {
