@@ -12,7 +12,7 @@ export class UserProfile extends PlaywrightWrapper {
   public selectors = {
     emailSelector: 'input[placeholder="Insert your email address"]',
     passwordSelector: 'input[placeholder="Enter your password"]',
-    clubsmalllogodashboard: 'img[alt="Small Logo"]',
+    clubsmalllogodashboard: 'img[alt="59club logo"]',
     loginButtonSelector:
       'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
     userProfileIconClosed:
@@ -36,7 +36,7 @@ export class UserProfile extends PlaywrightWrapper {
       'button[class*="inline-flex"][class*="bg-dark-green"][class*="font-body"][class*="text-greyscale-0"]:has-text("Update")',
     firstNameInput: 'input[placeholder="Enter your first name"]',
     surnameInput: 'input[placeholder="Enter your surname"]',
-    emailInput: 'input[placeholder="Enter your email"]',
+    emailInput: 'input[type="email"][placeholder="Enter your email"][disabled]',
     roleSelectInput:
       'button[role="combobox"][name="role"][class*="h-10"][class*="rounded-sm"]',
     changePasswordButton:
@@ -48,7 +48,7 @@ export class UserProfile extends PlaywrightWrapper {
     confirmNewPasswordInput:
       'input[placeholder="Enter your password"][name*="confirmPassword"]',
     cancelChangePasswordButton:
-      'button[class*="font-body"][type="button"]:has-text("Cancel")',
+      'div[role="dialog"] button[type="button"][title="Cancel"]:has-text("Cancel")',
     confirmChangePasswordButton:
       'button[class*="font-body"][type="submit"]:has-text("Change Password")',
     changePasswordSuccessHeader:

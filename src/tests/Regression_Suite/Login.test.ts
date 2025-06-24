@@ -492,7 +492,7 @@ test(`E2E-CLUB59-LOGIN-003: Contact Us submit flow ${E2E_TAG}`, async ({
     );
     await firstNameInput.fill('John');
     await lastNameInput.fill('Doe');
-    await emailInput.fill('john.doe@example.com');
+    await emailInput.fill('surveytester41@gmail.com');
     await messageInput.fill('Hello World');
   };
   await test.step('Submit button is disabled when all fields are empty', async () => {

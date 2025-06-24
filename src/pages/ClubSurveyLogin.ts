@@ -22,7 +22,7 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     secondaryPasswordSelector: 'input[name="password"]',
     loginButtonSelector:
       'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]',
-    clublogo: 'img[alt="logo"][src*="clubLogo"]',
+    clublogo: 'img[alt="59club logo"][src*="clubLogo"]',
     contactus:
       'button[class*="inline-flex"][class*="bg-lime"][class*="typography-body-1-bold"]',
     contactUsImg: 'img[alt*="Need help or want to contact us?"]',

@@ -184,7 +184,7 @@ test(`SANITY-CLUB59-NAVIGATION-06: Verify user can select franchise and view rel
     const dashboardHeading = page.locator(
       navigation.selectors.dashboardHeading
     );
-    await expect(dashboardHeading).toHaveText('59Club Asia');
+    await expect(dashboardHeading).toHaveText('Elite Fairway Golf Group');
   });
 });
 
@@ -230,7 +230,7 @@ test(`SANITY-CLUB59-NAVIGATION-07: Verify user can navigate using group and venu
     const dashboardHeading = page.locator(
       navigation.selectors.dashboardHeading
     );
-    await expect(dashboardHeading).toHaveText(/Cape Town Country Club/);
+    await expect(dashboardHeading).toHaveText(/Stonebridge Golf & Country Estate/);
   });
 });
 

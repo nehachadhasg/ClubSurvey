@@ -145,13 +145,14 @@ test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, as
     await login(page);
     await navigateToProfilePage(page);
   });
-  await test.step('Verify First Name is Editable', async () => {
+  await test.step('Verify First Name is NOT Editable', async () => {
     const emailInput = page.locator(userProfile.selectors.emailInput);
     const updateButton = page.locator(userProfile.selectors.updateButton);
-    await emailInput.click();
+  /*  await emailInput.click();
     await emailInput.fill('jane.doeness@59club.com');
     expect(emailInput).toHaveValue('jane.doeness@59club.com');
-    expect(updateButton).toBeEnabled();
+    expect(updateButton).toBeEnabled();*/
+    expect(emailInput).toBeDisabled(); // Email should be read-only
   });
 });
 
@@ -213,8 +214,7 @@ test(`SANITY-CLUB59-USER-PROFILE-06: Cancel Change Password ${SANITY_TAG}`, asyn
   await test.step('Click "Cancel" button', async () => {
     const myProfileHeader = page.locator(userProfile.selectors.myProfileHeader);
     const cancelChangePasswordButton = page
-      .locator(userProfile.selectors.cancelChangePasswordButton)
-      .nth(1);
+      .locator(userProfile.selectors.cancelChangePasswordButton).nth(1);
     await cancelChangePasswordButton.click();
     await expect(myProfileHeader).toBeVisible();
   });
