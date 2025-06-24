@@ -25,12 +25,12 @@ export class Navigation extends PlaywrightWrapper {
     franchiseDropdown: 'button[type="button"]:has-text("All Franchises")',
     groupDropdown: 'button[type="button"]:has-text("All Groups")',
     venueDropdown: 'button[type="button"]:has-text("All Venues")',
-    asiaFranchiseOption: 'div[data-value="59Club Asia"]',
-    premiumGolfGroupOption: 'div[data-value="Premium Golf"]',
-    capeTownVenueOption: 'div[data-value="Cape Town Country Clubbb"]',
+    asiaFranchiseOption: 'div[data-value="Elite Fairway Golf Group"]',
+    premiumGolfGroupOption: 'div[data-value="Northern Region Clubs"]',
+    capeTownVenueOption: 'div[data-value="Stonebridge Golf & Country Estate"]',
     dashboardHeading: 'h1[class*="typography-heading-2"]',
     dropdownMenu:
-      'div[role="menu"][class*="z-50"][class*="min-w-[8rem]"][data-state="open"]',
+      'div[role="menu"][class*="z-50"][data-state="open"]',
     userProfileIconClosed:
       'div[type="button"][data-state="closed"][class*="bg-gold"][class*="text-black"]:has-text("CD")',
     myProfileOption: 'div[role="menuitem"]:has-text("My Profile")',

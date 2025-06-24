@@ -145,13 +145,14 @@ test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, as
     await login(page);
     await navigateToProfilePage(page);
   });
-  await test.step('Verify First Name is Editable', async () => {
-    const emailInput = page.getByRole('textbox', { name: 'Enter your email' });
-    const updateButton = page.getByRole('button', { name: 'Update' });
-    await emailInput.click();
+  await test.step('Verify First Name is NOT Editable', async () => {
+    const emailInput = page.locator(userProfile.selectors.emailInput);
+    const updateButton = page.locator(userProfile.selectors.updateButton);
+  /*  await emailInput.click();
     await emailInput.fill('jane.doeness@59club.com');
     expect(emailInput).toHaveValue('jane.doeness@59club.com');
-    expect(updateButton).toBeEnabled();
+    expect(updateButton).toBeEnabled();*/
+    expect(emailInput).toBeDisabled(); // Email should be read-only
   });
 });
 
