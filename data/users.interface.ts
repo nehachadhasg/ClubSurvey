@@ -3,5 +3,7 @@ export interface UserData {
         username: string;
         password: string;
         role_id: number;
+        user_id: string;
+
     };
 }

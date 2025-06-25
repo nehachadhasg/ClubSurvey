@@ -1,4 +1,0 @@
-Error validating visibility of Contact Us Modal Close Button: Error: page.waitForSelector: Unexpected token "" while parsing css selector "div[class*="cursor-pointer"][class*="bg-greyscale-100"". Did you mean to CSS.escape it?
-Call log:
-  - waiting for div[class*="cursor-pointer"][class*="bg-greyscale-100"
-
