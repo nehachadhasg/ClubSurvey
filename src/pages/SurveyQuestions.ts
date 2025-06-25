@@ -110,6 +110,15 @@ export class SurveyQuestions extends PlaywrightWrapper {
     selectMandatoryCommentsDropdown: 'span:has-text("Select options...")',
     uploadIcon: 'svg[class="lucide lucide-upload"][width="16"][height="16"]',
     uploadedImage: 'img[class="max-h-80 w-full object-cover object-center"]',
+    deleteImage: 'div[title="Delete"][aria-label="Delete"]',
+    timerIcon:
+      'svg[class="lucide lucide-timer text-greyscale-500"][width="16"][height="16"]',
+    surveyLengthWarningMessage:
+      'p[class="typography-body-1 mt-1 text-greyscale-1000"]:has-text("You have added more questions than the recommended limit of 20. Surveys with too many questions may result in lower completion rates and reduced quality of responses. Consider prioritising key questions to improve engagement.")',
+    surveyDurationWarningMessage:
+      'p[class="typography-body-1 mt-1 text-greyscale-1000"]:has-text("Your survey is estimated to take more than the recommended 10 minutes to complete. Longer surveys can lead to lower completion rates.")',
+    threeDots:
+      'svg[class="lucide lucide-ellipsis w-full h-4 w-4 rotate-90"][width="24"][height="24"]',
   };
 
   public someAbstractMethod(): void {

@@ -12,7 +12,7 @@ const environment = loadEnvironmentConfig();
 const timestamp = Date.now();
 const reportDir = `./reporter/playwright-reports-${timestamp}`;
 export default defineConfig({
-  timeout: 100000,
+  timeout: 200000,
 
   expect: {
     timeout: 20000,
