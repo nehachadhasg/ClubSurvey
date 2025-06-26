@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { test, expect } from '@playwright/test';
 import { SANITY_TAG, E2E_TAG } from '../../../constants/tags';
 import { loadEnvironmentConfig } from '../../../config/configLoader';
@@ -138,21 +139,19 @@ test(`SANITY-CLUB59-USER-PROFILE-02: Verify Surname is Editable ${SANITY_TAG}`, 
   });
 });
 
-test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, async ({
+test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is View Only ${SANITY_TAG}`, async ({
   page,
 }) => {
   await test.step('Navigate to Profile page', async () => {
     await login(page);
     await navigateToProfilePage(page);
   });
-  await test.step('Verify First Name is NOT Editable', async () => {
+  await test.step('Verify Email is non Editable', async () => {
     const emailInput = page.locator(userProfile.selectors.emailInput);
     const updateButton = page.locator(userProfile.selectors.updateButton);
-  /*  await emailInput.click();
-    await emailInput.fill('jane.doeness@59club.com');
-    expect(emailInput).toHaveValue('jane.doeness@59club.com');
-    expect(updateButton).toBeEnabled();*/
-    expect(emailInput).toBeDisabled(); // Email should be read-only
+    await expect(emailInput).toBeDisabled();
+    expect(emailInput).toHaveValue('59qaadmin@yopmail.com');
+    expect(updateButton).toBeDisabled();
   });
 });
 
@@ -213,7 +212,9 @@ test(`SANITY-CLUB59-USER-PROFILE-06: Cancel Change Password ${SANITY_TAG}`, asyn
   });
   await test.step('Click "Cancel" button', async () => {
     const myProfileHeader = page.locator(userProfile.selectors.myProfileHeader);
-    const cancelChangePasswordButton = page.getByText('Cancel').nth(3);
+    const cancelChangePasswordButton = page
+      .locator(userProfile.selectors.cancelChangePasswordButton)
+      .nth(1);
     await cancelChangePasswordButton.click();
     await expect(myProfileHeader).toBeVisible();
   });

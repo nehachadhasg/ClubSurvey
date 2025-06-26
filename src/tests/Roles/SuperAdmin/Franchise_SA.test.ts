@@ -71,7 +71,7 @@ test.describe('SUPERADMIN - Franchises Permissions Tests', () => {
     await browser.close();
   });
 
-  test('@superadmin - Verify Super Admin can manage franchises.', async () => {
+  test('@superadmin - Verify Super Admin can manage ( create, edit, delete) franchises.', async () => {
     const franchisesPermissions = rolePermissions.franchises;
     if (
       franchisesPermissions.create &&

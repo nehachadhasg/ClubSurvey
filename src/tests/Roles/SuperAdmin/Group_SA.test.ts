@@ -72,7 +72,7 @@ test.describe('SUPERADMIN - Groups Permissions Tests', () => {
     await browser.close();
   });
 
-  test('@superadmin - Verify Super Admin can manage groups.', async () => {
+  test('@superadmin - Verify Super Admin can create,edit,delete groups.', async () => {
     const groupsPermissions = rolePermissions.groups;
     if (
       groupsPermissions.create &&

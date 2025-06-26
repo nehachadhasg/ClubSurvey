@@ -180,7 +180,7 @@ test.describe('GROUPADMIN - Users Permissions Tests', () => {
 
       await userPage.page
         .locator(userPage.selectors.searchUsers)
-        .fill('John Princess');
+        .fill('Braden');
 
       const groupAdmin = userPage.page.locator(userPage.selectors.groupAdmin);
       const editUserButton = userPage.page

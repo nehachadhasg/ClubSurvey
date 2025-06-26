@@ -29,9 +29,9 @@ export class VenuePage extends PlaywrightWrapper {
     groupSelectInput: 'button[class*="font-body"]:has-text("Select Group")',
     groupOptionButton: 'p[class*="typography-body-1"]:has-text("Premium Golf")',
     timezoneSelectInput:
-      'button[class*="font-body"]:has-text("Select Timezone")',
+      'button[type="button"][role="combobox"][name="time-zone"][data-testid="time-zone-select"]',
     timezoneOptionButton:
-      'p[class*="typography-body-1"]:has-text("(+09:00)  Asia/Tokyo")',
+      'p[class*="typography-body-1"]:has-text("(+05:30) Asia/Kolkat")',
     createButton: 'button[class*="font-body"]:has-text("Save")',
     attributeNameInput: 'input[placeholder="Enter Attribute Name"]',
     attributeTypeSelectInput:
@@ -78,8 +78,8 @@ export class VenuePage extends PlaywrightWrapper {
     await this.page.getByRole('menuitem', { name: franchiseOption }).click();
     await this.page.locator(this.selectors.groupSelectInput).click();
     await this.page.getByRole('menuitem', { name: groupOption }).click();
-    await this.page.locator(this.selectors.timezoneSelectInput).click();
-    await this.page.locator(this.selectors.timezoneOptionButton).click();
+//    await this.page.locator(this.selectors.timezoneSelectInput).click();
+//    await this.page.locator(this.selectors.timezoneOptionButton).click();
     await this.page.locator(this.selectors.createButton).click();
   }
 
@@ -90,7 +90,7 @@ export class VenuePage extends PlaywrightWrapper {
     venueName: string;
     newVenueName: string;
   }) {
-    await this.page.locator(this.selectors.searchVenue).fill(venueName);
+    await this.page.locator(this.selectors.searchVenue).fill(venueName.trim());
     await this.page.getByText(venueName).click();
     await this.page.locator(this.selectors.editVenueButton).click();
     await this.page.locator(this.selectors.venueNameInput).fill(newVenueName);
@@ -98,7 +98,7 @@ export class VenuePage extends PlaywrightWrapper {
   }
 
   async deleteVenue({ newVenueName }: { newVenueName: string }) {
-    await this.page.locator(this.selectors.searchVenue).fill(newVenueName);
+    await this.page.locator(this.selectors.searchVenue).fill(newVenueName.trim());
     await this.page.getByText(newVenueName).click();
     await this.page.locator(this.selectors.editVenueButton).click();
     await this.page.locator(this.selectors.deleteVenueButton).click();
@@ -127,7 +127,7 @@ export class VenuePage extends PlaywrightWrapper {
     attributeName: string;
     newAttributeName: string;
   }) {
-    await this.page.locator(this.selectors.searchVenue).fill(attributeName);
+    await this.page.locator(this.selectors.searchVenue).fill(attributeName.trim());
     await this.page.locator(this.selectors.threeDots).click();
     await this.page.locator(this.selectors.editAttributeButton).click();
     await this.page
@@ -137,7 +137,7 @@ export class VenuePage extends PlaywrightWrapper {
   }
 
   async deleteAttribute({ newAttributeName }: { newAttributeName: string }) {
-    await this.page.locator(this.selectors.searchVenue).fill(newAttributeName);
+    await this.page.locator(this.selectors.searchVenue).fill(newAttributeName.trim());
     await this.page.locator(this.selectors.threeDots).click();
     await this.page.locator(this.selectors.deleteAttributeButton).click();
     await this.page

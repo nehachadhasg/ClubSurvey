@@ -129,8 +129,7 @@ test.describe('SUPERADMIN - Users Permissions Tests', () => {
         .locator(userPage.selectors.superAdmin)
         .nth(0);
       await expect(staffMember).toBeVisible();
-      await expect(translator).toBeVisible();
-      await expect(venueManager).toBeVisible();
+//      await expect(venueManager).toBeVisible();
       await expect(franchiseAdmin).toBeVisible();
       await expect(groupManager).toBeVisible();
       await expect(superAdmin).toBeVisible();

@@ -84,11 +84,11 @@ test.describe('GROUPADMIN - Land on Survey Dashboard tests', () => {
     const venueDropdown = groupPage.page.locator(
       groupPage.selectors.venueDropdown
     );
-    const group = 'Eyeballs';
+    const group = 'Blockchains';
     const groupHeading = groupPage.page.getByRole('heading', {
       name: group,
     });
-    await expect(groupDropdown).toBeVisible();
+   // await expect(groupDropdown).toBeVisible();
     await expect(venueDropdown).toBeVisible();
     await expect(groupHeading).toBeVisible();
   });

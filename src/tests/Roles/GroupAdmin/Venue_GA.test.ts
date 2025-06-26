@@ -86,7 +86,10 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
         .locator(venuePage.selectors.searchVenue)
         .fill('Methodologies');
       await venuePage.page.waitForTimeout(2000);
-      const venue = venuePage.page.getByText('Solutions').nth(0);
+            await venuePage.page
+        .locator(venuePage.selectors.searchVenue)
+        .clear();
+      const venue = venuePage.page.getByText('Models').nth(0);
       await expect(venue).toBeVisible();
     } else {
       throw new Error(
@@ -108,7 +111,11 @@ test.describe('GROUPADMIN - Venues Permissions Tests', () => {
       await venuePage.page
         .locator(venuePage.selectors.searchVenue)
         .fill('Methodologies');
-      await venuePage.page.getByText('Solutions').nth(0).click();
+      await venuePage.page.waitForTimeout(2000); 
+      await venuePage.page 
+              .locator(venuePage.selectors.searchVenue)
+        .clear();
+      await venuePage.page.getByText('Models').nth(0).click();
       await venuePage.page.waitForTimeout(2000);
       const editVenueButton = venuePage.page.locator(
         venuePage.selectors.editVenueButton

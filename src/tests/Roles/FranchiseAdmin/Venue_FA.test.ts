@@ -91,8 +91,8 @@ test.describe('FRANCHISEADMIN - Venues Permissions Tests', () => {
     ) {
       const venueName = faker.company.name().slice(0, 10);
       const newVenueName = faker.company.name().slice(0, 10);
-      const franchiseOption = 'Solutions';
-      const groupOption = 'Solutions';
+      const franchiseOption = 'Paradigm';
+      const groupOption = 'Blockchains';
       await venuePage.createVenue({
         venueName,
         franchiseOption,

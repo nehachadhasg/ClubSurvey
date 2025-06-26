@@ -86,7 +86,7 @@ test.describe('FRANCHISEADMIN - Groups Permissions Tests', () => {
 
   test('@franchiseadmin - Verify Franchise Admin can only view groups under their own franchise.', async () => {
     if (rolePermissions.groups.view === 'ownFranchise') {
-      await expect(groupPage.page.getByText('Solutions').nth(0)).toBeVisible();
+      await expect(groupPage.page.getByText('Blockchains').nth(0)).toBeVisible();
     } else {
       throw new Error(
         'FRANCHISEADMIN has permission to view groups under other franchises'
@@ -108,7 +108,7 @@ test.describe('FRANCHISEADMIN - Groups Permissions Tests', () => {
         .name()
         .slice(0, 10)
         .replace(/[^a-zA-Z\s]/g, '');
-      const franchiseOption = 'Solutions';
+      const franchiseOption = 'Paradigm';
       await groupPage.createGroup({
         groupName,
         franchiseOption,

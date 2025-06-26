@@ -66,7 +66,7 @@ export default defineConfig({
         headless: false,
         viewport: null,
         launchOptions: {
-          slowMo: 300,
+          slowMo: 400,
           args: [
             '--start-maximized',
             '--disable-web-security',

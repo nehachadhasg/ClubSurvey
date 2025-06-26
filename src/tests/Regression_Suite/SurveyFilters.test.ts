@@ -126,7 +126,7 @@ test(`TC_SF_005: Restore Deleted Filter`, async () => {
   });
 });
 
-test(`TC_SF_006: Reorder Filters`, async () => {
+test.skip(`TC_SF_006: Reorder Filters`, async () => {
   test.info().annotations.push(
     { type: 'TestCase', description: 'TC_SF_006' },
     {

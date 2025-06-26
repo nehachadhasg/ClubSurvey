@@ -115,6 +115,9 @@ test.describe('FRANCHISEADMIN - Users Permissions Tests', () => {
       await userPage.page
         .locator(userPage.selectors.searchUsers)
         .fill('john_silva@yopmail.com');
+        await userPage.page
+        .locator(userPage.selectors.searchUsers)
+        .clear();
       await userPage.page.getByText('Franchise Manager').click();
       await expect(
         userPage.page.locator(userPage.selectors.editUserButton)

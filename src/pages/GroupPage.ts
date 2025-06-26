@@ -57,15 +57,15 @@ export class GroupPage extends PlaywrightWrapper {
     groupName: string;
     newGroupName: string;
   }) {
-    await this.page.locator(this.selectors.searchGroups).fill(groupName);
+    await this.page.locator(this.selectors.searchGroups).fill(groupName.trim());
     await this.page.getByText(groupName).click();
     await this.page.locator(this.selectors.editGroupButton).click();
-    await this.page.locator(this.selectors.groupNameInput).fill(newGroupName);
+    await this.page.locator(this.selectors.groupNameInput).fill(newGroupName.trim());
     await this.page.locator(this.selectors.createGroupButton).click();
   }
 
   async deleteGroup({ newGroupName }: { newGroupName: string }) {
-    await this.page.locator(this.selectors.searchGroups).fill(newGroupName);
+    await this.page.locator(this.selectors.searchGroups).fill(newGroupName.trim());
     await this.page.getByText(newGroupName).click();
     await this.page.locator(this.selectors.editGroupButton).click();
     await this.page.locator(this.selectors.deleteGroupButton).click();
