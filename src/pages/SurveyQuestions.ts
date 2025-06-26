@@ -119,6 +119,10 @@ export class SurveyQuestions extends PlaywrightWrapper {
       'p[class="typography-body-1 mt-1 text-greyscale-1000"]:has-text("Your survey is estimated to take more than the recommended 10 minutes to complete. Longer surveys can lead to lower completion rates.")',
     threeDots:
       'svg[class="lucide lucide-ellipsis w-full h-4 w-4 rotate-90"][width="24"][height="24"]',
+    backToSurveysListSvg: 'svg[class*="lucide lucide-chevron-left h-5 w-5"]',
+    searchInput: 'input[placeholder="Search..."][type="search"]',
+    threeDotsSvg:
+      'svg[class*="lucide lucide-ellipsis h-4 w-4 rotate-90"][height="24"][width="24"]',
   };
 
   public someAbstractMethod(): void {
@@ -411,6 +415,19 @@ export class SurveyQuestions extends PlaywrightWrapper {
       .fill(questionTooltip);
     await this.page.getByText('Time Info').click();
     await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async cleanUpSurvey() {
+    await this.page.locator(this.selectors.backToSurveysListSvg).click();
+    await this.page.waitForTimeout(1000);
+    await this.page.locator(this.selectors.searchInput).fill('Untitled Survey');
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.threeDotsSvg).first().click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Delete').first().click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('button', { name: 'Confirm' }).click();
     await this.page.waitForTimeout(500);
   }
 }
