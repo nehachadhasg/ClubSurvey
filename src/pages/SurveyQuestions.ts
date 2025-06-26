@@ -91,7 +91,7 @@ export class SurveyQuestions extends PlaywrightWrapper {
     enterRowsInput: 'input[placeholder="Enter row..."]',
     enterColumnsInput: 'input[placeholder="Enter column..."]',
     minimumRatingDropdown: 'button[name="rating-min-0"]',
-    maximumRatingDropdown: 'button[name="rating-max-1"]',
+    maximumRatingDropdown: 'button[name="rating-max-2"]',
     switchButtons:
       'button[role="switch"][value="on"][class*="peer inline-flex h-[24px] w-[50px] shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors data-[state=checked]:bg-dark-green data-[state=unchecked]:bg-greyscale-200 hover:ring-2 hover:ring-dark-green-shadow focus:outline-none focus:ring-[2px] focus:ring-lime-shadow focus:hover:ring-dark-green-shadow focus-visible:outline-none focus-visible:ring focus-visible:ring-offset-[1px] focus-visible:ring-lime-shadow focus-visible:hover:ring-dark-green-shadow disabled:cursor-not-allowed disabled:bg-background disabled:opacity-50"]',
     npsErrorMessage:
@@ -184,6 +184,37 @@ export class SurveyQuestions extends PlaywrightWrapper {
     await this.page.waitForTimeout(500);
   }
 
+  public async createNewChoiceQuestionWithMultipleChoice(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string,
+    option1: string,
+    option2: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page
+      .locator(this.selectors.singleOrMultipleChoiceDropdown)
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Multiple Choice').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.enterChoiceInput).fill(option1);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterChoiceInput).fill(option2);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.addConditionButton).click();
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
   public async createNewMatrixQuestion(
     question: string,
     questionDescription: string,
@@ -198,6 +229,84 @@ export class SurveyQuestions extends PlaywrightWrapper {
     await this.page.locator(this.selectors.choiceQuestionDropdown).click();
     await this.page.waitForTimeout(100);
     await this.page.getByText('Matrix Scale').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.enterRowsInput).fill(row1);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterRowsInput).fill(row2);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterColumnsInput).fill(column1);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterColumnsInput).fill(column2);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewMatrixQuestionWithTickbox(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string,
+    row1: string,
+    row2: string,
+    column1: string,
+    column2: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Matrix Scale').click();
+    await this.page
+      .locator(this.selectors.singleOrMultipleChoiceDropdown)
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Tickbox').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.enterRowsInput).fill(row1);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterRowsInput).fill(row2);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterColumnsInput).fill(column1);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.enterColumnsInput).fill(column2);
+    await this.page.keyboard.press('Enter');
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewMatrixQuestionWithNumeric(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string,
+    row1: string,
+    row2: string,
+    column1: string,
+    column2: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Matrix Scale').click();
+    await this.page
+      .locator(this.selectors.singleOrMultipleChoiceDropdown)
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Numeric').click();
     await this.page.locator(this.selectors.enterQuestionInput).fill(question);
     await this.page.locator(this.selectors.addDescription).click();
     await this.page
@@ -243,6 +352,35 @@ export class SurveyQuestions extends PlaywrightWrapper {
       .fill(questionTooltip);
     await this.page.locator(this.selectors.switchButtons).nth(4).click();
     await this.page.locator(this.selectors.addConditionButton).click();
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewRatingQuestionWithNumeric(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Rating').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.minimumRatingDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('option', { name: '1', exact: true }).click();
+    await this.page.locator(this.selectors.maximumRatingDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('option', { name: '5', exact: true }).click();
+    await this.page.getByPlaceholder('Neutral').fill('Pleasantly mid');
     await this.page.locator(this.selectors.saveButton).click();
     await this.page.waitForTimeout(500);
   }
@@ -356,6 +494,112 @@ export class SurveyQuestions extends PlaywrightWrapper {
     await this.page.locator(this.selectors.currencyDropdown).click();
     await this.page.waitForTimeout(100);
     await this.page.getByText('USD $').click();
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewNumericalInputQuestionWithNumber(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Numeric Input').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewNumericalInputQuestionWithPercentage(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Numeric Input').click();
+    await this.page
+      .locator(this.selectors.singleOrMultipleChoiceDropdown)
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Percentage').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewNumericalInputQuestionWithDecimalPoint(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Numeric Input').click();
+    await this.page
+      .locator(this.selectors.singleOrMultipleChoiceDropdown)
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Decimal point').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.saveButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async createNewNumericalInputQuestionWithCurrencyPound(
+    question: string,
+    questionDescription: string,
+    questionTooltip: string
+  ) {
+    await this.page.locator(this.selectors.addQuestionButton).click();
+    await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Numeric Input').click();
+    await this.page
+      .locator(this.selectors.singleOrMultipleChoiceDropdown)
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Currency').click();
+    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
+    await this.page.locator(this.selectors.addDescription).click();
+    await this.page
+      .locator(this.selectors.addDescriptionInput)
+      .fill(questionDescription);
+    await this.page
+      .locator(this.selectors.addTooltipInput)
+      .fill(questionTooltip);
+    await this.page.locator(this.selectors.currencyDropdown).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('option', { name: 'Pound £' }).click();
     await this.page.locator(this.selectors.saveButton).click();
     await this.page.waitForTimeout(500);
   }

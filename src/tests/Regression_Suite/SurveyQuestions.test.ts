@@ -95,6 +95,18 @@ test(`TC-653-03: Add Choice Question`, async () => {
     );
     await expect(questionItem).toBeVisible();
     await expect(questionItem).toContainText(question);
+    await surveyQuestions.createNewChoiceQuestionWithMultipleChoice(
+      question,
+      questionDescription,
+      questionTooltip,
+      option1,
+      option2
+    );
+    const questionItemMultipleChoice = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(3)'
+    );
+    await expect(questionItemMultipleChoice).toBeVisible();
+    await expect(questionItemMultipleChoice).toContainText(question);
   });
 });
 
@@ -129,6 +141,34 @@ test(`TC-653-04: Add Matrix Question`, async () => {
     );
     await expect(questionItem).toBeVisible();
     await expect(questionItem).toContainText(question);
+    await surveyQuestions.createNewMatrixQuestionWithTickbox(
+      question,
+      questionDescription,
+      questionTooltip,
+      row1,
+      row2,
+      column1,
+      column2
+    );
+    const questionItemTickbox = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(3)'
+    );
+    await expect(questionItemTickbox).toBeVisible();
+    await expect(questionItemTickbox).toContainText(question);
+    await surveyQuestions.createNewMatrixQuestionWithNumeric(
+      question,
+      questionDescription,
+      questionTooltip,
+      row1,
+      row2,
+      column1,
+      column2
+    );
+    const questionItemNumeric = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(4)'
+    );
+    await expect(questionItemNumeric).toBeVisible();
+    await expect(questionItemNumeric).toContainText(question);
   });
 });
 
@@ -154,6 +194,17 @@ test(`TC-653-05: Add Rating Question`, async () => {
     );
     await expect(questionItem).toBeVisible();
     await expect(questionItem).toContainText(question);
+
+    await surveyQuestions.createNewRatingQuestionWithNumeric(
+      question,
+      questionDescription,
+      questionTooltip
+    );
+    const questionItemNumeric = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(3)'
+    );
+    await expect(questionItemNumeric).toBeVisible();
+    await expect(questionItemNumeric).toContainText(question);
   });
 });
 
@@ -257,6 +308,48 @@ test(`TC-653-09: Add Numerical Input Question`, async () => {
     );
     await expect(questionItem).toBeVisible();
     await expect(questionItem).toContainText(question);
+    await surveyQuestions.createNewNumericalInputQuestionWithNumber(
+      question,
+      questionDescription,
+      questionTooltip
+    );
+    const questionItemNumeric = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(3)'
+    );
+    await expect(questionItemNumeric).toBeVisible();
+    await expect(questionItemNumeric).toContainText(question);
+    await surveyQuestions.createNewNumericalInputQuestionWithPercentage(
+      question,
+      questionDescription,
+      questionTooltip
+    );
+    const questionItemPercentage = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(4)'
+    );
+    await expect(questionItemPercentage).toBeVisible();
+    await expect(questionItemPercentage).toContainText(question);
+
+    await surveyQuestions.createNewNumericalInputQuestionWithDecimalPoint(
+      question,
+      questionDescription,
+      questionTooltip
+    );
+    const questionItemDecimalPoint = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(5)'
+    );
+    await expect(questionItemDecimalPoint).toBeVisible();
+    await expect(questionItemDecimalPoint).toContainText(question);
+
+    await surveyQuestions.createNewNumericalInputQuestionWithCurrencyPound(
+      question,
+      questionDescription,
+      questionTooltip
+    );
+    const questionItemCurrencyPound = surveyQuestions.page.locator(
+      '.mt-5 > div > div:nth-child(6)'
+    );
+    await expect(questionItemCurrencyPound).toBeVisible();
+    await expect(questionItemCurrencyPound).toContainText(question);
   });
 });
 
