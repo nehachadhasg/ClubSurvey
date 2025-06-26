@@ -12,6 +12,10 @@ test.beforeEach(async ({ page, context }) => {
   await surveyDetails.navigateToSurveyDetails();
 });
 
+test.afterEach(async () => {
+  await surveyDetails.cleanUpSurvey();
+});
+
 test(`TC_SD_001: Navigate to Survey Details`, async () => {
   test.info().annotations.push(
     { type: 'TestCase', description: 'TC_SD_001' },

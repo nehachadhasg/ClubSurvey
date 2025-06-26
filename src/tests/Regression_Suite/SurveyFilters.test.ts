@@ -12,6 +12,10 @@ test.beforeEach(async ({ page, context }) => {
   await surveyFilters.navigateToSurveyFilters();
 });
 
+test.afterEach(async () => {
+  await surveyFilters.cleanUpSurvey();
+});
+
 test(`TC_SF_001: Navigate to Survey Filters`, async () => {
   test.info().annotations.push(
     { type: 'TestCase', description: 'TC_SF_001' },

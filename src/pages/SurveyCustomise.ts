@@ -2,11 +2,10 @@
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
 import { loadEnvironmentConfig } from '../../config/configLoader';
-import { expect } from 'playwright/test';
 
 const environment = loadEnvironmentConfig();
 
-export class SurveyQuestions extends PlaywrightWrapper {
+export class SurveyCustomise extends PlaywrightWrapper {
   constructor(page: Page, context: BrowserContext) {
     super(page, context);
   }
@@ -119,14 +118,18 @@ export class SurveyQuestions extends PlaywrightWrapper {
       'p[class="typography-body-1 mt-1 text-greyscale-1000"]:has-text("Your survey is estimated to take more than the recommended 10 minutes to complete. Longer surveys can lead to lower completion rates.")',
     threeDots:
       'svg[class="lucide lucide-ellipsis w-full h-4 w-4 rotate-90"][width="24"][height="24"]',
-    backToSurveysListSvg: 'svg[class*="lucide lucide-chevron-left h-5 w-5"]',
-    searchInput: 'input[placeholder="Search..."][type="search"]',
-    threeDotsSvg:
-      'svg[class*="lucide lucide-ellipsis h-4 w-4 rotate-90"][height="24"][width="24"]',
+    emailPreviewButton:
+      'button[class*="font-body inline-flex items-center justify-center w-content rounded-sm transition-all active:scale-[0.98] bg-dark-green text-greyscale-0 typography-body-1-bold hover:bg-dark-green-dark focus:shadow-dark-green focus:bg-dark-green-dark focus:ring focus:ring-offset-2 focus:ring-offset-dark-green focus:ring-lime-shadow focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-dark-green focus-visible:ring-lime-shadow focus-visible:outline-none active:bg-dark-green-2 disabled:bg-greyscale-600 disabled:cursor-not-allowed disabled:pointer-events-none aria-disabled:bg-greyscale-600 aria-disabled:cursor-not-allowed aria-disabled:pointer-events-none px-[20px] py-[13px] max-h-[40px] max-w-content flex flex-1 items-center justify-center gap-1 rounded-sm px-4 py-2 text-sm font-normal transition-colors hover:bg-greyscale-50 cursor-pointer text-placeholder1 hover:text-white !bg-white hover:!text-greyscale-900"]:has-text("Email")',
+    surveyPreviewButton:
+      'button[class*="font-body inline-flex items-center justify-center w-content rounded-sm transition-all active:scale-[0.98] bg-dark-green text-greyscale-0 typography-body-1-bold hover:bg-dark-green-dark focus:shadow-dark-green focus:bg-dark-green-dark focus:ring focus:ring-offset-2 focus:ring-offset-dark-green focus:ring-lime-shadow focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-dark-green focus-visible:ring-lime-shadow focus-visible:outline-none active:bg-dark-green-2 disabled:bg-greyscale-600 disabled:cursor-not-allowed disabled:pointer-events-none aria-disabled:bg-greyscale-600 aria-disabled:cursor-not-allowed aria-disabled:pointer-events-none px-[20px] py-[13px] max-h-[40px] max-w-content flex flex-1 items-center justify-center gap-1 rounded-sm px-4 py-2 text-sm font-normal transition-colors hover:bg-greyscale-50 cursor-pointer text-placeholder1 hover:text-white !bg-white hover:!text-greyscale-900"]:has-text("Survey")',
+    emailSpanPreview:
+      'span[class*="font-body text-body-1 text-greyscale-400"]:has-text("to Participant’s email address")',
+    surveyStyleButtons:
+      'button[class*="font-body inline-flex items-center justify-center w-content rounded-sm transition-all active:scale-[0.98] bg-transparent text-greyscale-1000 typography-body-1-bold hover:bg-greyscale-200 disabled:text-greyscale-600 disabled:cursor-not-allowed aria-disabled:text-greyscale-600 aria-disabled:cursor-not-allowed px-[20px] py-[13px] max-h-[40px] max-w-content relative !m-0 !min-h-[98px] max-w-min flex-col items-center justify-center !rounded-[14px] !bg-white !p-0 transition-all lg:!w-[116px] hover:!border-gray-400"]',
   };
 
   public someAbstractMethod(): void {
-    console.log('Abstract method implemented in SurveyQuestions');
+    console.log('Abstract method implemented in SurveyCustomise');
   }
 
   public async login(page: Page) {
@@ -139,7 +142,7 @@ export class SurveyQuestions extends PlaywrightWrapper {
     await page.waitForTimeout(1000);
   }
 
-  public async navigateToSurveyQuestions() {
+  public async navigateToSurveyCustomise() {
     await this.page.locator(this.selectors.tableRow).nth(0).click();
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.tableRow).nth(0).click();
@@ -156,278 +159,7 @@ export class SurveyQuestions extends PlaywrightWrapper {
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.continueButton).click();
     await this.page.waitForTimeout(500);
-  }
-
-  public async createNewChoiceQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string,
-    option1: string,
-    option2: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.enterChoiceInput).fill(option1);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.enterChoiceInput).fill(option2);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.addConditionButton).click();
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewMatrixQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string,
-    row1: string,
-    row2: string,
-    column1: string,
-    column2: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Matrix Scale').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.enterRowsInput).fill(row1);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.enterRowsInput).fill(row2);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.enterColumnsInput).fill(column1);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.enterColumnsInput).fill(column2);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewRatingQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Rating').click();
-    await this.page
-      .locator(this.selectors.singleOrMultipleChoiceDropdown)
-      .click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Stars').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.switchButtons).nth(4).click();
-    await this.page.locator(this.selectors.addConditionButton).click();
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewNPSQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('NPS').click();
-    await this.page.waitForTimeout(100);
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.saveButton).click();
-  }
-
-  public async createNewRankingQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string,
-    option1: string,
-    option2: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Ranking').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page
-      .locator(this.selectors.enterRankingChoiceInput)
-      .fill(option1);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.saveButton).click();
-    await expect(
-      this.page.getByText('Error: choices: At least two choices are required')
-    ).toBeVisible();
-    await this.page.waitForTimeout(1000);
-    await this.page
-      .locator(this.selectors.enterRankingChoiceInput)
-      .fill(option2);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewTextInputQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Text Question').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.switchButtons).nth(0).click();
-    await this.page.locator(this.selectors.switchButtons).nth(3).click();
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewNumericalInputQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Numeric Input').click();
-    await this.page
-      .locator(this.selectors.singleOrMultipleChoiceDropdown)
-      .click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Currency').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.currencyDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('USD $').click();
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewDropdownQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string,
-    option1: string,
-    option2: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Dropdown').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.locator(this.selectors.enterChoiceInput).fill(option1);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.enterChoiceInput).fill(option2);
-    await this.page.keyboard.press('Enter');
-    await this.page.locator(this.selectors.trashIcon).nth(1).click();
-    await this.page.locator(this.selectors.trashIcon).click();
-    await this.page.locator(this.selectors.answerBankButton).click();
-    await this.page
-      .locator('.pointer-events-none > .font-body')
-      .first()
-      .click();
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async createNewDateTimePickerQuestion(
-    question: string,
-    questionDescription: string,
-    questionTooltip: string
-  ) {
-    await this.page.locator(this.selectors.addQuestionButton).click();
-    await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.choiceQuestionDropdown).click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Date/Time Picker').click();
-    await this.page.locator(this.selectors.enterQuestionInput).fill(question);
-    await this.page.locator(this.selectors.addDescription).click();
-    await this.page
-      .locator(this.selectors.addDescriptionInput)
-      .fill(questionDescription);
-    await this.page
-      .locator(this.selectors.addTooltipInput)
-      .fill(questionTooltip);
-    await this.page.getByText('Time Info').click();
-    await this.page.locator(this.selectors.saveButton).click();
-    await this.page.waitForTimeout(500);
-  }
-
-  public async cleanUpSurvey() {
-    await this.page.locator(this.selectors.backToSurveysListSvg).click();
-    await this.page.waitForTimeout(1000);
-    await this.page.locator(this.selectors.searchInput).fill('Untitled Survey');
-    await this.page.waitForTimeout(100);
-    await this.page.locator(this.selectors.threeDotsSvg).first().click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByText('Delete').first().click();
-    await this.page.waitForTimeout(100);
-    await this.page.getByRole('button', { name: 'Confirm' }).click();
+    await this.page.locator(this.selectors.continueButton).click();
     await this.page.waitForTimeout(500);
   }
 }

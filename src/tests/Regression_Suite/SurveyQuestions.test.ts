@@ -12,6 +12,10 @@ test.beforeEach(async ({ page, context }) => {
   await surveyQuestions.navigateToSurveyQuestions();
 });
 
+test.afterEach(async () => {
+  await surveyQuestions.cleanUpSurvey();
+});
+
 test(`TC-653-01: Load Survey Questions Page`, async () => {
   test.info().annotations.push(
     { type: 'TestCase', description: 'TC-653-01' },

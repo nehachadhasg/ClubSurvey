@@ -50,6 +50,10 @@ export class SurveyDetails extends PlaywrightWrapper {
     continueButton: 'button[title="Continue"]:has-text("Continue")',
     questionsPageHeading:
       'h2[class*="typography-heading-2 flex justify-start gap-2 text-black"]:has-text("Questions")',
+    backSvg: 'svg[class*="lucide lucide-chevron-left h-5 w-5"]',
+    searchInput: 'input[placeholder="Search..."][type="search"]',
+    threeDotsSvg:
+      'svg[class*="lucide lucide-ellipsis h-4 w-4 rotate-90"][height="24"][width="24"]',
   };
 
   public someAbstractMethod(): void {
@@ -80,6 +84,19 @@ export class SurveyDetails extends PlaywrightWrapper {
     await this.page.locator(this.selectors.startFromScratchButton).click();
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.getStartedButton).click();
+    await this.page.waitForTimeout(500);
+  }
+
+  public async cleanUpSurvey() {
+    await this.page.locator(this.selectors.backSvg).click();
+    await this.page.waitForTimeout(1000);
+    await this.page.locator(this.selectors.searchInput).fill('Untitled Survey');
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.threeDotsSvg).first().click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Delete').first().click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('button', { name: 'Confirm' }).click();
     await this.page.waitForTimeout(500);
   }
 }

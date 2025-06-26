@@ -67,6 +67,10 @@ export class SurveyFilters extends PlaywrightWrapper {
       'button[class*="font-body inline-flex items-center justify-center w-content rounded-sm transition-all active:scale-[0.98] bg-background text-greyscale-1000 typography-body-1-bold hover:bg-greyscale-200 focus:shadow-dark-green focus:bg-greyscale-200 focus:ring focus:ring-offset-2 focus:ring-offset-dark-green focus:ring-lime-shadow focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-offset-dark-green focus-visible:ring-lime-shadow focus-visible:outline-none active:bg-greyscale-300 disabled:bg-background disabled:text-greyscale-600 disabled:cursor-not-allowed aria-disabled:bg-background aria-disabled:text-greyscale-600 aria-disabled:cursor-not-allowed px-[20px] py-[13px] max-h-[40px] max-w-content flex max-w-fit items-center justify-center gap-1 !p-2 hover:bg-greyscale-300"]:has-text("Add")',
     backSvg: 'svg[class="lucide lucide-chevron-left"]',
     dragSvg: 'svg[class="lucide lucide-grip-vertical text-greyscale-300"]',
+    backToSurveysListSvg: 'svg[class*="lucide lucide-chevron-left h-5 w-5"]',
+    searchInput: 'input[placeholder="Search..."][type="search"]',
+    threeDotsSvg:
+      'svg[class*="lucide lucide-ellipsis h-4 w-4 rotate-90"][height="24"][width="24"]',
   };
 
   public someAbstractMethod(): void {
@@ -134,5 +138,18 @@ export class SurveyFilters extends PlaywrightWrapper {
   public async deleteDropdownFilter() {
     await this.page.locator(this.selectors.threeDotsButton).click();
     await this.page.locator(this.selectors.deleteButton).click();
+  }
+
+  public async cleanUpSurvey() {
+    await this.page.locator(this.selectors.backToSurveysListSvg).click();
+    await this.page.waitForTimeout(1000);
+    await this.page.locator(this.selectors.searchInput).fill('Untitled Survey');
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.threeDotsSvg).first().click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByText('Delete').first().click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('button', { name: 'Confirm' }).click();
+    await this.page.waitForTimeout(500);
   }
 }
