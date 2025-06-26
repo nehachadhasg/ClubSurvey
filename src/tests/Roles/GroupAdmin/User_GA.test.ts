@@ -104,15 +104,20 @@ test.describe('GROUPADMIN - Users Permissions Tests', () => {
       await userPage.navigateToUsersPage();
       const cards = userPage.page.locator(userPage.selectors.settingsCards);
       await cards.nth(0).click();
-
       const firstName = faker.person.firstName();
       const lastName = faker.person.lastName();
       const email = faker.internet.email();
-      const role = 'Venue Manager';
-      const assignTo = 'Methodologies';
-
       const newFirstName = faker.person.firstName();
       const newLastName = faker.person.lastName();
+      const role = 'Venue Manager';
+      const assignTo = 'Methodologies';
+      const staffFirstName = faker.person.firstName();
+      const staffLastName = faker.person.lastName();
+      const staffEmail = faker.internet.email();
+      const newStaffFirstName = faker.person.firstName();
+      const newStaffLastName = faker.person.lastName();
+      const staffRole = 'Staff Member';
+      const assignToStaff = 'Methodologies';
 
       await userPage.createUser({
         firstName,
@@ -134,6 +139,32 @@ test.describe('GROUPADMIN - Users Permissions Tests', () => {
       await expect(
         userPage.page.getByText('The user was deleted successfully.')
       ).toBeVisible();
+      await userPage.page.waitForTimeout(1000);
+      await userPage.createUser({
+        firstName: staffFirstName,
+        lastName: staffLastName,
+        email: staffEmail,
+        role: staffRole,
+        assignTo: assignToStaff,
+      });
+      await userPage.page.waitForTimeout(2000);
+      await userPage.editUser({
+        firstName: staffFirstName,
+        lastName: staffLastName,
+        email: staffEmail,
+        newFirstName: newStaffFirstName,
+        newLastName: newStaffLastName,
+      });
+      await userPage.page.waitForTimeout(2000);
+      await userPage.deleteUser({
+        newFirstName: newStaffFirstName,
+        newLastName: newStaffLastName,
+        email: staffEmail,
+      });
+      await expect(
+        userPage.page.getByText('The user was deleted successfully.')
+      ).toBeVisible();
+      await userPage.page.waitForTimeout(1000);
     } else {
       throw new Error(
         'GROUPADMIN does not have permission to create, edit, and delete users of type Venue Manager or Staff Member.'
