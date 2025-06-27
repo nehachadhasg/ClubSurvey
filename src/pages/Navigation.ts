@@ -61,7 +61,7 @@ export class Navigation extends PlaywrightWrapper {
     if (pageTitle.startsWith('59club')) {
       await this.type(this.selectors.emailSelector, 'Username', username);
       await this.type(this.selectors.passwordSelector, 'Password', password);
-      await this.click(this.selectors.loginButtonSelector, 'Sign In', 'Button');
+      await this.page.getByRole('button', { name: 'Login button' }).click();
       await this.page.waitForTimeout(1000);
       await this.validateElementVisibility(
         this.selectors.clubSmallLogo,

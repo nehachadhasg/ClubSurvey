@@ -12,7 +12,7 @@ export class SurveyFilters extends PlaywrightWrapper {
 
   public selectors = {
     tableRow:
-      'tr[class*="hover:bg-muted/50 border-b transition-colors data-[state=selected]:bg-muted focus:bg-muted/50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lime group mb-2 border-separate !border-b-0 bg-greyscale-100 [&_td:first-child]:rounded-l-xl [&_td:last-child]:rounded-r-xl cursor-pointer"]',
+      'tr[class*="hover:bg-muted/50 border-b transition-colors data-[state=selected]:bg-muted focus:bg-muted/50 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lime group mb-2 border-separate !border-b-0 bg-greyscale-100 [&_td:first-child]:rounded-l-xl [&_td:last-child]:rounded-r-xl cursor-pointer"]',
     emailSelector: 'input[placeholder="Insert your email address"]',
     passwordSelector: 'input[placeholder="Enter your password"]',
     loginButtonSelector:
@@ -80,7 +80,7 @@ export class SurveyFilters extends PlaywrightWrapper {
   public async login(page: Page) {
     const emailInput = page.locator(this.selectors.emailSelector);
     const passwordInput = page.locator(this.selectors.passwordSelector);
-    const loginButton = page.locator(this.selectors.loginButtonSelector);
+    const loginButton = page.getByRole('button', { name: 'Login button' });
     await emailInput.fill(environment.credentials.SUPER_ADMIN.username);
     await passwordInput.fill(environment.credentials.SUPER_ADMIN.password);
     await loginButton.click();
@@ -94,7 +94,7 @@ export class SurveyFilters extends PlaywrightWrapper {
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.tableRow).nth(0).click();
     await this.page.waitForTimeout(500);
-    await this.page.locator(this.selectors.addSurveyButton).click();
+    await this.page.getByRole('button', { name: 'Add Survey' }).click();
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.surveyCards).nth(0).click();
     await this.page.waitForTimeout(500);
@@ -137,7 +137,7 @@ export class SurveyFilters extends PlaywrightWrapper {
 
   public async deleteDropdownFilter() {
     await this.page.locator(this.selectors.threeDotsButton).click();
-    await this.page.locator(this.selectors.deleteButton).click();
+    await this.page.getByText('Delete', { exact: true }).click();
   }
 
   public async cleanUpSurvey() {

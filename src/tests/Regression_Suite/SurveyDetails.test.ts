@@ -139,7 +139,7 @@ test(`TC_SD_005: View Survey Preview`, async () => {
       surveyDetails.page.locator(surveyDetails.selectors.avgTimeDiv)
     ).toBeVisible();
     await expect(
-      surveyDetails.page.locator(surveyDetails.selectors.languageButtonDisabled)
+      surveyDetails.page.getByRole('button', { name: 'English' })
     ).toBeDisabled();
   });
 });

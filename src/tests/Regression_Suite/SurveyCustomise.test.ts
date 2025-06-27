@@ -12,6 +12,10 @@ test.beforeEach(async ({ page, context }) => {
   await surveyCustomise.navigateToSurveyCustomise();
 });
 
+test.afterEach(async () => {
+  await surveyCustomise.cleanUpSurvey();
+});
+
 test(`TC-CS-001: Toggle Survey and Email Preview`, async () => {
   test.info().annotations.push(
     { type: 'TestCase', description: 'TC-CS-001' },
@@ -47,8 +51,8 @@ test(`TC-CS-002: Select Default Style`, async () => {
     }
   );
   await test.step('Verify default style (Green) is applied initially', async () => {
-    await surveyCustomise.page
-      .locator(surveyCustomise.selectors.surveyStyleButtons)
-      .first();
+    await expect(
+      surveyCustomise.page.locator(surveyCustomise.selectors.greenButton)
+    ).toBeVisible();
   });
 });

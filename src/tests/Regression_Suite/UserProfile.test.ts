@@ -19,7 +19,7 @@ const navigateToProfilePage = async (page: Page) => {
 const login = async (page: Page) => {
   const emailInput = page.locator(userProfile.selectors.emailSelector);
   const passwordInput = page.locator(userProfile.selectors.passwordSelector);
-  const loginButton = page.locator(userProfile.selectors.loginButtonSelector);
+  const loginButton = page.getByRole('button', { name: 'Login button' });
   await emailInput.fill(environment.credentials.SUPER_ADMIN.username);
   await passwordInput.fill(environment.credentials.SUPER_ADMIN.password);
   await loginButton.click();
@@ -92,14 +92,14 @@ test(`E2E-CLUB59-USER-PROFILE-01: Login to the platform and verify user profile 
     await expect(languageSectionHeader).toBeVisible();
   });
   await test.step('Verify Update Button Initial State', async () => {
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await expect(updateButton).toBeVisible();
     await expect(updateButton).toBeDisabled();
   });
   await test.step('Enable Update Button on Edit - Details', async () => {
     const firstNameInput = page.locator(userProfile.selectors.firstNameInput);
     await firstNameInput.fill('Jane');
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await expect(updateButton).toBeEnabled();
   });
 });
@@ -113,7 +113,7 @@ test(`SANITY-CLUB59-USER-PROFILE-01: Verify First Name is Editable ${SANITY_TAG}
   });
   await test.step('Verify First Name is Editable', async () => {
     const firstNameInput = page.locator(userProfile.selectors.firstNameInput);
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await firstNameInput.click();
     await firstNameInput.fill('Jane');
     expect(firstNameInput).toHaveValue('Jane');
@@ -130,7 +130,7 @@ test(`SANITY-CLUB59-USER-PROFILE-02: Verify Surname is Editable ${SANITY_TAG}`, 
   });
   await test.step('Verify Surname is Editable', async () => {
     const surnameInput = page.locator(userProfile.selectors.surnameInput);
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await surnameInput.click();
     await surnameInput.fill('Doeness');
     expect(surnameInput).toHaveValue('Doeness');
@@ -146,8 +146,8 @@ test(`SANITY-CLUB59-USER-PROFILE-03: Verify Email is Editable ${SANITY_TAG}`, as
     await navigateToProfilePage(page);
   });
   await test.step('Verify First Name is Editable', async () => {
-    const emailInput = page.locator(userProfile.selectors.emailInput);
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const emailInput = page.getByRole('textbox', { name: 'Enter your email' });
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await emailInput.click();
     await emailInput.fill('jane.doeness@59club.com');
     expect(emailInput).toHaveValue('jane.doeness@59club.com');
@@ -532,7 +532,7 @@ test(`SANITY-CLUB59-USER-PROFILE-14: Enable Update Button on Edit - Language/Dat
     await options.nth(4).click();
   });
   await test.step('Enable Update Button', async () => {
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await expect(updateButton).toBeEnabled();
   });
 });
@@ -553,7 +553,7 @@ test(`SANITY-CLUB59-USER-PROFILE-15: Save Language/Date/Time Preferences ${SANIT
     await options.nth(6).click();
   });
   await test.step('Click "Update" button', async () => {
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await updateButton.click();
   });
   await test.step('Verify Success Message', async () => {
@@ -575,7 +575,7 @@ test(`SANITY-CLUB59-USER-PROFILE-15: Save Language/Date/Time Preferences ${SANIT
     await defaultLanguageSelect.click();
     const options = page.getByRole('option');
     await options.nth(0).click();
-    const updateButton = page.locator(userProfile.selectors.updateButton);
+    const updateButton = page.getByRole('button', { name: 'Update' });
     await updateButton.click();
     const closeSuccessModalButton = page.locator(
       userProfile.selectors.closeSuccessModalButton

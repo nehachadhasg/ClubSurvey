@@ -34,8 +34,7 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
       'img[@alt="Train & Excel with Expert Guidance" and contains(@src, "loginthird") and contains(@class, "object-contain")]',
     loginButton:
       'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Login")',
-    submitButton:
-      'button[type="submit"][class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Submit")',
+    submitButton: 'button[title="Submit"]:has-text("Submit")',
     rememberme: 'div[class*="h-5"][class*="w-5"][class*="bg-greyscale-200"]',
     togglebutton:
       'button[contains(@class, "text-gray-1000") and contains(@class, "flex") and contains(@class, "cursor-pointer") and contains(@class, "px-3")]',
@@ -116,7 +115,7 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
       await this.type(this.selectors.passwordSelector, 'Password', password);
 
       // Click the login button
-      await this.click(this.selectors.loginButtonSelector, 'Sign In', 'Button');
+      await this.page.getByRole('button', { name: 'Login button' }).click();
 
       // Wait for the dashboard to load
       await this.page.waitForTimeout(1000);
