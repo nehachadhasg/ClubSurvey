@@ -10,7 +10,7 @@ let navigation: Navigation;
 const login = async (page: Page) => {
   const emailInput = page.locator(navigation.selectors.emailSelector);
   const passwordInput = page.locator(navigation.selectors.passwordSelector);
-  const loginButton = page.locator(navigation.selectors.loginButtonSelector);
+  const loginButton = page.getByRole('button', { name: 'Login button' });
   await emailInput.fill(environment.credentials.SUPER_ADMIN.username);
   await passwordInput.fill(environment.credentials.SUPER_ADMIN.password);
   await loginButton.click();

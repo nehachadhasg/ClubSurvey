@@ -60,7 +60,7 @@ test(`SANITY-CLUB59-LOGIN-001: Load Login page ${SANITY_TAG}`, async ({
     await expect(rememberMeCheckbox).toBeVisible();
   });
   await test.step('Login button should be visible and disabled', async () => {
-    const loginButton = page.locator(clubSurveyLogin.selectors.loginButton);
+    const loginButton = page.getByRole('button', { name: 'Login button' });
     await expect(loginButton).toBeVisible();
     await expect(loginButton).toBeDisabled();
   });
@@ -192,7 +192,7 @@ test(`E2E-CLUB59-LOGIN-001: Login field validations ${E2E_TAG}`, async ({
     const passwordInput = page.locator(
       clubSurveyLogin.selectors.passwordSelector
     );
-    const loginButton = page.locator(clubSurveyLogin.selectors.loginButton);
+    const loginButton = page.getByRole('button', { name: 'Login button' });
     await expect(loginButton).toBeDisabled();
     await emailInput.fill('validemail@gmail.com');
     await passwordInput.fill('validpassword');

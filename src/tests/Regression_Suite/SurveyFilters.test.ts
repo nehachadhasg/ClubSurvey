@@ -117,9 +117,7 @@ test(`TC_SF_005: Restore Deleted Filter`, async () => {
     await surveyFilters.page
       .locator(surveyFilters.selectors.deletedFilters)
       .click();
-    await surveyFilters.page
-      .locator(surveyFilters.selectors.restoreButton)
-      .click();
+    await surveyFilters.page.getByRole('button', { name: 'Add' }).click();
     await surveyFilters.page.waitForTimeout(500);
     await surveyFilters.page.locator(surveyFilters.selectors.backSvg).click();
     await expect(

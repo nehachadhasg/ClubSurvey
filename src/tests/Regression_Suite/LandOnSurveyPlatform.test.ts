@@ -108,9 +108,7 @@ test(`SANITY-CLUB59-SURVEYS-PLATFORM-TC03:Validate login form is accessible--${S
     const passwordField = page.locator(
       clubSurveyLogin.selectors.passwordSelector
     );
-    const loginButton = page.locator(
-      clubSurveyLogin.selectors.loginButtonSelector
-    );
+    const loginButton = page.getByRole('button', { name: 'Login button' });
 
     // Assert that the username field is visible
     await expect(usernameField).toBeVisible();
@@ -193,7 +191,7 @@ test.skip(`E2E-CLUB59-SURVEYS-PLATFORM-001: Complete end-to-end flow ${E2E_TAG}`
     const passwordField = page.locator(
       clubSurveyLogin.selectors.passwordSelector
     );
-    const loginButton = page.locator(clubSurveyLogin.selectors.loginButton);
+    const loginButton = page.getByRole('button', { name: 'Login button' });
 
     // Assert that the username field is visible
     await expect(usernameField).toBeVisible();
