@@ -130,6 +130,30 @@ export class SurveyCustomise extends PlaywrightWrapper {
       'svg[class*="lucide lucide-ellipsis h-4 w-4 rotate-90"][height="24"][width="24"]',
     greenButton:
       'button[style="background-color: rgb(54, 90, 83);"][aria-label="Start Survey"]:has-text("Start Survey")',
+    mainColourPicker:
+      'span[class="typography-body-1-bold"]:has-text("#e2e2e4")',
+    backgroundColourPicker: 'button[aria-label*="Select background color"]',
+    addImageButtons: 'button:has-text("Add Image")',
+    galleryImages:
+      'div[class*="h-[130px] w-[150px] overflow-hidden rounded-md bg-transparent"]',
+    deleteImageButton: 'button[aria-label="Delete Image"]',
+    previewImageButton: 'button[aria-label="Preview"]',
+    imagePreview: 'img[class*="h-auto max-h-[70vh] w-auto max-w-full"]',
+    imageModalHeading:
+      'h2[class="text-lg font-semibold leading-none tracking-tight"]',
+    logoImage:
+      'img[class*="absolute top-4 bg-white left-4 h-12 w-24 rounded-md object-contain"][alt="Logo"]',
+    logoImageMiddleAligned:
+      'img[class*="absolute top-4 bg-white left-1/2 -translate-x-1/2 h-12 w-24 rounded-md object-contain"][alt="Logo"]',
+    logoImageRightAligned:
+      'img[class="absolute top-4 bg-white right-4 h-12 w-24 rounded-md object-contain"][alt="Logo"]',
+    alignLogoMiddleSvg:
+      'svg[class="lucide lucide-align-center"][width="16"][height="16"]',
+    alignLogoRightSvg:
+      'svg[class="lucide lucide-align-right"][width="16"][height="16"]',
+    alignLogoLeftSvg:
+      'svg[class="lucide lucide-align-left"][width="16"][height="16"]',
+    sponsorImages: 'img[class*="h-12 w-24 rounded-sm"]',
   };
 
   public someAbstractMethod(): void {
