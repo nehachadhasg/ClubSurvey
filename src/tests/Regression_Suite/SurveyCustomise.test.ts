@@ -123,7 +123,7 @@ test(`TC-CS-004: Upload Cover Image`, async () => {
       .click();
     await surveyCustomise.page.waitForTimeout(1000);
     await expect(
-      surveyCustomise.page.locator('.md\\:px-\\[48px\\] > div').first()
+      surveyCustomise.page.locator('.w-full > .mx-auto > div').first()
     ).toBeVisible();
   });
 });
@@ -156,7 +156,7 @@ test(`TC-CS-005: Browse and Upload New Cover Image`, async () => {
       .click();
     await surveyCustomise.page.waitForTimeout(1000);
     await expect(
-      surveyCustomise.page.locator('.md\\:px-\\[48px\\] > div').first()
+      surveyCustomise.page.locator('.w-full > .mx-auto > div').first()
     ).toBeVisible();
   });
 });
@@ -246,7 +246,7 @@ test(`TC-CS-007: Upload Logo`, async () => {
     await surveyCustomise.page.getByRole('button', { name: 'Email' }).click();
     await surveyCustomise.page.waitForTimeout(100);
     await expect(
-      surveyCustomise.page.locator(surveyCustomise.selectors.logoImage)
+      surveyCustomise.page.getByRole('img', { name: 'Logo', exact: true })
     ).toBeVisible();
   });
 });
@@ -405,5 +405,78 @@ test(`TC-CS-010: Prevent More Than 5 Sponsors`, async () => {
         .locator(surveyCustomise.selectors.addImageButtons)
         .nth(2)
     ).toBeVisible();
+  });
+});
+
+test(`TC-CS-011: Select Scrollable Survey Format`, async () => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'TC-CS-011' },
+    {
+      type: 'Test Description',
+      description: 'Verify scrollable format is default and works as expected',
+    }
+  );
+  await test.step('Verify scrollable format is default and works as expected', async () => {
+    await expect(
+      surveyCustomise.page.locator(surveyCustomise.selectors.progressBarSwitch)
+    ).not.toBeVisible();
+    await expect(
+      surveyCustomise.page.locator(
+        surveyCustomise.selectors.disableNavigationSwitch
+      )
+    ).not.toBeVisible();
+  });
+});
+
+test(`TC-CS-012: Select One Question Per Page Format`, async () => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'TC-CS-012' },
+    {
+      type: 'Test Description',
+      description: 'Verify selecting 1-question-per-page updates preview',
+    }
+  );
+  await test.step('Verify selecting 1-question-per-page updates preview', async () => {
+    await surveyCustomise.page
+      .locator(surveyCustomise.selectors.oneQuestionPerPageButton)
+      .click();
+    await surveyCustomise.page.waitForTimeout(100);
+    await surveyCustomise.page
+      .locator(surveyCustomise.selectors.progressBarSwitch)
+      .click();
+    await surveyCustomise.page.waitForTimeout(100);
+    await expect(
+      surveyCustomise.page.locator(surveyCustomise.selectors.progressBarSvg)
+    ).toBeVisible();
+  });
+});
+
+test(`TC-CS-013: Enable Disable Navigation Option`, async () => {
+  test.info().annotations.push(
+    { type: 'TestCase', description: 'TC-CS-013' },
+    {
+      type: 'Test Description',
+      description:
+        'Verify disabling navigation prompts confirmation and saves state',
+    }
+  );
+  await test.step('Verify disabling navigation prompts confirmation and saves state', async () => {
+    await surveyCustomise.page
+      .locator(surveyCustomise.selectors.oneQuestionPerPageButton)
+      .click();
+    await surveyCustomise.page.waitForTimeout(100);
+    await surveyCustomise.page
+      .locator(surveyCustomise.selectors.disableNavigationSwitch)
+      .click();
+    await surveyCustomise.page.waitForTimeout(100);
+    await surveyCustomise.page
+      .locator(surveyCustomise.selectors.confirmDisableNavigationButton)
+      .click();
+    await surveyCustomise.page.waitForTimeout(500);
+    await expect(
+      surveyCustomise.page.locator(
+        surveyCustomise.selectors.disableNavigationSwitch
+      )
+    ).toHaveAttribute('data-state', 'checked');
   });
 });

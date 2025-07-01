@@ -142,18 +142,26 @@ export class SurveyCustomise extends PlaywrightWrapper {
     imageModalHeading:
       'h2[class="text-lg font-semibold leading-none tracking-tight"]',
     logoImage:
-      'img[class*="absolute top-4 bg-white left-4 h-12 w-24 rounded-md object-contain"][alt="Logo"]',
+      'img[class="mr-auto h-[50px] w-[75px] rounded-md object-contain"][alt="Logo"]',
     logoImageMiddleAligned:
-      'img[class*="absolute top-4 bg-white left-1/2 -translate-x-1/2 h-12 w-24 rounded-md object-contain"][alt="Logo"]',
+      'img[class="mx-auto h-[50px] w-[75px] rounded-md object-contain"][alt="Logo"]',
     logoImageRightAligned:
-      'img[class="absolute top-4 bg-white right-4 h-12 w-24 rounded-md object-contain"][alt="Logo"]',
+      'img[class="ml-auto h-[50px] w-[75px] rounded-md object-contain"][alt="Logo"]',
     alignLogoMiddleSvg:
       'svg[class="lucide lucide-align-center"][width="16"][height="16"]',
     alignLogoRightSvg:
       'svg[class="lucide lucide-align-right"][width="16"][height="16"]',
     alignLogoLeftSvg:
       'svg[class="lucide lucide-align-left"][width="16"][height="16"]',
-    sponsorImages: 'img[class*="h-12 w-24 rounded-sm"]',
+    sponsorImages: 'img[class*="h-[50px] w-[75px] rounded-sm"]',
+    scrollableButton: 'button:has-text("Scrollable")',
+    oneQuestionPerPageButton: 'button:has-text("One Question per Page")',
+    progressBarSwitch: 'button[role="switch"][aria-label="Progress Bar"]',
+    disableNavigationSwitch:
+      'button[role="switch"][aria-label="Disable Back & Forward Navigation"]',
+    progressBarSvg: 'svg[width="100%"][height="12"][fill="none"]',
+    confirmDisableNavigationButton:
+      'button[title="Yes, Disable Navigation"]:has-text("Yes, Disable Navigation")',
   };
 
   public someAbstractMethod(): void {
