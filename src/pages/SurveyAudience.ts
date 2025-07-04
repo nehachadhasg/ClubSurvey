@@ -184,6 +184,11 @@ export class SurveyAudience extends PlaywrightWrapper {
       'button[aria-label="Survey results from participants who waived anonymity"]',
     individualSurveyResultsFromAllParticipantsSwitch:
       'button[aria-label="Individual survey results from all participants"]',
+    addEmailsButton: 'button[title="Add Emails"]:has-text("Add Emails")',
+    firstNameInput: 'input[placeholder="Enter First Name"]',
+    lastNameInput: 'input[placeholder="Enter Last Name"]',
+    userEmailInput: 'input[placeholder="Enter Email"]',
+    importParticipantsButton: 'button:has-text("Import")',
   };
 
   public someAbstractMethod(): void {
@@ -245,6 +250,7 @@ export class SurveyAudience extends PlaywrightWrapper {
     await this.page.waitForTimeout(100);
     await this.page.locator(this.selectors.footerTextarea).fill(footer);
     await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).click();
     await expect(this.page.locator(`p:has-text("${message}")`)).toBeVisible();
     await expect(this.page.locator(`p:has-text("${footer}")`)).toBeVisible();
     await this.page
