@@ -42,6 +42,12 @@ export class Navigation extends PlaywrightWrapper {
     searchBar: 'input[placeholder="Search..."]',
     applyFiltersButton: 'button:has-text("Apply Now")',
     metricsDashboardDiv: 'div[class*="relative flex w-1/4 flex-col pl-6"]',
+    pagination_text_show: 'span.whitespace-nowrap:contains("Show")',
+    pagination_dropdown: 'button[type="button"][role="combobox"][data-testid="page-size-select"][name="page-size"]',
+    pagination_previous: 'button[type="button"][aria-label="Previous page"]',
+    pagination_next: 'button[type="button"][aria-label="Next page"]',
+    surveyDashboardGroupsTable: 'table[aria-label="groups table"] tbody tr',
+    surveyDashboardFranchisesTable: 'table[aria-label="franchises table"] tbody tr',
   };
 
   public someAbstractMethod(): void {

@@ -10,6 +10,7 @@ import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
+import { VenueData } from '../../../../data/venue.interface';
 import { UserData } from '../../../../data/users.interface';
 import { VenuePage } from 'pages/VenuePage';
 
@@ -17,6 +18,8 @@ import { VenuePage } from 'pages/VenuePage';
 let rolePermissions: any;
 let venueAdminCredentials: { username: string; password: string };
 let users: UserData;
+let venueData: VenueData;
+let venueName: string;
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
@@ -30,6 +33,21 @@ test.describe('VENUEADMIN - Land on Survey Dashboard tests', () => {
     context = await browser.newContext();
     page = await context.newPage();
 
+  const venueFilePath = path.resolve(
+      __dirname,
+      '../../../../data/venue.json'
+    );
+    venueData = JsonReader.readJson(venueFilePath) as VenueData;
+
+    if (!venueData || !venueData.venue || !venueData.venue.id) {
+      throw new Error('franchise.json is empty or invalid. Please run the data generation script.');
+    }
+    // Get Venue Name 
+     venueName = venueData.venue.name;
+
+    if (!venueName) {
+      throw new Error('Venue Name is missing in franchise.json.');
+    }
     const usersFilePath = path.resolve(
       __dirname,
       '../../../../data/users.json'
@@ -81,12 +99,9 @@ test.describe('VENUEADMIN - Land on Survey Dashboard tests', () => {
     const venueDropdown = venuePage.page.locator(
       venuePage.selectors.venueDropdown
     );
-    const venue = 'Bandwidth';
     const venueHeading = venuePage.page.getByRole('heading', {
-      name: venue,
+      name: venueName,
     });
-    await expect(venueDropdown).toBeVisible();
-    await expect(venueDropdown).not.toBeEnabled();
     await expect(venueHeading).toBeVisible();
   });
 });

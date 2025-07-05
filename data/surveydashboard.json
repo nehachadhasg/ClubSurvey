@@ -1,0 +1,46 @@
+{
+  "1": {
+    "totalVenues": "58",
+    "totalSurveys": "672",
+    "activeSurveys": "68",
+    "avgParticipation": 38.86,
+    "avgCompletion": 74.08,
+    "total": 50,
+    "page": 1,
+    "perPage": 10,
+    "lastPage": 5
+  },
+  "2": {
+    "totalVenues": "1",
+    "totalSurveys": "0",
+    "activeSurveys": "0",
+    "avgParticipation": 0,
+    "avgCompletion": 0,
+    "total": 1,
+    "page": 1,
+    "perPage": 10,
+    "lastPage": 1
+  },
+  "4": {
+    "totalVenues": "1",
+    "totalSurveys": "0",
+    "activeSurveys": "0",
+    "avgParticipation": 0,
+    "avgCompletion": 0,
+    "total": 1,
+    "page": 1,
+    "perPage": 10,
+    "lastPage": 1
+  },
+  "5": {
+    "totalVenues": "",
+    "totalSurveys": "0",
+    "activeSurveys": "0",
+    "avgParticipation": 0,
+    "avgCompletion": 0,
+    "total": 0,
+    "page": 1,
+    "perPage": 10,
+    "lastPage": 0
+  }
+}

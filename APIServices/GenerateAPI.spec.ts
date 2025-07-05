@@ -3,13 +3,14 @@ import { authenticateSuperAdmin, createFranchise,createGroup,getTimezone,createV
 import { fr } from "@faker-js/faker";
 import { clearUsersFile } from '../helpers/playwright.ts'; // Import clearUsersFile
 import { updateJSONFile } from "../helpers/jsonDataHandler.ts";
+import path from 'path';
 
 test.beforeAll(async () => {
-    // Clear the users.json file before running tests
-    clearUsersFile();
+const outputFilePath = path.join(__dirname, '../data/users.json');
+await clearUsersFile(outputFilePath);
 });
 
-test('Create User', async () => {
+test('Create User,Franchise,Group,Venue', async () => {
     //await authenticateSuperAdmin();
     const franchiseId=await createFranchise();
     const groupId = await createGroup(franchiseId);
@@ -28,3 +29,7 @@ test('Create User', async () => {
 
     }
 );
+
+
+
+   

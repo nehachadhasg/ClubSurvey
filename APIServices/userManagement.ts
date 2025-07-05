@@ -7,7 +7,9 @@ import { writeUserToFile } from '../helpers/playwright.ts';
 import { updateJSONFile } from "../helpers/jsonDataHandler.ts";
 import { JsonReader } from '../helpers/jsonReader';
 import * as path from 'path';
-
+import { FranchiseData } from "../data/franchise.interface.ts";
+import { GroupData } from "../data/group.interface.ts";
+import { VenueData } from "../data/venue.interface.ts"; 
  
  
 // Authenticate as Super Admin and get a token
@@ -27,37 +29,48 @@ import * as path from 'path';
 
 // Create a Franchise with super admin token
 export async function createFranchise(){
+    const uniqueFranchiseName = `Franchise ${FakerData.getOrganizationName()} ${Date.now()}`;
     const response = await httpRequest({
         method: 'POST',
         endPoint: `${environment.apiBaseURL}/franchises`,
         contentType: 'json',
         userData: {
             "admins": [],
-            "name": FakerData.getOrganizationName(),
-            "status": "active",
+            "email": FakerData.getEmail(), 
             "firstName": FakerData.getFirstName(),
             "lastName": FakerData.getLastName(),
-            "email": FakerData.getEmail(), 
-        },
+            "name": uniqueFranchiseName,
+            "status": "active",
+                },
         customHeaders: {
             Authorization: `Bearer ${await authenticateSuperAdmin()}`
         }
     });
     console.log(response);
     let franchiseId = response.data.data.franchise_id;
+    let franchiseName = response.data.data.name;
+    let status = response.data.data.status;
+    updateJSONFile<FranchiseData>('../data/franchise.json', {
+    "franchise": {
+        id: franchiseId,
+        name: franchiseName,
+        status: status,
+        }
+        });
   return franchiseId;
 }
 
 
 // Create a Group under the Franchise
 export async function createGroup(franchiseId: string){
+    const uniqueGroupName = `Group ${FakerData.getOrganizationName()} ${Date.now()}`;
     const response = await httpRequest({
         method: 'POST',
         endPoint: `${environment.apiBaseURL}/groups`,
         contentType: 'json',
         userData: {
             "franchise_id": franchiseId,
-            "name": FakerData.getOrganizationName(),
+            "name": uniqueGroupName,
             "status": "active", 
         },
         customHeaders: {
@@ -66,6 +79,15 @@ export async function createGroup(franchiseId: string){
     });
     console.log(response);
     let groupId = response.data.data.group_id;
+    let groupName = response.data.data.name;
+    let status = response.data.data.status;
+    updateJSONFile<GroupData>('../data/group.json', {
+    "group": {
+        id: groupId,
+        name: groupName,
+        status: status,
+        }
+        });
   return groupId;
 }
 
@@ -81,7 +103,6 @@ export async function getTimezone(): Promise<string> {
     });
 
     console.log("Timezones response:", response.data);
-
     // Select the first timezone ID from the response data
     if (response.data && response.data.data && response.data.data.length > 0) {
         const timezoneId = response.data.data[0].id; // Get the first timezone ID
@@ -94,6 +115,7 @@ export async function getTimezone(): Promise<string> {
 
 // Create a Venue under the group and assign a timezone
 export async function createVenue(franchiseId: string, groupId: string, timezoneId: string){
+    const uniqueVenueName = `Venue ${FakerData.getOrganizationName()} ${Date.now()}`;
     const response = await httpRequest({
         method: 'POST',
         endPoint: `${environment.apiBaseURL}/venues`,
@@ -103,7 +125,7 @@ export async function createVenue(franchiseId: string, groupId: string, timezone
             "franchiseId": franchiseId,
             "groupId": groupId,
             "mentorSubdomain": "",
-            "name": FakerData.getOrganizationName(),
+            "name": uniqueVenueName,
             "status": "active", 
             "timezone": timezoneId,
         },
@@ -113,12 +135,25 @@ export async function createVenue(franchiseId: string, groupId: string, timezone
     });
     console.log(response);
     let venueId = response.data.data.venueId;
+    let venueName = response.data.data.name;
+    let status = response.data.data.status;
+    updateJSONFile<VenueData>('../data/venue.json', {
+    "venue": {
+        id: venueId,
+        franchise_id: franchiseId,
+        group_id: groupId,
+        name: venueName,
+        status: status,
+        timezone: timezoneId,
+        }
+        });
   return venueId;
 }
 
 // Create a User and Assign to Franchise Admin Role
 export async function createFranchiseAdmin(franchiseId: string, 
     role_id: number){
+    const uniqueUserNameFA = `user_${Date.now()}@example.com`;    
     try {
         const response = await httpRequest({
             method: 'POST',
@@ -126,7 +161,7 @@ export async function createFranchiseAdmin(franchiseId: string,
             contentType: 'json',
             userData: {
                 "assignTo": [franchiseId],
-                "email": FakerData.getEmail(),
+                "email": uniqueUserNameFA,
                 "first_name": FakerData.getFirstName(),
                 "last_name": FakerData.getLastName(),
                 "locale": "en-GB",
@@ -174,6 +209,7 @@ export async function createFranchiseAdmin(franchiseId: string,
     // Create a User and Assign to Group Admin Role
 export async function createGroupAdmin(groupId: string, 
     role_id: number){
+    const uniqueUserNameGA = `user_${Date.now()}@example.com`;
     try {
         const response = await httpRequest({
             method: 'POST',
@@ -181,7 +217,7 @@ export async function createGroupAdmin(groupId: string,
             contentType: 'json',
             userData: {
                 "assignTo": [groupId],
-                "email": FakerData.getEmail(),
+                "email": uniqueUserNameGA,
                 "first_name": FakerData.getFirstName(),
                 "last_name": FakerData.getLastName(),
                 "locale": "en-GB",
@@ -204,8 +240,6 @@ export async function createGroupAdmin(groupId: string,
             }
         });
         return user_ID;
-//        writeUserToFile(username_GA, 'club59@123', role_id);
-
         } catch (error: any) {
             console.error('Error during user creation:', error.response?.data || error.message);
             throw new Error('User creation failed');
@@ -215,6 +249,7 @@ export async function createGroupAdmin(groupId: string,
 // Create a User and Assign to Venue Admin Role
 export async function createVenueAdmin(VenueId: string, 
     role_id: number){
+    const uniqueUserNameVA = `user_${Date.now()}@example.com`;
     try {
         const response = await httpRequest({
             method: 'POST',
@@ -222,7 +257,7 @@ export async function createVenueAdmin(VenueId: string,
             contentType: 'json',
             userData: {
                 "assignTo": [VenueId],
-                "email": FakerData.getEmail(),
+                "email": uniqueUserNameVA,
                 "first_name": FakerData.getFirstName(),
                 "last_name": FakerData.getLastName(),
                 "locale": "en-GB",
@@ -257,58 +292,14 @@ export async function deleteUser(userId: string,) {
     try {
         const response = await httpRequest({
 
-           
-
-            // users = JsonReader.readJson(usersFilePath) as UserData;
-
-            // if (!users || Object.keys(users).length === 0) {
-            //   throw new Error('users.json is empty or invalid. Please run the data generation script.');
-            // }
-        
-            // Extract SUPERADMIN credentials
-            // const superAdminUser = Object.values(users).find((user: any) => user.role_id === 1);
-        
             method: 'DELETE',
             endPoint: `${environment.apiBaseURL}/users/delete/${userId}`,
             contentType: 'json',
-            // userData: {
-            //     "assignTo": [franchiseId],
-            //     "email": FakerData.getEmail(),
-            //     "first_name": FakerData.getFirstName(),
-            //     "last_name": FakerData.getLastName(),
-            //     "locale": "en-GB",
-            //     "role_id": role_id,
-            //     "timeZone": "(GMT - 08h00) Pacific Standard Time",
-            // },
             customHeaders: {
                 Authorization: `Bearer ${await authenticateSuperAdmin()}`
             }
         });
         console.log("User deleted successfully:", response.data.message);
-        // const username_FA = response.data.data.email;
-        // const user_ID = response.data.data.id;
-        // updateJSONFile<UserData>('../data/users.json', {
-        //     [role_id]: {
-        //         username: username_FA,
-        //         password: 'Club59@123',
-        //         role_id: role_id,
-        //         user_id: user_ID,
-        //     }
-        // });
-        // let username_SA = environment.credentials.SUPER_ADMIN.username;
-        // let password_SA = environment.credentials.SUPER_ADMIN.password;
-        // role_id = 1;
-        // updateJSONFile<UserData>('../data/users.json', {
-        //     [1]: {
-        //         username: username_SA,
-        //         password: password_SA,
-        //         role_id: role_id,
-        //         user_id: user_ID,
-        //     }
-        // });
-        // return user_ID;
-        // Write user data to JSON file
-        //        writeUserToFile(username_FA, 'club59@123', role_id);
     } catch (error: any) {
         console.error('Error during user deletion:', error.response?.data || error.message);
         throw new Error('User deletion failed');
@@ -318,8 +309,8 @@ export async function deleteUser(userId: string,) {
 
 
 
-// Create a User and Assign to Group Admin Role
-export async function deleteGroupAdmin(groupId: string,
+// Delete a User and Assign to Group Admin Role
+/*export async function deleteGroupAdmin(groupId: string,
     role_id: number) {
     try {
         const response = await httpRequest({
@@ -397,7 +388,7 @@ export async function deleteVenueAdmin(VenueId: string,
         console.error('Error during user creation:', error.response?.data || error.message);
         throw new Error('User creation failed');
     }
-}
+}*/
             
             
 

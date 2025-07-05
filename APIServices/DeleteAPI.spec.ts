@@ -58,6 +58,7 @@ console.log('Venue Admin User ID:', venueAdminUserId);
 await deleteUser(venueAdminUserId);
 
 // Clear the users.json file after running tests
-clearUsersFile();
+const outputFilePath = path.join(__dirname, '../data/users.json');
+clearUsersFile(outputFilePath);
 
 });

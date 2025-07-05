@@ -71,7 +71,7 @@ test.describe('SUPERADMIN - Franchises Permissions Tests', () => {
     await browser.close();
   });
 
-  test('@superadmin - Verify Super Admin can manage ( create, edit, delete) franchises.', async () => {
+  test('@superadmin - Verify Super Admin can manage ( view,create, edit, delete) franchises.', async () => {
     const franchisesPermissions = rolePermissions.franchises;
     if (
       franchisesPermissions.create &&
@@ -83,7 +83,7 @@ test.describe('SUPERADMIN - Franchises Permissions Tests', () => {
       );
       await cards.nth(3).click();
       await franchisePage.page.waitForTimeout(2000);
-      const franchiseName = faker.company.name().slice(0, 10);
+      const franchiseName = faker.company.name().trim();
       const firstName = faker.person.firstName();
       const lastName = faker.person.lastName();
       const email = faker.internet.email();

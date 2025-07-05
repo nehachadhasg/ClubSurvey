@@ -84,7 +84,8 @@ export class ClubSurveyLogin extends PlaywrightWrapper {
     contactUsSuccessSubtext:
       'p[class*="typography-body-1"]:has-text("Your message has been sent. We will respond to you as soon as possible.")',
     contactUsGoBackButton:
-      'button[class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Go back")',
+      'button[type="button"][title="Go back"]',
+//    'button[class*="inline-flex"][class*="bg-dark-green"][class*="typography-body-1-bold"]:has-text("Go back")',
     showPasswordButton:
       'button[class*="text-gray-1000"][class*="flex"][class*="cursor-pointer"]',
     forgotPasswordButton:

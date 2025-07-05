@@ -592,10 +592,15 @@ const outputFilePath = path.join(__dirname, '../data/users.json');
 /**
  * Clears the content of the users.json file by overwriting it with an empty array.
  */
-export async function clearUsersFile() {
+/**
+ * Clears the content of the specified users.json file by overwriting it with an empty array.
+ * @param {string} outputFilePath - The path to the users.json file.
+ */
+export async function clearUsersFile(outputFilePath: string) {
   fs.writeFileSync(outputFilePath, JSON.stringify([], null, 2));
   console.log(`Cleared user data file: ${outputFilePath}`);
 }
+
 
 // Helper function to write user data to a JSON file
 /**
@@ -604,6 +609,7 @@ export async function clearUsersFile() {
  * @param {string} username - The username (email) of the user.
  * @param {string} password - The password for the user.
  * @param {number} role_id - The role ID of the user.
+ * @param {string} outputFilePath - The path to the JSON file where user data will be stored.
  */
 
 export function writeUserToFile(

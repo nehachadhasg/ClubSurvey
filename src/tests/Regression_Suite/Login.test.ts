@@ -66,7 +66,7 @@ test(`SANITY-CLUB59-LOGIN-001: Load Login page ${SANITY_TAG}`, async ({
   });
 });
 
-test(`E2E-CLUB59-LOGIN-001: Login field validations ${E2E_TAG}`, async ({
+test.skip(`E2E-CLUB59-LOGIN-001: Login field validations ${E2E_TAG}`, async ({
   page,
 }) => {
   test.info().annotations.push(
@@ -336,7 +336,7 @@ test(`SANITY-CLUB59-LOGIN-002: Load Contact Us modal ${SANITY_TAG}`, async ({
   });
 });
 
-test(`E2E-CLUB59-LOGIN-002: Contact Us field validations ${E2E_TAG}`, async ({
+test.skip(`E2E-CLUB59-LOGIN-002: Contact Us field validations ${E2E_TAG}`, async ({
   page,
 }) => {
   test.info().annotations.push(

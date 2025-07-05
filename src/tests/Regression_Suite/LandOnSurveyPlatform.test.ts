@@ -12,7 +12,7 @@ test.beforeEach(async ({ page, context }) => {
   clubSurveyLogin = new ClubSurveyLogin(page, context);
 });
 
-test.skip(`SANITY-CLUB59-SURVEYS-PLATFORM-TC01: Navigate to Surveys Platform via 59club Logo ${SANITY_TAG}`, async ({
+test(`SANITY-CLUB59-SURVEYS-PLATFORM-TC01: Navigate to Surveys Platform via 59club Logo ${SANITY_TAG}`, async ({
   page,
 }) => {
   // Add test metadata

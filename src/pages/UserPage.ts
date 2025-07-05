@@ -33,6 +33,7 @@ export class UserPage extends PlaywrightWrapper {
     editUserButton: 'button[class*="font-body"]:has-text("Edit")',
     closeActionsPopUpButton:
       'div[class*="text-greycale-1000 relative z-[15] flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-tr-md bg-greyscale-100"]',
+    closeActionsPopUpButtonSecondary:'div[class*="flex"][class*="items-center"][class*="justify-between"][class*="bg-background"] > div[class*="cursor-pointer"][class*="h-[40px]"][class*="w-[40px]"]',
     tableRow: 'tr[class*="hover:bg-muted/50"]',
     rowActionsCell:
       'div[class*="h-8"][class*="w-8"][class*="cursor-pointer"][class*="hover:bg-greyscale-300"]',
@@ -63,9 +64,9 @@ export class UserPage extends PlaywrightWrapper {
   async createUser({
     firstName,
     lastName,
-    role,
-    assignTo,
     email,
+    role,
+    assignTo
   }: {
     firstName: string;
     lastName: string;
@@ -74,22 +75,26 @@ export class UserPage extends PlaywrightWrapper {
     assignTo: string;
   }) {
     await this.page.locator(this.selectors.addUsersButton).click();
-    await this.page.locator(this.selectors.firstNameInput).fill(firstName);
-    await this.page.locator(this.selectors.lastNameInput).fill(lastName);
+    await this.page.locator(this.selectors.firstNameInput).fill(firstName.trim());
+    await this.page.locator(this.selectors.lastNameInput).fill(lastName.trim());
     await this.page.locator(this.selectors.emailInput).fill(email);
     await this.page.locator(this.selectors.roleSelectInput).click();
     await this.page.getByRole('option', { name: role }).click();
     await this.page.locator(this.selectors.assignToSelectInput).click();
+    const userFullName = `${firstName.trim()} ${lastName.trim()}`;
+    await this.page.locator('input[placeholder="Search"][type="search"].w-full.text-greyscale-1000').fill(`${assignTo}`.trim());
     await this.page.getByRole('menuitem', { name: assignTo }).click();
+    //await this.page.locator(`//div[@role="menuitem"]//p[text()="${assignTo.trim()}"]/ancestor::div[@role="menuitem"]`).click();    
+    // console.log(`Selected assignTo: ${assignTo}`);
     await this.page.locator(this.selectors.createUserButton).click();
   }
 
   async editUser({
     firstName,
     lastName,
-    newFirstName,
-    newLastName,
     email,
+    newFirstName,
+    newLastName
   }: {
     firstName: string;
     lastName: string;
@@ -97,8 +102,12 @@ export class UserPage extends PlaywrightWrapper {
     newFirstName: string;
     newLastName: string;
   }) {
+    const userFullName = `${firstName} ${lastName}`;
+    console.log(`Editing user: ${userFullName} with email: ${email}`);
     await this.page.locator(this.selectors.searchUsers).fill(email);
-    await this.page.getByText(`${firstName} ${lastName}`).click();
+   
+   // await this.page.getByText(`${firstName} ${lastName}`).click();
+    await this.page.getByRole('button', { name: new RegExp(`${firstName} ${lastName}`) }).click();    
     await this.page.locator(this.selectors.editUserButton).click();
     await this.page.locator(this.selectors.firstNameInput).fill(newFirstName);
     await this.page.locator(this.selectors.lastNameInput).fill(newLastName);

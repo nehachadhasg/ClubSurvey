@@ -10,6 +10,7 @@ import { ClubSurveyLogin } from '../../../pages/ClubSurveyLogin';
 import { ROLE_CONFIG } from '../../../../constants/roleConfig';
 import { JsonReader } from '../../../../helpers/jsonReader';
 import * as path from 'path';
+import { GroupData } from '../../../../data/group.interface';
 import { UserData } from '../../../../data/users.interface';
 import { GroupPage } from 'pages/GroupPage';
 
@@ -17,6 +18,8 @@ import { GroupPage } from 'pages/GroupPage';
 let rolePermissions: any;
 let groupAdminCredentials: { username: string; password: string };
 let users: UserData;
+let groupData: GroupData;
+let groupName: string;
 let browser: Browser;
 let context: BrowserContext;
 let page: Page;
@@ -30,6 +33,22 @@ test.describe('GROUPADMIN - Land on Survey Dashboard tests', () => {
     context = await browser.newContext();
     page = await context.newPage();
 
+    const groupFilePath = path.resolve(
+          __dirname,
+          '../../../../data/group.json'
+        );
+        groupData = JsonReader.readJson(groupFilePath) as GroupData;
+    
+        if (!groupData || !groupData.group || !groupData.group.id) {
+          throw new Error('group.json is empty or invalid. Please run the data generation script.');
+        }
+        // Get Group Name 
+         groupName = groupData.group.name;
+    
+        if (!groupName) {
+          throw new Error('Group Name is missing in franchise.json.');
+        }
+    
     const usersFilePath = path.resolve(
       __dirname,
       '../../../../data/users.json'
@@ -84,9 +103,8 @@ test.describe('GROUPADMIN - Land on Survey Dashboard tests', () => {
     const venueDropdown = groupPage.page.locator(
       groupPage.selectors.venueDropdown
     );
-    const group = 'Blockchains';
     const groupHeading = groupPage.page.getByRole('heading', {
-      name: group,
+      name: groupName,
     });
    // await expect(groupDropdown).toBeVisible();
     await expect(venueDropdown).toBeVisible();
