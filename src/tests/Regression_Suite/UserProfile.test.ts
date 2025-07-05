@@ -213,8 +213,7 @@ test(`SANITY-CLUB59-USER-PROFILE-06: Cancel Change Password ${SANITY_TAG}`, asyn
   await test.step('Click "Cancel" button', async () => {
     const myProfileHeader = page.locator(userProfile.selectors.myProfileHeader);
     const cancelChangePasswordButton = page
-      .locator(userProfile.selectors.cancelChangePasswordButton)
-      .nth(1);
+      .locator(userProfile.selectors.cancelChangePasswordButton).nth(1);
     await cancelChangePasswordButton.click();
     await expect(myProfileHeader).toBeVisible();
   });
