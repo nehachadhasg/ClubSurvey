@@ -2,10 +2,11 @@
 import { BrowserContext, Page } from 'playwright';
 import { PlaywrightWrapper } from '../../helpers/playwright';
 import { loadEnvironmentConfig } from '../../config/configLoader';
+import { expect } from '@playwright/test';
 
 const environment = loadEnvironmentConfig();
 
-export class SurveyCustomise extends PlaywrightWrapper {
+export class SurveyAudience extends PlaywrightWrapper {
   constructor(page: Page, context: BrowserContext) {
     super(page, context);
   }
@@ -162,10 +163,36 @@ export class SurveyCustomise extends PlaywrightWrapper {
     progressBarSvg: 'svg[width="100%"][height="12"][fill="none"]',
     confirmDisableNavigationButton:
       'button[title="Yes, Disable Navigation"]:has-text("Yes, Disable Navigation")',
+    enableAnonymitySwitch:
+      'button[role="switch"][aria-label="Enable participant anonymity"]',
+    defaultAnonymitySwitch:
+      'button[role="switch"][aria-label="Make anonymity the default setting"]',
+    forceAnonymitySwitch: 'button[role="switch"][aria-label="Force anonymity"]',
+    validateEmailSwitch:
+      'button[role="switch"][aria-label="Require participants to validate their email"]',
+    hintsAndTipsSvg:
+      'svg[class="lucide lucide-lightbulb"][width="20"][height="20"]',
+    hintButton: 'button:has-text("Hints & Tips")',
+    messageTextarea: 'textarea[placeholder="Enter message here"]',
+    footerTextarea: 'textarea[placeholder="Enter footer content here"]',
+    infoIcon:
+      'svg[class="lucide lucide-info ml-2 h-4 w-4 cursor-help text-greyscale-500"]',
+    emailInput: 'input[placeholder="Enter email addresses"]',
+    surveyParticipationSummarySwitch:
+      'button[aria-label="Survey participation summary"]',
+    surveyResultsFromParticipantsWhoWaivedAnonymitySwitch:
+      'button[aria-label="Survey results from participants who waived anonymity"]',
+    individualSurveyResultsFromAllParticipantsSwitch:
+      'button[aria-label="Individual survey results from all participants"]',
+    addEmailsButton: 'button[title="Add Emails"]:has-text("Add Emails")',
+    firstNameInput: 'input[placeholder="Enter First Name"]',
+    lastNameInput: 'input[placeholder="Enter Last Name"]',
+    userEmailInput: 'input[placeholder="Enter Email"]',
+    importParticipantsButton: 'button:has-text("Import")',
   };
 
   public someAbstractMethod(): void {
-    console.log('Abstract method implemented in SurveyCustomise');
+    console.log('Abstract method implemented in SurveyAudience');
   }
 
   public async login(page: Page) {
@@ -178,7 +205,7 @@ export class SurveyCustomise extends PlaywrightWrapper {
     await page.waitForTimeout(1000);
   }
 
-  public async navigateToSurveyCustomise() {
+  public async navigateToSurveyAudience() {
     await this.page.locator(this.selectors.tableRow).nth(0).click();
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.tableRow).nth(0).click();
@@ -197,6 +224,8 @@ export class SurveyCustomise extends PlaywrightWrapper {
     await this.page.waitForTimeout(500);
     await this.page.locator(this.selectors.continueButton).click();
     await this.page.waitForTimeout(500);
+    await this.page.locator(this.selectors.continueButton).click();
+    await this.page.waitForTimeout(500);
   }
 
   public async cleanUpSurvey() {
@@ -210,5 +239,107 @@ export class SurveyCustomise extends PlaywrightWrapper {
     await this.page.waitForTimeout(100);
     await this.page.getByRole('button', { name: 'Confirm' }).click();
     await this.page.waitForTimeout(500);
+  }
+
+  public async createInviteEmail(message: string, footer: string) {
+    await this.page
+      .getByRole('button', { name: 'Invite Email Filled' })
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).fill(message);
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.footerTextarea).fill(footer);
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).click();
+    await expect(this.page.locator(`p:has-text("${message}")`)).toBeVisible();
+    await expect(this.page.locator(`p:has-text("${footer}")`)).toBeVisible();
+    await this.page
+      .locator(
+        'h3[class="typography-heading-3 cursor-pointer font-heading"]:has-text("Invite Email")'
+      )
+      .click();
+    await this.page.waitForTimeout(100);
+  }
+
+  public async createOpenSurvey(message: string) {
+    await this.page.getByRole('button', { name: 'Open Survey Filled' }).click();
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).fill(message);
+    await this.page.waitForTimeout(100);
+    await expect(this.page.locator(`p:has-text("${message}")`)).toBeVisible();
+    await this.page
+      .locator(
+        `h3[class="typography-heading-3 cursor-pointer font-heading"]:has-text("Open Survey")`
+      )
+      .click();
+    await this.page.waitForTimeout(100);
+  }
+
+  public async createEndSurvey(
+    message: string,
+    footer: string,
+    buttonText: string
+  ) {
+    await this.page.getByRole('button', { name: 'End Survey Filled' }).click();
+    await this.page.waitForTimeout(100);
+    await this.page.getByRole('textbox').first().fill(message);
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).fill(footer);
+    await this.page.waitForTimeout(100);
+    await this.page
+      .locator('input[placeholder="Enter button text"]')
+      .fill(buttonText);
+    await this.page.waitForTimeout(100);
+    await expect(
+      this.page.locator(`button:has-text("${buttonText}")`)
+    ).toBeVisible();
+    await expect(this.page.locator(`p:has-text("${footer}")`)).toBeVisible();
+    await this.page
+      .locator(
+        'h3[class="typography-heading-3 cursor-pointer font-heading"]:has-text("End Survey")'
+      )
+      .click();
+    await this.page.waitForTimeout(100);
+  }
+
+  public async createSurveyCompletedEmail(message: string, footer: string) {
+    await this.page.waitForTimeout(100);
+    await this.page
+      .getByRole('button', { name: 'Survey Completed Email Filled' })
+      .click();
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).fill(message);
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.footerTextarea).fill(footer);
+    await this.page.waitForTimeout(100);
+    await expect(this.page.locator(`p:has-text("${message}")`)).toBeVisible();
+    await expect(this.page.locator(`p:has-text("${footer}")`)).toBeVisible();
+    await this.page
+      .locator(
+        `h3[class="typography-heading-3 cursor-pointer font-heading"]:has-text("Survey Completed Email")`
+      )
+      .click();
+    await this.page.waitForTimeout(100);
+  }
+
+  public async createChaseEmail(message: string, footer: string) {
+    await this.page.getByRole('button', { name: 'Chase Email Filled' }).click();
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.messageTextarea).fill(message);
+    await this.page.waitForTimeout(100);
+    await this.page.locator(this.selectors.footerTextarea).fill(footer);
+    await this.page.waitForTimeout(100);
+    await expect(this.page.locator(`p:has-text("${footer}")`)).toBeVisible();
+    await expect(
+      this.page.locator(
+        'p:has-text("Shrek says: Beauty is in the eye of the beholder")'
+      )
+    ).toBeVisible();
+    await this.page
+      .locator(
+        `h3[class="typography-heading-3 cursor-pointer font-heading"]:has-text("Chase Email")`
+      )
+      .click();
+    await this.page.waitForTimeout(100);
   }
 }
